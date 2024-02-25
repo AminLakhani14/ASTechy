@@ -1,11 +1,10 @@
-import Header from "../Header/Header";
-
-
+import Heading from "../../Global/Heading";
+// import Header from "../Header/Header";
 
 function Home() {
   return (
     <div>
-        <Header/>
+        <Heading text="Amin Lakhani"/>
     </div>
   );
 }
