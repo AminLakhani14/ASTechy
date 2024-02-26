@@ -12,8 +12,9 @@ const Navbar = () => {
       {/* {login && <Login isOpen={login} closeModal={closeModal} />} */}
       <div className="app__navbar">
         <div><img src={images} style={{ height: '25%', width: '25%' }} alt="app logo" /></div>
-        <ul className="app__navbar-links d-flex mb-0">
-          <li className=""><a href="#Service">Services</a></li>
+        <ul className="app__navbar-links d-flex mb-0" style={{ marginRight: 'auto' }}>
+          <li className=""><a href="#Service">Services</a>
+          </li>
           <li className=""><a href="#Work">Work</a></li>
           <li className=""><a href="#AboutUs">About Us</a></li>
           <li className=""><a href="#Insights">Insights</a></li>
