@@ -12,7 +12,7 @@ function ExploreMore(props) {
         <h1>{props.heading}</h1>    
         <p>{props.subheading}</p>     
         <div className="my-5">
-        <button className="primaryButton mx-2"><b>Explore More</b></button>
+        <button onClick={props.handleController} className="primaryButton mx-2"><b>Explore More</b></button>
         <button className="SecondaryButton mx-2"><b>Google Play</b></button>
         <button className="SecondaryButton mx-2"><b>App Store</b></button>     
         </div>
