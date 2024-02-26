@@ -20,7 +20,7 @@ const Navbar = () => {
     document.body.style.overflowX = "hidden";
   }
   const openLink = () => {
-    alert("Register Yourself First")
+    alert("Open Pickup an app")
   };
   return (
     <>
@@ -28,17 +28,17 @@ const Navbar = () => {
       <nav className="app__navbar">
         <div><img src={images.sfaj} alt="app logo" /></div>
         <ul className="app__navbar-links">
-          <li className="p__opensans"><a href="#Service">Services</a></li>
-          <li className="p__opensans"><a href="#Work">Work</a></li>
-          <li className="p__opensans"><a href="#AboutUs">About Us</a></li>
-          <li className="p__opensans"><a href="#Insights">Insights</a></li>
-          <li className="p__opensans"><a href="#Careers">Careers</a></li>
+          <li className=""><a href="#Service">Services</a></li>
+          <li className=""><a href="#Work">Work</a></li>
+          <li className=""><a href="#AboutUs">About Us</a></li>
+          <li className=""><a href="#Insights">Insights</a></li>
+          <li className=""><a href="#Careers">Careers</a></li>
         </ul>
         <div className="app__navbar-login">
-          <a href="#login" className='p__opensans'
+          <a href="#login" className=''
             onClick={openLink}
           >+1 (866) 631-8767</a>
-          <button href="/" className='p__opensans'
+          <button href="/" className=''
           // onClick={bookTable}
           >Contact Us</button>
         </div>
