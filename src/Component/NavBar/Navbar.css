@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-black);
-    padding: 1rem 2rem;
+    /* background-color: black; */
+    padding: 1rem 10rem;
 }
 
 .app__navbar-links li {
@@ -14,11 +14,11 @@
 }
 
 .app__navbar-links li :hover {
-    color: var(--color-grey);
+    color: orangered;
 }
 
 .app__navbar-login :hover {
-    color: var(--color-grey);
+    color: orangered;
 }
 
 .app__navbar-login a {
@@ -29,7 +29,10 @@
 
 .ContactusBtn{
     background-color: orangered;
-    border-radius: 6px;
+    border-radius: 5px;
     color: #ffffff;
     border: none;
+    height: 35px;
+    padding: 0 12px;
+    font-weight: 500;
 }

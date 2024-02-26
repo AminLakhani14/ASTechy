@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
         <div className="app__navbar-login">
           <a href="#login" className='' onClick={openLink} >+1 (866) 631-8767</a>
-          <button href="/" className='ContactusBtn' >Contact Us</button>
+          <button href="/" className='ContactusBtn' >CONTACT US</button>
         </div>
         {/* <div className="app__navbar-smallscreen">
           {toggleMenu && (
