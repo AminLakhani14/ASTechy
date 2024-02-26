@@ -9,17 +9,12 @@
 .app__navbar-links li {
     margin: 0 1rem;
     cursor: pointer;
+    align-items: center;
     display: flex;
 }
 
 .app__navbar-links li :hover {
     color: var(--color-grey);
-}
-
-.app__navbar-login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .app__navbar-login :hover {
@@ -30,4 +25,11 @@
     margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s ease;
+}
+
+.ContactusBtn{
+    background-color: orangered;
+    border-radius: 6px;
+    color: #ffffff;
+    border: none;
 }
