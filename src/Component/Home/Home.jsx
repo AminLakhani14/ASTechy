@@ -3,16 +3,29 @@ import ExploreMore from "../../Global/ExploreMore";
 import Heading from "../../Global/Heading";
 // import Header from "../Header/Header";
 import picture from "../../Images/Mobile.jpg"
+import { useState } from "react";
+import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
+import Cities from "../../Global/Cities";
 
 function Home() {
+  const [visible,setvisible] = useState(false);
   const navigate = useNavigate();
 
   const handleController = () => {
-    navigate('/Home');
+    navigate('/');
   };
   return (
     <div>
-        <Heading text="BlockChain Development Portfolio" paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."/>
+        <Heading visible={true} text="BlockChain Development Portfolio" paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."/>
+        <LeftSideExploreMore   handleController={handleController}
+        heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience" 
+        subheading="Zwapifi, developed using the React Native framework, 
+        is a cutting-edge platform that aims to transform the bartering process.
+         It provides a digital venue for users to trade items, ensuring fair value in return. 
+         The app simplifies trading, promotes sustainability, and aids in decluttering, 
+         offering a unique and seamless trading experience to the users." 
+        picture={picture}/>
+
         <ExploreMore 
         handleController={handleController}
         heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience" 
@@ -23,6 +36,7 @@ function Home() {
          offering a unique and seamless trading experience to the users." 
         picture={picture}
         />
+        <Cities/>
     </div>
   );
 }
