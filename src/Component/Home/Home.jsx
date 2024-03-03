@@ -6,6 +6,7 @@ import picture from "../../Images/Mobile.jpg"
 import { useState } from "react";
 import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
 import Cities from "../../Global/Cities";
+import Footer from "../../Global/Footer";
 
 function Home() {
   const [visible,setvisible] = useState(false);
@@ -37,6 +38,8 @@ function Home() {
         picture={picture}
         />
         <Cities/>
+        <Footer/>
+
     </div>
   );
 }

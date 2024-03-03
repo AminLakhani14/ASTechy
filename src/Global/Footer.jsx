@@ -1,8 +1,51 @@
+import "../CSS/Footer.css"
+import PhoneIcon from '@mui/icons-material/Phone';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import EmailIcon from '@mui/icons-material/Email';
+
 function Footer() {
     return (
-      <div>
-          <h1>hello world2</h1>
+      <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3 col-md-6">
+            {/* About Us section (replace with your content) */}
+            <PhoneIcon style={{marginTop: "30px"}} fontSize="large"/>
+            <div style={{display: 'inline-grid',borderLeft: '1px solid #ffffff',marginTop: "40px",height: '40px'}}>
+            <p className="mx-2"  style={{marginTop: "-10px",marginBottom:"8px"}}>Have a query?</p>
+            <p className="mx-2">+1(866)631-8767</p>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6" style={{marginTop: "30px"}}>
+            <div style={{display: 'flex', justifyContent:"center",gap:"12px"}}>
+            <LinkedInIcon fontSize="large"/>
+            <InstagramIcon fontSize="large"/>
+            <FacebookIcon fontSize="large"/>
+            <XIcon fontSize="large"/>
+            </div>
+            <ul className="contact-info">
+              <li style={{fontSize:"20px",marginLeft: '30px'}}>
+                <a >Terms of Use – Privacy Policy.</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-6 px-5">
+            {/* Social Media section (replace with your links) */}
+            <EmailIcon style={{marginTop: "30px"}} fontSize="large"/>
+            <div style={{display: 'inline-grid',borderLeft: '1px solid #ffffff',marginTop: "40px",height: '40px'}}>
+            <p className="mx-2"  style={{marginTop: "-10px",marginBottom:"8px"}}>Have a query?</p>
+            <p className="mx-2">+1(866)631-8767</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <div className="copyright">
+        <p>&copy; {new Date().getFullYear()} Ropstam Solutions Inc. All Rights Reserved.</p>
+      </div>
+    </footer>
     );
   }
   

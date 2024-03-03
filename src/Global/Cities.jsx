@@ -9,7 +9,7 @@ import lahore from "../Images/lahore.png";
 function Cities(props) {
   return (
     <div className="row citiesBackground" style={{ justifyContent: "center" }}>
-      <div className="col-lg-3">
+      <div className="col-sm-3">
         <div className="investNowCard">
           <img
             data-aos="fade-up"
@@ -25,7 +25,7 @@ function Cities(props) {
           </label>
         </div>
       </div>
-      <div className="col-lg-3">
+      <div className="col-sm-3">
         <div className="investNowCard">
           <img data-aos="fade-up" src={lahore} width="100" height="100"></img>
           <label data-aos="fade-up" className="stageTextColor">
@@ -36,7 +36,7 @@ function Cities(props) {
           </label>
         </div>
       </div>
-      <div className="col-lg-3">
+      <div className="col-sm-3">
         <div className="investNowCard">
           <img data-aos="fade-up" src={tajmahal} width="100" height="100"></img>
           <label data-aos="fade-up" className="stageTextColor">
@@ -47,7 +47,7 @@ function Cities(props) {
           </label>
         </div>
       </div>
-      <div className="col-lg-3">
+      <div className="col-sm-3">
         <div className="investNowCard">
           <img data-aos="fade-up" src={canada} width="100" height="100"></img>
           <label data-aos="fade-up" className="stageTextColor">
