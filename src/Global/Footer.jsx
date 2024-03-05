@@ -13,7 +13,7 @@ function Footer() {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             {/* About Us section (replace with your content) */}
-            <PhoneIcon style={{marginTop: "30px"}} fontSize="large"/>
+            <PhoneIcon style={{marginTop: "30px"}} className="mx-xl-2" fontSize="large"/>
             <div style={{display: 'inline-grid',borderLeft: '1px solid #ffffff',marginTop: "40px",height: '40px'}}>
             <p className="mx-2"  style={{marginTop: "-10px",marginBottom:"8px"}}>Have a query?</p>
             <p className="mx-2">+1(866)631-8767</p>
@@ -34,7 +34,7 @@ function Footer() {
           </div>
           <div className="col-lg-3 col-md-6 px-5">
             {/* Social Media section (replace with your links) */}
-            <EmailIcon style={{marginTop: "30px"}} fontSize="large"/>
+            <EmailIcon style={{marginTop: "30px"}} fontSize="large" className="mx-xl-2"/>
             <div style={{display: 'inline-grid',borderLeft: '1px solid #ffffff',marginTop: "40px",height: '40px'}}>
             <p className="mx-2"  style={{marginTop: "-10px",marginBottom:"8px"}}>Have a query?</p>
             <p className="mx-2">+1(866)631-8767</p>

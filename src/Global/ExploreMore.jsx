@@ -2,7 +2,7 @@ import "../CSS/style.css"
 
 function ExploreMore(props) {
     return (
-        <div className="row m-3">
+        <div className="row" style={{marginTop:"90px"}}>
         <div className="col-sm-6">
         <a href="/" className="">
             <img className="imageSetting"  src={props.picture} alt="profile picture"/>
@@ -13,8 +13,8 @@ function ExploreMore(props) {
         <p>{props.subheading}</p>     
         <div className="my-5">
         <button onClick={props.handleController} className="primaryButton mx-2"><b>Explore More</b></button>
-        <button className="SecondaryButton mx-2"><b>Google Play</b></button>
-        <button className="SecondaryButton mx-2"><b>App Store</b></button>     
+        <button className="rightGenericButton mx-2"><b>Google Play</b></button>
+        <button className="rightGenericButton mx-2"><b>App Store</b></button>     
         </div>
         </div>
         <div className="col-sm-1 my-5">

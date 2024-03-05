@@ -1,25 +1,40 @@
+body{
+  overflow-x:hidden;
+}
 .HeadingBackground{
-display: flex;
 color: #ffffff;
 background-repeat: no-repeat;
 background-image: url("../Images/Background.jpg");
-height: 923px;
+height: 100vh;
 width: 100%;
 }
 
 .primaryButton{
-border-radius: 6px;
+border-radius: 5px;
+transition: all .3s ease 0s;
+padding-top: 0.5em !important;
+padding-right: 2em !important;
+padding-bottom: 0.5em !important;
+padding-left: 2em !important;
 height: 50px;
-width: 170px;
+width: auto;
+font-size: 18px;
+border:transparent;
 color: white;
 background-color: #2693fa;
 border-color: #2693fa;
 }
-
+.primaryButton:hover{
+  color: #fff !important;
+  border-color: #c94a22 !important;
+  background-image: initial;
+  background-color: #ff5300;
+}
 .SecondaryButton{
 border-radius: 6px;
 height: 50px;
-width: 170px;
+width: auto;
+padding: 0px 30px;
 color: black;
 background-color: white;
 border-color: black;
@@ -29,14 +44,45 @@ border-radius: 30px;
 }
 
 .HeaderButton{
-border-radius: 6px;
-height: 50px;
-width: 170px;
-color: white;
-background-color: transparent;
-border-color: white;
+  color: #fff !important;
+  border: 1px solid white;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  font-weight: 700 !important;
+  transition: all .3s ease 0s;
+  padding-top: 0.5em !important;
+  padding-right: 2em !important;
+  padding-bottom: 0.5em !important;
+  padding-left: 2em !important;
 }
-
+.HeaderButton:hover{
+  color: #fff !important;
+  border-color: #c94a22 !important;
+  background-image: initial;
+  background-color: #ff5300;
+}
+.rightGenericButton{
+  color: black !important;
+  border: 1px solid black;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  /* font-weight: 700 !important; */
+  transition: all .3s ease 0s;
+  padding-top: 0.5em !important;
+  padding-right: 2em !important;
+  padding-bottom: 0.5em !important;
+  padding-left: 2em !important;
+}
+.rightGenericButton:hover{
+  color: #fff !important;
+  border-color: #c94a22 !important;
+  background-image: initial;
+  background-color: #ff5300;
+}
 .ExploreButton{
 border-radius: 6px;
 height: 50px;
@@ -47,11 +93,10 @@ border-color: #fa7226;;
 }
 .investNowCard {
     display: flex;
-    margin-top: 80px;
     flex-direction: column;
-    /* width: 250px; */
-    height: 400px;
     align-items: center;
+    justify-content: center;
+    height: 100%;
   }
   .stageTextColor {
     font-size: 32px;
@@ -68,6 +113,7 @@ border-color: #fa7226;;
   }
 .citiesBackground{
     background-color: #1e1e1e;
+    height:450px;
 }
   @media screen and (max-width: 500px) {
  .investNowCard {
