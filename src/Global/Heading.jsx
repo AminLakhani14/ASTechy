@@ -9,7 +9,7 @@ function Heading(props) {
           <h1 style={{ fontSize: "55px" }} className="mb-4">
             <b>{props.text}</b>
           </h1>
-          <p style={{ fontSize: "24px", fontWeight: "400" }}>
+          <p style={{ fontSize: "20px", fontWeight: "400" }}>
             {props.paragraph}
           </p>
           <div className="d-flex mt-4">

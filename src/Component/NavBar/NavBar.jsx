@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import DropDown from './DropDown';
-import './navbar.css';
+import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
