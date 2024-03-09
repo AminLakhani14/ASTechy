@@ -10,6 +10,8 @@ import SearchEngine from "./Component/Work/SearchEngine/SearchEngine.jsx";
 import SocialMedia from "./Component/Work/SocialMediaMarketing/SocialMediaMarketing.jsx";
 import Wikipedia from "./Component/Work/Wikipedia/Wikipedia.jsx";
 import Ebook from "./Component/Work/Ebook/Ebook.jsx";
+import Service from "./Component/Services/Service.jsx";
+import BlockchainPage from "./Component/Services/ServiceProvider/Blockchainservice.jsx";
 
 function App() {
   return (
@@ -24,8 +26,7 @@ function App() {
           <Route path="/SocialMedia" element={<SocialMedia />} />
           <Route path="/Wikipedia" element={<Wikipedia />} />
           <Route path="/Ebook" element={<Ebook />} />
-
-          
+          <Route path="/BlockchainPage" element={<BlockchainPage />} />
         </Routes>
       </Router>
       <Cities />
