@@ -26,7 +26,7 @@ function App() {
           <Route path="/SocialMedia" element={<SocialMedia />} />
           <Route path="/Wikipedia" element={<Wikipedia />} />
           <Route path="/Ebook" element={<Ebook />} />
-          <Route path="/BlockchainPage" element={<BlockchainPage />} />
+          <Route path="/blockchain" element={<BlockchainPage />} />
         </Routes>
       </Router>
       <Cities />
