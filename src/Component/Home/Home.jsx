@@ -7,6 +7,8 @@ import { useState } from "react";
 import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
 import Cities from "../../Global/Cities";
 import Footer from "../../Global/Footer";
+import Service from "./Services/Service";
+import Navbar from "../NavBar/NavBar";
 
 function Home() {
   const [visible,setvisible] = useState(false);
@@ -17,6 +19,8 @@ function Home() {
   };
   return (
     <div>
+        <Navbar />
+        <Service />
         <Heading visible={false} text="BlockChain Development Portfolio" paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."/>
         <LeftSideExploreMore   handleController={handleController}
         heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience" 

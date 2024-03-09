@@ -1,0 +1,35 @@
+.card-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.card {
+    width: 260px;
+    margin: 1%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.card:hover{
+    background-color: #2693fa;
+    color: #fff;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.Arrow{
+    color: #000000;
+}
+
+.Arrow:hover{
+    color: #fff;
+}
+
+.lastone{
+    color: orangered;
+}
