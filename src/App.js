@@ -26,7 +26,13 @@ function App() {
           <Route path="/SocialMedia" element={<SocialMedia />} />
           <Route path="/Wikipedia" element={<Wikipedia />} />
           <Route path="/Ebook" element={<Ebook />} />
-          <Route path="/blockchain" element={<BlockchainPage />} />
+          <Route path="/blockchain-development-services" element={<BlockchainPage />} />
+          <Route path="/web-application-development-services" element={<BlockchainPage />} />
+          <Route path="/mobile-app-development-services" element={<BlockchainPage />} />
+          <Route path="/ui-ux-design-services" element={<BlockchainPage />} />
+          <Route path="/shopify-development-services" element={<BlockchainPage />} />
+          <Route path="/mvp-development-services" element={<BlockchainPage />} />
+          <Route path="/services" element={<BlockchainPage />} />
         </Routes>
       </Router>
       <Cities />
