@@ -1,13 +1,11 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./BasePage";
-import Navbar from "./Component/NavBar/Navbar.jsx";
-import Service from "./Component/Home/Services/Service";
+// import Navbar from "./Component/NavBar/Navbar.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Service />
+      {/* <Navbar /> */}
       <RouterProvider router={router} />
     </div>
   );

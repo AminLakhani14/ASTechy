@@ -8,16 +8,16 @@ import tablet from '../../Assets/screen-tablet-svgrepo-com.svg'
 import mvp from '../../Assets/tablet-ipad-svgrepo-com.svg'
 const Service = () => {
     const cardData = [
-        { title: <ComputerIcon />, description: 'Blockchain Development' },
-        { title: <ComputerIcon />, description: 'Web Applications' },
-        { title: <img src={tablet} height={'20px'} width={'20px'} />, description: 'Mobile Applications' },
-        { title: <img src={clone} height={'20px'} width={'20px'}/>, description: 'UI/UX Designing' },
+        { title: <ComputerIcon />, description: 'Blockchain Development', index: '01', route: '/' },
+        { title: <ComputerIcon />, description: 'Web Applications', index: '02', route: '/' },
+        { title: <img src={tablet} height={'20px'} width={'20px'} />, description: 'Mobile Applications', index: '03', route: '/' },
+        { title: <img src={clone} height={'20px'} width={'20px'}/>, description: 'UI/UX Designing', index: '04', route: '/' },
     ];
     const cardData1 = [
-        { title: <img src={wordpress} height={'20px'} width={'20px'} />, description: 'WordPress Development' },
-        { title: <img src={shopify} height={'20px'} width={'20px'} />, description: 'Shopify Development' },
-        { title: <img src={mvp} height={'20px'} width={'20px'} />, description: 'MVP Development' },
-        { title: <div className='mt-5'></div>, description: 'Explore Our Solutions' },
+        { title: <img src={wordpress} height={'20px'} width={'20px'} />, description: 'WordPress Development', index: '05', route: '/' },
+        { title: <img src={shopify} height={'20px'} width={'20px'} />, description: 'Shopify Development', index: '06', route: '/' },
+        { title: <img src={mvp} height={'20px'} width={'20px'} />, description: 'MVP Development', index: '07', route: '/' },
+        { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#ff0000' }
     ];
     return (
         <>
