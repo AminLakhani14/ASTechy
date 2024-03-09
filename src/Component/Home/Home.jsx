@@ -17,7 +17,7 @@ function Home() {
   };
   return (
     <div>
-        <Heading visible={true} text="BlockChain Development Portfolio" paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."/>
+        <Heading visible={false} text="BlockChain Development Portfolio" paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."/>
         <LeftSideExploreMore   handleController={handleController}
         heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience" 
         subheading="Zwapifi, developed using the React Native framework, 

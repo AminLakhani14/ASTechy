@@ -1,94 +1,81 @@
 import React, { useState } from 'react';
-import images from '../Assets/sfaj.svg'
-import './Navbar.css';
+import Button from './Button';
+import DropDown from './DropDown';
+import './navbar.css';
 
-const Navbar = () => {
-  const [toggleMenu, setTogleMenu] = useState(false)
-  const openLink = () => {
-    alert("Open Pickup an app")
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+  const changeClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    setDropdown(true);
   };
+
+  const onMouseLeave = () => {
+    setDropdown(false);
+  };
+
   return (
     <>
-      {/* {login && <Login isOpen={login} closeModal={closeModal} />} */}
-      <div className="app__navbar">
-        <div><img src={images} style={{ height: '25%', width: '25%' }} alt="app logo" /></div>
-        <ul className="app__navbar-links d-flex mb-0" style={{ marginRight: 'auto' }}>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Work
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About Us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Insights
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Careers
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <div className="app__navbar-login">
-          <a href="#login" className='' onClick={openLink} >+1 (866) 631-8767</a>
-          <button href="/" className='ContactusBtn' >CONTACT US</button>
-        </div>
-        {/* <div className="app__navbar-smallscreen">
-          {toggleMenu && (
-            <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-              <ul className="app__navbar-smallscreen_links">
-                <li className="" onClick={() => setTogleMenu(false)}><a href="#home">Home</a></li>
-                <li className="" onClick={() => setTogleMenu(false)}><a href="#about">About</a></li>
-                <li className="" onClick={() => setTogleMenu(false)}><a href="#menu">Menu</a></li>
-                <li className="" onClick={() => setTogleMenu(false)}><a href="#ourchefs">Our Chef's</a></li>
-                <li className="" onClick={() => setTogleMenu(false)}><a href="#contactus">Contact Us</a></li>
-              </ul>
-            </div>
-          )}
-        </div> */}
-      </div>
+      <section>
+        <nav className="navbar">
+          <div to="/" className="logo">
+            <i className="fas fa-home" /> Pro-Blog{' '}
+          </div>
+
+          <div className="menu-icon" onClick={changeClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
+          </div>
+
+          <ul className={click ? 'nav-side-menu start' : 'nav-side-menu'}>
+            <li className="nav-items">
+              <div to="/" className="nav-links" onClick={closeMobileMenu}>
+                {' '}
+                Home{' '}
+              </div>
+            </li>
+
+            <li className="nav-items">
+              <div className="nav-links" onClick={closeMobileMenu}>
+                {' '}
+                About{' '}
+              </div>
+            </li>
+
+            <li
+              className="nav-items"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
+              <div className="nav-links" onClick={closeMobileMenu}>
+                {' '}
+                Category <i className="fas fa-caret-down" />
+                {dropdown && <DropDown />}
+              </div>
+            </li>
+
+            <li className="nav-items">
+              <div className="nav-links" onClick={closeMobileMenu}>
+                {' '}
+                Contact{' '}
+              </div>
+            </li>
+
+            <li className="nav-items">
+              <div className="nav-links-button" onClick={closeMobileMenu}>
+                {' '}
+                Sign Up{' '}
+              </div>
+            </li>
+          </ul>
+
+          <Button />
+        </nav>
+      </section>
     </>
-  )
-};
+  );
+}
 
 export default Navbar;

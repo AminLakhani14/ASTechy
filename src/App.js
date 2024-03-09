@@ -1,8 +1,7 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./BasePage";
-import Navbar from "./Component/NavBar/NavBar";
+import Navbar from "./Component/NavBar/Navbar.jsx";
 import Service from "./Component/Home/Services/Service";
-
 
 function App() {
   return (
