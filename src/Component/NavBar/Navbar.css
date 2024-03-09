@@ -24,9 +24,7 @@ nav {
     align-items: center;
 	border-bottom: 1px solid black;
 }
-body{
-	background-color: black;
-}
+
 #logo {
 	display: block;
 	padding: 0 30px;
@@ -200,7 +198,7 @@ li > a:only-child:after { content: ''; }
 	font-weight: 700;
 	text-decoration:none;
 	font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;	
-	transition: all 1s ease 2s;
+	transition: all 1s ease 2ms;
 	}
 
 	.toggle:hover {

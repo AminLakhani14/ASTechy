@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Service />
-      {/* <RouterProvider router={router} /> */}
+      <RouterProvider router={router} />
     </div>
   );
 }
