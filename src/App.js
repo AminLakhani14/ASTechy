@@ -1,14 +1,15 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./BasePage";
-import Navbar from "./Component/NavBar/Navbar.jsx";
+import Navbar from "./Component/NavBar/NavBar";
+import Service from "./Component/Home/Services/Service";
 
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Service />
       <RouterProvider router={router} />
-      {/* <Footer /> */}
     </div>
   );
 }
