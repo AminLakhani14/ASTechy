@@ -1,11 +1,11 @@
 import React from 'react'
 import { CardList } from './cards';
 import ComputerIcon from '@mui/icons-material/Computer';
-import wordpress from '../../Assets/icons8-wordpress.svg'
-import clone from '../../Assets/clone-svgrepo-com.svg'
-import shopify from '../../Assets/shopify-svgrepo-com.svg'
-import tablet from '../../Assets/screen-tablet-svgrepo-com.svg'
-import mvp from '../../Assets/tablet-ipad-svgrepo-com.svg'
+import wordpress from '../Assets/icons8-wordpress.svg'
+import clone from '../Assets/clone-svgrepo-com.svg'
+import shopify from '../Assets/shopify-svgrepo-com.svg'
+import tablet from '../Assets/screen-tablet-svgrepo-com.svg'
+import mvp from '../Assets/tablet-ipad-svgrepo-com.svg'
 const Service = () => {
     const cardData = [
         { title: <ComputerIcon />, description: 'Blockchain Development', index: '01', route: '/' },

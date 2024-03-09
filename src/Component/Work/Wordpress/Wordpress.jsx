@@ -1,10 +1,9 @@
 import { useState } from "react";
-import ExploreMore from "../../Global/ExploreMore";
-import Heading from "../../Global/Heading";
-import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
 import { useNavigate } from "react-router";
-import picture from "../../Images/Mobile.jpg"
-
+import Heading from "../../../Global/Heading";
+import picture from "../../../Images/Mobile.jpg"
+import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
+import ExploreMore from "../../../Global/ExploreMore";
 function Wordpress() {
     const [visible,setvisible] = useState(false);
     const navigate = useNavigate();

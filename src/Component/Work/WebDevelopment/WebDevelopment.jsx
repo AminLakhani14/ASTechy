@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import ExploreMore from "../../Global/ExploreMore";
-import Heading from "../../Global/Heading";
-import picture from "../../Images/Mobile.jpg"
-import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
+import picture from "../../../Images/Mobile.jpg"
+import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
+import ExploreMore from "../../../Global/ExploreMore";
+import Heading from "../../../Global/Heading";
 
 function WebDevelopment() {
   const navigate = useNavigate();
