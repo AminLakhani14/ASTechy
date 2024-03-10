@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const ReactCard = ({ title, description, index, color, route }) => {
   const navigate = useNavigate();
   const openServices = () => {
+    debugger;
     navigate(route);
   };
   return (

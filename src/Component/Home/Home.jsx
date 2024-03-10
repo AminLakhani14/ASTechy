@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import ExploreMore from "../../Global/ExploreMore";
 import Heading from "../../Global/Heading";
-// import Header from "../Header/Header";
 import picture from "../../Images/Mobile.jpg"
 import { useState } from "react";
 import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
 import Cities from "../../Global/Cities";
 import Footer from "../../Global/Footer";
-import Service from "./Services/Service";
+import Service from "../Services/Service";
 import Navbar from "../NavBar/Navbar";
 
 function Home() {

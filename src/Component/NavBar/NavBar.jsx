@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./navbar.css";
-import Ropstam from "../../Images/ropstamcolorlogo.png";
+import "./Navbar.css";
+import Ropstam from "../../Images/Ropstam.png";
+
 function Navbar() {
     const [click, setClick] = useState(false);
     const changeClick = () => setClick(!click);
@@ -9,13 +10,15 @@ function Navbar() {
     <>
     <div>
       <nav >
+      <a href="/" to="/">
         <img
             data-aos="fade-up"
             src={Ropstam}
             width="200"
             id='headerLogo'
             height="60"
-          ></img>
+            ></img>
+            </a>
 
         <label for="drop" class="toggle" onClick={changeClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -30,13 +33,28 @@ function Navbar() {
             <input type="checkbox" id="drop-1" />
             <ul>
               <li>
-                <a href="#">Themes and stuff</a>
+                <a href="#">Hire Team</a>
               </li>
               <li>
-                <a href="#">Plugins</a>
+                <a href="#">Blockchain</a>
               </li>
               <li>
-                <a href="#">Tutorials</a>
+                <a href="#">Web Apps</a>
+              </li>
+              <li>
+                <a href="#">Mobile Apps</a>
+              </li>
+               <li>
+                <a href="#">UI/UX Design</a>
+              </li> 
+              <li>
+                <a href="#">WordPress</a>
+              </li>
+               <li>
+                <a href="#">Shopify</a>
+              </li>
+              <li>
+                <a href="#">MVP</a>
               </li>
             </ul>
           </li>
@@ -48,10 +66,22 @@ function Navbar() {
             <input type="checkbox" id="drop-2" />
             <ul>
               <li>
-                <a href="#">Resources</a>
+                <a to="/WebDevelopment"  href="/WebDevelopment">Web Development</a>
               </li>
               <li>
-                <a href="#">Links</a>
+                <a to="/Wordpress"  href="/Wordpress">Wordpress</a>
+              </li>
+              <li>
+                <a to="/SearchEngine"  href="/SearchEngine">SEO</a>
+              </li>
+              <li>
+                <a to="/SocialMedia"  href="/SocialMedia">Social Media Marketing</a>
+              </li>
+              <li>
+                <a to="/Wikipedia"  href="/Wikipedia">Wikipedia</a>
+              </li>
+              <li>
+                <a to="/Ebook"  href="/Ebook">Ebook</a>
               </li>
               <li>
                 <label for="drop-3" class="toggle">
