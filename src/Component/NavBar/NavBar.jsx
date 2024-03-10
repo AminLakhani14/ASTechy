@@ -8,7 +8,7 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
   return (
     <>
-    <div>
+    <div style={{height:'90px'}}>
       <nav >
       <a href="/" to="/">
         <img
