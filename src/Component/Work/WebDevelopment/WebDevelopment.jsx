@@ -3,6 +3,7 @@ import picture from "../../../Images/Mobile.jpg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
+import Feedback from "../../../Global/Feedback";
 
 function WebDevelopment() {
   const navigate = useNavigate();
@@ -53,6 +54,7 @@ function WebDevelopment() {
         secondbutton="Visit Live Site"
         visible={false}
       />
+      <Feedback/>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import picture from "../../../Images/Mobile.jpg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
+import Feedback from "../../../Global/Feedback";
 function SocialMedia() {
   const navigate = useNavigate();
 
@@ -52,6 +53,7 @@ function SocialMedia() {
         secondbutton="Visit Live Site"
         visible={false}
       />
+       <Feedback/>
     </div>
   );
 }
