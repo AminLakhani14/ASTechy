@@ -3,6 +3,7 @@ import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import picture from "../../../Images/Mobile.jpg"
+import Feedback from "../../../Global/Feedback";
 
 function Ebook() {
   const navigate = useNavigate();
@@ -53,6 +54,7 @@ function Ebook() {
         secondbutton="Visit Live Site"
         visible={false}
       />
+       <Feedback/>
     </div>
   );
 }
