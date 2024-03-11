@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Heading from "../../../Global/Heading";
-import picture from "../../../Images/Mobile.jpg"
+import picture from "../../../Images/Mobile.jpg";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import ExploreMore from "../../../Global/ExploreMore";
+import Feedback from "../../../Global/Feedback";
 function Wordpress() {
-    const [visible,setvisible] = useState(false);
-    const navigate = useNavigate();
-  
-    const handleController = () => {
-      navigate('/');
-    };
+  const [visible, setvisible] = useState(false);
+  const navigate = useNavigate();
+
+  const handleController = () => {
+    navigate("/");
+  };
   return (
     <div>
       <Heading
@@ -54,6 +55,7 @@ function Wordpress() {
         secondbutton="Visit Live Site"
         visible={false}
       />
+       <Feedback/>
     </div>
   );
 }
