@@ -77,7 +77,31 @@ border-radius: 30px;
   padding-bottom: 0.5em !important;
   padding-left: 2em !important;
 }
+.sliderBg{
+  /* background-image: linear-gradient(180deg,rgba(0,61,119,.5) 0,rgba(38,147,250,.5) 100%); */
+  background-image: linear-gradient(180deg,rgba(0,61,119,.5) 0,rgba(38,147,250,.5) 99%);
+}
 .rightGenericButton:hover{
+  color: #fff !important;
+  border-color: #c94a22 !important;
+  background-image: initial;
+  background-color: #ff5300;
+}
+.sliderButton{
+  color: white !important;
+  border: 1px solid white;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  /* font-weight: 700 !important; */
+  transition: all .3s ease 0s;
+  padding-top: 0.5em !important;
+  padding-right: 2em !important;
+  padding-bottom: 0.5em !important;
+  padding-left: 2em !important;
+}
+.sliderButton:hover{
   color: #fff !important;
   border-color: #c94a22 !important;
   background-image: initial;
@@ -110,6 +134,15 @@ border-color: #fa7226;;
     width: 280px;
     text-align: center;
     height: 110px;
+  }
+  .sliderHeading{
+    color:white;
+    line-height:50px;
+  }
+  .slierText{
+    color:white;
+    line-height:30px;
+    font-size: 18px;
   }
 .citiesBackground{
     background-color: #1e1e1e;

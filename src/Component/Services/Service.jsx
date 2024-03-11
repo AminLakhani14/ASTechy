@@ -9,16 +9,16 @@ import mvp from '../Assets/tablet-ipad-svgrepo-com.svg'
 
 const Service = () => {
     const cardData = [
-        { title: <ComputerIcon />, description: 'Blockchain Development', index: '01', route: '/blockchain' },
-        { title: <ComputerIcon />, description: 'Web Applications', index: '02', route: '/webapplications' },
-        { title: <img src={tablet} height={'20px'} width={'20px'} />, description: 'Mobile Applications', index: '03', route: '/mobile' },
-        { title: <img src={clone} height={'20px'} width={'20px'} />, description: 'UI/UX Designing', index: '04', route: '/uiux' },
+        { title: <ComputerIcon fontSize={'large'}/>, description: 'Blockchain Development', index: '01', route: '/blockchain' },
+        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Applications', index: '02', route: '/webapplications' },
+        { title: <img src={tablet} height={'30px'} width={'30px'} />, description: 'Mobile Applications', index: '03', route: '/mobile' },
+        { title: <img src={clone} height={'30px'} width={'30px'} />, description: 'UI/UX Designing', index: '04', route: '/uiux' },
     ];
     const cardData1 = [
-        { title: <img src={wordpress} height={'20px'} width={'20px'} />, description: 'WordPress Development', index: '05', route: '/wordpress-development-services/' },
-        { title: <img src={shopify} height={'20px'} width={'20px'} />, description: 'Shopify Development', index: '06', route: '/shopify-development-services/' },
-        { title: <img src={mvp} height={'20px'} width={'20px'} />, description: 'MVP Development', index: '07', route: '/mvp-development-services/' },
-        { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#ff0000', route: '/services/' }
+        { title: <img src={wordpress} height={'30px'} width={'30px'} />, description: 'WordPress Development', index: '05', route: '/wordpress-development-services/' },
+        { title: <img src={shopify} height={'30px'} width={'30px'} />, description: 'Shopify Development', index: '06', route: '/shopify-development-services/' },
+        { title: <img src={mvp} height={'30px'} width={'30px'} />, description: 'MVP Development', index: '07', route: '/mvp-development-services/' },
+        { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#fa7226',textColor:'#fff', route: '/services/' }
     ];
     const pageData = [
         { route: '/blockchain-development-services', title: 'Blockchain Development Services', description: 'Detailed description for Blockchain Development Services.' },

@@ -17,6 +17,7 @@
 nav { 
 	margin:0;
 	padding: 0;
+	z-index: 1;
 	display: flex;
 	height: 90px;
     background-color: white;
@@ -64,7 +65,7 @@ nav ul li {
 /* Styling the links */
 nav a {
 	display:block;
-	padding:15px 20px;	
+	padding:10px 20px;	
 	color:#000;
 	font-size:18px;
 	background-color: white;
