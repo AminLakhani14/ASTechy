@@ -9,10 +9,10 @@ import mvp from '../Assets/tablet-ipad-svgrepo-com.svg'
 
 const Service = () => {
     const cardData = [
-        { title: <ComputerIcon fontSize={'large'}/>, description: 'Blockchain Development', index: '01', route: '/blockchain' },
-        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Applications', index: '02', route: '/webapplications' },
-        { title: <img src={tablet} height={'30px'} width={'30px'} />, description: 'Mobile Applications', index: '03', route: '/mobile' },
-        { title: <img src={clone} height={'30px'} width={'30px'} />, description: 'UI/UX Designing', index: '04', route: '/uiux' },
+        { title: <ComputerIcon fontSize={'large'}/>, description: 'Blockchain Development', index: '01', route: '/blockchain-development-services' },
+        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Applications', index: '02', route: '/web-application-development-services' },
+        { title: <img src={tablet} height={'30px'} width={'30px'} />, description: 'Mobile Applications', index: '03', route: '/mobile-app-development-services' },
+        { title: <img src={clone} height={'30px'} width={'30px'} />, description: 'UI/UX Designing', index: '04', route: '/ui-ux-design-services' },
     ];
     const cardData1 = [
         { title: <img src={wordpress} height={'30px'} width={'30px'} />, description: 'WordPress Development', index: '05', route: '/wordpress-development-services/' },

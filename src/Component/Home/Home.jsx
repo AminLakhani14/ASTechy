@@ -10,6 +10,7 @@ import Service from "../Services/Service";
 import Navbar from "../NavBar/NavBar";
 import CustomCarousel from "../CustomSlider/CustomSlider";
 import images from "../../Images/sliderData";
+import TechnologyStack from "../Technologies/OurTechStack";
 
 function Home() {
   const [visible, setvisible] = useState(false);
@@ -73,6 +74,7 @@ function Home() {
       />
       <Cities />
       {/* <Footer/> */}
+      <TechnologyStack />
     </div>
   );
 }
