@@ -57,7 +57,7 @@ nav ul {
 nav ul li {
 	margin: 0px;
 	display:inline-block;
-	margin-left:20px;
+	/* margin-left:20px; */
 	float: left;
 	background-color: white;
 	}
@@ -65,7 +65,7 @@ nav ul li {
 /* Styling the links */
 nav a {
 	display:block;
-	padding:10px 20px;	
+	padding:14px 20px;	
 	color:#000;
 	font-size:18px;
 	background-color: white;
@@ -94,11 +94,14 @@ nav ul ul {
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
+	z-index: 1;
+	width:250px;
+	border-top:5px solid #2693F9;
 }
 	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
+	width:250px;
 	float:none;
 	display:list-item;
 	position: relative;

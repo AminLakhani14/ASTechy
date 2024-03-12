@@ -24,7 +24,6 @@ function Home() {
       {/* <Navbar /> */}
       <CustomCarousel>
         {images.map((item, index) => {
-          // return <img key={index} src={item.imgURL} alt={item.imgAlt} />;
           return (
             <>
               <div className="row justify-content-center align-items-center sliderBg" style={{backgroundColor: item.bgColor , height:'100vh',width:'100vw'}} >
