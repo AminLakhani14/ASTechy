@@ -30,7 +30,7 @@ const TechnologyStack = () => {
     switch (activeTab) {
       case 'Web':
         return (
-          <div className="">
+          <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={html5} className='imageclass' alt='' />
               <img src={css3} className='imageclass' alt='' />
@@ -49,7 +49,7 @@ const TechnologyStack = () => {
         );
       case 'Mobile':
         return (
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }} className='content'>
             <img src={andriod} className='imageclass' alt='' />
             <img src={flutter} className='imageclass' alt='' />
             <img src={ios} className='imageclass' alt='' />
@@ -59,7 +59,7 @@ const TechnologyStack = () => {
         );
       case 'Blockchain':
         return (
-          <div className="">
+          <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={bitcoin} className='imageclass' alt='' />
               <img src={solana} className='imageclass' alt='' />
@@ -76,7 +76,7 @@ const TechnologyStack = () => {
         );
       case 'UI/UX Design':
         return (
-          <div className="">
+          <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <img src={bitcoin} className='imageclass' alt='' />
               <img src={solana} className='imageclass' alt='' />
@@ -98,7 +98,7 @@ const TechnologyStack = () => {
         );
       case 'Testing':
         return (
-          <div className="Testing">
+          <div className="content">
           </div>
         );
 
