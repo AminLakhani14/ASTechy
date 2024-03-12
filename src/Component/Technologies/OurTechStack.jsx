@@ -49,14 +49,12 @@ const TechnologyStack = () => {
         );
       case 'Mobile':
         return (
-          <div>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <img src={andriod} className='imageclass' alt='' />
-              <img src={flutter} className='imageclass' alt='' />
-              <img src={ios} className='imageclass' alt='' />
-              <img src={react} className='imageclass' alt='' />
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img src={andriod} className='imageclass' alt='' />
+            <img src={flutter} className='imageclass' alt='' />
+            <img src={ios} className='imageclass' alt='' />
+            <img src={react} className='imageclass' alt='' />
 
-            </div>
           </div>
         );
       case 'Blockchain':
@@ -78,7 +76,19 @@ const TechnologyStack = () => {
         );
       case 'UI/UX Design':
         return (
-          <div className="content">
+          <div className="">
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <img src={bitcoin} className='imageclass' alt='' />
+              <img src={solana} className='imageclass' alt='' />
+              <img src={etherium} className='imageclass' alt='' />
+
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
+              <img src={metamask} className='imageclass' alt='' />
+              <img src={ripple} className='imageclass' alt='' />
+              <img src={solidity} className='imageclass' alt='' />
+
+            </div>
           </div>
         );
       case 'Database':
