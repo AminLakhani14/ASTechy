@@ -1,6 +1,7 @@
+import { TextField } from "@mui/material";
 import "../CSS/style.css";
 
-function Heading(props) {
+function  Heading(props) {
   return (
     <div className="pt-5 HeadingBackground d-flex justify-content-center align-items-center">
       <div className="w-50">
@@ -24,7 +25,56 @@ function Heading(props) {
           </div>
         </div>
       </div>
-      <div className="w-25"></div>
+      <div className="w-25">
+      {props.feedbackvisible == true ? (
+                <div className="d-flex">
+                <div className="FeedbackBackground">
+                  <TextField
+                    id="standard-basic"
+                    className="w-75 "
+                    style={{ marginLeft: "40px", marginBottom: "30px",marginTop:"20px" }}
+                    label="Full Name*"
+                    variant="standard"
+                  />
+                  <TextField
+                    id="standard-basic"
+                    className="w-75 "
+                    style={{ marginLeft: "40px", marginBottom: "30px" }}
+                    label="Work Email*"
+                    variant="standard"
+                  />
+                  <TextField
+                    id="standard-basic"
+                    className="w-75 "
+                    style={{ marginLeft: "40px", marginBottom: "30px" }}
+                    label="Work Phone*"
+                    variant="standard"
+                  />
+                  <TextField
+                    id="standard-basic"
+                    className="w-75 "
+                    style={{ marginLeft: "40px", marginBottom: "30px" }}
+                    label="Company Name*"
+                    variant="standard"
+                  />
+                  <TextField
+                    id="standard-basic"
+                    className="w-75 "
+                    style={{ marginLeft: "40px", marginBottom: "30px" }}
+                    label="Messge*"
+                    variant="standard"
+                  />
+                  <div style={{ display: "flex", justifyContent: "center", marginTop: "30px"  }}>
+                    <button className="headerMenuButton mx-2">
+                      <b>Get in Touch</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+      </div>
     </div>
   );
 }

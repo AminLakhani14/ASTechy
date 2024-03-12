@@ -42,6 +42,10 @@ border-color: black;
 .imageSetting{
 border-radius: 30px;
 }
+.imageSettingRight{
+  border-radius: 30px;
+  }
+  
 
 .HeaderButton{
   color: #fff !important;
@@ -155,4 +159,26 @@ border-color: #fa7226;;
   .stageTextColor {
     font-size: 30px;
   }
+  .leftsideExplore{
+    width: 100%;
   }
+  .leftsideExploreButton{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftsideExploreImage{
+    margin-left: 24px;
+  }
+  .imageSetting{
+    width: 85%;
+  }
+  .ExploreImage{
+    display: flex;
+    justify-content: center;
+  }
+  
+  }
+     

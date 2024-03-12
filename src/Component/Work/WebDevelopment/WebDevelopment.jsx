@@ -4,6 +4,7 @@ import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import Feedback from "../../../Global/Feedback";
+import { useState } from "react";
 
 function WebDevelopment() {
   const navigate = useNavigate();
@@ -11,10 +12,14 @@ function WebDevelopment() {
   const handleController = () => {
     navigate('/Home');
   };
+  const [visible, setvisible] = useState(false);
+  const [feedbackvisible, setfeedbackvisible] = useState(false);
+
   return (
     <div>
       <Heading
         visible={false}
+        feedbackvisible={false}
         text="Web Development Portfolio"
         paragraph="Discover our expertise in web application development with our portfolio showcasing diverse projects and satisfied clients. Let us help bring your vision to life with cutting-edge technology and personalized solutions."
       />
@@ -33,7 +38,7 @@ function WebDevelopment() {
         heading2="– Your Ultimate App for Curating Spotify Music Playlists"
         subheading="Built with MERN stack, this app allows users to create and manage playlists to enhance their Spotify music experience. With Cloud 9, users have the option to play their tracks multiple times to boost their streaming statistics. Elevate your music curation game with Cloud 9 and create playlists that resonate with your unique taste. Join the Cloud 9 community and take your Spotify music journey to new heights."
         picture={picture}
-        visible={false}
+        visible={true}
         secondbutton="Visit Live Site"
       />
       <LeftSideExploreMore
