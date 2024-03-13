@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ServiceProvider.css';
+import { ServiceCardList } from '../ServiceChildCards/ServiceChildCards';
+import TechnologyStack from '../../Technologies/OurTechStack';
 
 export const BlockchainPage = ({ route }) => {
   // const renderedTitle = React.isValidElement(title) ? title : <b>{String(title)}</b>;
@@ -59,19 +61,56 @@ export const BlockchainPage = ({ route }) => {
     }
   };
 
+  const serviceCardList = [
+    { icon: { undefined }, title: 'Smart Contract Development', description: 'Developing optimized smart contracts to automate processes and power blockchain solutions.' },
+    { icon: { undefined }, title: 'Metaverse Development', description: 'Building immersive metaverse, virtual worlds and blockchain-based digital experiences.' },
+  ];
+  const serviceCardList1 = [
+    { icon: { undefined }, title: 'NFT Marketplace Development', description: 'Building feature-rich NFT (Non-Fungible Token) marketplaces for digital collectibles and assets.' },
+    { icon: { undefined }, title: 'DeFi Development', description: 'Designing DeFi protocols, ecosystems, and applications including exchanges, lending platforms, and more.' },
+    { icon: { undefined }, title: 'Web 3.0 Development', description: 'Integrating blockchain with web technologies for decentralized applications.' },
+    { icon: { undefined }, title: 'Blockchain Consultancy', description: 'Providing strategic advisory and identifying appropriate blockchain use cases.' }
+  ];
+  const serviceCardList2 = [
+    { icon: { undefined }, title: 'dApps Development', description: 'Building innovative decentralized applications for engagement, automation and new revenue.' },
+    { icon: { undefined }, title: 'IEO & ICO Development', description: 'End-to-end planning, launch and marketing services for IEO and ICO fundraising.' },
+    { icon: { undefined }, title: 'Crypto Exchanage Development', description: 'Developing secure, scalable digital currency exchanges with trading tools.' },
+    { icon: { undefined }, title: 'Blockchain Security', description: 'Conducting comprehensive audits and testing to ensure blockchain solution security.' }
+  ];
+
   return (
-    <div className='service_container'>
-      <div className='leftSide'>
-        <h1 className='mainheading'><b>{title}</b></h1>
-        <p className='mainpara'>
-          {description}
-        </p>
-        <button className='startedbutton'>Let's Get Started</button>
+    <>
+      <div className='service_container'>
+        <div className='leftSide'>
+          <h1 className='mainheading'><b>{title}</b></h1>
+          <p className='mainpara'>
+            {description}
+          </p>
+          <button className='startedbutton'>Let's Get Started</button>
+        </div>
+        <div className='rightSide'>
+          <ContactForm />
+        </div>
       </div>
-      <div className='rightSide'>
-        <ContactForm />
+      <div style={{ width: '100%', display: 'flex', padding: '0% 6% 0% 10%', alignItems: 'center' }}>
+        <div style={{ width: '50%' }}>
+            <h2>Our Custom Blockchain Development Services</h2>
+            <p>Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.</p>
+        </div>
+        <div style={{ width: '50%' }}>
+          <ServiceCardList ServiceCardList={serviceCardList} />
+        </div>
       </div>
-    </div>
+      <div>
+        <ServiceCardList ServiceCardList={serviceCardList1} />
+      </div>
+      <div>
+        <ServiceCardList ServiceCardList={serviceCardList2} />
+      </div>
+      <div>
+        <TechnologyStack />
+      </div>
+    </>
   );
 };
 
