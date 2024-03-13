@@ -14,10 +14,27 @@ import ios from '../Assets/icons8-ios.svg'
 import react from '../Assets/icons8-react.svg'
 import bitcoin from '../Assets/icons8-bitcoin.svg'
 import solana from '../Assets/icons8-solana-64.png'
-import etherium from '../Assets/icons8-solana-64.png'
+import etherium from '../Assets/icons8-ethereum-58.png'
 import metamask from '../Assets/icons8-metamask-48.png'
 import ripple from '../Assets/icons8-ripple-50.png'
 import solidity from '../Assets/icons8-solidity-48.png'
+import adobeae from '../Assets/icons8-solidity-48.png'
+import adobeil from '../Assets/icons8-adobe-illustrator-24.png'
+import adobefi from '../Assets/icons8-figma-48.png'
+import adobeph from '../Assets/icons8-adobe-photoshop-48.png'
+import adobexd from '../Assets/icons8-adobe-xd-48.png'
+import SQLite from '../Assets/icons8-leaf-50.png'
+import PostgreSQL from '../Assets/icons8-postgresql-100.png'
+import redis from '../Assets/icons8-redis-48.png'
+import mongodb from '../Assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-24.png'
+import mysql from '../Assets/icons8-mysql-48.png'
+import trello from '../Assets/icons8-trello-48.png'
+import selenium from '../Assets/icons8-mysql-48.png'
+import postman from '../Assets/icons8-postgresql-100.png'
+import jira from '../Assets/icons8-jira-48.png'
+import jmeter from '../Assets/icons8-mysql-48.png'
+import apprium from '../Assets/icons8-mysql-48.png'
+import mern from '../Assets/mern.svg'
 
 const TechnologyStack = () => {
   const [activeTab, setActiveTab] = useState('Web');
@@ -32,45 +49,98 @@ const TechnologyStack = () => {
         return (
           <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <img src={html5} className='imageclass' alt='' />
-              <img src={css3} className='imageclass' alt='' />
-              <img src={js} className='imageclass' alt='' />
-              <img src={php} className='imageclass' alt='' />
-
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={html5} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>HTML 5</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={css3} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>CSS 3</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={js} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>JavaScript</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={mern} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>MERN</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={php} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>PHP</p>
+              </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <img src={webflow} className='imageclass' alt='' />
-              <img src={wordpress} className='imageclass' alt='' />
-              <img src={laravel} className='imageclass' alt='' />
-              <img src={shopify} className='imageclass' alt='' height={'55px'} width={'55px'} />
-
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={webflow} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Webflow</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={wordpress} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>WordPress</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={laravel} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Laravel</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+                <img src={shopify} className='imageclass' alt='' color='#5E8E3E' height={'60px'} width={'55px'} />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>shopify</p>
+              </div>
             </div>
           </div>
         );
       case 'Mobile':
         return (
           <div style={{ display: 'flex', justifyContent: 'center' }} className='content'>
-            <img src={andriod} className='imageclass' alt='' />
-            <img src={flutter} className='imageclass' alt='' />
-            <img src={ios} className='imageclass' alt='' />
-            <img src={react} className='imageclass' alt='' />
-
+            <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+              <img src={andriod} className='imageclass' alt='' />
+              <p style={{ fontSize: '18px', fontWeight: 400 }}>Andriod</p>
+            </div>
+            <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+              <img src={flutter} className='imageclass' alt='' />
+              <p style={{ fontSize: '18px', fontWeight: 400 }}>Flutter</p>
+            </div>
+            <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+              <img src={ios} className='imageclass' alt='' />
+              <p style={{ fontSize: '18px', fontWeight: 400 }}>IOS</p>
+            </div>
+            <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+              <img src={react} className='imageclass' alt='' />
+              <p style={{ fontSize: '18px', fontWeight: 400 }}>React Native</p>
+            </div>
           </div>
         );
       case 'Blockchain':
         return (
           <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <img src={bitcoin} className='imageclass' alt='' />
-              <img src={solana} className='imageclass' alt='' />
-              <img src={etherium} className='imageclass' alt='' />
-
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={bitcoin} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Bitcoin</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={solana} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Solana</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={etherium} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Ethereum</p>
+              </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <img src={metamask} className='imageclass' alt='' />
-              <img src={ripple} className='imageclass' alt='' />
-              <img src={solidity} className='imageclass' alt='' />
-
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={metamask} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Metamask</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={ripple} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Ripple</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={solidity} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Solidity</p>
+              </div>
             </div>
           </div>
         );
@@ -78,27 +148,91 @@ const TechnologyStack = () => {
         return (
           <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <img src={bitcoin} className='imageclass' alt='' />
-              <img src={solana} className='imageclass' alt='' />
-              <img src={etherium} className='imageclass' alt='' />
-
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={adobeae} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe AE</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={adobeil} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe Illustrator</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={adobeph} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe Photshop</p>
+              </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <img src={metamask} className='imageclass' alt='' />
-              <img src={ripple} className='imageclass' alt='' />
-              <img src={solidity} className='imageclass' alt='' />
-
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={adobexd} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe XD</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={adobefi} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Figma</p>
+              </div>
             </div>
           </div>
         );
       case 'Database':
         return (
           <div className="content">
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={redis} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Redis</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={mongodb} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>MongoDB</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={mysql} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>MySQL</p>
+              </div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={PostgreSQL} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>PostgreSQL</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={SQLite} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>SQLite</p>
+              </div>
+            </div>
           </div>
         );
       case 'Testing':
         return (
           <div className="content">
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={apprium} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Apprium</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={jira} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Jira</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={jmeter} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>JMeter</p>
+              </div>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
+              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+                <img src={postman} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Postman</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={selenium} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Selenium</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={trello} className='imageclass' alt='' />
+                <p style={{ fontSize: '18px', fontWeight: 400 }}>Trello</p>
+              </div>
+            </div>
           </div>
         );
 
