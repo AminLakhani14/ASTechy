@@ -10,8 +10,9 @@
 	display: none;
 }
 #headerLogo{
-	height:60px;
-	width:200px;
+	object-fit: cover;
+    height: 69px;
+    width: 200px;
 }
 /* Giving a background-color to the nav container. */
 nav { 
