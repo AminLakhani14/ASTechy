@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
-import picture from "../../../Images/Mobile.jpg"
+import picture from "../../../Images/WikiWork.jpg"
 import Feedback from "../../../Global/Feedback";
 
 function Wikipedia() {

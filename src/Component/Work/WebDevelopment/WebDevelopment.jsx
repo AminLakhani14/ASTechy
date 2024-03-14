@@ -19,7 +19,7 @@ function WebDevelopment() {
     <div>
       <Heading
         visible={false}
-        feedbackvisible={false}
+        feedbackvisible={true}
         text="Web Development Portfolio"
         paragraph="Discover our expertise in web application development with our portfolio showcasing diverse projects and satisfied clients. Let us help bring your vision to life with cutting-edge technology and personalized solutions."
       />
@@ -58,6 +58,7 @@ function WebDevelopment() {
         picture={picture}
         secondbutton="Visit Live Site"
         visible={false}
+        
       />
       <Feedback/>
     </div>

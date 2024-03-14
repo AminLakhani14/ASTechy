@@ -21,7 +21,7 @@ function LeftSideExploreMore(props) {
         <div className={windowWidth < 500 ? "d-flex" : "row"}
         style={
           windowWidth <= 500
-            ? { marginTop:"90px", flexDirection: "column-reverse"  }
+            ? { flexDirection: "column"  }
             : { marginTop:"90px"}
         }>
         <div className="col-sm-1"></div>
