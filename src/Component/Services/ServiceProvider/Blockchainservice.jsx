@@ -75,43 +75,43 @@ export const BlockchainPage = ({ route }) => {
       switch (route) {
         case 'blockchain-development-services':
           setServicesCardsDesc({
-            title: 'Our Custom Blockchain Development Services'
-            , desc: 'Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.'
+            title: 'Custom Blockchain',
+            desc: 'Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.'
           })
           break;
         case 'web-application-development-services':
           setServicesCardsDesc({
-            title: 'Our Custom Web App Development Services',
+            title: 'Custom Web App',
             desc: 'We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:'
           });
           break;
         case 'mobile-app-development-services':
           setServicesCardsDesc({
-            title: 'Our Custom Mobile App Development Services',
+            title: 'Custom Mobile App',
             desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
           });
           break;
         case 'ui-ux-design-services':
           setServicesCardsDesc({
-            title: 'Our Custom Mobile App Development Services',
+            title: 'Custom Mobile App',
             desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
           });
           break;
         case 'wordpress-development-services':
           setServicesCardsDesc({
-            title: 'Our Custom WordPress Development Services',
+            title: 'Custom WordPress',
             desc: 'From WordPress theme customization and plugin development to complex WordPress integrations, Ropstam provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.'
           });
           break;
         case 'shopify-development-services':
           setServicesCardsDesc({
-            title: 'Our Custom Shopify Development Services',
+            title: 'Custom Shopify',
             desc: 'Trust Ropstam for custom Shopify development services to create high-converting online stores. With years of experience building ecommerce solutions on the Shopify platform, our team of experts specialize in the following services:'
           });
           break;
         case 'mvp-development-services':
           setServicesCardsDesc({
-            title: 'Our Custom MVP Development Services',
+            title: 'Custom MVP',
             desc: 'At Ropstam, we offer a comprehensive suite of MVP development services to bring your innovative ideas to life. Our team of skilled developers specializes in MVP app development, MVP software development, and MVP project management.'
           });
           break;
@@ -164,7 +164,7 @@ export const BlockchainPage = ({ route }) => {
       </div>
       <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }}>
         <div style={{ width: '40%' }}>
-          <h2>{servicesCardsDesc.title}</h2>
+          <h2>Our <span className='changecolor'>{servicesCardsDesc.title}</span> Development Services</h2>
           <p>{servicesCardsDesc.desc}</p>
         </div>
         <div style={{ width: '60%' }}>
