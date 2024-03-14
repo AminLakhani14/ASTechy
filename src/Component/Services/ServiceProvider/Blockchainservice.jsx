@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './ServiceProvider.css';
 import { ServiceCardList } from '../ServiceChildCards/ServiceChildCards';
 import TechnologyStack from '../../Technologies/OurTechStack';
+import Heading from '../../../Global/Heading';
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
@@ -96,30 +97,36 @@ export const BlockchainPage = ({ route }) => {
             desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
           });
           break;
-        // case 'wordpress-development-services':
-        //   setServicesCardsTitle('WordPress Development Services');
-        //   setServicesCardsDesc('Our custom WordPress development services can be the one-stop solution for all your design and development needs. At Ropstam, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business.');
-        //   break;
-        // case 'shopify-development-services':
-        //   setServicesCardsTitle('Shopify Development Services');
-        //   setServicesCardsDesc('Unlock your e-commerce potential with Ropstam’s custom Shopify development services. Elevate your online business with expert Shopify web design and development. Partner with us to create a stunning, professional, and high-performing Shopify store.');
-        //   break;
-        // case 'mvp-development-services':
-        //   setServicesCardsTitle('MVP Development Services');
-        //   setServicesCardsDesc('Ropstam is a leading MVP software development company providing end-to-end mvp development services to build your minimum viable product (MVP). With years of experience delivering successful MVP software for startups and enterprises, we are your ideal technology partner for MVP development.');
-        //   break;
+        case 'wordpress-development-services':
+          setServicesCardsDesc({
+            title: 'Our Custom WordPress Development Services',
+            desc: 'From WordPress theme customization and plugin development to complex WordPress integrations, Ropstam provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.'
+          });
+          break;
+        case 'shopify-development-services':
+          setServicesCardsDesc({
+            title: 'Our Custom Shopify Development Services',
+            desc: 'Trust Ropstam for custom Shopify development services to create high-converting online stores. With years of experience building ecommerce solutions on the Shopify platform, our team of experts specialize in the following services:'
+          });
+          break;
+        case 'mvp-development-services':
+          setServicesCardsDesc({
+            title: 'Our Custom MVP Development Services',
+            desc: 'At Ropstam, we offer a comprehensive suite of MVP development services to bring your innovative ideas to life. Our team of skilled developers specializes in MVP app development, MVP software development, and MVP project management.'
+          });
+          break;
         // case 'services':
-        //   setServicesCardsTitle('Our Services');
-        //   setServicesCardsDesc('Boosting Your Success through Advanced Technology and Client-Centric Solutions <br /> At Ropstam, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry.');
-        //   break;
+        // setServicesCardsDesc({
+        //   title: 'Our Custom Mobile App Development Services',
+        //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+        // });
+        // break;
         default:
-          // setServicesCardsTitle('');
-          setServicesCardsDesc('')
+          setServicesCardsDesc({ title: '', desc: '' })
           break;
       }
     } else {
-      // setServicesCardsTitle('');
-      setServicesCardsDesc('');
+      setServicesCardsDesc({ title: '', desc: '' })
     }
   };
 
@@ -142,8 +149,8 @@ export const BlockchainPage = ({ route }) => {
 
   return (
     <>
-      <div className='service_container'>
-        <div className='leftSide'>
+      <div className=''>
+        {/* <div className='leftSide'>
           <h1 className='mainheading'><b>{title}</b></h1>
           <p className='mainpara'>
             {description}
@@ -152,7 +159,8 @@ export const BlockchainPage = ({ route }) => {
         </div>
         <div className='rightSide'>
           <ContactForm />
-        </div>
+        </div> */}
+        <Heading visible={false} text={title} paragraph={description} />
       </div>
       <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }}>
         <div style={{ width: '40%' }}>
@@ -176,27 +184,26 @@ export const BlockchainPage = ({ route }) => {
   );
 };
 
-const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-  };
+// const ContactForm = () => {
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//   };
 
-  return (
-    <form className='form' onSubmit={handleSubmit}>
-      <input className='submitforminput' placeholder='>Full Name*' type="text" id="fullName" name="fullName" required />
+//   return (
+//     <form className='form' onSubmit={handleSubmit}>
+//       <input className='submitforminput' placeholder='Full Name*' type="text" id="fullName" name="fullName" required />
 
-      <input className='submitforminput' placeholder='Work Email*' type="email" id="email" name="email" required />
+//       <input className='submitforminput' placeholder='Work Email*' type="email" id="email" name="email" required />
 
-      <input className='submitforminput' placeholder='Work Phone*' type="tel" id="phone" name="phone" required />
+//       <input className='submitforminput' placeholder='Work Phone*' type="tel" id="phone" name="phone" required />
 
-      <input className='submitforminput' placeholder='Company Name*' type="text" id="companyName" name="companyName" required />
+//       <input className='submitforminput' placeholder='Company Name*' type="text" id="companyName" name="companyName" required />
 
-      <textarea id="message" name="message" placeholder='Message*' rows="4" required></textarea>
+//       <textarea id="message" name="message" placeholder='Message*' rows="4" required></textarea>
 
-      <button type="submit" className='getintouch'>Get in Touch</button>
-    </form>
-  );
-};
+//       <button type="submit" className='getintouch'>Get in Touch</button>
+//     </form>
+//   );
+// };
 
 export default BlockchainPage;
