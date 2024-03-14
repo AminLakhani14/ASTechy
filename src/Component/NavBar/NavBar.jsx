@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import Ropstam from "../../Images/Ropstam.png";
+import logo from "../../Images/logo.jpg";
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -13,7 +13,7 @@ function Navbar() {
       <a href="/" to="/">
         <img
             data-aos="fade-up"
-            src={Ropstam}
+            src={logo}
             width="200"
             id='headerLogo'
             height="60"
