@@ -8,7 +8,7 @@ const ServiceCard = ({ icon, title, description }) => {
                 <div>
                     <h3>{title}</h3>
                 </div>
-                <p style={{ textAlign: 'left', marginTop: '10%', fontSize: '16px', color: '#7c7c7c', fontWeight: 600, lineHeight: '1.3em' }}>{description}</p>
+                <p className='svcardspara'>{description}</p>
             </div>
         </div>
     );

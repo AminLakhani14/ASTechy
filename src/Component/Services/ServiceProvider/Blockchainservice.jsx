@@ -4,14 +4,18 @@ import { ServiceCardList } from '../ServiceChildCards/ServiceChildCards';
 import TechnologyStack from '../../Technologies/OurTechStack';
 
 export const BlockchainPage = ({ route }) => {
-  // const renderedTitle = React.isValidElement(title) ? title : <b>{String(title)}</b>;
+  const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
+  // const [servicesCardsDesc]
+
   useEffect(() => {
     debugger;
     getHeadingDesc();
+    getHeadingDescforservice();
   }, [route]);
   const [title, setTitle] = useState('');
   const [description, setDesc] = useState('');
   const getHeadingDesc = () => {
+    const route = window.location.pathname.replace(/^\//, '');
     const validRoutes = ['blockchain-development-services',
       'web-application-development-services', 'mobile-app-development-services',
       'ui-ux-design-services', 'wordpress-development-services',
@@ -60,6 +64,64 @@ export const BlockchainPage = ({ route }) => {
       setDesc('');
     }
   };
+  const getHeadingDescforservice = () => {
+    const route = window.location.pathname.replace(/^\//, '');
+    const validRoutes = ['blockchain-development-services',
+      'web-application-development-services', 'mobile-app-development-services',
+      'ui-ux-design-services', 'wordpress-development-services',
+      'shopify-development-services', 'mvp-development-services', 'services'];
+    if (validRoutes.includes(route)) {
+      switch (route) {
+        case 'blockchain-development-services':
+          setServicesCardsDesc({
+            title: 'Our Custom Blockchain Development Services'
+            , desc: 'Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.'
+          })
+          break;
+        case 'web-application-development-services':
+          setServicesCardsDesc({
+            title: 'Our Custom Web App Development Services',
+            desc: 'We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:'
+          });
+          break;
+        case 'mobile-app-development-services':
+          setServicesCardsDesc({
+            title: 'Our Custom Mobile App Development Services',
+            desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+          });
+          break;
+        case 'ui-ux-design-services':
+          setServicesCardsDesc({
+            title: 'Our Custom Mobile App Development Services',
+            desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+          });
+          break;
+        // case 'wordpress-development-services':
+        //   setServicesCardsTitle('WordPress Development Services');
+        //   setServicesCardsDesc('Our custom WordPress development services can be the one-stop solution for all your design and development needs. At Ropstam, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business.');
+        //   break;
+        // case 'shopify-development-services':
+        //   setServicesCardsTitle('Shopify Development Services');
+        //   setServicesCardsDesc('Unlock your e-commerce potential with Ropstam’s custom Shopify development services. Elevate your online business with expert Shopify web design and development. Partner with us to create a stunning, professional, and high-performing Shopify store.');
+        //   break;
+        // case 'mvp-development-services':
+        //   setServicesCardsTitle('MVP Development Services');
+        //   setServicesCardsDesc('Ropstam is a leading MVP software development company providing end-to-end mvp development services to build your minimum viable product (MVP). With years of experience delivering successful MVP software for startups and enterprises, we are your ideal technology partner for MVP development.');
+        //   break;
+        // case 'services':
+        //   setServicesCardsTitle('Our Services');
+        //   setServicesCardsDesc('Boosting Your Success through Advanced Technology and Client-Centric Solutions <br /> At Ropstam, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry.');
+        //   break;
+        default:
+          // setServicesCardsTitle('');
+          setServicesCardsDesc('')
+          break;
+      }
+    } else {
+      // setServicesCardsTitle('');
+      setServicesCardsDesc('');
+    }
+  };
 
   const serviceCardList = [
     { icon: { undefined }, title: 'Smart Contract Development', description: 'Developing optimized smart contracts to automate processes and power blockchain solutions.' },
@@ -92,12 +154,12 @@ export const BlockchainPage = ({ route }) => {
           <ContactForm />
         </div>
       </div>
-      <div style={{ width: '100%', display: 'flex', padding: '0% 6% 0% 10%', alignItems: 'center' }}>
-        <div style={{ width: '50%' }}>
-            <h2>Our Custom Blockchain Development Services</h2>
-            <p>Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.</p>
+      <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }}>
+        <div style={{ width: '40%' }}>
+          <h2>{servicesCardsDesc.title}</h2>
+          <p>{servicesCardsDesc.desc}</p>
         </div>
-        <div style={{ width: '50%' }}>
+        <div style={{ width: '60%' }}>
           <ServiceCardList ServiceCardList={serviceCardList} />
         </div>
       </div>
