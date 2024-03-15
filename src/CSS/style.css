@@ -189,7 +189,9 @@ body {
     margin-left: 24px;
   }
   .imageSetting {
-    width: 85%;
+    width: 96%;
+    object-fit: contain;
+    height: auto;
   }
   .ExploreImage {
     display: flex;

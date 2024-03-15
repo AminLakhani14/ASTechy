@@ -4,6 +4,7 @@ import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import picture from "../../../Images/WikiWork.jpg"
 import Feedback from "../../../Global/Feedback";
+import pictured from "../../../Images/Mobile.jpg"
 
 function Wikipedia() {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ function Wikipedia() {
         heading="InfoInsight"
         heading2="- Unveiling Golf Course Innovations."
         subheading="Explore the groundbreaking advancements in golf course management with InfoInsight's coverage of Tagmarshal. Learn how Tagmarshal harnesses real-time data insights to optimize golf operations and elevate the player experience. With a powerful tech stack including Laravel, Vue.js, and MongoDB, InfoInsight offers a comprehensive overview of Tagmarshal's innovative solutions."
-        picture={picture}
+        picture={pictured}
         visible={false}
         secondbutton="Visit Live Site"
       />
