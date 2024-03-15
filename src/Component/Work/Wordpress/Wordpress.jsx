@@ -16,6 +16,7 @@ function Wordpress() {
     <div>
       <Heading
         visible={false}
+        startedbtn={true}
         text="WordPress Development Portfolio"
         paragraph="Experience seamless e-commerce solutions with our expertise in WordPress development. Our portfolio showcases our ability to create custom online stores, integrate third-party plugins, and optimize website performance."
       />
