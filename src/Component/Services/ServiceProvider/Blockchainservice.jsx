@@ -2,16 +2,21 @@ import React, { useEffect, useState } from 'react';
 import './ServiceProvider.css';
 import { ServiceCardList } from '../ServiceChildCards/ServiceChildCards';
 import TechnologyStack from '../../Technologies/OurTechStack';
+import Heading from '../../../Global/Heading';
 
 export const BlockchainPage = ({ route }) => {
-  // const renderedTitle = React.isValidElement(title) ? title : <b>{String(title)}</b>;
+  const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
+  // const [servicesCardsDesc]
+
   useEffect(() => {
     debugger;
     getHeadingDesc();
+    getHeadingDescforservice();
   }, [route]);
   const [title, setTitle] = useState('');
   const [description, setDesc] = useState('');
   const getHeadingDesc = () => {
+    const route = window.location.pathname.replace(/^\//, '');
     const validRoutes = ['blockchain-development-services',
       'web-application-development-services', 'mobile-app-development-services',
       'ui-ux-design-services', 'wordpress-development-services',
@@ -60,6 +65,70 @@ export const BlockchainPage = ({ route }) => {
       setDesc('');
     }
   };
+  const getHeadingDescforservice = () => {
+    const route = window.location.pathname.replace(/^\//, '');
+    const validRoutes = ['blockchain-development-services',
+      'web-application-development-services', 'mobile-app-development-services',
+      'ui-ux-design-services', 'wordpress-development-services',
+      'shopify-development-services', 'mvp-development-services', 'services'];
+    if (validRoutes.includes(route)) {
+      switch (route) {
+        case 'blockchain-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Blockchain',
+            desc: 'Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.'
+          })
+          break;
+        case 'web-application-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Web App',
+            desc: 'We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:'
+          });
+          break;
+        case 'mobile-app-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Mobile App',
+            desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+          });
+          break;
+        case 'ui-ux-design-services':
+          setServicesCardsDesc({
+            title: 'Custom Mobile App',
+            desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+          });
+          break;
+        case 'wordpress-development-services':
+          setServicesCardsDesc({
+            title: 'Custom WordPress',
+            desc: 'From WordPress theme customization and plugin development to complex WordPress integrations, Ropstam provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.'
+          });
+          break;
+        case 'shopify-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Shopify',
+            desc: 'Trust Ropstam for custom Shopify development services to create high-converting online stores. With years of experience building ecommerce solutions on the Shopify platform, our team of experts specialize in the following services:'
+          });
+          break;
+        case 'mvp-development-services':
+          setServicesCardsDesc({
+            title: 'Custom MVP',
+            desc: 'At Ropstam, we offer a comprehensive suite of MVP development services to bring your innovative ideas to life. Our team of skilled developers specializes in MVP app development, MVP software development, and MVP project management.'
+          });
+          break;
+        // case 'services':
+        // setServicesCardsDesc({
+        //   title: 'Our Custom Mobile App Development Services',
+        //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+        // });
+        // break;
+        default:
+          setServicesCardsDesc({ title: '', desc: '' })
+          break;
+      }
+    } else {
+      setServicesCardsDesc({ title: '', desc: '' })
+    }
+  };
 
   const serviceCardList = [
     { icon: { undefined }, title: 'Smart Contract Development', description: 'Developing optimized smart contracts to automate processes and power blockchain solutions.' },
@@ -80,8 +149,8 @@ export const BlockchainPage = ({ route }) => {
 
   return (
     <>
-      <div className='service_container'>
-        <div className='leftSide'>
+      <div className=''>
+        {/* <div className='leftSide'>
           <h1 className='mainheading'><b>{title}</b></h1>
           <p className='mainpara'>
             {description}
@@ -90,14 +159,15 @@ export const BlockchainPage = ({ route }) => {
         </div>
         <div className='rightSide'>
           <ContactForm />
-        </div>
+        </div> */}
+        <Heading visible={false} text={title} paragraph={description} />
       </div>
-      <div style={{ width: '100%', display: 'flex', padding: '0% 6% 0% 10%', alignItems: 'center' }}>
-        <div style={{ width: '50%' }}>
-            <h2>Our Custom Blockchain Development Services</h2>
-            <p>Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.</p>
+      <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }}>
+        <div style={{ width: '40%' }}>
+          <h2>Our <span className='changecolor'>{servicesCardsDesc.title}</span> Development Services</h2>
+          <p>{servicesCardsDesc.desc}</p>
         </div>
-        <div style={{ width: '50%' }}>
+        <div style={{ width: '60%' }}>
           <ServiceCardList ServiceCardList={serviceCardList} />
         </div>
       </div>
@@ -114,27 +184,26 @@ export const BlockchainPage = ({ route }) => {
   );
 };
 
-const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-  };
+// const ContactForm = () => {
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//   };
 
-  return (
-    <form className='form' onSubmit={handleSubmit}>
-      <input className='submitforminput' placeholder='>Full Name*' type="text" id="fullName" name="fullName" required />
+//   return (
+//     <form className='form' onSubmit={handleSubmit}>
+//       <input className='submitforminput' placeholder='Full Name*' type="text" id="fullName" name="fullName" required />
 
-      <input className='submitforminput' placeholder='Work Email*' type="email" id="email" name="email" required />
+//       <input className='submitforminput' placeholder='Work Email*' type="email" id="email" name="email" required />
 
-      <input className='submitforminput' placeholder='Work Phone*' type="tel" id="phone" name="phone" required />
+//       <input className='submitforminput' placeholder='Work Phone*' type="tel" id="phone" name="phone" required />
 
-      <input className='submitforminput' placeholder='Company Name*' type="text" id="companyName" name="companyName" required />
+//       <input className='submitforminput' placeholder='Company Name*' type="text" id="companyName" name="companyName" required />
 
-      <textarea id="message" name="message" placeholder='Message*' rows="4" required></textarea>
+//       <textarea id="message" name="message" placeholder='Message*' rows="4" required></textarea>
 
-      <button type="submit" className='getintouch'>Get in Touch</button>
-    </form>
-  );
-};
+//       <button type="submit" className='getintouch'>Get in Touch</button>
+//     </form>
+//   );
+// };
 
 export default BlockchainPage;

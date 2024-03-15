@@ -20,19 +20,20 @@
 }
 
 .svcard-content {
-    /* text-align: center; */
     font-size: 20px;
     font-weight: 600
 }
 
-.Arrow{
-    color: #000000;
+.svcardspara{
+    text-align: left;
+    margin-top: 10%;
+    font-size: 16px;
+    color: #7c7c7c;
+    font-weight: 600; 
+    line-height: 1.3em;
+    transition: all 0.5s ease 2ms;
 }
 
-.Arrow:hover{
+.svcardspara:hover {
     color: #fff;
-}
-
-.lastone{
-    color: orangered;
 }
