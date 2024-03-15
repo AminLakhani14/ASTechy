@@ -14,6 +14,7 @@ function SocialMedia() {
     <div>
       <Heading
         visible={false}
+        startedbtn={true}
         text="Social Media Marketing Portfolio"
         paragraph="Elevate your online presence with our expert Social Media Marketing services. Our tailored strategies are designed to maximize engagement, drive traffic, and boost conversions across various social media platforms. Let us harness the power of Social Media Marketing to amplify your brand's reach and impact in the digital landscape."
       />

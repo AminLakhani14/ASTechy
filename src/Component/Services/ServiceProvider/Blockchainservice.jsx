@@ -3,10 +3,10 @@ import './ServiceProvider.css';
 import { ServiceCardList } from '../ServiceChildCards/ServiceChildCards';
 import TechnologyStack from '../../Technologies/OurTechStack';
 import Heading from '../../../Global/Heading';
+import DevelopmentProcess from '../../DevelopmentProcess/DevelopmentProcess';
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
-  // const [servicesCardsDesc]
 
   useEffect(() => {
     debugger;
@@ -150,19 +150,9 @@ export const BlockchainPage = ({ route }) => {
   return (
     <>
       <div className=''>
-        {/* <div className='leftSide'>
-          <h1 className='mainheading'><b>{title}</b></h1>
-          <p className='mainpara'>
-            {description}
-          </p>
-          <button className='startedbutton'>Let's Get Started</button>
-        </div>
-        <div className='rightSide'>
-          <ContactForm />
-        </div> */}
-        <Heading visible={false} text={title} paragraph={description} />
+        <Heading visible={false} startedbtn={true} text={title} paragraph={description} feedbackvisible={true} />
       </div>
-      <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }}>
+      <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }} className='mt-4'>
         <div style={{ width: '40%' }}>
           <h2>Our <span className='changecolor'>{servicesCardsDesc.title}</span> Development Services</h2>
           <p>{servicesCardsDesc.desc}</p>
@@ -178,32 +168,16 @@ export const BlockchainPage = ({ route }) => {
         <ServiceCardList ServiceCardList={serviceCardList2} />
       </div>
       <div>
+        <DevelopmentProcess />
+      </div>
+      <div className=''>
         <TechnologyStack />
+      </div>
+      <div className='mt-5'>
+        <Heading visible={false}startedbtn={false} paragraph={'Ready to discuss your Cross-Platform App development project? Get in touch today to get started.'} feedbackvisible={true} />
       </div>
     </>
   );
 };
-
-// const ContactForm = () => {
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//   };
-
-//   return (
-//     <form className='form' onSubmit={handleSubmit}>
-//       <input className='submitforminput' placeholder='Full Name*' type="text" id="fullName" name="fullName" required />
-
-//       <input className='submitforminput' placeholder='Work Email*' type="email" id="email" name="email" required />
-
-//       <input className='submitforminput' placeholder='Work Phone*' type="tel" id="phone" name="phone" required />
-
-//       <input className='submitforminput' placeholder='Company Name*' type="text" id="companyName" name="companyName" required />
-
-//       <textarea id="message" name="message" placeholder='Message*' rows="4" required></textarea>
-
-//       <button type="submit" className='getintouch'>Get in Touch</button>
-//     </form>
-//   );
-// };
 
 export default BlockchainPage;

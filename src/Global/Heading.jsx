@@ -41,9 +41,10 @@ function Heading(props) {
             {props.paragraph}
           </p>
           <div className="d-flex mt-4">
+            {props.startedbtn === true ?
             <button onClick={props.Handler} className="HeaderButton">
               Let's Get Started
-            </button>
+            </button> : ''}
             {props.visible == true ? (
               <button className="ExploreButton mx-3">Explore Services</button>
             ) : (

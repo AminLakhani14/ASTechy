@@ -14,6 +14,7 @@ import TechnologyStack from "../Technologies/OurTechStack";
 
 function Home() {
   const [visible, setvisible] = useState(false);
+  const [startedbtn, setStartedbtn] = useState(false);
   const navigate = useNavigate();
 
   const handleController = () => {
@@ -47,6 +48,7 @@ function Home() {
       <Service />
       <Heading
         visible={false}
+        startedbtn={true}
         text="BlockChain Development Portfolio"
         paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."
       />
