@@ -1,8 +1,28 @@
+import { useEffect, useState } from "react";
 import "../CSS/style.css"
 
 function ExploreMore(props) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    // Function to update the windowWidth state when the resize event occurs
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     return (
-        <div className="row ExploreMoreForm" style={{marginTop:"90px"}}>
+        <div className={windowWidth < 500 ? "d-flex ExploreMoreForm" : "row ExploreMoreForm"} style={
+          windowWidth <= 500
+            ? { }
+            : { marginTop:"90px"}
+        }>
         <div className="col-sm-6 col-order-2 ">
         <a href="/" className="ExploreImage">
             <img className="imageSetting"  src={props.picture} alt="profile picture"/>

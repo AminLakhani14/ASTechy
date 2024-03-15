@@ -85,3 +85,11 @@ footer.footer {
 .copyright p {
   margin: 0;
 }
+
+@media all and (max-width : 768px) {
+  .responsiveFooter{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}

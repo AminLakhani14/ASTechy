@@ -1,206 +1,219 @@
-body{
-  overflow-x:hidden;
+body {
+  overflow-x: hidden;
 }
-.HeadingBackground{
-color: #ffffff;
-background-repeat: no-repeat;
-background-image: url("../Images/Background.jpg");
-height: 100vh;
-width: 100%;
+.HeadingBackground {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-image: url("../Images/Background.jpg");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.primaryButton{
-border-radius: 5px;
-transition: all .3s ease 0s;
-padding-top: 0.5em !important;
-padding-right: 2em !important;
-padding-bottom: 0.5em !important;
-padding-left: 2em !important;
-height: 50px;
-width: auto;
-font-size: 18px;
-border:transparent;
-color: white;
-background-color: #2693fa;
-border-color: #2693fa;
+.primaryButton {
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  padding-top: 0.5em !important;
+  padding-right: 2em !important;
+  padding-bottom: 0.5em !important;
+  padding-left: 2em !important;
+  height: 50px;
+  width: auto;
+  font-size: 18px;
+  border: transparent;
+  color: white;
+  background-color: #2693fa;
+  border-color: #2693fa;
 }
-.primaryButton:hover{
+.primaryButton:hover {
   color: #fff !important;
   border-color: #c94a22 !important;
   background-image: initial;
   background-color: #ff5300;
 }
-.SecondaryButton{
-border-radius: 6px;
-height: 50px;
-width: auto;
-padding: 0px 30px;
-color: black;
-background-color: white;
-border-color: black;
+.SecondaryButton {
+  border-radius: 6px;
+  height: 50px;
+  width: auto;
+  padding: 0px 30px;
+  color: black;
+  background-color: white;
+  border-color: black;
 }
-.imageSetting{
-border-radius: 30px;
-}
-.imageSettingRight{
+.imageSetting {
   border-radius: 30px;
-  }
-  
+  object-fit: cover;
+  width: 850px;
+  height: 660px;
+}
+.imageSettingRight {
+  border-radius: 30px;
+}
 
-.HeaderButton{
+.HeaderButton {
   color: #fff !important;
   border: 1px solid white;
   font-size: 18px;
   border-radius: 5px;
   background-color: transparent;
-  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif !important;
   font-weight: 700 !important;
-  transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
   padding-top: 0.5em !important;
   padding-right: 2em !important;
   padding-bottom: 0.5em !important;
   padding-left: 2em !important;
 }
-.HeaderButton:hover{
+.HeaderButton:hover {
   color: #fff !important;
   border-color: #c94a22 !important;
   background-image: initial;
   background-color: #ff5300;
 }
-.rightGenericButton{
+.rightGenericButton {
   color: black !important;
   border: 1px solid black;
   font-size: 18px;
   border-radius: 5px;
   background-color: transparent;
-  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif !important;
   /* font-weight: 700 !important; */
-  transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
   padding-top: 0.5em !important;
   padding-right: 2em !important;
   padding-bottom: 0.5em !important;
   padding-left: 2em !important;
 }
-.sliderBg{
+.sliderBg {
   /* background-image: linear-gradient(180deg,rgba(0,61,119,.5) 0,rgba(38,147,250,.5) 100%); */
-  background-image: linear-gradient(180deg,rgba(0,61,119,.5) 0,rgba(38,147,250,.5) 99%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 61, 119, 0.5) 0,
+    rgba(38, 147, 250, 0.5) 99%
+  );
 }
-.rightGenericButton:hover{
+.rightGenericButton:hover {
   color: #fff !important;
   border-color: #c94a22 !important;
   background-image: initial;
   background-color: #ff5300;
 }
-.sliderButton{
+.sliderButton {
   color: white !important;
   border: 1px solid white;
   font-size: 18px;
   border-radius: 5px;
   background-color: transparent;
-  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif !important;
   /* font-weight: 700 !important; */
-  transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
   padding-top: 0.5em !important;
   padding-right: 2em !important;
   padding-bottom: 0.5em !important;
   padding-left: 2em !important;
 }
-.sliderButton:hover{
+.sliderButton:hover {
   color: #fff !important;
   border-color: #c94a22 !important;
   background-image: initial;
   background-color: #ff5300;
 }
-.ExploreButton{
-border-radius: 6px;
-height: 50px;
-width: 170px;
-color: white;
-background-color: #fa7226;;
-border-color: #fa7226;;
+.ExploreButton {
+  border-radius: 6px;
+  height: 50px;
+  width: 170px;
+  color: white;
+  background-color: #fa7226;
+  border-color: #fa7226;
 }
 .investNowCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  .stageTextColor {
-    font-size: 32px;
-    color: white;
-    font-family: "Crimson Pro";
-  }
-  .secondaryLabelColor {
-    color: white;
-    font-size: 20px;
-    font-family: "Crimson Pro";
-    width: 280px;
-    text-align: center;
-    height: 110px;
-  }
-  .sliderHeading{
-    color:white;
-    line-height:50px;
-  }
-  .slierText{
-    color:white;
-    line-height:30px;
-    font-size: 18px;
-  }
-.citiesBackground{
-    background-color: #1e1e1e;
-    height:450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
-  @media screen and (max-width: 500px) {
- .investNowCard {
+.stageTextColor {
+  font-size: 32px;
+  color: white;
+  font-family: "Crimson Pro";
+}
+.secondaryLabelColor {
+  color: white;
+  font-size: 20px;
+  font-family: "Crimson Pro";
+  width: 280px;
+  text-align: center;
+  height: 110px;
+}
+.sliderHeading {
+  color: white;
+  line-height: 50px;
+}
+.slierText {
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+}
+.citiesBackground {
+  background-color: #1e1e1e;
+  height: 450px;
+}
+@media screen and (max-width: 500px) {
+  .investNowCard {
     height: 280px;
   }
   .stageTextColor {
     font-size: 30px;
   }
-  .leftsideExplore{
+  .leftsideExplore {
     width: 100%;
     text-align: center;
   }
-  .citiesBackground{
+  .citiesBackground {
     background-color: #1e1e1e;
     flex-direction: column;
     align-items: center;
-    height:auto;
-}
-  .leftsideExploreButton{
+    height: auto;
+  }
+  .leftsideExploreButton {
     flex-direction: column;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
   }
-  .leftsideExploreImage{
+  .leftsideExploreImage {
     margin-left: 24px;
   }
-  .imageSetting{
-    width: 85%;
+  .imageSetting {
+    width: 96%;
+    object-fit: contain;
+    height: auto;
   }
-  .ExploreImage{
+  .ExploreImage {
     display: flex;
     justify-content: center;
   }
-  .ExploreMoreForm{
+  .ExploreMoreForm {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column-reverse;
     justify-content: space-between;
   }
-  .HeadingBackground{
+  .HeadingBackground {
     color: #ffffff;
     background-repeat: no-repeat;
     background-image: url("../Images/Background.jpg");
     height: auto;
     width: 100%;
     padding-bottom: 25px;
-    padding-right: 25px;
-    }
-    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
