@@ -3,6 +3,7 @@ import './ServiceProvider.css';
 import { ServiceCardList } from '../ServiceChildCards/ServiceChildCards';
 import TechnologyStack from '../../Technologies/OurTechStack';
 import Heading from '../../../Global/Heading';
+import DevelopmentProcess from '../../DevelopmentProcess/DevelopmentProcess';
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
@@ -165,6 +166,9 @@ export const BlockchainPage = ({ route }) => {
       </div>
       <div>
         <ServiceCardList ServiceCardList={serviceCardList2} />
+      </div>
+      <div>
+        <DevelopmentProcess />
       </div>
       <div className=''>
         <TechnologyStack />
