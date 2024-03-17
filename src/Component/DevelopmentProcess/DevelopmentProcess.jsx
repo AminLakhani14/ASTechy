@@ -81,7 +81,7 @@ export const DevelopmentProcess = () => {
 
     return (
         <>
-            <div className='mt-4 devpromain' style={{ width: '100%', padding: '0% 10% 0% 6%', height: '500px' }}>
+            <div className='mt-4 devpromain' style={{ padding: '0% 10% 0% 6%', height: '500px' }}>
                 <div className='' style={{ width: '100%' }}>
                     <h2>Our <span className='changecolor'>{devTitleDesc.title}</span> {PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h2>
                     <p>{devTitleDesc.desc}</p>

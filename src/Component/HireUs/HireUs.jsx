@@ -92,7 +92,7 @@ export const HireUs = () => {
     ];
     return (
         <>
-            <div className='mt-4' style={{ }}>
+            <div className='mt-4'>
                 <div className='text-center'>
                     <h2>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}
                     </span> with <span className='changecolor'>Ropstam</span></h2>
