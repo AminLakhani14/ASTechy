@@ -11,11 +11,12 @@ import Navbar from "../NavBar/NavBar";
 import CustomCarousel from "../CustomSlider/CustomSlider";
 import images from "../../Images/sliderData";
 import TechnologyStack from "../Technologies/OurTechStack";
-import { Accordion } from "../../Global/FAQ";
+// import { Accordion } from "../../Global/FAQ";
 
 function Home() {
   const [visible, setvisible] = useState(false);
   const [startedbtn, setStartedbtn] = useState(false);
+  const [workBtn, setworkBtn] = useState(false);
   const navigate = useNavigate();
 const panels = [
   {
@@ -45,7 +46,7 @@ const panels = [
   return (
     <div>
       {/* <Navbar /> */}
-      <Accordion panels={panels} />
+      {/* <Accordion panels={panels} /> */}
       <CustomCarousel>
         {images.map((item, index) => {
           return (
@@ -102,6 +103,7 @@ const panels = [
         visible={false}
         startedbtn={false}
         feedbackvisible={true}
+        workBtn={false}
         // text="BlockChain Development Portfolio"
         paragraph="Ready to discuss your Cross-Platform App development project? Get in touch today to get started."
       />

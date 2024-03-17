@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../Images/logo.jpg";
+import { useHistory } from "react-router-dom";
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const changeClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+  //   const history = useHistory();
+
+  // const contactUs = () => {
+  //   history.push('/contact');
+  // };
   return (
     <>
     <div style={{height:'90px'}}>

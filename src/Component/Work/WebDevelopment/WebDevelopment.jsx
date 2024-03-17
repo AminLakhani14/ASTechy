@@ -21,6 +21,7 @@ function WebDevelopment() {
         visible={false}
         startedbtn={true}
         feedbackvisible={true}
+        workBtn={false}
         text="Web Development Portfolio"
         paragraph="Discover our expertise in web application development with our portfolio showcasing diverse projects and satisfied clients. Let us help bring your vision to life with cutting-edge technology and personalized solutions."
       />

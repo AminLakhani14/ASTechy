@@ -16,6 +16,7 @@ function SearchEngine() {
       <Heading
         visible={false}
         startedbtn={true}
+        workBtn={false}
         text="SEO Portfolio"
         paragraph="Optimize your online presence with our SEO-driven web application development services. Explore our portfolio of diverse projects and delighted clients, and let us elevate your digital footprint with cutting-edge technology and personalized SEO solutions."
       />

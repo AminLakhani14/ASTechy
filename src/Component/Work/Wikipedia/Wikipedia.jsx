@@ -17,6 +17,7 @@ function Wikipedia() {
       <Heading
         visible={false}
         startedbtn={true}
+        workBtn={false}
         text="Wikipedia Portfolio"
         paragraph="Access a wealth of knowledge and information on Wikipedia, the world's largest online encyclopedia. Explore diverse topics ranging from history and science to pop culture and current events. With its vast repository of articles, Wikipedia serves as a valuable resource for learning and research, empowering users to discover, contribute, and expand their understanding of the world."
       />

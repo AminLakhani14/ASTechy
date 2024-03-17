@@ -16,6 +16,7 @@ function Ebook() {
       <Heading
         visible={false}
         startedbtn={true}
+        workBtn={false}
         text="Ebook Portfolio"
         paragraph="Unlock knowledge and inspiration with our captivating Ebook collection. Dive into a world of limitless possibilities as our Ebooks cover a diverse range of topics, from personal development to professional growth. Elevate your reading experience and immerse yourself in the transformative power of our Ebook library today."
       />
