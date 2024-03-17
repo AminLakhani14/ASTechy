@@ -69,12 +69,12 @@ const panels = [
         })}
       </CustomCarousel>
       <Service />
-      <Heading
+      {/* <Heading
         visible={false}
         startedbtn={true}
         text="BlockChain Development Portfolio"
         paragraph="Ropstam offers top-notch blockchain development services to help businesses overcome challenges and bring their innovative ideas to life. We aim to deliver quality solutions and help clients turn their vision into successful businesses."
-      />
+      /> */}
       <LeftSideExploreMore
         handleController={handleController}
         heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience"
@@ -96,8 +96,15 @@ const panels = [
          offering a unique and seamless trading experience to the users."
         picture={picture}
       />
-      <Cities />
+      {/* <Cities /> */}
       {/* <Footer/> */}
+      <Heading
+        visible={false}
+        startedbtn={false}
+        feedbackvisible={true}
+        // text="BlockChain Development Portfolio"
+        paragraph="Ready to discuss your Cross-Platform App development project? Get in touch today to get started."
+      />
       <TechnologyStack />
     </div>
   );

@@ -12,6 +12,7 @@ import Wikipedia from "./Component/Work/Wikipedia/Wikipedia.jsx";
 import Ebook from "./Component/Work/Ebook/Ebook.jsx";
 import Service from "./Component/Services/Service.jsx";
 import BlockchainPage from "./Component/Services/ServiceProvider/Blockchainservice.jsx";
+import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/shopify-development-services" element={<BlockchainPage />} />
           <Route path="/mvp-development-services" element={<BlockchainPage />} />
           <Route path="/services" element={<BlockchainPage />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </Router>
       <Cities />

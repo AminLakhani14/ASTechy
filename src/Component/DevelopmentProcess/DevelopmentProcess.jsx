@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './DevelopmentProcess.css';
+import concept from '../Assets/icons8-concept-64.png';
+import design from '../Assets/icons8-design-50.png';
+import dev from '../Assets/icons8-developer-50.png';
+import deployment from '../Assets/icons8-deployment-64.png';
+import testing from '../Assets/icons8-testing-50.png';
+import maintain from '../Assets/icons8-wrench-as-a-maintenance-logotype-for-computer-operating-system-24.png';
 
 export const DevelopmentProcess = () => {
     const [devTitleDesc, setDevTitleDesc] = useState({ title: '', desc: '' });
@@ -75,44 +81,56 @@ export const DevelopmentProcess = () => {
 
     return (
         <>
-            <div className='mt-4' style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }}>
-                <div className=''>
+            <div className='mt-4' style={{ width: '100%', padding: '0% 5% 0% 10%', height: '500px' }}>
+                <div className='' style={{ width: '100%' }}>
                     <h2>Our <span className='changecolor'>{devTitleDesc.title}</span> {PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h2>
                     <p>{devTitleDesc.desc}</p>
                 </div>
-                <div>
-                    <div>
-                        <img src={undefined} alt='' />
-                        <span className='changecolor'>Concept</span>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+                    <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={concept} alt='' />
+                            <span className='changecolor'>Concept</span>
+                        </div>
                         <span>This involves understanding the client’s needs, defining project goals and requirements and creating a project plan.</span>
                     </div>
-                    <div>
-                        <img src={undefined} alt='' />
-                        <span className='changecolor'>Design</span>
-                        <span>Develop wireframes, mockups, and prototypes to create a visual representation of the Blockchain website or Apps UI/UX for perfect user experience.</span>
+                    <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={design} alt='' />
+                            <span className='changecolor'>Design</span>
+                        </div>
+                        <span>Develop wireframes, mockups, and prototypes to create a visual representation of the {devTitleDesc.title} website or Apps UI/UX for perfect user experience.</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src={undefined} alt='' />
-                        <span className='changecolor'>Development</span>
-                        <span>Code the Blockchain solution and integrate necessary third-party ?tools or APIs for enhanced functionality and performance.</span>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+                    <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={dev} alt='' />
+                            <span className='changecolor'>Development</span>
+                        </div>
+                        <span>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced functionality and performance.</span>
                     </div>
-                    <div>
-                        <img src={undefined} alt='' />
-                        <span className='changecolor'>Testing</span>
-                        <span>Conduct various tests to ensure the security and functionality of the Blockchain solution.</span>
+                    <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={testing} alt='' />
+                            <span className='changecolor'>Testing</span>
+                        </div>
+                        <span>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src={undefined} alt='' />
-                        <span className='changecolor'>Deployment</span>
-                        <span>Launch the Blockchain solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+                    <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={deployment} alt='' />
+                            <span className='changecolor'>Deployment</span>
+                        </div>
+                        <span>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
                     </div>
-                    <div>
-                        <img src={undefined} alt='' />
-                        <span className='changecolor'>Maintenance</span>
+                    <div style={{ width: '50%' }}>
+                        <div style={{ width: '100%' }}>
+                            <img src={maintain} alt='' />
+                            <span className='changecolor'>Maintenance</span>
+                        </div>
                         <span>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
                     </div>
                 </div>
