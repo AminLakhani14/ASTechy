@@ -11,7 +11,7 @@
 }
 #headerLogo{
 	object-fit: cover;
-    height: 69px;
+    height: 60px;
     width: 200px;
 }
 /* Giving a background-color to the nav container. */
@@ -155,6 +155,9 @@ li > a:only-child:after { content: ''; }
 --------------------------------------------- */
 
 @media all and (max-width : 768px) {
+	.headerMenuButton{
+		font-size: 14px;
+	}
 	.display-none{
 		display: none;
 	}

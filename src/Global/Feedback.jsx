@@ -26,12 +26,12 @@ function Feedback(props) {
         : { marginTop:"90px"}
     }
     >
-      <div className="w-50">
+      <div className="width50">
         <div className="col-lg-3"></div>
-        <div className=" justify-content-center d-flex flex-column">
+        <div className={windowWidth <= 700?"justify-content-center d-flex flex-column align-items-center":"justify-content-center d-flex flex-column"}>
           <h1  style={
-            windowWidth <= 500
-              ? { fontSize: "24px" }
+            windowWidth <= 700
+              ? { fontSize: "24px",textAlign:'center', padding:'0px 20px 0px 20px' }
               : { fontSize: "55px" }
           } className="mb-4">
             <b>
@@ -41,7 +41,7 @@ function Feedback(props) {
           </h1>
         </div>
       </div>
-      <div className="w-5-CU1jdf d-flex">
+      <div className="width75 d-flex">
         <div className="FeedbackBackground">
           <TextField
             id="standard-basic"

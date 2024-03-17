@@ -3,16 +3,25 @@
     width:570px;
     height: 550px;
 }
-@media screen and (max-width: 500px) {   
+.width50{
+    width:50%;
+  }
+@media screen and (max-width: 768px) {   
     .FeedbackBackground{
         background-color: white;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
         height:auto;
         width:100%;  
         margin-top: 30px;
+        padding-bottom: 15px;
     }
+    .width50{
+        width:auto;
+      }
+      .width75{
+        width:75%
+      }
    
 }

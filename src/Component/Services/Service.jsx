@@ -6,7 +6,7 @@ import clone from '../Assets/clone-svgrepo-com.svg';
 import shopify from '../Assets/shopify-svgrepo-com.svg';
 import tablet from '../Assets/screen-tablet-svgrepo-com.svg';
 import mvp from '../Assets/tablet-ipad-svgrepo-com.svg';
-
+import '../../CSS/style.css'
 const Service = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -57,11 +57,11 @@ const Service = () => {
 
     return (
         <>
-            <div style={{ display: 'flex', justifyContent: 'center', fontSize: '35px', fontWeight: 500 }}>
-                <span style={{ color: '#000', marginTop: '70px' }}>Our</span>
-                <span style={{ color: '#2693fa', marginTop: '70px', marginLeft: '10px' }}>Services</span>
+            <div className='servicesMainHeading'>
+                <span style={{ color: '#000' }}>Our </span>
+                <span style={{ color: '#2693fa' }} className='mx-2'> Services</span>
             </div>
-            <div><p className='text-center' style={{ padding: '0% 1%' }}>Accelerate your business success with our innovative digital solutions.</p></div>
+            <div><p className='text-center' style={{ padding: '0% 15  %' }}>Accelerate your business success with our innovative digital solutions.</p></div>
             <div className=''>
                 {isMobile ? (
                     <>

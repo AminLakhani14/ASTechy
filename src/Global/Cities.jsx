@@ -14,8 +14,7 @@ function Cities(props) {
           <img
             data-aos="fade-up"
             src={Islamabad}
-            width="100"
-            height="100"
+            className="citiesLogo"
           ></img>
           <label data-aos="fade-up" className="stageTextColor">
             Islamabad
@@ -27,7 +26,7 @@ function Cities(props) {
       </div>
       <div className="w-25">
         <div className="investNowCard">
-          <img data-aos="fade-up" src={lahore} width="100" height="100"></img>
+          <img data-aos="fade-up" src={lahore} className="citiesLogo"></img>
           <label data-aos="fade-up" className="stageTextColor">
             Lahore
           </label>
@@ -38,7 +37,7 @@ function Cities(props) {
       </div>
       <div className="w-25">
         <div className="investNowCard">
-          <img data-aos="fade-up" src={tajmahal} width="100" height="100"></img>
+          <img data-aos="fade-up" src={tajmahal} className="citiesLogo"></img>
           <label data-aos="fade-up" className="stageTextColor">
             Headquarter
           </label>
@@ -49,7 +48,7 @@ function Cities(props) {
       </div>
       <div className="w-25">
         <div className="investNowCard">
-          <img data-aos="fade-up" src={canada} width="100" height="100"></img>
+          <img data-aos="fade-up" src={canada} className="citiesLogo"></img>
           <label data-aos="fade-up" className="stageTextColor">
             India
           </label>
