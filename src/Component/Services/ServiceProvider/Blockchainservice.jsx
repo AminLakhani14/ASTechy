@@ -5,6 +5,7 @@ import TechnologyStack from '../../Technologies/OurTechStack';
 import Heading from '../../../Global/Heading';
 import DevelopmentProcess from '../../DevelopmentProcess/DevelopmentProcess';
 import Accordion from '../../../Global/FAQ';
+import HireUs from '../../HireUs/HireUs';
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
@@ -175,7 +176,7 @@ export const BlockchainPage = ({ route }) => {
       <div className=''>
         <Heading workBtn={false} visible={false} startedbtn={true} text={title} paragraph={description} feedbackvisible={true} />
       </div>
-      <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 10%', alignItems: 'center' }} className='mt-4'>
+      <div style={{ width: '100%', display: 'flex', padding: '0% 5% 0% 6%', alignItems: 'center' }} className='mt-4'>
         <div style={{ width: '40%' }}>
           <h2>Our <span className='changecolor'>{servicesCardsDesc.title}</span> Development Services</h2>
           <p>{servicesCardsDesc.desc}</p>
@@ -192,6 +193,9 @@ export const BlockchainPage = ({ route }) => {
       </div>
       <div>
         <DevelopmentProcess />
+      </div>
+      <div>
+        <HireUs />
       </div>
       <div className=''>
         <Accordion panels={panels} />

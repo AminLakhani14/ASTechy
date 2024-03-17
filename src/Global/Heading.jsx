@@ -49,7 +49,6 @@ function Heading(props) {
               </button> : ''}
             {props.workBtn === true &&
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                {/* First Row */}
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <div style={{ display: 'flex' }}>
                     <PhoneIcon
@@ -66,7 +65,6 @@ function Heading(props) {
                     <p>Email Us</p>
                   </div>
                 </div>
-                {/* Second Row */}
                 <div>
                   <button className="HeaderButton">
                     Explore Our Work

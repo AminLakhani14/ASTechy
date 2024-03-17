@@ -81,57 +81,72 @@ export const DevelopmentProcess = () => {
 
     return (
         <>
-            <div className='mt-4' style={{ width: '100%', padding: '0% 5% 0% 10%', height: '500px' }}>
+            <div className='mt-4 devpromain' style={{ width: '100%', padding: '0% 10% 0% 6%', height: '500px' }}>
                 <div className='' style={{ width: '100%' }}>
                     <h2>Our <span className='changecolor'>{devTitleDesc.title}</span> {PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h2>
                     <p>{devTitleDesc.desc}</p>
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
-                    <div style={{ width: '50%' }}>
-                        <div style={{ width: '100%' }}>
+                    <div style={{ width: '50%', display: 'flex' }}>
+                        <div>
                             <img src={concept} alt='' />
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-4'>
                             <span className='changecolor'>Concept</span>
+                            <span>This involves understanding the client’s needs, defining project goals and
+                                requirements and creating a project plan.</span>
                         </div>
-                        <span>This involves understanding the client’s needs, defining project goals and requirements and creating a project plan.</span>
                     </div>
-                    <div style={{ width: '50%' }}>
-                        <div style={{ width: '100%' }}>
+                    <div style={{ width: '50%', display: 'flex' }}>
+                        <div>
                             <img src={design} alt='' />
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
                             <span className='changecolor'>Design</span>
+                            <span>Develop wireframes, mockups, and prototypes to create a visual
+                                representation of the {devTitleDesc.title} website or Apps UI/UX for perfect user experience.</span>
                         </div>
-                        <span>Develop wireframes, mockups, and prototypes to create a visual representation of the {devTitleDesc.title} website or Apps UI/UX for perfect user experience.</span>
                     </div>
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
-                    <div style={{ width: '50%' }}>
-                        <div style={{ width: '100%' }}>
+                    <div style={{ width: '50%', display: 'flex' }}>
+                        <div>
                             <img src={dev} alt='' />
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
                             <span className='changecolor'>Development</span>
+                            <span>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced
+                                functionality and performance.</span>
                         </div>
-                        <span>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced functionality and performance.</span>
                     </div>
-                    <div style={{ width: '50%' }}>
-                        <div style={{ width: '100%' }}>
+                    <div style={{ width: '50%', display: 'flex' }}>
+                        <div>
                             <img src={testing} alt='' />
-                            <span className='changecolor'>Testing</span>
                         </div>
-                        <span>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
+                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
+                            <span className='changecolor'>Testing</span>
+                            <span>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
+                        </div>
                     </div>
                 </div>
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
-                    <div style={{ width: '50%' }}>
-                        <div style={{ width: '100%' }}>
+                    <div style={{ width: '50%', display: 'flex' }}>
+                        <div>
                             <img src={deployment} alt='' />
+                        </div>
+                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
                             <span className='changecolor'>Deployment</span>
+                            <span>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
                         </div>
-                        <span>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
                     </div>
-                    <div style={{ width: '50%' }}>
-                        <div style={{ width: '100%' }}>
-                            <img src={maintain} alt='' />
-                            <span className='changecolor'>Maintenance</span>
+                    <div style={{ width: '50%', display: 'flex' }}>
+                        <div>
+                            <img src={maintain} alt='' width={'30px'} />
                         </div>
-                        <span>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
+                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
+                            <span className='changecolor'>Maintenance</span>
+                            <span>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
+                        </div>
                     </div>
                 </div>
             </div>
