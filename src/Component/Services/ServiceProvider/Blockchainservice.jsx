@@ -6,6 +6,9 @@ import Heading from '../../../Global/Heading';
 import DevelopmentProcess from '../../DevelopmentProcess/DevelopmentProcess';
 import Accordion from '../../../Global/FAQ';
 import HireUs from '../../HireUs/HireUs';
+import Feedback from '../../../Global/Feedback';
+import ProjectPartner from '../../ProjectPartner/ProjectPartner';
+// import { Feedback } from '@mui/icons-material';
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({ title: '', desc: '' });
@@ -131,6 +134,73 @@ export const BlockchainPage = ({ route }) => {
     }
   };
 
+  /******* Lets do project together block *******/
+  const getHeadingDescforNewProject = () => {
+    const route = window.location.pathname.replace(/^\//, '');
+    const validRoutes = ['blockchain-development-services',
+      'web-application-development-services', 'mobile-app-development-services',
+      'ui-ux-design-services', 'wordpress-development-services',
+      'shopify-development-services', 'mvp-development-services', 'services'];
+    if (validRoutes.includes(route)) {
+      switch (route) {
+        case 'blockchain-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Blockchain',
+            desc: 'Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.'
+          })
+          break;
+        case 'web-application-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Web App',
+            desc: 'We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:'
+          });
+          break;
+        case 'mobile-app-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Mobile App',
+            desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+          });
+          break;
+        case 'ui-ux-design-services':
+          setServicesCardsDesc({
+            title: 'Custom Mobile App',
+            desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+          });
+          break;
+        case 'wordpress-development-services':
+          setServicesCardsDesc({
+            title: 'Custom WordPress',
+            desc: 'From WordPress theme customization and plugin development to complex WordPress integrations, Ropstam provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.'
+          });
+          break;
+        case 'shopify-development-services':
+          setServicesCardsDesc({
+            title: 'Custom Shopify',
+            desc: 'Trust Ropstam for custom Shopify development services to create high-converting online stores. With years of experience building ecommerce solutions on the Shopify platform, our team of experts specialize in the following services:'
+          });
+          break;
+        case 'mvp-development-services':
+          setServicesCardsDesc({
+            title: 'Custom MVP',
+            desc: 'At Ropstam, we offer a comprehensive suite of MVP development services to bring your innovative ideas to life. Our team of skilled developers specializes in MVP app development, MVP software development, and MVP project management.'
+          });
+          break;
+        // case 'services':
+        // setServicesCardsDesc({
+        //   title: 'Our Custom Mobile App Development Services',
+        //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+        // });
+        // break;
+        default:
+          setServicesCardsDesc({ title: '', desc: '' })
+          break;
+      }
+    } else {
+      setServicesCardsDesc({ title: '', desc: '' })
+    }
+  };
+  /******* Lets do project together block *******/
+
   const panels = [
     {
       label: 'Seriously, Don\'t Use Icon Fonts',
@@ -195,6 +265,13 @@ export const BlockchainPage = ({ route }) => {
         <DevelopmentProcess />
       </div>
       <div>
+        <ProjectPartner
+          mainText="Blockchain Development"
+          subText="We are a leading blockchain development company with a team of experienced professionals who excel in blockchain software development, blockchain application development, and more."
+          buttonText="Blockchain"
+        />
+      </div>
+      <div>
         <HireUs />
       </div>
       <div className=''>
@@ -204,7 +281,8 @@ export const BlockchainPage = ({ route }) => {
         <TechnologyStack />
       </div>
       <div className='mt-5'>
-        <Heading workBtn={false} visible={false}startedbtn={false} paragraph={'Ready to discuss your Cross-Platform App development project? Get in touch today to get started.'} feedbackvisible={true} />
+        {/* <Heading workBtn={false} visible={false}startedbtn={false} paragraph={'Ready to discuss your Cross-Platform App development project? Get in touch today to get started.'} feedbackvisible={true} /> */}
+        <Feedback />
       </div>
     </>
   );

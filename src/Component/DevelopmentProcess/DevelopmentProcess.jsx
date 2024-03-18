@@ -81,8 +81,8 @@ export const DevelopmentProcess = () => {
 
     return (
         <>
-            <div className='mt-4 devpromain' style={{ padding: '0% 10% 0% 6%', height: '500px' }}>
-                <div className='' style={{ width: '100%' }}>
+            <div className='mt-4 devpromain' style={{ padding: '0% 10% 0% 6%', height: '550px' }}>
+                <div className='pt-4' style={{ width: '100%' }}>
                     <h2>Our <span className='changecolor'>{devTitleDesc.title}</span> {PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h2>
                     <p>{devTitleDesc.desc}</p>
                 </div>
@@ -108,7 +108,7 @@ export const DevelopmentProcess = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }} className='mt-5'>
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
                             <img src={dev} alt='' />
@@ -129,7 +129,7 @@ export const DevelopmentProcess = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }} className='mt-5'>
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
                             <img src={deployment} alt='' />
