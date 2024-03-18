@@ -6,6 +6,7 @@ import Heading from "../../../Global/Heading";
 import DevelopmentProcess from "../../DevelopmentProcess/DevelopmentProcess";
 import Accordion from "../../../Global/FAQ";
 import HireUs from "../../HireUs/HireUs";
+import ProjectPartner from "../../ProjectPartner/ProjectPartner";
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({
@@ -293,6 +294,10 @@ export const BlockchainPage = ({ route }) => {
       </div>
       <div>
         <DevelopmentProcess />
+      </div>
+      <div>
+        <ProjectPartner mainText={'UI/UX Design'} subText={'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'}
+         buttonText={'UI/UX Design'} />
       </div>
       <div>
         <HireUs />
