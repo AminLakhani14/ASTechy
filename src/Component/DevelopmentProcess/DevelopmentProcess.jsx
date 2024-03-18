@@ -81,41 +81,41 @@ export const DevelopmentProcess = () => {
 
     return (
         <>
-            <div className='mt-4 devpromain' style={{ padding: '0% 10% 0% 6%', height: '500px' }}>
+            <div className='margintop devpromain' style={{ padding: '3% 6% 3% 7%', height: 'auto' }}>
                 <div className='' style={{ width: '100%' }}>
-                    <h2>Our <span className='changecolor'>{devTitleDesc.title}</span> {PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h2>
-                    <p>{devTitleDesc.desc}</p>
+                    <h1 className='heading4034'>Our <span className='changecolor'>{devTitleDesc.title}</span> <br></br>{PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h1>
+                    <p className='font2014' style={{width:"95%"}}>{devTitleDesc.desc}</p>
                 </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
-                    <div style={{ width: '50%', display: 'flex' }}>
+                <div className="d-flex w-100 justify-content-around margintop marginbottom">
+                    <div className='d-flex w-50'>
                         <div>
                             <img src={concept} alt='' />
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-4'>
-                            <span className='changecolor'>Concept</span>
-                            <span>This involves understanding the client’s needs, defining project goals and
+                        <div className='d-flex flex-column  mx-2'>
+                            <span className='changecolor font26'>Concept</span>
+                            <span className='font18 w-75'>This involves understanding the client’s needs, defining project goals and
                                 requirements and creating a project plan.</span>
                         </div>
                     </div>
-                    <div style={{ width: '50%', display: 'flex' }}>
+                    <div className='d-flex w-50'>
                         <div>
                             <img src={design} alt='' />
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
-                            <span className='changecolor'>Design</span>
-                            <span>Develop wireframes, mockups, and prototypes to create a visual
+                        <div className='d-flex flex-column  mx-2'>
+                            <span className='changecolor font26'>Design</span>
+                            <span className='font18 w-75'>Develop wireframes, mockups, and prototypes to create a visual
                                 representation of the {devTitleDesc.title} website or Apps UI/UX for perfect user experience.</span>
                         </div>
                     </div>
                 </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
-                    <div style={{ width: '50%', display: 'flex' }}>
+                <div className="d-flex w-100 justify-content-around margintop marginbottom">
+                    <div className='d-flex w-50'>
                         <div>
                             <img src={dev} alt='' />
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
-                            <span className='changecolor'>Development</span>
-                            <span>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced
+                        <div className='d-flex flex-column  mx-2'>
+                            <span className='changecolor font26'>Development</span>
+                            <span className='font18 w-75'>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced
                                 functionality and performance.</span>
                         </div>
                     </div>
@@ -123,29 +123,29 @@ export const DevelopmentProcess = () => {
                         <div>
                             <img src={testing} alt='' />
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
-                            <span className='changecolor'>Testing</span>
-                            <span>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
+                        <div className='d-flex flex-column  mx-2'>
+                            <span className='changecolor font26'>Testing</span>
+                            <span className='font18 w-75'>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
                         </div>
                     </div>
                 </div>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
+                <div className="d-flex w-100 justify-content-around margintop marginbottom">
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
                             <img src={deployment} alt='' />
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
-                            <span className='changecolor'>Deployment</span>
-                            <span>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
+                        <div className='d-flex flex-column  mx-2'>
+                            <span className='changecolor font26'>Deployment</span>
+                            <span className='font18 w-75'>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
                         </div>
                     </div>
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
                             <img src={maintain} alt='' width={'30px'} />
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='mt-2'>
-                            <span className='changecolor'>Maintenance</span>
-                            <span>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
+                        <div className='d-flex flex-column  mx-2'>
+                            <span className='changecolor font26'>Maintenance</span>
+                            <span className='font18 w-75'>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
                         </div>
                     </div>
                 </div>

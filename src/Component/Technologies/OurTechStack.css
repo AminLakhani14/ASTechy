@@ -1,27 +1,28 @@
 .tabs {
     display: flex;
-    justify-content: space-around;
-    margin: 6% 0;
-    padding: 0% 6%;
+    justify-content: center;
+    height:120px;
+    gap: 90px;
   }
   
   .tabs span {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
   }
   
   .tabs span:hover {
     color: #ff5300;
+    text-decoration: underline;
   }
   
   .tabs span.active {
-    border-bottom: 2px solid #007bff;
+    text-decoration: underline;
     color: #007bff;
   }
   
   .content {
-    height: 200px;
+    height: auto;
   }
   
   .imageclass{

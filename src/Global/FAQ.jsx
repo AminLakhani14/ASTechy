@@ -47,8 +47,9 @@ const Accordion = ({ panels }) => {
 
   return (
     <div style={{ backgroundColor: "#2693fa" }}>
+      <div style={{height:'40px'}}></div>
       <div className="mb-4 text-center pt-5 text-light">
-        <h1>FAQ's</h1>
+        <h1 className="font4834">FAQ's</h1>
       </div>
       <div className="d-flex justify-content-center">
         <div className="accordion" role="tablist">

@@ -4,7 +4,7 @@ import "../CSS/style.css"
 function LeftSideExploreMore(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
-    // Function to update the windowWidth state when the resize event occurs
+    // Function t update the windowWidth state when the resize event occurs
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };

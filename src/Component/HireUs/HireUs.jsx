@@ -92,22 +92,24 @@ export const HireUs = () => {
     ];
     return (
         <>
-            <div className='mt-4'>
-                <div className='text-center'>
-                    <h2>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}
-                    </span> with <span className='changecolor'>Ropstam</span></h2>
-                    <p>{devTitleDesc.desc}</p>
+            <div className='margintop'>
+                <div className='text-center d-flex flex-column align-items-center'>
+                    <h1 className='heading4034' style={{fontWeight:"700"}}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
+                    </span> with <span className='changecolor'>Ropstam</span></h1>
+                    <p className='font2014 w-50 mt-3'>{devTitleDesc.desc}</p>
                 </div>
-                <div>
-                    <div>
+                <div className='row justify-content-center margintop'>
+                    <div className='col-lg-10'>
                         <ServiceCardList ServiceCardList={serviceCardList1} />
                     </div>
-                    <div>
+                </div>
+                <div className='row justify-content-center mt-4'>
+                    <div className='col-lg-10'>
                         <ServiceCardList ServiceCardList={serviceCardList2} />
                     </div>
                 </div>
                 <div className='d-flex justify-content-center'>
-                    <button className="HireUsButton mt-2 mb-4">
+                    <button className="HireUsButton margintop" style={{marginBottom:'70px'}}>
                         Hire MVP Developers
                     </button>
                 </div>

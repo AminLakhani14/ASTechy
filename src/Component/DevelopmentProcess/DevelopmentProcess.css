@@ -1,3 +1,27 @@
 .devpromain{
     background-color: rgb(243 245 249);
 }
+.font2014{
+    font-size: 20px;
+}
+.font26{
+    font-size: 26px;
+    font-weight: 600;
+}
+.font18{
+    font-size: 18px;
+ }
+.heading4034{
+    font-size: 40px;
+    font-weight: 500;
+}
+@media all and (max-width : 768px) {
+    .font2014{
+      font-size: 14px;
+    }
+    .heading4034{
+        font-size: 34px;
+        font-weight: 500;
+    }
+  }
+  

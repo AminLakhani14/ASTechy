@@ -48,8 +48,8 @@ const TechnologyStack = () => {
       case 'Web':
         return (
           <div className="content">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='d-flex justify-content-center'>
+              <div className='text-center'>
                 <img src={html5} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>HTML 5</p>
               </div>
@@ -70,7 +70,7 @@ const TechnologyStack = () => {
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>PHP</p>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
+            <div className='mt-5 d-flex justify-content-center pt-4'>
               <div style={{ flexDirection: 'column', textAlign: 'center' }}>
                 <img src={webflow} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Webflow</p>
@@ -92,7 +92,7 @@ const TechnologyStack = () => {
         );
       case 'Mobile':
         return (
-          <div style={{ display: 'flex', justifyContent: 'center' }} className='content'>
+          <div className='content d-flex justify-content-center'>
             <div style={{ flexDirection: 'column', textAlign: 'center' }}>
               <img src={andriod} className='imageclass' alt='' />
               <p style={{ fontSize: '18px', fontWeight: 400 }}>Andriod</p>
@@ -114,8 +114,8 @@ const TechnologyStack = () => {
       case 'Blockchain':
         return (
           <div className="content">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='d-flex justify-content-center'>
+              <div className='text-center'>
                 <img src={bitcoin} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Bitcoin</p>
               </div>
@@ -128,8 +128,8 @@ const TechnologyStack = () => {
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Ethereum</p>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='mt-5 d-flex justify-content-center pt-4'>
+              <div className='text-center'>
                 <img src={metamask} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Metamask</p>
               </div>
@@ -147,8 +147,8 @@ const TechnologyStack = () => {
       case 'UI/UX Design':
         return (
           <div className="content">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='d-flex justify-content-center'>
+              <div className='text-center'>
                 <img src={adobeae} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe AE</p>
               </div>
@@ -161,8 +161,8 @@ const TechnologyStack = () => {
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe Photshop</p>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='mt-5 pt-4 d-flex justify-content-center'>
+              <div className='text-center'>
                 <img src={adobexd} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe XD</p>
               </div>
@@ -176,8 +176,8 @@ const TechnologyStack = () => {
       case 'Database':
         return (
           <div className="content">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='d-flex justify-content-center'>
+              <div className='text-center'>
                 <img src={redis} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Redis</p>
               </div>
@@ -190,8 +190,8 @@ const TechnologyStack = () => {
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>MySQL</p>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+            <div className='mt-5 pt-4 d-flex justify-content-centers'>
+              <div className='text-center'>
                 <img src={PostgreSQL} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>PostgreSQL</p>
               </div>
@@ -206,7 +206,7 @@ const TechnologyStack = () => {
         return (
           <div className="content">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+              <div className='text-center'>
                 <img src={apprium} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Apprium</p>
               </div>
@@ -220,7 +220,7 @@ const TechnologyStack = () => {
               </div>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
-              <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+              <div className='text-center'>
                 <img src={postman} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Postman</p>
               </div>
@@ -242,13 +242,12 @@ const TechnologyStack = () => {
   };
 
   return (
-    <div>
-      <h2 style={{
-        textAlign: 'center', fontSize: '34px',
-        lineHeight: '1.4em', fontWeight: '700'
-      }}>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h2>
+    <div className='mb-4 pb-4'>
+      <h1 className='font4834 margintop marginbottom pt-5 pb-4' style={{
+        textAlign: 'center',lineHeight: '1.4em', fontWeight: '700'
+      }}>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h1>
 
-      <div className="tabs">
+      <div className="tabs pt-4">
         <span
           className={activeTab === 'Web' ? 'active' : ''}
           onClick={() => handleTabClick('Web')}

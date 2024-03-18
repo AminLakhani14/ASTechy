@@ -17,7 +17,12 @@
 .rightSide {
   flex: 1;
 }
-
+.margintop{
+  margin-top: 70px;
+}
+.marginbottom{
+  margin-bottom: 40px;
+}
 .mainheading {
   color: #fff;
   font-size: 45px;
