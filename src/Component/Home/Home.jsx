@@ -11,6 +11,7 @@ import Navbar from "../NavBar/NavBar";
 import CustomCarousel from "../CustomSlider/CustomSlider";
 import images from "../../Images/sliderData";
 import TechnologyStack from "../Technologies/OurTechStack";
+import Feedback from "../../Global/Feedback";
 // import { Accordion } from "../../Global/FAQ";
 
 function Home() {
@@ -99,14 +100,7 @@ const panels = [
       />
       {/* <Cities /> */}
       {/* <Footer/> */}
-      <Heading
-        visible={false}
-        startedbtn={false}
-        feedbackvisible={true}
-        workBtn={false}
-        // text="BlockChain Development Portfolio"
-        paragraph="Ready to discuss your Cross-Platform App development project? Get in touch today to get started."
-      />
+      <Feedback />
       <TechnologyStack />
     </div>
   );
