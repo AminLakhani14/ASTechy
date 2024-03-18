@@ -114,7 +114,9 @@ function Navbar() {
         <div className="display-none" style={{width:'15%'}}>
         <h5 className="headercontact me-3 mt-2 float-md-end">+92123456789</h5>
         </div>
+        <a to='/contact' href='/contact'>
           <button className=" display-none headerMenuButton mx-2"><b>Contact Us</b></button>
+          </a>
       </nav>
       </div>
     </>
