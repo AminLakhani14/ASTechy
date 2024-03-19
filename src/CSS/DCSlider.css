@@ -41,3 +41,26 @@ slick-arrow slick-prev{
     position: fixed;
     color: red;
 }
+
+.background1{
+    background-color: #184e8c !important;
+    display: flex !important;
+    width: auto ;
+    height: 100vh !important;
+    /* background-image: linear-gradient(180deg,rgba(0,61,119,.5) 0,rgba(38,147,250,.5) 100%)  */
+    /* background-image: url("../Images/cloud.jpeg"); */
+
+}
+.background2{
+    /* background-image:linear-gradient(180deg,rgba(0,61,119,.5) 0,rgba(38,147,250,.5) 100%); */
+    background-color: #1e1842 !important;
+    display: flex !important;
+    width: auto;
+    height: 100vh !important;
+}
+.background3{
+    background-color: #2f5458!important;
+    display: flex !important;
+    width: auto;
+    height: 100vh !important;
+}

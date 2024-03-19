@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import cloud from "../Images/cloud.jpeg";
-import back1 from "../Images/back1.jpg";
-import back2 from "../Images/back2.jpg";
-import "../CSS/DCSlider.css"
+import slider2 from "../Images/slider2.gif";
+import data from "../Images/data.gif";
+import "../CSS/DCSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -70,15 +70,85 @@ function AutoPlay(props) {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div>
-          <img src={cloud} width="100%" height="100%" />
+        <div className="background1">
+          <div style={{ color: "#ffffff" }} className="width50 d-flex">
+            <div className="col-lg-3 col-sm-3 col-md-3"></div>
+            <div>
+              <h1 className="mb-4">
+                <b>
+                  Streamline Your Web App with Our Cutting-Edge All-In-One
+                  Solutions.
+                </b>
+              </h1>
+              <p>
+                Our Web Application Development Service provide a comprehensive
+                solution for all your web needs, utilizing cutting-edge
+                technology to optimize efficiency,productivity,and success.
+              </p>
+              <div className="d-flex mt-4">
+                <button className="HeaderButton">
+                 Web App Services
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="width50">
+          <img src={data} alt="Computer man" />
+          </div>
         </div>
-        <div>
-          <img src={back1} width="100%" height="80%" />
+
+        <div className="background2">
+        <div style={{ color: "#ffffff" }} className="width50 d-flex">
+            <div className="col-lg-3 col-sm-3 col-md-3"></div>
+            <div>
+              <h1 className="mb-4">
+                <b>
+                  Streamline Your Mobile Application with Our Cutting-Edge All-In-One
+                  Solutions.
+                </b>
+              </h1>
+              <p>
+                Our Mobile Application Development Service provide a comprehensive
+                solution for all your Mobile Application needs, utilizing cutting-edge
+                technology to optimize efficiency,productivity,and success.
+              </p>
+              <div className="d-flex mt-4">
+                <button className="HeaderButton">
+                Mobile App Services
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="width50">
+          <img src={slider2} alt="Computer man" />
+          </div>
         </div>
-        <div>
-          <img src={back2} width="100%" height="100%" />
-        </div>
+        {/* <div className="background3">
+        <div style={{ color: "#ffffff" }} className="width50 d-flex">
+            <div className="col-lg-3 col-sm-3 col-md-3"></div>
+            <div>
+              <h1 className="mb-4">
+                <b>
+                  Streamline Your Web App with Our Cutting-Edge All-In-One
+                  Solutions.
+                </b>
+              </h1>
+              <p>
+                Our Web Application Development Service provide a comprehensive
+                solution for all your web needs, utilizing cutting-edge
+                technology to optimize efficiency,productivity,and success.
+              </p>
+              <div className="d-flex mt-4">
+                <button className="HeaderButton">
+                 Web App Services
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="width50">
+          <img src={data} alt="Computer man" />
+          </div>
+        </div> */}
       </Slider>
     </div>
   );
