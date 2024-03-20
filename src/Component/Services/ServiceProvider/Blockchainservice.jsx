@@ -7,6 +7,7 @@ import DevelopmentProcess from "../../DevelopmentProcess/DevelopmentProcess";
 import Accordion from "../../../Global/FAQ";
 import HireUs from "../../HireUs/HireUs";
 import ProjectPartner from "../../ProjectPartner/ProjectPartner";
+import Feedback from "../../../Global/Feedback";
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({
@@ -20,6 +21,7 @@ export const BlockchainPage = ({ route }) => {
   }, [route]);
   const [title, setTitle] = useState("");
   const [description, setDesc] = useState("");
+  const PageRoute = window.location.pathname.replace(/^\//, "");
   const getHeadingDesc = () => {
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
@@ -79,7 +81,7 @@ export const BlockchainPage = ({ route }) => {
         case "services":
           setTitle("Our Services");
           setDesc(
-            "Boosting Your Success through Advanced Technology and Client-Centric Solutions <br /> At Ropstam, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
+            "Boosting Your Success through Advanced Technology and Client-Centric Solutions At Ropstam, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
           );
           break;
         default:
@@ -149,11 +151,11 @@ export const BlockchainPage = ({ route }) => {
           });
           break;
         // case 'services':
-        // setServicesCardsDesc({
-        //   title: 'Our Custom Mobile App Development Services',
-        //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
-        // });
-        // break;
+        //   setServicesCardsDesc({
+        //     title: 'Our Custom Mobile App Development Services',
+        //     desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
+        //   });
+        //   break;
         default:
           setServicesCardsDesc({ title: "", desc: "" });
           break;
@@ -262,9 +264,9 @@ export const BlockchainPage = ({ route }) => {
     <>
       <div className="">
         <Heading
-          workBtn={false}
+          workBtn={PageRoute == 'services' ? true : false}
           visible={false}
-          startedbtn={true}
+          startedbtn={PageRoute == 'services' ? false : true}
           text={title}
           paragraph={description}
           feedbackvisible={true}
@@ -272,53 +274,54 @@ export const BlockchainPage = ({ route }) => {
       </div>
       <div className="margintop row justify-content-center align-items-center">
         <div className="col-lg-5">
-          <h1 className="heading4034">
-            Our <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
-            Development Services
-          </h1>
-          <p>{servicesCardsDesc.desc}</p>
+          {PageRoute == 'services' ? <>
+            <h1 className="heading4034">Join us on the journey towards excellence!</h1>
+            <p>Partner with our experts to bring your ideas to life and enhance your digital transformation with our comprehensive digital solutions and expert support.</p>
+          </> : <>
+
+            <h1 className="heading4034">
+              Our <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
+              Development Services
+            </h1>
+            <p>{servicesCardsDesc.desc}</p>
+          </>}
         </div>
+        {PageRoute == 'services' ? <></>:
         <div className="col-lg-5">
           <ServiceCardList ServiceCardList={serviceCardList} />
-        </div>
+        </div>}
       </div>
+      {PageRoute == 'services' ? <></>:
       <div className="mt-5 d-flex justify-content-center ">
         <div style={{ width: "86%" }}>
           <ServiceCardList ServiceCardList={serviceCardList1} />
         </div>
-      </div>
+      </div>}
+      {PageRoute == 'services' ? <></>:
       <div className="mt-5 d-flex justify-content-center ">
         <div style={{ width: "86%" }}>
           <ServiceCardList ServiceCardList={serviceCardList2} />
         </div>
-      </div>
-      <div>
+      </div>}
+      {PageRoute == 'services' ? <></>:<div>
         <DevelopmentProcess />
-      </div>
-      <div>
+      </div>}
+      {PageRoute == 'services' ? <></>:<div>
         <ProjectPartner mainText={'UI/UX Design'} subText={'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'}
-         buttonText={'UI/UX Design'} />
-      </div>
-      <div>
+          buttonText={'UI/UX Design'} />
+      </div>}
+      {PageRoute == 'services' ? <></>:<div>
         <HireUs />
-      </div>
-      <div className="">
+      </div>}
+      {PageRoute == 'services' ? <></>:<div className="">
         <Accordion panels={panels} />
-      </div>
+      </div>}
       <div className="">
         <TechnologyStack />
       </div>
-      <div className="mt-5">
-        <Heading
-          workBtn={false}
-          visible={false}
-          startedbtn={false}
-          paragraph={
-            "Ready to discuss your Cross-Platform App development project? Get in touch today to get started."
-          }
-          feedbackvisible={true}
-        />
-      </div>
+      {PageRoute == 'services' ? <></>:<div className="mt-5">
+        <Feedback />
+      </div>}
     </>
   );
 };

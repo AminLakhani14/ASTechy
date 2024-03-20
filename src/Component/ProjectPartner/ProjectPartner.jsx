@@ -67,14 +67,14 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                                 <img src={webdev} alt="Image 4" />
                                 <div className="ppcontent">
                                     <h4 className="row1">300+</h4>
-                                    <p className="row">Designs Build</p>
+                                    <p className="row">--Designs Build--</p>
                                 </div>
                             </div>
                         </div>
                         <div className="ppcard">
                             <div className='subcontentcard'>
                                 <img src={countries} alt="Image 5" />
-                                <div className="ppcontent">
+                                <div className="ppcontent mt-3">
                                     <h4 className="row1">30+</h4>
                                     <p className="row">Countries Served</p>
                                 </div>
@@ -83,7 +83,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                         <div className="ppcard">
                             <div className='subcontentcard'>
                                 <img src={satisfaction} alt="Image 6" />
-                                <div className="ppcontent">
+                                <div className="ppcontent mt-2">
                                     <h4 className="row1">100%</h4>
                                     <p className="row">Client Satisfaction</p>
                                 </div>
