@@ -6,7 +6,7 @@
 .ppsmallcontainer{
   /* display: flex; */
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .ppleft-side {
@@ -31,7 +31,7 @@
   margin-bottom: 20px;
   background-color: #2693fa;
   color: #fff;
-  padding: 5px 24px;
+  padding: 5px 36px;
   font-size: 14px;
   border-radius: 10px 40px 10px 40px;
   line-height: 1.5em;

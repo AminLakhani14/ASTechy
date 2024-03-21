@@ -8,11 +8,14 @@ import Accordion from "../../../Global/FAQ";
 import HireUs from "../../HireUs/HireUs";
 import ProjectPartner from "../../ProjectPartner/ProjectPartner";
 import Feedback from "../../../Global/Feedback";
+import OurClient from "../../Our Client/OurClient";
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({
     title: "",
     desc: "",
+    partnerTitle: '',
+    partnerDesc: '',
   });
 
   useEffect(() => {
@@ -112,56 +115,64 @@ export const BlockchainPage = ({ route }) => {
           setServicesCardsDesc({
             title: "Custom Blockchain",
             desc: "Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.",
+            partnerTitle: 'Blockchain',
+            partnerDesc: 'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'
           });
           break;
         case "web-application-development-services":
           setServicesCardsDesc({
             title: "Custom Web App",
             desc: "We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:",
+            partnerTitle: 'Web App',
+            partnerDesc: 'Don’t settle for an average web app – get a custom solution tailored to your needs with Ropstam. With Ropstam as your web app development partner, you get:'
           });
           break;
         case "mobile-app-development-services":
           setServicesCardsDesc({
             title: "Custom Mobile App",
             desc: "We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:",
+            partnerTitle: 'Mobile App',
+            partnerDesc: 'When it comes to choosing a partner for mobile app development, experience, expertise, and a track record of success matter. We are the top choice for mobile app development services due to:'
           });
           break;
         case "ui-ux-design-services":
           setServicesCardsDesc({
-            title: "Custom Mobile App",
-            desc: "We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:",
+            title: "Custom UI/UX",
+            desc: "Ropstam offers cutting-edge UI/UX design services to create intuitive, engaging digital experiences. With an expert team of designers and researchers, we help companies craft user-focused products that delight customers.",
+            partnerTitle: 'UI/UX',
+            partnerDesc: 'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'
           });
           break;
         case "wordpress-development-services":
           setServicesCardsDesc({
             title: "Custom WordPress",
             desc: "From WordPress theme customization and plugin development to complex WordPress integrations, Ropstam provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.",
+            partnerTitle: 'WordPress',
+            partnerDesc: 'With over a decade of WordPress experience, Ropstam is your trusted partner for custom WordPress services. Here’s why you should choose us:'
           });
           break;
         case "shopify-development-services":
           setServicesCardsDesc({
             title: "Custom Shopify",
             desc: "Trust Ropstam for custom Shopify development services to create high-converting online stores. With years of experience building ecommerce solutions on the Shopify platform, our team of experts specialize in the following services:",
+            partnerTitle: 'Shopify',
+            partnerDesc: 'Ropstam is the top choice for custom ecommerce solutions our track record of successful projects. This makes us the ideal Shopify development partner to transform a basic Shopify store into a high-performing online selling tool.'
           });
           break;
         case "mvp-development-services":
           setServicesCardsDesc({
             title: "Custom MVP",
             desc: "At Ropstam, we offer a comprehensive suite of MVP development services to bring your innovative ideas to life. Our team of skilled developers specializes in MVP app development, MVP software development, and MVP project management.",
+            partnerTitle: 'MVP',
+            partnerDesc: 'As a leading MVP app development company, we take pride in our track record of success. We’re not just a bespoke MVP development services provider; we’re your partner in innovation. Here’s why you should choose Ropstam for MVP development:'
           });
           break;
-        // case 'services':
-        //   setServicesCardsDesc({
-        //     title: 'Our Custom Mobile App Development Services',
-        //     desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
-        //   });
-        //   break;
         default:
-          setServicesCardsDesc({ title: "", desc: "" });
+          setServicesCardsDesc({ title: "", desc: "", partnerTitle: '', partnerDesc: '' });
           break;
       }
     } else {
-      setServicesCardsDesc({ title: "", desc: "" });
+      setServicesCardsDesc({ title: "", desc: "", partnerTitle: '', partnerDesc: '' });
     }
   };
 
@@ -286,40 +297,43 @@ export const BlockchainPage = ({ route }) => {
             <p>{servicesCardsDesc.desc}</p>
           </>}
         </div>
-        {PageRoute == 'services' ? <></>:
-        <div className="col-lg-5">
-          <ServiceCardList ServiceCardList={serviceCardList} />
-        </div>}
+        {PageRoute == 'services' ? <></> :
+          <div className="col-lg-5">
+            <ServiceCardList ServiceCardList={serviceCardList} />
+          </div>}
       </div>
-      {PageRoute == 'services' ? <></>:
-      <div className="mt-5 d-flex justify-content-center ">
-        <div style={{ width: "86%" }}>
-          <ServiceCardList ServiceCardList={serviceCardList1} />
-        </div>
-      </div>}
-      {PageRoute == 'services' ? <></>:
-      <div className="mt-5 d-flex justify-content-center ">
-        <div style={{ width: "86%" }}>
-          <ServiceCardList ServiceCardList={serviceCardList2} />
-        </div>
-      </div>}
-      {PageRoute == 'services' ? <></>:<div>
+      {PageRoute == 'services' ? <></> :
+        <div className="mt-5 d-flex justify-content-center ">
+          <div style={{ width: "86%" }}>
+            <ServiceCardList ServiceCardList={serviceCardList1} />
+          </div>
+        </div>}
+      {PageRoute == 'services' ? <></> :
+        <div className="mt-5 d-flex justify-content-center ">
+          <div style={{ width: "86%" }}>
+            <ServiceCardList ServiceCardList={serviceCardList2} />
+          </div>
+        </div>}
+      {PageRoute == 'services' ? <></> : <div>
         <DevelopmentProcess />
       </div>}
-      {PageRoute == 'services' ? <></>:<div>
-        <ProjectPartner mainText={'UI/UX Design'} subText={'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'}
-          buttonText={'UI/UX Design'} />
+      {PageRoute == 'services' ? <></> : <div>
+        <ProjectPartner mainText={servicesCardsDesc.partnerTitle} subText={servicesCardsDesc.partnerDesc}
+          buttonText={servicesCardsDesc.partnerTitle} />
       </div>}
-      {PageRoute == 'services' ? <></>:<div>
+      {PageRoute == 'services' ? <></> : <div>
         <HireUs />
       </div>}
-      {PageRoute == 'services' ? <></>:<div className="">
+      {PageRoute == 'services' ? <></> : <div>
+        <OurClient />
+      </div>}
+      {PageRoute == 'services' ? <></> : <div className="">
         <Accordion panels={panels} />
       </div>}
       <div className="">
         <TechnologyStack />
       </div>
-      {PageRoute == 'services' ? <></>:<div className="mt-5">
+      {PageRoute == 'services' ? <></> : <div className="mt-5">
         <Feedback />
       </div>}
     </>
