@@ -38,13 +38,13 @@ function Navbar() {
                   <a href="#">Hire Team</a>
                 </li>
                 <li>
-                  <a to='/blockchain-development-services' href="/blockchain-development-services">Blockchain</a>
+                  <a to='/graphics-development-services' href="/graphics-development-services">Blockchain</a>
                 </li>
                 <li>
                   <a to='/web-application-development-services' href="/web-application-development-services">Web Apps</a>
                 </li>
                 <li>
-                  <a to='/mobile-app-development-services' href="/mobile-app-development-services">Mobile Apps</a>
+                  <a to='/seo-services' href="/seo-services">Mobile Apps</a>
                 </li>
                 <li>
                   <a to='/ui-ux-design-services' href="/ui-ux-design-services">UI/UX Design</a>
@@ -53,10 +53,10 @@ function Navbar() {
                   <a to='/wordpress-development-services' href="/wordpress-development-services">WordPress</a>
                 </li>
                 <li>
-                  <a to='/shopify-development-services' href="/shopify-development-services">Shopify</a>
+                  <a to='/social-media-marketing-services' href="/social-media-marketing-services">Shopify</a>
                 </li>
                 <li>
-                  <a to='/mvp-development-services' href="/mvp-development-services">MVP</a>
+                  <a to='/3d-animation-services' href="/3d-animation-services">MVP</a>
                 </li>
               </ul>
             </li>
@@ -68,7 +68,7 @@ function Navbar() {
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>
-                  <a to="/blockchain-development-services" href="/blockchain-development-services">Web Development</a>
+                  <a to="/graphics-development-services" href="/graphics-development-services">Web Development</a>
                 </li>
                 <li>
                   <a to="/wordpress-development-services" href="/wordpress-development-services">Wordpress</a>

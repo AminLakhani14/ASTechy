@@ -28,19 +28,19 @@ export const BlockchainPage = ({ route }) => {
   const getHeadingDesc = () => {
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
-      "blockchain-development-services",
+      "graphics-development-services",
       "web-application-development-services",
-      "mobile-app-development-services",
+      "seo-services",
       "ui-ux-design-services",
       "wordpress-development-services",
-      "shopify-development-services",
-      "mvp-development-services",
+      "social-media-marketing-services",
+      "3d-animation-services",
       "services",
     ];
     if (validRoutes.includes(route)) {
       switch (route) {
-        case "blockchain-development-services":
-          setTitle("Graphics Designing");
+        case "graphics-development-services":
+          setTitle("Graphics Designing Services");
           setDesc(
             "Welcome to 'Elevating Digital Presence,' a graphics design initiative by SSTech. As a leading provider of bespoke graphic design solutions, SSTech is committed to empowering businesses with captivating visual experiences. In this campaign, we delve into the realm of graphic innovation, exploring emerging trends, strategies, and best practices to drive growth and success in the digital age. From transformative graphic techniques to actionable design insights, 'Elevating Digital Presence' serves as your guide to harnessing the full potential of visual communication with SSTech as your trusted partner.",
           );
@@ -51,14 +51,14 @@ export const BlockchainPage = ({ route }) => {
             "At Ropstam, we are a leading custom web application development company dedicated to creating innovative web apps that solve real business problems. With years of experience designing, building and launching complex web applications, we have the proven expertise to handle any web app project."
           );
           break;
-        case "mobile-app-development-services":
-          setTitle("Mobile App Development Services");
+        case "seo-services":
+          setTitle("SEO Services");
           setDesc(
-            "At Ropstam, we offer full-cycle mobile app development services to help businesses digitally transform and meet their goals through custom mobile apps. With over 10 years of experience building successful apps for startups, enterprises and leaders across industries, we are your trusted mobile app development partner."
+            "At SSTech, we provide end-to-end SEO services to drive digital transformation and achieve your business objectives through tailored SEO strategies. With a decade-long track record of optimizing websites for startups, enterprises, and industry leaders, we stand as your reliable SEO partner, ensuring enhanced online visibility and sustainable growth."
           );
           break;
         case "ui-ux-design-services":
-          setTitle("UI/UX Development Services");
+          setTitle("UI/UX Designing Services");
           setDesc(
             "Unlock the potential of exceptional UI/UX design services at Ropstam. Elevate your digital presence with our holistic approach, latest technology stack, and industry-specific solutions. Discover why we’re the best UI/UX design company for your brand’s success."
           );
@@ -69,16 +69,16 @@ export const BlockchainPage = ({ route }) => {
             "Our custom WordPress development services can be the one-stop solution for all your design and development needs. At Ropstam, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business."
           );
           break;
-        case "shopify-development-services":
-          setTitle("Shopify Development Services");
+        case "social-media-marketing-services":
+          setTitle("Social Media Marketing Services");
           setDesc(
-            "Unlock your e-commerce potential with Ropstam’s custom Shopify development services. Elevate your online business with expert Shopify web design and development. Partner with us to create a stunning, professional, and high-performing Shopify store."
+            "Unlock your brand's potential with SSTech's tailored Social Media Marketing services. Elevate your online presence with expertly crafted social media strategies and campaign management. Partner with us to cultivate a captivating, professional, and high-performing social media profile."
           );
           break;
-        case "mvp-development-services":
-          setTitle("MVP Development Services");
+        case "3d-animation-services":
+          setTitle("3D Animation Services");
           setDesc(
-            "Ropstam is a leading MVP software development company providing end-to-end mvp development services to build your minimum viable product (MVP). With years of experience delivering successful MVP software for startups and enterprises, we are your ideal technology partner for MVP development."
+            "Ropstam is a premier 3D animation studio, offering comprehensive MVP animation services to bring your minimum viable product (MVP) to life. With a wealth of experience in delivering successful 3D animations for startups and enterprises alike, we are your ultimate technology partner for MVP animation development."
           );
           break;
         case "services":
@@ -100,22 +100,22 @@ export const BlockchainPage = ({ route }) => {
   const getHeadingDescforservice = () => {
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
-      "blockchain-development-services",
+      "graphics-development-services",
       "web-application-development-services",
-      "mobile-app-development-services",
+      "seo-services",
       "ui-ux-design-services",
       "wordpress-development-services",
-      "shopify-development-services",
-      "mvp-development-services",
+      "social-media-marketing-services",
+      "3d-animation-services",
       "services",
     ];
     if (validRoutes.includes(route)) {
       switch (route) {
-        case "blockchain-development-services":
+        case "graphics-development-services":
           setServicesCardsDesc({
             title: "Custom Graphics Designing",
             desc: "SSTech's expertise extends from crafting robust digital ecosystems to tailoring bespoke digital solutions and offering comprehensive consulting services. Explore our eBook services to elevate your digital presence and engage your audience effectively.",
-            partnerTitle: 'E-Book',
+            partnerTitle: 'Graphics Designing',
             partnerDesc: "At SSTech, we go beyond conventional eBook development services; we emerge as your dedicated digital publishing partners, committed to amplifying your brand's visibility in the digital realm. Here's why you should trust us with your eBook needs:"
           });
           break;
@@ -127,19 +127,19 @@ export const BlockchainPage = ({ route }) => {
             partnerDesc: 'Don’t settle for an average web app – get a custom solution tailored to your needs with Ropstam. With Ropstam as your web app development partner, you get:'
           });
           break;
-        case "mobile-app-development-services":
+        case "seo-services":
           setServicesCardsDesc({
-            title: "Custom Mobile App",
-            desc: "We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:",
-            partnerTitle: 'Mobile App',
-            partnerDesc: 'When it comes to choosing a partner for mobile app development, experience, expertise, and a track record of success matter. We are the top choice for mobile app development services due to:'
+            title: "Custom SEO",
+            desc: "We provide complete SEO solutions, spanning from initial strategy development and keyword research to on-page optimization, content creation, and performance tracking. Our core SEO services include:",
+            partnerTitle: 'SEO',
+            partnerDesc: 'When selecting a partner for SEO services, experience, expertise, and a proven track record of success are paramount. We stand out as the premier choice for SEO solutions because:'
           });
           break;
         case "ui-ux-design-services":
           setServicesCardsDesc({
-            title: "Custom UI/UX",
+            title: "Custom UI/UX Designing",
             desc: "Ropstam offers cutting-edge UI/UX design services to create intuitive, engaging digital experiences. With an expert team of designers and researchers, we help companies craft user-focused products that delight customers.",
-            partnerTitle: 'UI/UX',
+            partnerTitle: 'UI/UX Designing',
             partnerDesc: 'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'
           });
           break;
@@ -151,20 +151,20 @@ export const BlockchainPage = ({ route }) => {
             partnerDesc: 'With over a decade of WordPress experience, Ropstam is your trusted partner for custom WordPress services. Here’s why you should choose us:'
           });
           break;
-        case "shopify-development-services":
+        case "social-media-marketing-services":
           setServicesCardsDesc({
-            title: "Custom Shopify",
-            desc: "Trust Ropstam for custom Shopify development services to create high-converting online stores. With years of experience building ecommerce solutions on the Shopify platform, our team of experts specialize in the following services:",
-            partnerTitle: 'Shopify',
-            partnerDesc: 'Ropstam is the top choice for custom ecommerce solutions our track record of successful projects. This makes us the ideal Shopify development partner to transform a basic Shopify store into a high-performing online selling tool.'
+            title: "Custom Social Media Marketing",
+            desc: "Rely on SSTech for bespoke Social Media Marketing solutions aimed at creating high-engagement online presence. With extensive experience in crafting effective social media strategies, our team of experts specializes in the following services:",
+            partnerTitle: 'Social Media Marketing',
+            partnerDesc: 'SSTech emerges as the preferred option for customized social media marketing solutions, backed by a track record of successful campaigns. This establishes us as the ideal partner to transform your social media presence into a dynamic and impactful marketing tool.'
           });
           break;
-        case "mvp-development-services":
+        case "3d-animation-services":
           setServicesCardsDesc({
-            title: "Custom MVP",
-            desc: "At Ropstam, we offer a comprehensive suite of MVP development services to bring your innovative ideas to life. Our team of skilled developers specializes in MVP app development, MVP software development, and MVP project management.",
-            partnerTitle: 'MVP',
-            partnerDesc: 'As a leading MVP app development company, we take pride in our track record of success. We’re not just a bespoke MVP development services provider; we’re your partner in innovation. Here’s why you should choose Ropstam for MVP development:'
+            title: "Custom 3D Animation",
+            desc: "At SSTech, we offer a comprehensive array of 3D animation services to bring vibrancy to your innovative concepts. Our team of adept animators specializes in 3D animation development, ensuring seamless execution and captivating visuals for your project.",
+            partnerTitle: '3D Animation',
+            partnerDesc: "As a leading 3D animation studio, we take pride in our track record of success. We're not just a provider of bespoke 3D animation services; we're your partner in innovation. Here's why you should choose us for 3D animation development:"
           });
           break;
         default:
@@ -292,7 +292,7 @@ export const BlockchainPage = ({ route }) => {
 
             <h1 className="heading4034">
               Our <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
-              Development Services
+              {(PageRoute === 'graphics-development-services') || (PageRoute === 'ui-ux-design-services') ? '' : 'Development'} Services
             </h1>
             <p>{servicesCardsDesc.desc}</p>
           </>}

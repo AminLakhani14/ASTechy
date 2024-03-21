@@ -18,32 +18,7 @@ const SolutionProvider = ({ mainText, subText, buttonText }) => {
     return (
         <div className={"spcontainer mt-4"}>
             <div className="spleft-side">
-                {/* <div style={{ display: 'flex' }}>
-                    <div className="spcard">
-                        <div className='subcontentcard mt-3'>
-                            <div className="spcontent">
-                                <h4 className="row1">14+</h4>
-                                <p className="row">Year of Experience</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="spcard">
-                        <div className='subcontentcard mt-3'>
-                            <div className="spcontent">
-                                <h4 className="row1">100+</h4>
-                                <p className="row">Talented Squad</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="spcard">
-                        <div className='subcontentcard mt-3'>
-                            <div className="spcontent">
-                                <h4 className="row1">100+</h4>
-                                <p className="row">Projects Delivered</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                
             </div>
             <div className="spright-side">
                 <div className="spcard-container">

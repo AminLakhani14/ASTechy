@@ -20,10 +20,11 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+    const PageRoute = window.location.pathname.replace(/^\//, "");
     return (
         <div className={windowWidth < 980 ? "ppsmallcontainer mt-4" : "ppcontainer mt-4"}>
             <div className="ppleft-side">
-                <h2 className='partnerheading'>Why Choose SSTech as Your <span className='changecolor'>{mainText} Development Company</span></h2>
+                <h2 className='partnerheading'>Why Choose SSTech as Your <span className='changecolor'>{mainText} {PageRoute === 'graphics-development-services' ? '' : 'Development'} Company</span></h2>
                 <p className='partnerpara'>{subText}</p>
                 <h3 className='togetherpara'>Let’s Start a New {buttonText} Project Together</h3>
                 <a to='/contact' href='/contact'>
