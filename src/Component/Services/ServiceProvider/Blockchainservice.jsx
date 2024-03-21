@@ -40,9 +40,9 @@ export const BlockchainPage = ({ route }) => {
     if (validRoutes.includes(route)) {
       switch (route) {
         case "blockchain-development-services":
-          setTitle("Blockchain Development Services");
+          setTitle("Graphics Designing");
           setDesc(
-            "Ropstam offers future-proof custom blockchain development services including private, public, and hybrid blockchain solutions, cryptocurrencies, smart contracts, dApps, tokenization, and more. Our blockchain experts design and build decentralized networks and applications on Ethereum, Hyperledger, Corda, and other platforms."
+            "Welcome to 'Elevating Digital Presence,' a graphics design initiative by SSTech. As a leading provider of bespoke graphic design solutions, SSTech is committed to empowering businesses with captivating visual experiences. In this campaign, we delve into the realm of graphic innovation, exploring emerging trends, strategies, and best practices to drive growth and success in the digital age. From transformative graphic techniques to actionable design insights, 'Elevating Digital Presence' serves as your guide to harnessing the full potential of visual communication with SSTech as your trusted partner.",
           );
           break;
         case "web-application-development-services":
@@ -113,10 +113,10 @@ export const BlockchainPage = ({ route }) => {
       switch (route) {
         case "blockchain-development-services":
           setServicesCardsDesc({
-            title: "Custom Blockchain",
-            desc: "Ropstam’s expertise spans from creating blockchain networks and nodes to developing custom blockchain solutions and providing blockchain consulting services. Explore our blockchain development services for your business.",
-            partnerTitle: 'Blockchain',
-            partnerDesc: 'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'
+            title: "Custom Graphics Designing",
+            desc: "SSTech's expertise extends from crafting robust digital ecosystems to tailoring bespoke digital solutions and offering comprehensive consulting services. Explore our eBook services to elevate your digital presence and engage your audience effectively.",
+            partnerTitle: 'E-Book',
+            partnerDesc: "At SSTech, we go beyond conventional eBook development services; we emerge as your dedicated digital publishing partners, committed to amplifying your brand's visibility in the digital realm. Here's why you should trust us with your eBook needs:"
           });
           break;
         case "web-application-development-services":

@@ -25,16 +25,16 @@ const Service = () => {
     }, []);
 
     const cardData = [
-        { title: <ComputerIcon fontSize={'large'} />, description: 'Blockchain Development', index: '01', route: '/blockchain-development-services' },
-        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Applications', index: '02', route: '/web-application-development-services' },
-        { title: <img src={tablet} height={'30px'} width={'30px'} />, description: 'Mobile Applications', index: '03', route: '/mobile-app-development-services' },
-        { title: <img src={clone} height={'30px'} width={'30px'} />, description: 'UI/UX Designing', index: '04', route: '/ui-ux-design-services' },
+        { title: <ComputerIcon fontSize={'large'} />, description: 'Graphics Designing', index: '01', route: '/blockchain-development-services' },
+        { title: <img src={clone} height={'30px'} width={'30px'} alt='' />, description: 'UI/UX Designing', index: '02', route: '/ui-ux-design-services' },
+        { title: <img src={tablet} height={'30px'} width={'30px'} alt='' />, description: 'SEO', index: '03', route: '/mobile-app-development-services' },
+        { title: <img src={tablet} height={'30px'} width={'30px'} alt='' />, description: 'Social Media Marketing', index: '04', route: '/mobile-app-development-services' },
     ];
 
     const cardData1 = [
-        { title: <img src={wordpress} height={'30px'} width={'30px'} />, description: 'WordPress Development', index: '05', route: '/wordpress-development-services' },
-        { title: <img src={shopify} height={'30px'} width={'30px'} />, description: 'Shopify Development', index: '06', route: '/shopify-development-services' },
-        { title: <img src={mvp} height={'30px'} width={'30px'} />, description: 'MVP Development', index: '07', route: '/mvp-development-services' },
+        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Development', index: '05', route: '/web-application-development-services' },
+        { title: <img src={shopify} height={'30px'} width={'30px'} alt='' />, description: '3D Animation', index: '06', route: '/shopify-development-services' },
+        { title: <img src={wordpress} height={'30px'} width={'30px'} alt='' />, description: 'WordPress Development', index: '07', route: '/wordpress-development-services' },
         { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#fa7226', textColor: '#fff', route: '/services' }
     ];
 

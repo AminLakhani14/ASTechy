@@ -24,8 +24,8 @@ export const HireUs = () => {
             switch (route) {
                 case 'blockchain-development-services':
                     setDevTitleDesc({
-                        title: 'Blockchain',
-                        desc: 'Build your blockchain dream team by hiring our experienced blockchain developers. Our dedicated blockchain development team is well-versed in blockchain network configuration, blockchain protocols, cryptocurrency development, and more.'
+                        title: 'Graphics Designing',
+                        desc: 'Create your dream E-Book team by recruiting our seasoned E-Book developers. Our dedicated E-Book development team excels in E-Book creation, formatting, design, and more, ensuring your digital content stands out in the competitive market.'
                     })
                     break;
                 case 'web-application-development-services':
@@ -64,12 +64,6 @@ export const HireUs = () => {
                         desc: 'Looking to hire full-stack developers for your MVP project? Ropstam has a team of experienced professionals ready to bring your vision to life. Our full-stack developers excel in MVP app development, ensuring your project is in capable hands.'
                     });
                     break;
-                // case 'services':
-                // setDevTitleDesc({
-                //   title: 'Our Custom Mobile App Development Services',
-                //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
-                // });
-                // break;
                 default:
                     setDevTitleDesc({ title: '', desc: '' })
                     break;
@@ -94,8 +88,8 @@ export const HireUs = () => {
         <>
             <div className='margintop'>
                 <div className='text-center d-flex flex-column align-items-center'>
-                    <h1 className='heading4034' style={{fontWeight:"700"}}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
-                    </span> with <span className='changecolor'>Ropstam</span></h1>
+                    <h1 className='heading4034' style={{ fontWeight: "700" }}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
+                    </span> with <span className='changecolor'>SSTech</span></h1>
                     <p className='font2014 w-50 mt-3'>{devTitleDesc.desc}</p>
                 </div>
                 <div className='row justify-content-center margintop'>
@@ -109,7 +103,7 @@ export const HireUs = () => {
                     </div>
                 </div>
                 <div className='d-flex justify-content-center'>
-                    <button className="HireUsButton margintop" style={{marginBottom:'70px'}}>
+                    <button className="HireUsButton margintop" style={{ marginBottom: '70px' }}>
                         Hire MVP Developers
                     </button>
                 </div>

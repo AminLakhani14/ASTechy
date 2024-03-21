@@ -24,8 +24,8 @@ export const DevelopmentProcess = () => {
             switch (route) {
                 case 'blockchain-development-services':
                     setDevTitleDesc({
-                        title: 'Blockchain',
-                        desc: 'Our blockchain development process enables us to deliver highly secure and decentralized blockchain networks and applications tailored to your business needs and streamlining business workflows. Our Blockchain team architects a tailored solution to match your needs, incorporating the ideal technologies and features.'
+                        title: 'Graphics',
+                        desc: "Our graphics design process guarantees the creation of captivating and personalized visual content, meticulously tailored to your audience's preferences and optimized for seamless integration. Our graphics design team crafts customized solutions aligned with your goals, incorporating cutting-edge features and technologies to amplify impact."
                     })
                     break;
                 case 'web-application-development-services':
@@ -64,12 +64,6 @@ export const DevelopmentProcess = () => {
                         desc: 'Achieve success with seamless MVP support – Let us handle the technicalities so you can focus on growth.'
                     });
                     break;
-                // case 'services':
-                // setDevTitleDesc({
-                //   title: 'Our Custom Mobile App Development Services',
-                //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
-                // });
-                // break;
                 default:
                     setDevTitleDesc({ title: '', desc: '' })
                     break;
@@ -84,7 +78,7 @@ export const DevelopmentProcess = () => {
             <div className='margintop devpromain' style={{ padding: '3% 6% 3% 7%', height: 'auto' }}>
                 <div className='' style={{ width: '100%' }}>
                     <h1 className='heading4034'>Our <span className='changecolor'>{devTitleDesc.title}</span> <br></br>{PageRoute === 'ui-ux-design-services' ? 'Design' : 'Development'} Process</h1>
-                    <p className='font2014' style={{width:"95%"}}>{devTitleDesc.desc}</p>
+                    <p className='font2014' style={{ width: "95%" }}>{devTitleDesc.desc}</p>
                 </div>
                 <div className="d-flex w-100 justify-content-around margintop marginbottom">
                     <div className='d-flex w-50'>
