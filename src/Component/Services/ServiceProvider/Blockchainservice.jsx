@@ -9,6 +9,7 @@ import HireUs from "../../HireUs/HireUs";
 import ProjectPartner from "../../ProjectPartner/ProjectPartner";
 import Feedback from "../../../Global/Feedback";
 import OurClient from "../../Our Client/OurClient";
+import SolutionProvider from "../../SolutionProvider/SolutionProvider";
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({
@@ -320,6 +321,9 @@ export const BlockchainPage = ({ route }) => {
       {PageRoute == 'services' ? <></> : <div>
         <ProjectPartner mainText={servicesCardsDesc.partnerTitle} subText={servicesCardsDesc.partnerDesc}
           buttonText={servicesCardsDesc.partnerTitle} />
+      </div>}
+      {PageRoute == 'services' ? <></> : <div>
+        <SolutionProvider />
       </div>}
       {PageRoute == 'services' ? <></> : <div>
         <HireUs />
