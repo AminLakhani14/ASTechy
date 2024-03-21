@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../Images/logo.jpg";
-import { Modal, Button, Form } from 'react-bootstrap';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const changeClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const [open, setOpen] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
-
-  const handleCloseModal = () => setShowModal(false);
-  const handleShowModal = () => setShowModal(true);
 
   return (
     <>
@@ -29,6 +18,7 @@ function Navbar() {
               width="200"
               id='headerLogo'
               height="60"
+              alt=""
             ></img>
           </a>
 
@@ -124,35 +114,13 @@ function Navbar() {
             </li>
           </ul>
           <div className="display-none" style={{ width: '15%' }}>
-            <h5 className="headercontact me-3 mt-2 float-md-end" onClick={handleShowModal}>+92-307-1234567</h5>
+            <h5 className="headercontact me-3 mt-2 float-md-end">+92-307-1234567</h5>
           </div>
           <a to='/contact' href='/contact'>
             <button className=" display-none headerMenuButton mx-2"><b>Contact Us</b></button>
           </a>
         </nav>
       </div>
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Pickup an app?</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>https://www.ropstam.com wants to open this application.</p>
-          <Form.Check
-            type="checkbox"
-            label="Always allow to open link"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-          />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            open an app
-          </Button>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Cancel
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </>
   );
 }

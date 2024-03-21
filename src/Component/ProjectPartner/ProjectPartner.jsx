@@ -34,7 +34,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                 <div className="ppcard-container">
                     <div style={{ display: 'flex' }}>
                         <div className="ppcard">
-                            <div className='subcontentcard'>
+                            <div className='subcontentcard mt-3'>
                                 <img src={experience} alt="Image 1" />
                                 <div className="ppcontent">
                                     <h4 className="row1">14+</h4>
@@ -43,7 +43,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                             </div>
                         </div>
                         <div className="ppcard">
-                            <div className='subcontentcard'>
+                            <div className='subcontentcard mt-3'>
                                 <img src={talented} alt="Image 2" />
                                 <div className="ppcontent">
                                     <h4 className="row1">100+</h4>
@@ -52,7 +52,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                             </div>
                         </div>
                         <div className="ppcard">
-                            <div className='subcontentcard'>
+                            <div className='subcontentcard mt-3'>
                                 <img src={projectdel} alt="Image 3" />
                                 <div className="ppcontent">
                                     <h4 className="row1">100+</h4>
@@ -63,7 +63,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                     </div>
                     <div style={{ display: 'flex' }}>
                         <div className="ppcard">
-                            <div className='subcontentcard'>
+                            <div className='subcontentcard mt-3'>
                                 <img src={webdev} alt="Image 4" />
                                 <div className="ppcontent">
                                     <h4 className="row1">300+</h4>
@@ -72,7 +72,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                             </div>
                         </div>
                         <div className="ppcard">
-                            <div className='subcontentcard'>
+                            <div className='subcontentcard mt-3'>
                                 <img src={countries} alt="Image 5" />
                                 <div className="ppcontent mt-3">
                                     <h4 className="row1">30+</h4>
@@ -81,7 +81,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                             </div>
                         </div>
                         <div className="ppcard">
-                            <div className='subcontentcard'>
+                            <div className='subcontentcard mt-3'>
                                 <img src={satisfaction} alt="Image 6" />
                                 <div className="ppcontent mt-2">
                                     <h4 className="row1">100%</h4>
