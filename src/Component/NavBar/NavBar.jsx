@@ -113,9 +113,6 @@ function Navbar() {
           <li>
             <a href="#">About Us</a>
           </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
         </ul>
         <div className="display-none" style={{width:'15%'}}>
         <h5 className="headercontact me-3 mt-2 float-md-end">+92123456789</h5>
