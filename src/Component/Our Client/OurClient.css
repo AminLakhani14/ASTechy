@@ -1,0 +1,49 @@
+.occontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+
+}
+
+.ocsmallcontainer {
+    display: flex;
+}
+
+.ocleft-side,
+.ocright-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.ocright-side {
+    width: 50%;
+}
+
+.occard-container {
+    width: 50% !important;
+}
+
+.ourclientheading {
+    line-height: 1.2em;
+    font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.ourclientpara {
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+@media (max-width: 980px) {
+    .occontainer {
+        flex-direction: column;
+    }
+
+    .ocleft-side,
+    .ocright-side {
+        width: auto;
+        padding: 20px;
+    }
+}
