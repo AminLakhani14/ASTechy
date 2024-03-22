@@ -37,3 +37,15 @@
 .lastone{
     color: orangered;
 }
+@media screen and (max-width: 1024px) {   
+    .card{
+        height: auto;
+        margin-bottom: 11px;
+    }
+    .card-content{
+        font-size: 15px;
+    }
+    .card-list{
+        gap:10px;
+    }
+}
