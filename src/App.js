@@ -31,6 +31,7 @@ function App() {
           <Route path="/web-application-development-services" element={<BlockchainPage />} />
           <Route path="/seo-services" element={<BlockchainPage />} />
           <Route path="/ui-ux-design-services" element={<BlockchainPage />} />
+          <Route path="/wordpress-development-services" element={<BlockchainPage />} />
           <Route path="/social-media-marketing-services" element={<BlockchainPage />} />
           <Route path="/3d-animation-services" element={<BlockchainPage />} />
           <Route path="/services" element={<BlockchainPage />} />
