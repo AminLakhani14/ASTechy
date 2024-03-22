@@ -36,7 +36,7 @@ function AutoPlay(props) {
     autoplay: true,
     nextArrow: <NextIcon />,
     prevArrow: <PreviousIcon />,
-    speed: 10000,
+    speed: 2000,
     autoplaySpeed: 10000,
     cssEase: "linear",
     responsive: [
@@ -71,7 +71,7 @@ function AutoPlay(props) {
     <div className="slider-container">
       <Slider {...settings}>
         <div className="background1">
-          <div style={{ color: "#ffffff" }} className="width50 d-flex">
+          <div style={{ color: "#ffffff" }} className="width50 d-flex align-items-center">
             <div className="col-lg-3 col-sm-3 col-md-3"></div>
             <div>
               <h1 className="mb-4">
@@ -92,13 +92,13 @@ function AutoPlay(props) {
               </div>
             </div>
           </div>
-          <div className="width50">
+          <div className="width50 d-flex align-items-center">
           <img src={data} alt="Computer man" />
           </div>
         </div>
 
         <div className="background2">
-        <div style={{ color: "#ffffff" }} className="width50 d-flex">
+        <div style={{ color: "#ffffff" }} className="width50 d-flex align-items-center">
             <div className="col-lg-3 col-sm-3 col-md-3"></div>
             <div>
               <h1 className="mb-4">
@@ -119,7 +119,7 @@ function AutoPlay(props) {
               </div>
             </div>
           </div>
-          <div className="width50">
+          <div className="width50 d-flex align-items-center">
           <img src={slider2} alt="Computer man" />
           </div>
         </div>

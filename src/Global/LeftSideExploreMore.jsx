@@ -28,7 +28,7 @@ function LeftSideExploreMore(props) {
 
         <div className="col-sm-5 col-md-5 my-5 leftsideExplore">
         <h1 className="leftsideExploreHeading"><strong style={{color:"#2693fa"}}>{props.heading}</strong><strong>{props.heading2}</strong></h1>    
-        <p style={{fontSize:'22px'}}>{props.subheading}</p>     
+        <p style={{fontSize:'22px',fontWeight:'500'}}>{props.subheading}</p>     
         <div className="my-5 leftsideExploreButton">
         <button onClick={props.handleController} className="primaryButton "><b>Explore More</b></button>
         <button className="rightGenericButton mx-2"><b>{props.secondbutton}</b></button>
