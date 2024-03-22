@@ -3,6 +3,7 @@ import "../CSS/style.css";
 import { useEffect, useState } from "react";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
+import "aos/dist/aos.css";
 
 function Heading(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -20,6 +21,10 @@ function Heading(props) {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+  const handleGetStartedClick = () => {
+    // Scroll down 200 pixels when "Let's Get Started" button is clicked
+    window.scrollBy(0, 1000);
+  };
 
   return (
     <div className="pt-5 HeadingBackground ">
@@ -31,10 +36,12 @@ function Heading(props) {
               windowWidth <= 768
                 ? { fontSize: "24px" }
                 : { fontSize: "55px" }
-            } className="mb-4">
+            } className="mb-4"
+            data-aos="fade-right">
             <b>{props.text}</b>
           </h1>
           <p
+          data-aos="fade-right"
             style={
               windowWidth <= 768
                 ? { fontSize: "14px", fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
@@ -44,7 +51,7 @@ function Heading(props) {
           </p>
           <div className="d-flex mt-4">
             {props.startedbtn === true ?
-              <button onClick={props.Handler} className="HeaderButton">
+              <button  data-aos="fade-up" onClick={handleGetStartedClick} className="HeaderButton">
                 Let's Get Started
               </button> : ''}
             {props.workBtn === true &&
@@ -83,7 +90,9 @@ function Heading(props) {
       <div className="width75">
         {props.feedbackvisible == true ? (
           <div className="d-flex">
-            <div className="FeedbackBackground">
+            <div className="FeedbackBackground"
+            data-aos="fade-left"
+            >
               <TextField
                 id="standard-basic"
                 className="w-75 "

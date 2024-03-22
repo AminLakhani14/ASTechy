@@ -13,7 +13,6 @@ function Navbar() {
         <nav >
           <a href="/" to="/">
             <img
-              data-aos="fade-up"
               src={logo}
               width="200"
               id='headerLogo'
@@ -68,10 +67,10 @@ function Navbar() {
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>
-                  <a to="/graphics-development-services" href="/graphics-development-services">Web Development</a>
+                  <a to="/WebDevelopment" href="/WebDevelopment">Web Development</a>
                 </li>
                 <li>
-                  <a to="/wordpress-development-services" href="/wordpress-development-services">Wordpress</a>
+                  <a to="/Wordpress" href="/Wordpress">Wordpress</a>
                 </li>
                 <li>
                   <a to="/SearchEngine" href="/SearchEngine">SEO</a>
