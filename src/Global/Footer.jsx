@@ -24,7 +24,7 @@ function Footer() {
     };
   }, []);
   return (
-    <footer className="footer">
+    <footer className="footer" data-aos="fade-down">
       <div className="container">
         <div
           className={windowWidth < 500 ? "d-flex" : "row"}
