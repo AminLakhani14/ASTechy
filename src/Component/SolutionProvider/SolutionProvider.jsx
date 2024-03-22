@@ -34,15 +34,22 @@ const SolutionProvider = () => {
                 case "graphics-development-services":
                     setServicesIndustries({
                         title: "Graphics Designing",
-                        desc: "SSTech's expertise extends from crafting robust digital ecosystems to tailoring bespoke digital solutions and offering comprehensive consulting services. Explore our eBook services to elevate your digital presence and engage your audience effectively.",
-                        tabs: { first: 'Ecommerce', second: '', third: '', fourth: '', fifth: '', sixth: '' },
+                        desc: "We acknowledge the distinctive demands of each industry. Hence, our custom Graphics Designing services are tailored to meet the specific requirements of your industry. By harnessing innovative design techniques, we elevate the visual appeal of your brand, ensuring it stands out amidst competition. Our expertise in Graphics Designing enhances aesthetics, usability, and brand identity, delivering impactful solutions that resonate with your target audience.",
+                        tabs: {
+                            first: 'Healthcare',
+                            second: 'Travel',
+                            third: 'Finance',
+                            fourth: 'Logistics',
+                            fifth: 'Education',
+                            sixth: 'Sports'
+                        },
                         tabsdesc: {
-                            first: '',
-                            second: '',
-                            third: '',
-                            fourth: '',
-                            fifth: '',
-                            sixth: ''
+                            first: 'SSTech has revolutionized patient care and medical operations through innovative graphics designing solutions in the healthcare industry. We have created visually appealing and intuitive designs for healthcare providers, facilitating patient management, telemedicine, electronic health records (EHR), and more. Our designs empower healthcare organizations to streamline processes, enhance patient engagement, and deliver better outcomes.',
+                            second: 'From captivating website designs to immersive user interfaces, we specialize in crafting visually stunning graphics for travel companies. Our designs enable travel providers to offer seamless online booking experiences, itinerary management, and real-time updates to travelers. With a focus on agile design methodologies and integration of travel-specific features, our solutions enhance efficiency for travel providers and elevate the travel experience for customers.',
+                            third: 'Ropstam offers specialized graphics designing services for fintech web applications catering to banking, trading, lending, and insurance clients. Our finance designs prioritize robust security, real-time data visualization, and compliance with regulatory standards. With expertise in user-centric design principles, we create intuitive interfaces that facilitate complex financial transactions and provide a seamless user experience.',
+                            fourth: 'Our graphics designing solutions optimize supply chain workflows by creating visually appealing interfaces for logistics web applications. From order tracking to freight management, our designs offer real-time visibility into the entire distribution cycle. With a focus on user-friendly design and integration of supply chain-focused features, our solutions empower logistics clients to enhance operational efficiency and improve decision-making.',
+                            fifth: 'Ropstam has contributed to the evolution of online learning with visually engaging graphics designing solutions for educational web applications. From designing intuitive learning management systems (LMS) to online course marketplaces, our designs facilitate digital learning experiences. With a focus on enhancing user engagement and collaboration, our designs empower educators and students to succeed in the digital learning environment.',
+                            sixth: 'The sports industry demands dynamic and engaging graphics for web applications that connect with fans. Ropstam specializes in creating visually striking designs for sports teams, leagues, and organizations. Our designs enable live score updates, fan engagement, and ticketing solutions, fostering loyalty and enthusiasm among fans. With a focus on real-time interaction and visual appeal, our designs elevate the sports viewing experience.'
                         }
                     });
                     break;
@@ -72,14 +79,21 @@ const SolutionProvider = () => {
                     setServicesIndustries({
                         title: "SEO",
                         desc: "We provide complete SEO solutions, spanning from initial strategy development and keyword research to on-page optimization, content creation, and performance tracking. Our core SEO services include:",
-                        tabs: { first: 'Ecommerce', second: '', third: '', fourth: '', fifth: '', sixth: '' },
+                        tabs: {
+                            first: 'Ecommerce',
+                            second: 'Real Estate',
+                            third: 'Finance',
+                            fourth: 'Logistics',
+                            fifth: 'Education',
+                            sixth: 'Travel'
+                        },
                         tabsdesc: {
-                            first: '',
-                            second: '',
-                            third: '',
-                            fourth: '',
-                            fifth: '',
-                            sixth: ''
+                            first: 'Maximize your online sales with our comprehensive SEO services tailored for e-commerce websites. Our SEO strategies focus on optimizing product pages, improving website navigation, and implementing schema markup to enhance search engine visibility. From keyword research to on-page optimization and technical SEO audits, our e-commerce SEO solutions drive targeted traffic, increase conversions, and boost revenue for online stores.',
+                            second: 'Elevate your real estate business with our specialized SEO services designed for real estate websites. Our SEO strategies target local search optimization, including optimizing property listings, enhancing Google My Business profiles, and building citations to improve visibility in local search results. With a focus on targeting relevant keywords and optimizing for local intent, our real estate SEO solutions attract more qualified leads and drive property sales.',
+                            third: 'SSTech provides specialized SEO services for finance-related websites, including banking, trading, lending, and insurance platforms. Our SEO strategies focus on optimizing financial content, improving website performance, and enhancing user experience to increase organic traffic and conversions. With a data-driven approach and industry-specific expertise, we help finance companies rank higher in search engine results and gain a competitive edge.',
+                            fourth: 'Our SEO services for logistics companies are tailored to improve online visibility and drive targeted traffic to logistics websites. We optimize logistics-related content, including shipment tracking, freight management, and supply chain solutions, to improve search engine rankings and attract potential customers. With strategic keyword targeting and technical SEO optimization, we help logistics businesses expand their online presence and generate more leads.',
+                            fifth: 'SSTech specializes in SEO services for educational institutions, including schools, colleges, and e-learning platforms. Our SEO strategies focus on optimizing educational content, improving website structure, and increasing organic visibility in search engine results. From optimizing course descriptions to enhancing website speed and mobile-friendliness, our SEO solutions help educational organizations attract more students and boost enrollment.',
+                            sixth: 'Elevate your travel business with our comprehensive SEO services designed for the travel industry. Our SEO strategies encompass keyword research, content optimization, and link building to improve search engine rankings for travel websites. We optimize travel-related content, including destination guides, hotel listings, and travel itineraries, ensuring increased visibility and attracting more travelers to your platform.'
                         }
                     });
                     break;
@@ -131,14 +145,21 @@ const SolutionProvider = () => {
                     setServicesIndustries({
                         title: "Social Media Marketing",
                         desc: "Rely on SSTech for bespoke Social Media Marketing solutions aimed at creating high-engagement online presence. With extensive experience in crafting effective social media strategies, our team of experts specializes in the following services:",
-                        tabs: { first: 'Ecommerce', second: '', third: '', fourth: '', fifth: '', sixth: '' },
+                        tabs: {
+                            first: 'Strategy',
+                            second: 'Analysis',
+                            third: 'Optimization',
+                            fourth: 'Interaction',
+                            fifth: 'Planning',
+                            sixth: 'Partnerships'
+                        },
                         tabsdesc: {
-                            first: '',
-                            second: '',
-                            third: '',
-                            fourth: '',
-                            fifth: '',
-                            sixth: ''
+                            first: "Develop a comprehensive content strategy tailored for social media platforms to engage your target audience effectively. This includes creating diverse content formats such as images, videos, and infographics to captivate users' attention.",
+                            second: 'Conduct thorough audience analysis to understand your target demographics, interests, and behaviors. Utilize social media analytics tools to gather insights and tailor your content to resonate with your audience.',
+                            third: 'Choose the most relevant social media platforms based on your target audience and industry. Optimize your profiles with compelling visuals, informative descriptions, and relevant keywords to enhance visibility and attract followers.',
+                            fourth: 'Foster a sense of community on social media by actively engaging with your audience through comments, messages, and discussions. Respond promptly to inquiries, address feedback, and encourage user-generated content to build brand loyalty.',
+                            fifth: 'Develop a content calendar to schedule and organize your social media posts effectively. Plan content themes, campaigns, and promotions in advance to maintain consistency and maximize engagement.',
+                            sixth: "Collaborate with influencers and industry experts to amplify your brand's reach and credibility on social media. Identify relevant influencers in your niche and establish authentic partnerships to leverage their audience and boost brand awareness."
                         }
                     });
                     break;
@@ -146,20 +167,35 @@ const SolutionProvider = () => {
                     setServicesIndustries({
                         title: "3D Animation",
                         desc: "At SSTech, we offer a comprehensive array of 3D animation services to bring vibrancy to your innovative concepts. Our team of adept animators specializes in 3D animation development, ensuring seamless execution and captivating visuals for your project.",
-                        tabs: { first: 'Ecommerce', second: '', third: '', fourth: '', fifth: '', sixth: '' },
+                        tabs: {
+                            first: 'Animation',
+                            second: 'Visualization',
+                            third: 'Graphics',
+                            fourth: 'VR',
+                            fifth: 'Advertising',
+                            sixth: 'Product Visualize'
+                        },
                         tabsdesc: {
+                            first: 'Bring characters to life through dynamic 3D animation, imbuing them with personality, emotion, and fluid movement for engaging storytelling.',
+                            second: 'Create lifelike 3D animations of architectural designs and environments, enabling clients to visualize spaces, layouts, and construction projects before implementation.',
+                            third: 'Design stunning motion graphics and visual effects using 3D animation techniques, enhancing videos, presentations, and multimedia projects with dynamic visuals.',
+                            fourth: 'Produce immersive VR and AR experiences with 3D animation, allowing users to interact with virtual environments and digital objects in real-world settings.',
+                            fifth: 'Enhance advertising campaigns and promotional materials with attention-grabbing 3D animations, effectively communicating brand messages and attracting target audiences.',
+                            sixth: 'Showcase products and prototypes with realistic 3D animations, allowing viewers to explore features, functionalities, and design details in a captivating manner.'
+                        }
+                    });
+                    break;
+                default:
+                    setServicesIndustries({
+                        title: "", desc: "",
+                        tabs: {
                             first: '',
                             second: '',
                             third: '',
                             fourth: '',
                             fifth: '',
                             sixth: ''
-                        }
-                    });
-                    break;
-                default:
-                    setServicesIndustries({
-                        title: "", desc: "", tabs: { first: '', second: '', third: '', fourth: '', fifth: '', sixth: '' },
+                        },
                         tabsdesc: {
                             first: '',
                             second: '',
