@@ -17,14 +17,11 @@
 .tabsp {
   display: flex;
   flex-wrap: wrap;
-  /* margin-bottom: 20px; */
-  /* justify-content: center; */
   height: 25px;
   font-size: 18px;
   font-weight: 600;
   gap: 20px;
   cursor: pointer;
-  /* border-right: 2px solid #cdcdcd */
 }
 
 
@@ -35,21 +32,18 @@
 
 .tabsp-content {
   margin-top: 20px;
+  transition: all 1s ease 2ms;
 }
 
-.togetherpara {
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-.sppara{
+.sppara {
   font-weight: 400;
   font-size: 20px;
 }
 
-.spdesc{
+.spdesc {
   font-weight: 400;
   font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
   line-height: 1.6em;
-font-size: 16px;
+  transition: all 0.9s ease 2ms;
+  font-size: 16px;
 }
