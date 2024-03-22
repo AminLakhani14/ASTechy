@@ -32,11 +32,7 @@
 
 .tabsp-content {
   margin-top: 20px;
-}
-
-.togetherpara {
-  font-size: 16px;
-  margin-top: 20px;
+  transition: all 1s ease 2ms;
 }
 
 .sppara {
@@ -48,5 +44,6 @@
   font-weight: 400;
   font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
   line-height: 1.6em;
+  transition: all 0.9s ease 2ms;
   font-size: 16px;
 }
