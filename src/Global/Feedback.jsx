@@ -28,7 +28,7 @@ function Feedback(props) {
     >
       <div className="width50">
         <div className="col-lg-3"></div>
-        <div className={windowWidth <= 700?"justify-content-center d-flex flex-column align-items-center":"justify-content-center d-flex flex-column"}>
+        <div data-aos="fade-right" className={windowWidth <= 700?"justify-content-center d-flex flex-column align-items-center":"justify-content-center d-flex flex-column"}>
           <h1  style={
             windowWidth <= 700
               ? { fontSize: "24px",textAlign:'center', padding:'0px 20px 0px 20px' }
@@ -42,7 +42,7 @@ function Feedback(props) {
         </div>
       </div>
       <div className="width75 d-flex">
-        <div className="FeedbackBackground">
+        <div className="FeedbackBackground" data-aos="fade-left">
           <TextField
             id="standard-basic"
             className="w-75 "

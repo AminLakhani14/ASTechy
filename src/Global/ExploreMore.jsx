@@ -23,12 +23,12 @@ function ExploreMore(props) {
             ? { }
             : { marginTop:"90px"}
         }>
-        <div className="col-sm-6 col-md-5 col-order-2 ">
+        <div className="col-sm-6 col-md-5 col-order-2 "data-aos="fade-right">
         <a href="/" >
             <img className="imageSetting"  src={props.picture} alt="profile picture"/>
         </a>
         </div>
-        <div className="col-sm-5 col-md-5 col-order-1 my-5">
+        <div className="col-sm-5 col-md-5 col-order-1 my-5" data-aos="fade-left">
         <h1 className="leftsideExploreHeading"><strong style={{color:"#2693fa"}}>{props.heading}</strong><strong>{props.heading2}</strong></h1>    
         <p style={{fontSize:'22px',fontWeight:'500'}}>{props.subheading}</p>     
         <div className="my-5 leftsideExploreButton">

@@ -16,16 +16,16 @@ export const HireUs = () => {
     }, []);
     const getDevTexts = () => {
         const route = window.location.pathname.replace(/^\//, '');
-        const validRoutes = ['blockchain-development-services',
-            'web-application-development-services', 'mobile-app-development-services',
+        const validRoutes = ['graphics-development-services',
+            'web-application-development-services', 'seo-services',
             'ui-ux-design-services', 'wordpress-development-services',
-            'shopify-development-services', 'mvp-development-services', 'services'];
+            'social-media-marketing-services', '3d-animation-services', 'services'];
         if (validRoutes.includes(route)) {
             switch (route) {
-                case 'blockchain-development-services':
+                case 'graphics-development-services':
                     setDevTitleDesc({
-                        title: 'Blockchain',
-                        desc: 'Build your blockchain dream team by hiring our experienced blockchain developers. Our dedicated blockchain development team is well-versed in blockchain network configuration, blockchain protocols, cryptocurrency development, and more.'
+                        title: 'Graphics Designing',
+                        desc: 'Forge your ideal graphics design team by enlisting our seasoned graphic designers. Our dedicated graphics design team excels in crafting captivating visuals, perfecting layouts, and more, guaranteeing your visual content shines amidst competition in the market.'
                     })
                     break;
                 case 'web-application-development-services':
@@ -34,10 +34,10 @@ export const HireUs = () => {
                         desc: 'Finding the right talent for your project is easy with Ropstam. Our talented in-house team has decade of experience successfully designing, developing, and launching custom web apps. This expertise allows us to efficiently handle any type of web app project:'
                     });
                     break;
-                case 'mobile-app-development-services':
+                case 'seo-services':
                     setDevTitleDesc({
-                        title: 'Mobile App',
-                        desc: 'Looking for skilled mobile app developers to join your team? At Ropstam, we offer flexible hiring options that allow you to access top talent without the hassle. Whether you need one developer or an entire team, we have you covered.'
+                        title: 'SEO',
+                        desc: "Seeking adept SEO specialists to augment your team? At SSTech, we provide flexible hiring solutions, granting you access to top-tier talent seamlessly. Whether you require a single specialist or an entire team, we've got you covered."
                     });
                     break;
                 case 'ui-ux-design-services':
@@ -52,24 +52,18 @@ export const HireUs = () => {
                         desc: 'Our WordPress development team is well-versed in the latest technologies and tools, ensuring your website is built using the most advanced and efficient methods.'
                     });
                     break;
-                case 'shopify-development-services':
+                case 'social-media-marketing-services':
                     setDevTitleDesc({
-                        title: 'Shopify',
-                        desc: 'Want to hire a dedicated Shopify development team? Ropstam provides flexible engagement models to scale your team:'
+                        title: 'Social Media Marketing',
+                        desc: "Interested in recruiting a dedicated Social Media Marketing team? SSTech offers flexible engagement models to expand your team effortlessly:"
                     });
                     break;
-                case 'mvp-development-services':
+                case '3d-animation-services':
                     setDevTitleDesc({
-                        title: 'Full Stack',
-                        desc: 'Looking to hire full-stack developers for your MVP project? Ropstam has a team of experienced professionals ready to bring your vision to life. Our full-stack developers excel in MVP app development, ensuring your project is in capable hands.'
+                        title: '3D Animation',
+                        desc: 'Exploring options to hire expert 3D animators for your project? SSTech offers a team of seasoned professionals poised to bring your vision to life. Our skilled 3D animators excel in animation development, ensuring your project receives the expertise it deserves.'
                     });
                     break;
-                // case 'services':
-                // setDevTitleDesc({
-                //   title: 'Our Custom Mobile App Development Services',
-                //   desc: 'We offer end-to-end mobile app development services, from conceptualization and user experience design to development, testing and launch. Our core services include:'
-                // });
-                // break;
                 default:
                     setDevTitleDesc({ title: '', desc: '' })
                     break;
@@ -94,8 +88,8 @@ export const HireUs = () => {
         <>
             <div className='margintop'>
                 <div className='text-center d-flex flex-column align-items-center'>
-                    <h1 className='heading4034' style={{fontWeight:"700"}}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
-                    </span> with <span className='changecolor'>Ropstam</span></h1>
+                    <h1 className='heading4034' style={{ fontWeight: "700" }}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
+                    </span> with <span className='changecolor'>SSTech</span></h1>
                     <p className='font2014 w-50 mt-3'>{devTitleDesc.desc}</p>
                 </div>
                 <div className='row justify-content-center margintop'>
@@ -109,7 +103,7 @@ export const HireUs = () => {
                     </div>
                 </div>
                 <div className='d-flex justify-content-center'>
-                    <button className="HireUsButton margintop" style={{marginBottom:'70px'}}>
+                    <button className="HireUsButton margintop" style={{ marginBottom: '70px' }}>
                         Hire MVP Developers
                     </button>
                 </div>

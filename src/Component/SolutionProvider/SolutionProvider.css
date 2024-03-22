@@ -1,0 +1,55 @@
+.spcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.spleft-side {
+  padding: 18% 0%;
+  flex: 1;
+  background-color: #2693fa;
+}
+
+.spright-side {
+  padding: 0% 4% 0% 2%;
+  flex: 1;
+}
+
+.tabsp {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-bottom: 20px; */
+  /* justify-content: center; */
+  height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  gap: 20px;
+  cursor: pointer;
+  /* border-right: 2px solid #cdcdcd */
+}
+
+
+.active-tabsp {
+  border-bottom: 2px solid #d9d9d9;
+  color: #2693fa;
+}
+
+.tabsp-content {
+  margin-top: 20px;
+}
+
+.togetherpara {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.sppara{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.spdesc{
+  font-weight: 400;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
+  line-height: 1.6em;
+font-size: 16px;
+}

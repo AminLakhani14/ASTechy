@@ -25,21 +25,21 @@ const Service = () => {
     }, []);
 
     const cardData = [
-        { title: <ComputerIcon fontSize={'large'} />, description: 'Blockchain Development', index: '01', route: '/blockchain-development-services' },
-        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Applications', index: '02', route: '/web-application-development-services' },
-        { title: <img src={tablet} height={'30px'} width={'30px'} />, description: 'Mobile Applications', index: '03', route: '/mobile-app-development-services' },
-        { title: <img src={clone} height={'30px'} width={'30px'} />, description: 'UI/UX Designing', index: '04', route: '/ui-ux-design-services' },
+        { title: <ComputerIcon fontSize={'large'} />, description: 'Graphics Designing', index: '01', route: '/graphics-development-services' },
+        { title: <img src={clone} height={'30px'} width={'30px'} alt='' />, description: 'UI/UX Designing', index: '02', route: '/ui-ux-design-services' },
+        { title: <img src={tablet} height={'30px'} width={'30px'} alt='' />, description: 'SEO', index: '03', route: '/seo-services' },
+        { title: <img src={tablet} height={'30px'} width={'30px'} alt='' />, description: 'Social Media Marketing', index: '04', route: '/social-media-marketing-services' },
     ];
 
     const cardData1 = [
-        { title: <img src={wordpress} height={'30px'} width={'30px'} />, description: 'WordPress Development', index: '05', route: '/wordpress-development-services' },
-        { title: <img src={shopify} height={'30px'} width={'30px'} />, description: 'Shopify Development', index: '06', route: '/shopify-development-services' },
-        { title: <img src={mvp} height={'30px'} width={'30px'} />, description: 'MVP Development', index: '07', route: '/mvp-development-services' },
+        { title: <ComputerIcon fontSize={'large'} />, description: 'Web Development', index: '05', route: '/web-application-development-services' },
+        { title: <img src={shopify} height={'30px'} width={'30px'} alt='' />, description: '3D Animation', index: '06', route: '/3d-animation-services' },
+        { title: <img src={wordpress} height={'30px'} width={'30px'} alt='' />, description: 'WordPress Development', index: '07', route: '/wordpress-development-services' },
         { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#fa7226', textColor: '#fff', route: '/services' }
     ];
 
     const pageData = [
-        { route: '/blockchain-development-services', title: 'Blockchain Development Services', description: 'Detailed description for Blockchain Development Services.' },
+        { route: '/graphics-development-services', title: 'Blockchain Development Services', description: 'Detailed description for Blockchain Development Services.' },
         { route: '/mobile', title: 'Mobile Applications Services', description: 'Detailed description for Mobile Applications Services.' },
         { route: '/web-application-development-services', title: 'Web Applications Services', description: 'Detailed description for Web Applications Services.' },
         { route: '/uiux', title: 'UI/UX Designing Services', description: 'Detailed description for UI/UX Designing Services.' },

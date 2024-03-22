@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../Images/logo.jpg";
-import { Modal, Button, Form } from 'react-bootstrap';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const changeClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const [open, setOpen] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
-
-  const handleCloseModal = () => setShowModal(false);
-  const handleShowModal = () => setShowModal(true);
 
   return (
     <>
@@ -24,11 +13,11 @@ function Navbar() {
         <nav >
           <a href="/" to="/">
             <img
-              data-aos="fade-up"
               src={logo}
               width="200"
               id='headerLogo'
               height="60"
+              alt=""
             ></img>
           </a>
 
@@ -48,13 +37,13 @@ function Navbar() {
                   <a href="#">Hire Team</a>
                 </li>
                 <li>
-                  <a to='/blockchain-development-services' href="/blockchain-development-services">Blockchain</a>
+                  <a to='/graphics-development-services' href="/graphics-development-services">Blockchain</a>
                 </li>
                 <li>
                   <a to='/web-application-development-services' href="/web-application-development-services">Web Apps</a>
                 </li>
                 <li>
-                  <a to='/mobile-app-development-services' href="/mobile-app-development-services">Mobile Apps</a>
+                  <a to='/seo-services' href="/seo-services">Mobile Apps</a>
                 </li>
                 <li>
                   <a to='/ui-ux-design-services' href="/ui-ux-design-services">UI/UX Design</a>
@@ -63,10 +52,10 @@ function Navbar() {
                   <a to='/wordpress-development-services' href="/wordpress-development-services">WordPress</a>
                 </li>
                 <li>
-                  <a to='/shopify-development-services' href="/shopify-development-services">Shopify</a>
+                  <a to='/social-media-marketing-services' href="/social-media-marketing-services">Shopify</a>
                 </li>
                 <li>
-                  <a to='/mvp-development-services' href="/mvp-development-services">MVP</a>
+                  <a to='/3d-animation-services' href="/3d-animation-services">MVP</a>
                 </li>
               </ul>
             </li>
@@ -78,10 +67,10 @@ function Navbar() {
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>
-                  <a to="/blockchain-development-services" href="/blockchain-development-services">Web Development</a>
+                  <a to="/WebDevelopment" href="/WebDevelopment">Web Development</a>
                 </li>
                 <li>
-                  <a to="/wordpress-development-services" href="/wordpress-development-services">Wordpress</a>
+                  <a to="/Wordpress" href="/Wordpress">Wordpress</a>
                 </li>
                 <li>
                   <a to="/SearchEngine" href="/SearchEngine">SEO</a>
@@ -124,35 +113,13 @@ function Navbar() {
             </li>
           </ul>
           <div className="display-none" style={{ width: '15%' }}>
-            <h5 className="headercontact me-3 mt-2 float-md-end" onClick={handleShowModal}>+92-307-1234567</h5>
+            <h5 className="headercontact me-3 mt-2 float-md-end">+92-307-1234567</h5>
           </div>
           <a to='/contact' href='/contact'>
             <button className=" display-none headerMenuButton mx-2"><b>Contact Us</b></button>
           </a>
         </nav>
       </div>
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Pickup an app?</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>https://www.ropstam.com wants to open this application.</p>
-          <Form.Check
-            type="checkbox"
-            label="Always allow to open link"
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-          />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            open an app
-          </Button>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Cancel
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </>
   );
 }
