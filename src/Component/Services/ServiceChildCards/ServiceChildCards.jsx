@@ -4,8 +4,8 @@ const ServiceCard = ({ icon, title, description }) => {
     return (
         <div className={'svcard'}>
             <div className="svcard-content">
-                <div style={{ textAlign: 'left' }} className='Arrow' ><img src={icon} height={'30px'} width={'30px'} alt='' /></div>
-                <div>
+                <div style={{ textAlign: 'left' }} className='Arrow mt-1' >{icon}</div>
+                <div className='mt-4'>
                     <h3>{title}</h3>
                 </div>
                 <p className='svcardspara'>{description}</p>

@@ -10,6 +10,7 @@ import ProjectPartner from "../../ProjectPartner/ProjectPartner";
 import Feedback from "../../../Global/Feedback";
 import OurClient from "../../Our Client/OurClient";
 import SolutionProvider from "../../SolutionProvider/SolutionProvider";
+import hiring from '../../Assets/icons8-hire-me-50.png'
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({
@@ -207,13 +208,13 @@ export const BlockchainPage = ({ route }) => {
 
   const serviceCardList = [
     {
-      icon: { undefined },
+      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
       title: "Smart Contract Development",
       description:
         "Developing optimized smart contracts to automate processes and power blockchain solutions.",
     },
     {
-      icon: { undefined },
+      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
       title: "Metaverse Development",
       description:
         "Building immersive metaverse, virtual worlds and blockchain-based digital experiences.",
@@ -221,56 +222,56 @@ export const BlockchainPage = ({ route }) => {
   ];
   const serviceCardList1 = [
     {
-      icon: { undefined },
+      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
       title: "NFT Marketplace Development",
       description:
         "Building feature-rich NFT (Non-Fungible Token) marketplaces for digital collectibles and assets.",
     },
     {
-      icon: { undefined },
+      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
       title: "DeFi Development",
       description:
         "Designing DeFi protocols, ecosystems, and applications including exchanges, lending platforms, and more.",
     },
     {
-      icon: { undefined },
+      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
       title: "Web 3.0 Development",
       description:
         "Integrating blockchain with web technologies for decentralized applications.",
     },
     {
-      icon: { undefined },
+      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
       title: "Blockchain Consultancy",
       description:
         "Providing strategic advisory and identifying appropriate blockchain use cases.",
     },
   ];
-  const serviceCardList2 = [
-    {
-      icon: { undefined },
-      title: "dApps Development",
-      description:
-        "Building innovative decentralized applications for engagement, automation and new revenue.",
-    },
-    {
-      icon: { undefined },
-      title: "IEO & ICO Development",
-      description:
-        "End-to-end planning, launch and marketing services for IEO and ICO fundraising.",
-    },
-    {
-      icon: { undefined },
-      title: "Crypto Exchanage Development",
-      description:
-        "Developing secure, scalable digital currency exchanges with trading tools.",
-    },
-    {
-      icon: { undefined },
-      title: "Blockchain Security",
-      description:
-        "Conducting comprehensive audits and testing to ensure blockchain solution security.",
-    },
-  ];
+  // const serviceCardList2 = [
+  //   {
+  //     icon: { undefined },
+  //     title: "dApps Development",
+  //     description:
+  //       "Building innovative decentralized applications for engagement, automation and new revenue.",
+  //   },
+  //   {
+  //     icon: { undefined },
+  //     title: "IEO & ICO Development",
+  //     description:
+  //       "End-to-end planning, launch and marketing services for IEO and ICO fundraising.",
+  //   },
+  //   {
+  //     icon: { undefined },
+  //     title: "Crypto Exchanage Development",
+  //     description:
+  //       "Developing secure, scalable digital currency exchanges with trading tools.",
+  //   },
+  //   {
+  //     icon: { undefined },
+  //     title: "Blockchain Security",
+  //     description:
+  //       "Conducting comprehensive audits and testing to ensure blockchain solution security.",
+  //   },
+  // ];
 
   return (
     <>
@@ -309,12 +310,12 @@ export const BlockchainPage = ({ route }) => {
             <ServiceCardList ServiceCardList={serviceCardList1} />
           </div>
         </div>}
-      {PageRoute == 'services' ? <></> :
+      {/* {PageRoute == 'services' ? <></> :
         <div className="mt-5 d-flex justify-content-center ">
           <div style={{ width: "86%" }}>
             <ServiceCardList ServiceCardList={serviceCardList2} />
           </div>
-        </div>}
+        </div>} */}
       {PageRoute == 'services' ? <></> : <div>
         <DevelopmentProcess />
       </div>}
