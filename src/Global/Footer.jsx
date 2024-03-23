@@ -105,7 +105,7 @@ function Footer() {
       </div>
       <div className="copyright">
         <p>
-          &copy; {new Date().getFullYear()} Ropstam Solutions Inc. All Rights
+          &copy; {new Date().getFullYear()} SSTech Solutions Inc. All Rights
           Reserved.
         </p>
       </div>

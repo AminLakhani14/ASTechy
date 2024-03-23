@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { CardList } from './cards';
 import ComputerIcon from '@mui/icons-material/Computer';
-import wordpress from '../Assets/icons8-wordpress.svg';
-import clone from '../Assets/clone-svgrepo-com.svg';
-import shopify from '../Assets/shopify-svgrepo-com.svg';
-import tablet from '../Assets/screen-tablet-svgrepo-com.svg';
+import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import InsightsIcon from '@mui/icons-material/Insights';
+import ThreeDRotationIcon from '@mui/icons-material/ThreeDRotation';
 import '../../CSS/style.css'
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import TabletAndroidIcon from '@mui/icons-material/TabletAndroid';
+import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 const Service = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -24,16 +26,16 @@ const Service = () => {
     }, []);
 
     const cardData = [
-        { title: <ComputerIcon fontSize={'large'} />, description: 'Graphics Designing', index: '01', route: '/graphics-development-services' },
-        { title: <img src={clone} height={'30px'} width={'30px'} alt='' />, description: 'UI/UX Designing', index: '02', route: '/ui-ux-design-services' },
-        { title: <img src={tablet} height={'30px'} width={'30px'} alt='' />, description: 'SEO', index: '03', route: '/seo-services' },
-        { title: <img src={tablet} height={'30px'} width={'30px'} alt='' />, description: 'Social Media Marketing', index: '04', route: '/social-media-marketing-services' },
+        { title: <DesignServicesIcon fontSize={'large'} />, description: 'Graphics Designing', index: '01', route: '/graphics-development-services' },
+        { title: <AssignmentTurnedInIcon fontSize={'large'} />, description: 'UI/UX Designing', index: '02', route: '/ui-ux-design-services' },
+        { title: <InsightsIcon fontSize={'large'} />, description: 'SEO', index: '03', route: '/seo-services' },
+        { title: <TabletAndroidIcon fontSize={'large'} />, description: 'Social Media Marketing', index: '04', route: '/social-media-marketing-services' },
     ];
 
     const cardData1 = [
         { title: <ComputerIcon fontSize={'large'} />, description: 'Web Development', index: '05', route: '/web-application-development-services' },
-        { title: <img src={shopify} height={'30px'} width={'30px'} alt='' />, description: '3D Animation', index: '06', route: '/3d-animation-services' },
-        { title: <img src={wordpress} height={'30px'} width={'30px'} alt='' />, description: 'WordPress Development', index: '07', route: '/wordpress-development-services' },
+        { title: <ThreeDRotationIcon fontSize={'large'}  />, description: '3D Animation', index: '06', route: '/3d-animation-services' },
+        { title: <DeveloperModeIcon fontSize={'large'} />, description: 'WordPress Development', index: '07', route: '/wordpress-development-services' },
         { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#fa7226', textColor: '#fff', route: '/services' }
     ];
 

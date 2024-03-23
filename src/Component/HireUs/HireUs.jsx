@@ -41,126 +41,126 @@ export const HireUs = () => {
                     setDevTitleDesc({
                         title: 'Graphics Designing',
                         desc: 'Forge your ideal graphics design team by enlisting our seasoned graphic designers. Our dedicated graphics design team excels in crafting captivating visuals, perfecting layouts, and more, guaranteeing your visual content shines amidst competition in the market.',
-                        cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     })
                     break;
                 case 'web-application-development-services':
                     setDevTitleDesc({
                         title: 'Web Application',
-                        desc: 'Finding the right talent for your project is easy with Ropstam. Our talented in-house team has decade of experience successfully designing, developing, and launching custom web apps. This expertise allows us to efficiently handle any type of web app project:'
-                        , cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        desc: 'Finding the right talent for your project is easy with SSTech. Our talented in-house team has decade of experience successfully designing, developing, and launching custom web apps. This expertise allows us to efficiently handle any type of web app project:'
+                        , cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     });
                     break;
                 case 'seo-services':
                     setDevTitleDesc({
                         title: 'SEO',
                         desc: "Seeking adept SEO specialists to augment your team? At SSTech, we provide flexible hiring solutions, granting you access to top-tier talent seamlessly. Whether you require a single specialist or an entire team, we've got you covered."
-                        , cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        , cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     });
                     break;
                 case 'ui-ux-design-services':
                     setDevTitleDesc({
                         title: 'UI/UX ',
                         desc: 'Ready to bring your digital vision to life? Our expert UI/UX designers are ready to help you create transformative digital products that convert and engage users.'
-                        , cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        , cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     });
                     break;
                 case 'wordpress-development-services':
                     setDevTitleDesc({
                         title: 'WordPress',
                         desc: 'Our WordPress development team is well-versed in the latest technologies and tools, ensuring your website is built using the most advanced and efficient methods.'
-                        , cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        , cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     });
                     break;
                 case 'social-media-marketing-services':
                     setDevTitleDesc({
                         title: 'Social Media Marketing',
                         desc: "Interested in recruiting a dedicated Social Media Marketing team? SSTech offers flexible engagement models to expand your team effortlessly:"
-                        , cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        , cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     });
                     break;
                 case '3d-animation-services':
                     setDevTitleDesc({
                         title: '3D Animation',
                         desc: 'Exploring options to hire expert 3D animators for your project? SSTech offers a team of seasoned professionals poised to bring your vision to life. Our skilled 3D animators excel in animation development, ensuring your project receives the expertise it deserves.'
-                        , cardTitle1: 'Creative Recruitment',
-                        cardDesc1: 'Discover handpicked, creative graphic designers who excel in bringing visions to life.',
-                        cardTitle2: 'Design Excellence',
-                        cardDesc2: 'Experience visually stunning designs that perfectly align with your brand strategy and objectives.',
-                        cardTitle3: 'Collaborative Workflow',
-                        cardDesc3: 'Utilize collaborative tools for seamless communication, ensuring efficient project management across different time zones.',
-                        cardTitle4: 'Creative Progress Updates',
-                        cardDesc4: 'Stay informed with regular updates on creative milestones achieved, providing clarity and confidence throughout the project.',
-                        cardTitle5: 'Tailored Design Teams',
-                        cardDesc5: "Get matched with customized design teams, ensuring the perfect blend of skills for your project's success.",
-                        cardTitle6: 'Design Collaboration',
-                        cardDesc6: 'Foster a culture of collaboration through regular feedback meetings, enhancing creativity and ensuring client satisfaction.'
+                        , cardTitle1: 'Fast Hiring',
+                        cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
+                        cardTitle2: 'Top Talent',
+                        cardDesc2: 'Our team is dedicated to sourcing and managing the top talent available, while also providing ongoing training and development to ensure they remain the best in their field.',
+                        cardTitle3: 'Time Zone Aligned',
+                        cardDesc3: 'We’ve equipped our team with collaborative skills using advanced scheduling tools to ensure that all meetings and deadlines align with the client’s time zones.',
+                        cardTitle4: 'Daily Progress Report',
+                        cardDesc4: 'Our daily progress reports keep you informed and involved throughout the project, providing a clear understanding of our team’s activities for peace of mind.',
+                        cardTitle5: 'Fully Managed Team',
+                        cardDesc5: "Our team of dedicated project managers goes above and beyond to ensure you are paired with the most suitable team members for your project.",
+                        cardTitle6: 'Agile Meetings',
+                        cardDesc6: 'Regular meetings are held to maintain clear communication and keep everyone informed about the progress and status of the project.'
                     });
                     break;
                 default:
