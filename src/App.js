@@ -13,6 +13,7 @@ import Ebook from "./Component/Work/Ebook/Ebook.jsx";
 import Service from "./Component/Services/Service.jsx";
 import BlockchainPage from "./Component/Services/ServiceProvider/Blockchainservice.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
+import AboutUs from "./Component/AboutUs/AboutUs.jsx";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/3d-animation-services" element={<BlockchainPage />} />
           <Route path="/services" element={<BlockchainPage />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
       </Router>
       <Cities />

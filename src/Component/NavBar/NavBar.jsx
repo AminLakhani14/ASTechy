@@ -106,7 +106,7 @@ function Navbar() {
               </ul>
             </li>
             <li>
-              <a href="#">About Us</a>
+            <a to="/AboutUs"  href="/AboutUs">About Us</a>
             </li>
             <li>
               <a to='/contact' href="/contact">Contact Us</a>
