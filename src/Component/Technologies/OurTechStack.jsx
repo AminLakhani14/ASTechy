@@ -190,7 +190,7 @@ const TechnologyStack = () => {
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>MySQL</p>
               </div>
             </div>
-            <div className='mt-5 pt-4 d-flex justify-content-centers'>
+            <div className='mt-5 pt-4 d-flex justify-content-center '>
               <div className='text-center'>
                 <img src={PostgreSQL} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>PostgreSQL</p>
@@ -205,7 +205,7 @@ const TechnologyStack = () => {
       case 'Testing':
         return (
           <div className="content">
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className='d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={apprium} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Apprium</p>
@@ -219,7 +219,7 @@ const TechnologyStack = () => {
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>JMeter</p>
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center' }} className='mt-5'>
+            <div  className='mt-5 d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={postman} className='imageclass' alt='' />
                 <p style={{ fontSize: '18px', fontWeight: 400 }}>Postman</p>
@@ -242,7 +242,7 @@ const TechnologyStack = () => {
   };
 
   return (
-    <div className='mb-4 pb-4'>
+    <div className='mb-4 pb-5'>
       <h1 className='font4834 margintop marginbottom pt-5 pb-4' style={{
         textAlign: 'center',lineHeight: '1.4em', fontWeight: '700'
       }}>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h1>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 6%;
+    padding: 2% 0% 0% 6%;
 
 }
 
@@ -10,10 +10,12 @@
     display: flex;
 }
 
-.ocleft-side,
-.ocright-side {
+.ocleft-side{
     flex: 1;
     padding: 20px;
+}
+.ocright-side {
+    flex: 1;
 }
 
 .ocright-side {
@@ -21,7 +23,7 @@
 }
 
 .occard-container {
-    width: 50% !important;
+    /* width: 50% !important; */
 }
 
 .ourclientheading {
