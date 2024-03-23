@@ -43,7 +43,7 @@ export const DevelopmentProcess = () => {
                 case 'ui-ux-design-services':
                     setDevTitleDesc({
                         title: 'UI/UX Designing',
-                        desc: 'At Ropstam, we follow a rigorous 6-step user-centered design process to create experiences that truly resonate with your users. By following this well-defined methodology, we ensure that every design we craft is user-centered, efficient, and optimized for your target audience and matches expected user behavior.'
+                        desc: 'At SSTech, we follow a rigorous 6-step user-centered design process to create experiences that truly resonate with your users. By following this well-defined methodology, we ensure that every design we craft is user-centered, efficient, and optimized for your target audience and matches expected user behavior.'
                     });
                     break;
                 case 'wordpress-development-services':

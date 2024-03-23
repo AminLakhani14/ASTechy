@@ -40,7 +40,7 @@ function AboutUs() {
               </b>
             </h1>
             <p>
-              Ropstam is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.
+              SSTech is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.
             </p>
             <div>
               <button data-aos="fade-up" className="HeaderButton">

@@ -26,6 +26,20 @@ export const BlockchainPage = ({ route }) => {
   }, [route]);
   const [title, setTitle] = useState("");
   const [description, setDesc] = useState("");
+  const [cards, setCards] = useState({
+    title1: '',
+    Desc1: '',
+    title2: '',
+    Desc2: '',
+    title3: '',
+    Desc3: '',
+    title4: '',
+    Desc4: '',
+    title5: '',
+    Desc5: '',
+    title6: '',
+    Desc6: '',
+  })
   const PageRoute = window.location.pathname.replace(/^\//, "");
   const getHeadingDesc = () => {
     const route = window.location.pathname.replace(/^\//, "");
@@ -46,57 +60,197 @@ export const BlockchainPage = ({ route }) => {
           setDesc(
             "Welcome to 'Elevating Digital Presence,' a graphics design initiative by SSTech. As a leading provider of bespoke graphic design solutions, SSTech is committed to empowering businesses with captivating visual experiences. In this campaign, we delve into the realm of graphic innovation, exploring emerging trends, strategies, and best practices to drive growth and success in the digital age. From transformative graphic techniques to actionable design insights, 'Elevating Digital Presence' serves as your guide to harnessing the full potential of visual communication with SSTech as your trusted partner.",
           );
+          setCards({
+            title1: 'Web App Design',
+            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title2: 'Web App Design',
+            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title3: 'Web App Design',
+            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title4: 'Web App Design',
+            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title5: 'Web App Design',
+            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title6: 'Web App Design',
+            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+          });
           break;
         case "web-application-development-services":
           setTitle("Web App Development Services");
           setDesc(
-            "At Ropstam, we are a leading custom web application development company dedicated to creating innovative web apps that solve real business problems. With years of experience designing, building and launching complex web applications, we have the proven expertise to handle any web app project."
+            "At SSTech, we are a leading custom web application development company dedicated to creating innovative web apps that solve real business problems. With years of experience designing, building and launching complex web applications, we have the proven expertise to handle any web app project."
           );
+          setCards({
+            title1: 'Web App Design',
+            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title2: 'E-commerce Web App Development',
+            Desc2: 'We build secure, feature-rich custom e-commerce platforms to support your online business.',
+            title3: 'CMS Development',
+            Desc3: 'We develop flexible, scalable content management systems to organize & manage content.',
+            title4: 'Web App Testing',
+            Desc4: 'We thoroughly test your web app for functionality, UI/UX, security and performance issues.',
+            title5: 'Custom Website Development',
+            Desc5: 'We develop custom websites optimized for your unique business needs & brand identity.',
+            title6: 'Support & Maintenance',
+            Desc6: 'We offer ongoing support and maintenance to keep your web app optimized post-launch.',
+          });
           break;
         case "seo-services":
           setTitle("SEO Services");
           setDesc(
             "At SSTech, we provide end-to-end SEO services to drive digital transformation and achieve your business objectives through tailored SEO strategies. With a decade-long track record of optimizing websites for startups, enterprises, and industry leaders, we stand as your reliable SEO partner, ensuring enhanced online visibility and sustainable growth."
           );
+          setCards({
+            title1: 'Web App Design',
+            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title2: 'Web App Design',
+            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title3: 'Web App Design',
+            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title4: 'Web App Design',
+            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title5: 'Web App Design',
+            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title6: 'Web App Design',
+            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+          });
           break;
         case "ui-ux-design-services":
           setTitle("UI/UX Designing Services");
           setDesc(
-            "Unlock the potential of exceptional UI/UX design services at Ropstam. Elevate your digital presence with our holistic approach, latest technology stack, and industry-specific solutions. Discover why we’re the best UI/UX design company for your brand’s success."
+            "Unlock the potential of exceptional UI/UX design services at SSTech. Elevate your digital presence with our holistic approach, latest technology stack, and industry-specific solutions. Discover why we’re the best UI/UX design company for your brand’s success."
           );
+          setCards({
+            title1: 'Website UI/UX Design',
+            Desc1: 'We craft immersive website experiences optimized for user engagement and conversion.',
+            title2: 'Mobile UI/UX Design',
+            Desc2: 'Our mobile app designs and user interfaces provide intuitive navigation and flows for flawless mobile interactions.',
+            title3: 'SaaS Product Design',
+            Desc3: 'We design flawless SaaS product experiences that solve customer pain points.',
+            title4: 'Wireframing & Prototyping',
+            Desc4: 'We rapidly test concepts through low-fi wireframes and hi-fi interactive prototypes.',
+            title5: 'NFT Design',
+            Desc5: 'We design captivating NFTs combining visual design, metadata, and smart contracts.',
+            title6: 'Interaction Design',
+            Desc6: 'We architect innovative interactive experiences based on cognition & perception principles.',
+          });
           break;
         case "wordpress-development-services":
           setTitle("WordPress Development Services");
           setDesc(
-            "Our custom WordPress development services can be the one-stop solution for all your design and development needs. At Ropstam, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business."
+            "Our custom WordPress development services can be the one-stop solution for all your design and development needs. At SSTech, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business."
           );
+          setCards({
+            title1: 'WordPress Theme Customization',
+            Desc1: 'Developing custom themes to make your website stand out and align with your brand identity.',
+            title2: 'WordPress Design Services',
+            Desc2: 'Creating visually stunning, user-centric WordPress designs that captivate and convert visitors.',
+            title3: 'WordPress Plugin Development',
+            Desc3: 'Building custom plugins to enhance your website’s functionality and user experience.',
+            title4: 'WordPress Security Services',
+            Desc4: 'Protecting your website from threats and vulnerabilities with robust security measures.',
+            title5: 'WordPress Support',
+            Desc5: 'Providing ongoing support and maintenance to keep your WordPress website up-to-date.',
+            title6: 'WordPress Speed Optimization',
+            Desc6: 'Ensuring lightning-fast loading times for improved search engine rankings.',
+          });
           break;
         case "social-media-marketing-services":
           setTitle("Social Media Marketing Services");
           setDesc(
             "Unlock your brand's potential with SSTech's tailored Social Media Marketing services. Elevate your online presence with expertly crafted social media strategies and campaign management. Partner with us to cultivate a captivating, professional, and high-performing social media profile."
           );
+          setCards({
+            title1: 'Web App Design',
+            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title2: 'Web App Design',
+            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title3: 'Web App Design',
+            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title4: 'Web App Design',
+            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title5: 'Web App Design',
+            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title6: 'Web App Design',
+            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+          });
           break;
         case "3d-animation-services":
           setTitle("3D Animation Services");
           setDesc(
-            "Ropstam is a premier 3D animation studio, offering comprehensive MVP animation services to bring your minimum viable product (MVP) to life. With a wealth of experience in delivering successful 3D animations for startups and enterprises alike, we are your ultimate technology partner for MVP animation development."
+            "SSTech is a premier 3D animation studio, offering comprehensive MVP animation services to bring your minimum viable product (MVP) to life. With a wealth of experience in delivering successful 3D animations for startups and enterprises alike, we are your ultimate technology partner for MVP animation development."
           );
+          setCards({
+            title1: 'Web App Design',
+            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title2: 'Web App Design',
+            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title3: 'Web App Design',
+            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title4: 'Web App Design',
+            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title5: 'Web App Design',
+            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title6: 'Web App Design',
+            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+          });
           break;
         case "services":
           setTitle("Our Services");
           setDesc(
-            "Boosting Your Success through Advanced Technology and Client-Centric Solutions At Ropstam, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
+            "Boosting Your Success through Advanced Technology and Client-Centric Solutions At SSTech, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
           );
+          setCards({
+            title1: 'Web App Design',
+            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title2: 'Web App Design',
+            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title3: 'Web App Design',
+            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title4: 'Web App Design',
+            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title5: 'Web App Design',
+            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title6: 'Web App Design',
+            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+          });
           break;
         default:
           setTitle("");
           setDesc("");
+          setCards({
+            title1: '',
+            Desc1: '',
+            title2: '',
+            Desc2: '',
+            title3: '',
+            Desc3: '',
+            title4: '',
+            Desc4: '',
+            title5: '',
+            Desc5: '',
+            title6: '',
+            Desc6: '',
+          });
           break;
       }
     } else {
       setTitle("");
       setDesc("");
+      setCards({
+        title1: '',
+        Desc1: '',
+        title2: '',
+        Desc2: '',
+        title3: '',
+        Desc3: '',
+        title4: '',
+        Desc4: '',
+        title5: '',
+        Desc5: '',
+        title6: '',
+        Desc6: '',
+      });
     }
   };
   const getHeadingDescforservice = () => {
@@ -126,7 +280,7 @@ export const BlockchainPage = ({ route }) => {
             title: "Custom Web App",
             desc: "We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:",
             partnerTitle: 'Web App',
-            partnerDesc: 'Don’t settle for an average web app – get a custom solution tailored to your needs with Ropstam. With Ropstam as your web app development partner, you get:'
+            partnerDesc: 'Don’t settle for an average web app – get a custom solution tailored to your needs with SSTech. With SSTech as your web app development partner, you get:'
           });
           break;
         case "seo-services":
@@ -140,17 +294,17 @@ export const BlockchainPage = ({ route }) => {
         case "ui-ux-design-services":
           setServicesCardsDesc({
             title: "Custom UI/UX Designing",
-            desc: "Ropstam offers cutting-edge UI/UX design services to create intuitive, engaging digital experiences. With an expert team of designers and researchers, we help companies craft user-focused products that delight customers.",
+            desc: "SSTech offers cutting-edge UI/UX design services to create intuitive, engaging digital experiences. With an expert team of designers and researchers, we help companies craft user-focused products that delight customers.",
             partnerTitle: 'UI/UX Designing',
-            partnerDesc: 'At Ropstam, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'
+            partnerDesc: 'At SSTech, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:'
           });
           break;
         case "wordpress-development-services":
           setServicesCardsDesc({
             title: "Custom WordPress",
-            desc: "From WordPress theme customization and plugin development to complex WordPress integrations, Ropstam provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.",
+            desc: "From WordPress theme customization and plugin development to complex WordPress integrations, SSTech provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.",
             partnerTitle: 'WordPress',
-            partnerDesc: 'With over a decade of WordPress experience, Ropstam is your trusted partner for custom WordPress services. Here’s why you should choose us:'
+            partnerDesc: 'With over a decade of WordPress experience, SSTech is your trusted partner for custom WordPress services. Here’s why you should choose us:'
           });
           break;
         case "social-media-marketing-services":
@@ -209,69 +363,37 @@ export const BlockchainPage = ({ route }) => {
   const serviceCardList = [
     {
       icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: "Smart Contract Development",
-      description:
-        "Developing optimized smart contracts to automate processes and power blockchain solutions.",
+      title: cards.title1,
+      description: cards.Desc1,
     },
     {
       icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: "Metaverse Development",
-      description:
-        "Building immersive metaverse, virtual worlds and blockchain-based digital experiences.",
+      title: cards.title2,
+      description: cards.Desc2,
     },
   ];
   const serviceCardList1 = [
     {
       icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: "NFT Marketplace Development",
-      description:
-        "Building feature-rich NFT (Non-Fungible Token) marketplaces for digital collectibles and assets.",
+      title: cards.title3,
+      description: cards.Desc3,
     },
     {
       icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: "DeFi Development",
-      description:
-        "Designing DeFi protocols, ecosystems, and applications including exchanges, lending platforms, and more.",
+      title: cards.title4,
+      description: cards.Desc4,
     },
     {
       icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: "Web 3.0 Development",
-      description:
-        "Integrating blockchain with web technologies for decentralized applications.",
+      title: cards.title5,
+      description: cards.Desc5,
     },
     {
       icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: "Blockchain Consultancy",
-      description:
-        "Providing strategic advisory and identifying appropriate blockchain use cases.",
+      title: cards.title6,
+      description: cards.Desc6,
     },
   ];
-  // const serviceCardList2 = [
-  //   {
-  //     icon: { undefined },
-  //     title: "dApps Development",
-  //     description:
-  //       "Building innovative decentralized applications for engagement, automation and new revenue.",
-  //   },
-  //   {
-  //     icon: { undefined },
-  //     title: "IEO & ICO Development",
-  //     description:
-  //       "End-to-end planning, launch and marketing services for IEO and ICO fundraising.",
-  //   },
-  //   {
-  //     icon: { undefined },
-  //     title: "Crypto Exchanage Development",
-  //     description:
-  //       "Developing secure, scalable digital currency exchanges with trading tools.",
-  //   },
-  //   {
-  //     icon: { undefined },
-  //     title: "Blockchain Security",
-  //     description:
-  //       "Conducting comprehensive audits and testing to ensure blockchain solution security.",
-  //   },
-  // ];
 
   return (
     <>
@@ -310,12 +432,6 @@ export const BlockchainPage = ({ route }) => {
             <ServiceCardList ServiceCardList={serviceCardList1} />
           </div>
         </div>}
-      {/* {PageRoute == 'services' ? <></> :
-        <div className="mt-5 d-flex justify-content-center ">
-          <div style={{ width: "86%" }}>
-            <ServiceCardList ServiceCardList={serviceCardList2} />
-          </div>
-        </div>} */}
       {PageRoute == 'services' ? <></> : <div>
         <DevelopmentProcess />
       </div>}
