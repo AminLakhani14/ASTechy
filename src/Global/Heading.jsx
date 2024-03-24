@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 
 function Heading(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const PageRoute = window.location.pathname.replace(/^\//, "");
   useEffect(() => {
     // Function to update the windowWidth state when the resize event occurs
     const handleResize = () => {
@@ -40,8 +41,17 @@ function Heading(props) {
             data-aos="fade-right">
             <b>{props.text}</b>
           </h1>
+          {PageRoute == 'services' ? <p
+            data-aos="fade-right"
+            style={
+              windowWidth <= 768
+                ? { fontSize: "14px", fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
+                : { fontSize: "20px", fontWeight: "400", color: "#ffffff" }
+            }>
+            <b>Boosting Your Success through Advanced Technology and Client-Centric Solutions</b>
+          </p> : ''}
           <p
-          data-aos="fade-right"
+            data-aos="fade-right"
             style={
               windowWidth <= 768
                 ? { fontSize: "14px", fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
@@ -51,7 +61,7 @@ function Heading(props) {
           </p>
           <div className="d-flex mt-4">
             {props.startedbtn === true ?
-              <button  data-aos="fade-up" onClick={handleGetStartedClick} className="HeaderButton">
+              <button data-aos="fade-up" onClick={handleGetStartedClick} className="HeaderButton">
                 Let's Get Started
               </button> : ''}
             {props.workBtn === true &&
@@ -91,7 +101,7 @@ function Heading(props) {
         {props.feedbackvisible == true ? (
           <div className="d-flex">
             <div className="FeedbackBackground"
-            data-aos="fade-left"
+              data-aos="fade-left"
             >
               <TextField
                 id="standard-basic"

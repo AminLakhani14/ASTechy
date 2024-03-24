@@ -417,6 +417,12 @@ export const BlockchainPage = ({ route }) => {
               "We assist in developing compelling storyboards and scripts to outline the narrative and visual sequence of your 3D animation projects.",
           });
           break;
+        case "services":
+          setTitle("Our Services");
+          setDesc(
+            "At SSTech, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
+          );
+          break;
         default:
           setTitle("");
           setDesc("");
@@ -645,7 +651,7 @@ export const BlockchainPage = ({ route }) => {
                 Our{" "}
                 <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
                 {PageRoute === "graphics-development-services" ||
-                PageRoute === "ui-ux-design-services"
+                  PageRoute === "ui-ux-design-services"
                   ? ""
                   : "Development"}{" "}
                 Services
@@ -676,31 +682,31 @@ export const BlockchainPage = ({ route }) => {
                   <strong style={{ color: "#ededed" }}>Marketing Services</strong>
                 </h1>
                 <p className="subheading">
-      Amplify Your Brand Reach with Social Media Marketing
-    </p>
-    <p className="sub-subheading">
-      Harness the power of social media to connect with your audience and
-      drive business growth with Ropstam's comprehensive social media
-      marketing services. Our experienced team develops tailored
-      strategies to engage your target audience across various platforms,
-      creating compelling content and driving meaningful interactions.
-      From content creation to community management, we help you build a
-      strong presence and achieve your marketing goals.
-    </p>
-    <p className="subheading mt-5">
-      Explore Ropstam’s Social Media Marketing Services:
-    </p>
-    <ul className="bulletpoint">
-      <li>Social Media Strategy</li>
-      <li>Content Creation</li>
-      <li>Community Management</li>
-      <li>Social Media Advertising</li>
-      <li>Influencer Marketing</li>
-      <li>Analytics and Reporting</li>
-    </ul>
-    <p className="sub-subheading mt-5">
-      Elevate your brand's social media presence with Ropstam's expertise!
-    </p>
+                  Amplify Your Brand Reach with Social Media Marketing
+                </p>
+                <p className="sub-subheading">
+                  Harness the power of social media to connect with your audience and
+                  drive business growth with SSTech's comprehensive social media
+                  marketing services. Our experienced team develops tailored
+                  strategies to engage your target audience across various platforms,
+                  creating compelling content and driving meaningful interactions.
+                  From content creation to community management, we help you build a
+                  strong presence and achieve your marketing goals.
+                </p>
+                <p className="subheading mt-5">
+                  Explore SSTech’s Social Media Marketing Services:
+                </p>
+                <ul className="bulletpoint">
+                  <li>Social Media Strategy</li>
+                  <li>Content Creation</li>
+                  <li>Community Management</li>
+                  <li>Social Media Advertising</li>
+                  <li>Influencer Marketing</li>
+                  <li>Analytics and Reporting</li>
+                </ul>
+                <p className="sub-subheading mt-5">
+                  Elevate your brand's social media presence with SSTech's expertise!
+                </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
                     <b>Learn More</b>
@@ -746,7 +752,7 @@ export const BlockchainPage = ({ route }) => {
                   Transform Your Digital Presence with Web Apps
                 </p>
                 <p className="sub-subheading">
-                  Harness Ropstam’s extensive tech expertise and
+                  Harness SSTech’s extensive tech expertise and
                   customer-centric web development approach to accelerate your
                   digital transformation. With over a decade of experience and a
                   talent-driven methodology, we create tailored solutions with
@@ -754,7 +760,7 @@ export const BlockchainPage = ({ route }) => {
                   success.
                 </p>
                 <p className="subheading mt-5">
-                  Discover Ropstam’s Comprehensive Web App Services:
+                  Discover SSTech’s Comprehensive Web App Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Full Stack Development</li>
@@ -768,7 +774,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Shopify Web Development</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Empower your digital strategy with Ropstam today!
+                  Empower your digital strategy with SSTech today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -803,7 +809,7 @@ export const BlockchainPage = ({ route }) => {
                   Transform Your Digital Experience with UI/UX Design Services
                 </p>
                 <p className="sub-subheading">
-                  Elevate your digital presence with Ropstam’s exceptional UI/UX
+                  Elevate your digital presence with SSTech’s exceptional UI/UX
                   design services. Our expert team harnesses the latest
                   technology to craft purpose-driven designs that streamline
                   navigation, boost on-site engagement, and provide an
@@ -811,7 +817,7 @@ export const BlockchainPage = ({ route }) => {
                   interface complexity and captivate users like never before.
                 </p>
                 <p className="subheading mt-5">
-                  Explore Ropstam’s Comprehensive UI/UX Services:
+                  Explore SSTech’s Comprehensive UI/UX Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Product Design</li>
@@ -822,7 +828,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Agile UX Design</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Enhance your user experience with Ropstam today!
+                  Enhance your user experience with SSTech today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -877,7 +883,7 @@ export const BlockchainPage = ({ route }) => {
                   level.
                 </p>
                 <p className="subheading mt-5">
-                  Explore Ropstam’s Expertise in WordPress Development:
+                  Explore SSTech’s Expertise in WordPress Development:
                 </p>
                 <ul className="bulletpoint">
                   <li>WordPress Theme Customization:</li>
@@ -888,7 +894,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Speed Optimization</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Grow your business with Ropstam today!
+                  Grow your business with SSTech today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -922,7 +928,7 @@ export const BlockchainPage = ({ route }) => {
                 </p>
                 <p className="sub-subheading">
                   Maximize your online visibility and reach your target audience
-                  effectively with Ropstam’s top-notch SEO services. Our expert
+                  effectively with SSTech’s top-notch SEO services. Our expert
                   team employs advanced strategies and techniques to optimize
                   your website for search engines, driving organic traffic and
                   ensuring higher rankings. Experience enhanced online
@@ -930,7 +936,7 @@ export const BlockchainPage = ({ route }) => {
                   comprehensive SEO solutions.
                 </p>
                 <p className="subheading mt-5">
-                  Discover Ropstam’s SEO Services:
+                  Discover SSTech’s SEO Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>On-Page SEO</li>
@@ -941,7 +947,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>SEO Consulting</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Elevate your online presence with Ropstam's SEO expertise!
+                  Elevate your online presence with SSTech's SEO expertise!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -991,7 +997,7 @@ export const BlockchainPage = ({ route }) => {
                 </p>
                 <p className="sub-subheading">
                   Stand out from the crowd and leave a lasting impression with
-                  Ropstam's exceptional graphics designing services. Our
+                  SSTech's exceptional graphics designing services. Our
                   talented designers create visually appealing graphics that
                   communicate your brand message effectively. From logos and
                   branding to marketing materials and social media assets, we
@@ -999,7 +1005,7 @@ export const BlockchainPage = ({ route }) => {
                   audience.
                 </p>
                 <p className="subheading mt-5">
-                  Explore Ropstam’s Graphics Designing Services:
+                  Explore SSTech’s Graphics Designing Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Logo Design</li>
@@ -1010,7 +1016,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Illustrations</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Transform your brand's visual identity with Ropstam today!
+                  Transform your brand's visual identity with SSTech today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -1045,7 +1051,7 @@ export const BlockchainPage = ({ route }) => {
                   Bring Your Imagination to Life with 3D Animation
                 </p>
                 <p className="sub-subheading">
-                  Unlock the power of visual storytelling with Ropstam's
+                  Unlock the power of visual storytelling with SSTech's
                   captivating 3D animation services. Our skilled animators
                   breathe life into your ideas, creating immersive and engaging
                   animations that leave a lasting impact on your audience. From
@@ -1053,7 +1059,7 @@ export const BlockchainPage = ({ route }) => {
                   bring your concepts to life with stunning 3D animations.
                 </p>
                 <p className="subheading mt-5">
-                  Explore Ropstam’s 3D Animation Services:
+                  Explore SSTech’s 3D Animation Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Product Animation</li>
@@ -1064,7 +1070,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Virtual Reality</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Let your imagination soar with Ropstam's 3D animation
+                  Let your imagination soar with SSTech's 3D animation
                   expertise!
                 </p>
                 <div className="my-5 leftsideExploreButton">
