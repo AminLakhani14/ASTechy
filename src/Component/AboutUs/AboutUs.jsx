@@ -21,9 +21,9 @@ function AboutUs() {
   }, []);
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    if(tab === "Teams") {
+    if (tab === "Teams") {
       setTeamTab("All")
-    }else{
+    } else {
       setTeamTab(null)
     }
   };
@@ -280,10 +280,24 @@ function AboutUs() {
                   </div>
                 </div>
               </div>
-              // teamTabHtml()
-          )
+            )
           }
           {teamTabHtml()}
+
+          <div className="row">
+            <div className="col-lg-6">
+              <div>
+                <div className="h1">Headquartered in <span style={{color:"#2693fa"}}>Ontario, Canada</span></div>
+                <p className="contentText">
+                  Ropstam boasts a proven track record of delivering top-notch custom software solutions to clients ranging from Fortune 500 companies to startups, including Walmart, SharkTank Rogers, PostMedia, Bell, Telus, Cafebonappetit, and Nescafe, since 2009.
+                </p>
+                <div className="row">
+                  <div className="col-lg-12 img6"></div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 img5"></div>
+          </div>
 
         </div>
         <div className="col-lg-1"></div>

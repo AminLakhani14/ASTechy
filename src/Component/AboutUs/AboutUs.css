@@ -39,16 +39,34 @@
     background-repeat: no-repeat;
     background-image: url("../../Images/about3.webp");
     background-size: contain;
-    background-position: center;
+    /* background-position: center; */
     height: 500px;
 }
+
 .img4 {
     background-repeat: no-repeat;
     background-image: url("../../Images/about4.jpg");
     background-size: contain;
+    /* background-position: center; */
+    height: 500px;
+}
+
+.img5 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about5.webp");
+    background-size: contain;
     background-position: center;
     height: 500px;
 }
-.ml-10{
+
+.img6 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about6.webp");
+    background-size: contain;
+    /* background-position: center; */
+    height: 500px;
+}
+
+.ml-10 {
     margin-left: 10px;
 }
