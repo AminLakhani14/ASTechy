@@ -632,8 +632,8 @@ export const BlockchainPage = ({ route }) => {
           feedbackvisible={true}
         />
       </div>
-      <div className="margintop row justify-content-center align-items-center">
-        <div className="col-lg-5">
+      <div className="margintop text-center row justify-content-center mt-5 align-items-center">
+        <div className="col-lg-8">
           {PageRoute == "services" ? (
             <>
               <h1 className="heading4034">
