@@ -10,7 +10,45 @@ import ProjectPartner from "../../ProjectPartner/ProjectPartner";
 import Feedback from "../../../Global/Feedback";
 import OurClient from "../../Our Client/OurClient";
 import SolutionProvider from "../../SolutionProvider/SolutionProvider";
-import hiring from '../../Assets/icons8-hire-me-50.png'
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
+import DrawIcon from '@mui/icons-material/Draw';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import BrandingWatermarkTwoToneIcon from '@mui/icons-material/BrandingWatermarkTwoTone';
+import BrushTwoToneIcon from '@mui/icons-material/BrushTwoTone';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import WebAssetTwoToneIcon from '@mui/icons-material/WebAssetTwoTone';
+import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
+import SupportIcon from '@mui/icons-material/Support';
+import BiotechIcon from '@mui/icons-material/Biotech';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import LayersIcon from '@mui/icons-material/Layers';
+import SyncAltIcon from '@mui/icons-material/SyncAlt';
+import LocalActivityIcon from '@mui/icons-material/LocalActivity';
+import LayersClearIcon from '@mui/icons-material/LayersClear';
+import BugReportIcon from '@mui/icons-material/BugReport';
+import TagIcon from '@mui/icons-material/Tag';
+import ContentPasteIcon from '@mui/icons-material/ContentPaste';
+import PeopleIcon from '@mui/icons-material/People';
+import PaidIcon from '@mui/icons-material/Paid';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import CommitIcon from '@mui/icons-material/Commit';
+import AodIcon from '@mui/icons-material/Aod';
+import CodeIcon from '@mui/icons-material/Code';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import GamepadIcon from '@mui/icons-material/Gamepad';
+import ContrastIcon from '@mui/icons-material/Contrast';
+import PowerIcon from '@mui/icons-material/Power';
+import SecurityIcon from '@mui/icons-material/Security';
+import SpeedIcon from '@mui/icons-material/Speed';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
+import ThreeDRotationIcon from '@mui/icons-material/ThreeDRotation';
+import FilterHdrIcon from '@mui/icons-material/FilterHdr';
+import AnimationIcon from '@mui/icons-material/Animation';
+import SentimentSatisfiedIcon from '@mui/icons-material/SentimentSatisfied';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 export const BlockchainPage = ({ route }) => {
   const [servicesCardsDesc, setServicesCardsDesc] = useState({
@@ -61,18 +99,18 @@ export const BlockchainPage = ({ route }) => {
             "Welcome to 'Elevating Digital Presence,' a graphics design initiative by SSTech. As a leading provider of bespoke graphic design solutions, SSTech is committed to empowering businesses with captivating visual experiences. In this campaign, we delve into the realm of graphic innovation, exploring emerging trends, strategies, and best practices to drive growth and success in the digital age. From transformative graphic techniques to actionable design insights, 'Elevating Digital Presence' serves as your guide to harnessing the full potential of visual communication with SSTech as your trusted partner.",
           );
           setCards({
-            title1: 'Web App Design',
-            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title2: 'Web App Design',
-            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title3: 'Web App Design',
-            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title4: 'Web App Design',
-            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title5: 'Web App Design',
-            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title6: 'Web App Design',
-            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title1: { title: 'Graphic Design Solutions', icon: <EmojiObjectsIcon fontSize='large' /> },
+            Desc1: 'We provide innovative and visually stunning graphic design solutions tailored to your brand and target audience.',
+            title2: { title: 'Logo Design', icon: <BrandingWatermarkIcon fontSize='large' /> },
+            Desc2: 'We specialize in creating unique and memorable logos that effectively represent your brand identity.',
+            title3: { title: 'Print Design', icon: <DrawIcon fontSize='large' /> },
+            Desc3: 'We offer creative print design services including brochures, flyers, business cards, and more to elevate your marketing materials.',
+            title4: { title: 'UI/UX Design', icon: <AdminPanelSettingsIcon fontSize='large' /> },
+            Desc4: 'Our UI/UX design expertise ensures intuitive and engaging user experiences across various digital platforms.',
+            title5: { title: 'Branding Design', icon: <BrandingWatermarkTwoToneIcon fontSize='large' /> },
+            Desc5: 'We develop cohesive branding strategies and design elements to establish a strong and consistent brand image for your business.',
+            title6: { title: 'Graphic Design Consultation', icon: <BrushTwoToneIcon fontSize='large' /> },
+            Desc6: 'We provide expert consultation to understand your design needs and offer tailored solutions to achieve your objectives.'
           });
           break;
         case "web-application-development-services":
@@ -81,17 +119,17 @@ export const BlockchainPage = ({ route }) => {
             "At SSTech, we are a leading custom web application development company dedicated to creating innovative web apps that solve real business problems. With years of experience designing, building and launching complex web applications, we have the proven expertise to handle any web app project."
           );
           setCards({
-            title1: 'Web App Design',
+            title1: { title: 'Web App Design', icon: <LaptopMacIcon fontSize='large' /> },
             Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title2: 'E-commerce Web App Development',
+            title2: { title: 'E-commerce Web App Development', icon: <ShoppingCartIcon fontSize='large' /> },
             Desc2: 'We build secure, feature-rich custom e-commerce platforms to support your online business.',
-            title3: 'CMS Development',
+            title3: { title: 'CMS Development', icon: <WorkspacePremiumIcon fontSize='large' /> },
             Desc3: 'We develop flexible, scalable content management systems to organize & manage content.',
-            title4: 'Web App Testing',
+            title4: { title: 'Web App Testing', icon: <WebAssetTwoToneIcon fontSize='large' /> },
             Desc4: 'We thoroughly test your web app for functionality, UI/UX, security and performance issues.',
-            title5: 'Custom Website Development',
+            title5: { title: 'Custom Website Development', icon: <DashboardCustomizeIcon fontSize='large' /> },
             Desc5: 'We develop custom websites optimized for your unique business needs & brand identity.',
-            title6: 'Support & Maintenance',
+            title6: { title: 'Support & Maintenance', icon: <SupportIcon fontSize='large' /> },
             Desc6: 'We offer ongoing support and maintenance to keep your web app optimized post-launch.',
           });
           break;
@@ -101,18 +139,18 @@ export const BlockchainPage = ({ route }) => {
             "At SSTech, we provide end-to-end SEO services to drive digital transformation and achieve your business objectives through tailored SEO strategies. With a decade-long track record of optimizing websites for startups, enterprises, and industry leaders, we stand as your reliable SEO partner, ensuring enhanced online visibility and sustainable growth."
           );
           setCards({
-            title1: 'Web App Design',
-            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title2: 'Web App Design',
-            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title3: 'Web App Design',
-            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title4: 'Web App Design',
-            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title5: 'Web App Design',
-            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title6: 'Web App Design',
-            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title1: { title: 'Keyword Research', icon: <BiotechIcon fontSize='large' /> },
+            Desc1: 'We conduct comprehensive keyword research to identify the most relevant and high-performing keywords for your website.',
+            title2: { title: 'On-Page Optimization', icon: <ManageAccountsIcon fontSize='large' /> },
+            Desc2: 'We optimize on-page elements including meta tags, headings, and content to improve your website\'s search engine visibility.',
+            title3: { title: 'Off-Page', icon: <LayersIcon fontSize='large' /> },
+            Desc3: 'We implement off-page SEO strategies such as link building and social media promotion to enhance your website\'s authority and ranking.',
+            title4: { title: 'Technical SEO', icon: <SyncAltIcon fontSize='large' /> },
+            Desc4: 'We analyze and optimize technical aspects of your website such as site speed, mobile-friendliness, and site architecture for better search engine performance.',
+            title5: { title: 'Local SEO', icon: <LocalActivityIcon fontSize='large' /> },
+            Desc5: 'We optimize your website for local search results, helping you attract more customers from your target geographical area.',
+            title6: { title: 'SEO Reporting', icon: <BugReportIcon fontSize='large' /> },
+            Desc6: 'We provide regular reports and analysis of your website\'s SEO performance, along with actionable insights to drive continuous improvement.'
           });
           break;
         case "ui-ux-design-services":
@@ -121,17 +159,17 @@ export const BlockchainPage = ({ route }) => {
             "Unlock the potential of exceptional UI/UX design services at SSTech. Elevate your digital presence with our holistic approach, latest technology stack, and industry-specific solutions. Discover why we’re the best UI/UX design company for your brand’s success."
           );
           setCards({
-            title1: 'Website UI/UX Design',
+            title1: { title: 'Website UI/UX Design', icon: <LaptopMacIcon fontSize='large' /> },
             Desc1: 'We craft immersive website experiences optimized for user engagement and conversion.',
-            title2: 'Mobile UI/UX Design',
+            title2: { title: 'Mobile UI/UX Design', icon: <AodIcon fontSize='large' /> },
             Desc2: 'Our mobile app designs and user interfaces provide intuitive navigation and flows for flawless mobile interactions.',
-            title3: 'SaaS Product Design',
+            title3: { title: 'SaaS Product Design', icon: <CodeIcon fontSize='large' /> },
             Desc3: 'We design flawless SaaS product experiences that solve customer pain points.',
-            title4: 'Wireframing & Prototyping',
+            title4: { title: 'Wireframing & Prototyping', icon: <InventoryIcon fontSize='large' /> },
             Desc4: 'We rapidly test concepts through low-fi wireframes and hi-fi interactive prototypes.',
-            title5: 'NFT Design',
+            title5: { title: 'NFT Design', icon: <GamepadIcon fontSize='large' /> },
             Desc5: 'We design captivating NFTs combining visual design, metadata, and smart contracts.',
-            title6: 'Interaction Design',
+            title6: { title: 'Interaction Design', icon: <LayersClearIcon fontSize='large' /> },
             Desc6: 'We architect innovative interactive experiences based on cognition & perception principles.',
           });
           break;
@@ -141,17 +179,17 @@ export const BlockchainPage = ({ route }) => {
             "Our custom WordPress development services can be the one-stop solution for all your design and development needs. At SSTech, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business."
           );
           setCards({
-            title1: 'WordPress Theme Customization',
+            title1: { title: 'WordPress Theme Customization', icon: <ContrastIcon fontSize='large' /> },
             Desc1: 'Developing custom themes to make your website stand out and align with your brand identity.',
-            title2: 'WordPress Design Services',
+            title2: { title: 'WordPress Design Services', icon: <LaptopMacIcon fontSize='large' /> },
             Desc2: 'Creating visually stunning, user-centric WordPress designs that captivate and convert visitors.',
-            title3: 'WordPress Plugin Development',
+            title3: { title: 'WordPress Plugin Development', icon: <PowerIcon fontSize='large' /> },
             Desc3: 'Building custom plugins to enhance your website’s functionality and user experience.',
-            title4: 'WordPress Security Services',
+            title4: { title: 'WordPress Security Services', icon: <SecurityIcon fontSize='large' /> },
             Desc4: 'Protecting your website from threats and vulnerabilities with robust security measures.',
-            title5: 'WordPress Support',
+            title5: { title: 'WordPress Support', icon: <SupportIcon fontSize='large' /> },
             Desc5: 'Providing ongoing support and maintenance to keep your WordPress website up-to-date.',
-            title6: 'WordPress Speed Optimization',
+            title6: { title: 'WordPress Speed Optimization', icon: <SpeedIcon fontSize='large' /> },
             Desc6: 'Ensuring lightning-fast loading times for improved search engine rankings.',
           });
           break;
@@ -161,18 +199,18 @@ export const BlockchainPage = ({ route }) => {
             "Unlock your brand's potential with SSTech's tailored Social Media Marketing services. Elevate your online presence with expertly crafted social media strategies and campaign management. Partner with us to cultivate a captivating, professional, and high-performing social media profile."
           );
           setCards({
-            title1: 'Web App Design',
-            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title2: 'Web App Design',
-            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title3: 'Web App Design',
-            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title4: 'Web App Design',
-            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title5: 'Web App Design',
-            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title6: 'Web App Design',
-            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title1: { title: 'Social Media Strategy', icon: <TagIcon fontSize='large' /> },
+            Desc1: 'We develop customized social media strategies tailored to your business goals and target audience.',
+            title2: { title: 'Content Creation', icon: <ContentPasteIcon fontSize='large' /> },
+            Desc2: 'We create engaging and visually appealing content, including graphics, videos, and posts, optimized for various social media platforms.',
+            title3: { title: 'Community Management', icon: <PeopleIcon fontSize='large' /> },
+            Desc3: 'We manage your online community by engaging with followers, responding to comments, and fostering positive interactions.',
+            title4: { title: 'Paid Advertising', icon: <PaidIcon fontSize='large' /> },
+            Desc4: 'We run targeted paid advertising campaigns on social media platforms to increase reach, engagement, and conversions for your business.',
+            title5: { title: 'Influencer Marketing', icon: <AccountCircleIcon fontSize='large' /> },
+            Desc5: 'We collaborate with influencers and industry experts to amplify your brand message and reach a wider audience.',
+            title6: { title: 'Performance Analytics', icon: <CommitIcon fontSize='large' /> },
+            Desc6: 'We track and analyze key performance metrics to measure the effectiveness of your social media campaigns.'
           });
           break;
         case "3d-animation-services":
@@ -181,38 +219,18 @@ export const BlockchainPage = ({ route }) => {
             "SSTech is a premier 3D animation studio, offering comprehensive MVP animation services to bring your minimum viable product (MVP) to life. With a wealth of experience in delivering successful 3D animations for startups and enterprises alike, we are your ultimate technology partner for MVP animation development."
           );
           setCards({
-            title1: 'Web App Design',
-            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title2: 'Web App Design',
-            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title3: 'Web App Design',
-            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title4: 'Web App Design',
-            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title5: 'Web App Design',
-            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title6: 'Web App Design',
-            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-          });
-          break;
-        case "services":
-          setTitle("Our Services");
-          setDesc(
-            "Boosting Your Success through Advanced Technology and Client-Centric Solutions At SSTech, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
-          );
-          setCards({
-            title1: 'Web App Design',
-            Desc1: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title2: 'Web App Design',
-            Desc2: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title3: 'Web App Design',
-            Desc3: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title4: 'Web App Design',
-            Desc4: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title5: 'Web App Design',
-            Desc5: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
-            title6: 'Web App Design',
-            Desc6: 'We craft visually appealing and user-centric designs tailored to your brand and users.',
+            title1: { title: '3D Modeling', icon: <ThreeDRotationIcon fontSize='large' /> },
+            Desc1: 'We specialize in creating high-quality 3D models of objects, characters, and environments for various industries and applications.',
+            title2: { title: 'Animation Production', icon: <ViewInArIcon fontSize='large' /> },
+            Desc2: 'Our expert animators bring your ideas to life through captivating 3D animations, including character animation, product demos etc.',
+            title3: { title: 'Visual Effects (VFX)', icon: <FilterHdrIcon fontSize='large' /> },
+            Desc3: 'We integrate stunning visual effects into your projects to enhance realism and create immersive storytelling experiences.',
+            title4: { title: 'Motion Graphics', icon: <AnimationIcon fontSize='large' /> },
+            Desc4: 'We design dynamic motion graphics and animated visuals to convey complex information and captivate audiences across different media platforms.',
+            title5: { title: '3D Rendering', icon: <SentimentSatisfiedIcon fontSize='large' /> },
+            Desc5: 'We provide high-quality 3D rendering services to showcase your designs and concepts with realistic lighting, textures, and shadows.',
+            title6: { title: 'Storyboarding', icon: <AutoStoriesIcon fontSize='large' /> },
+            Desc6: 'We assist in developing compelling storyboards and scripts to outline the narrative and visual sequence of your 3D animation projects.'
           });
           break;
         default:
@@ -362,35 +380,35 @@ export const BlockchainPage = ({ route }) => {
 
   const serviceCardList = [
     {
-      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: cards.title1,
+      icon: cards.title1.icon,
+      title: cards.title1.title,
       description: cards.Desc1,
     },
     {
-      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: cards.title2,
+      icon: cards.title2.icon,
+      title: cards.title2.title,
       description: cards.Desc2,
     },
   ];
   const serviceCardList1 = [
     {
-      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: cards.title3,
+      icon: cards.title3.icon,
+      title: cards.title3.title,
       description: cards.Desc3,
     },
     {
-      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: cards.title4,
+      icon: cards.title4.icon,
+      title: cards.title4.title,
       description: cards.Desc4,
     },
     {
-      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: cards.title5,
+      icon: cards.title5.icon,
+      title: cards.title5.title,
       description: cards.Desc5,
     },
     {
-      icon: <img src={hiring} height={'30px'} width={'30px'} alt='' />,
-      title: cards.title6,
+      icon: cards.title6.icon,
+      title: cards.title6.title,
       description: cards.Desc6,
     },
   ];
@@ -422,7 +440,7 @@ export const BlockchainPage = ({ route }) => {
           </>}
         </div>
         {PageRoute == 'services' ? <></> :
-          <div className="col-lg-5">
+          <div className="col-lg-5 mt-5">
             <ServiceCardList ServiceCardList={serviceCardList} />
           </div>}
       </div>
