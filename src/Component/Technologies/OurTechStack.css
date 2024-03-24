@@ -1,32 +1,94 @@
 .tabs {
-    display: flex;
-    justify-content: center;
-    height:120px;
-    gap: 90px;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  gap: 90px;
+}
+
+.tabs span {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tabs span:hover {
+  color: #ff5300;
+  text-decoration: underline;
+}
+
+.tabs span.active {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.content {
+  height: auto;
+}
+
+.imageclass {
+  width: 60px;
+}
+
+.ot_iconpara {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.ociconpaddingtop {
+  padding-top: 2%;
+}
+
+@media all and (max-width: 600px) {
+  .tabs {
+    gap: 20px;
   }
-  
+
   .tabs span {
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 15px;
   }
-  
-  .tabs span:hover {
-    color: #ff5300;
-    text-decoration: underline;
+}
+
+@media all and (max-width: 552px) {
+  .tabs {
+    padding: 0px 5%;
+    height: 60px;
   }
-  
-  .tabs span.active {
-    text-decoration: underline;
-    color: #007bff;
+
+  .tabs span {
+    font-size: 13px;
   }
-  
-  .content {
-    height: auto;
+
+}
+
+@media all and (max-width: 470px) {
+  .imageclass {
+    width: 50px;
   }
-  
-  .imageclass{
-    /* margin-left: 4%; */
-    width: 60px;
-    /* height: 180; */
+
+  .ot_iconpara {
+    font-size: 15px;
   }
+}
+
+@media all and (max-width: 375px) {
+  .tabs {
+    gap: 10px;
+  }
+
+  .tabs span {
+    font-size: 13px;
+  }
+
+  .imageclass {
+    width: 40px;
+  }
+
+  .ot_iconpara {
+    font-size: 13px;
+  }
+
+  .ociconpaddingtop {
+    padding-top: 0.5%;
+  }
+}

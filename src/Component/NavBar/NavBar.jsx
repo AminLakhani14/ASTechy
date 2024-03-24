@@ -37,25 +37,25 @@ function Navbar() {
                   <a href="#">Hire Team</a>
                 </li>
                 <li>
-                  <a to='/graphics-development-services' href="/graphics-development-services">Blockchain</a>
+                  <a to='/graphics-development-services' href="/graphics-development-services">Graphics Design</a>
                 </li>
                 <li>
-                  <a to='/web-application-development-services' href="/web-application-development-services">Web Apps</a>
+                  <a to='/web-application-development-services' href="/web-application-development-services">Web Development</a>
                 </li>
                 <li>
-                  <a to='/seo-services' href="/seo-services">Mobile Apps</a>
+                  <a to='/seo-services' href="/seo-services">SEO</a>
                 </li>
                 <li>
                   <a to='/ui-ux-design-services' href="/ui-ux-design-services">UI/UX Design</a>
                 </li>
                 <li>
-                  <a to='/wordpress-development-services' href="/wordpress-development-services">WordPress</a>
+                  <a to='/wordpress-development-services' href="/wordpress-development-services">WordPress Development</a>
                 </li>
                 <li>
-                  <a to='/social-media-marketing-services' href="/social-media-marketing-services">Shopify</a>
+                  <a to='/social-media-marketing-services' href="/social-media-marketing-services">Social Media Marketing</a>
                 </li>
                 <li>
-                  <a to='/3d-animation-services' href="/3d-animation-services">MVP</a>
+                  <a to='/3d-animation-services' href="/3d-animation-services">3D Animation</a>
                 </li>
               </ul>
             </li>
@@ -67,23 +67,23 @@ function Navbar() {
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>
-                  <a to="/WebDevelopment" href="/WebDevelopment">Web Development</a>
+                  <a to="/web-application-development-services" href="/web-application-development-services">Web Development</a>
                 </li>
                 <li>
-                  <a to="/Wordpress" href="/Wordpress">Wordpress</a>
+                  <a to="/wordpress-development-services" href="/wordpress-development-services">Wordpress</a>
                 </li>
                 <li>
-                  <a to="/SearchEngine" href="/SearchEngine">SEO</a>
+                  <a to="/seo-services" href="/seo-services">SEO</a>
                 </li>
                 <li>
-                  <a to="/SocialMedia" href="/SocialMedia">Social Media Marketing</a>
+                  <a to="/social-media-marketing-services" href="/social-media-marketing-services">Social Media Marketing</a>
                 </li>
                 <li>
-                  <a to="/Wikipedia" href="/Wikipedia">Wikipedia</a>
+                  <a to="https://www.wikipedia.org" href="https://www.wikipedia.org">Wikipedia</a>
                 </li>
-                <li>
+                {/* <li>
                   <a to="/Ebook" href="/Ebook">Ebook</a>
-                </li>
+                </li> */}
                 <li>
                   <label for="drop-3" class="toggle">
                     Tutorials +
