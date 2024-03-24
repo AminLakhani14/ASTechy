@@ -1,12 +1,72 @@
-.year{
+.year {
     font-size: 22px;
     color: #2693fa;
 }
-.contentTitle{
+
+.contentTitle {
     color: #000000;
     font-size: 22px;
 }
-.textContent{
+
+.contentText {
     font-size: 16px;
     font-weight: normal;
+}
+
+.textHeading {
+    line-height: 2;
+    font-size: 24px;
+    color: #2693fa;
+}
+
+.img1 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about1.webp");
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+}
+
+.img2 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about2.webp");
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+}
+
+.img3 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about3.webp");
+    background-size: contain;
+    /* background-position: center; */
+    height: 500px;
+}
+
+.img4 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about4.jpg");
+    background-size: contain;
+    /* background-position: center; */
+    height: 500px;
+}
+
+.img5 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about5.webp");
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+}
+
+.img6 {
+    background-repeat: no-repeat;
+    background-image: url("../../Images/about6.webp");
+    background-size: contain;
+    /* background-position: center; */
+    height: 500px;
+}
+
+.ml-10 {
+    margin-left: 10px;
 }
