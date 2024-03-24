@@ -86,3 +86,39 @@
 .changecolor{
   color: #2693fa;
 }
+.heading{
+  color: #ededed;
+  font-size: 70px;
+}
+.subheading{
+  font-size: 28px;
+  font-weight: bold;
+}
+.sub-subheading{
+  font-size: 24px;
+  font-weight: lighter;
+}
+.bulletpoint{
+  font-size: 24px;
+  font-weight: lighter;
+}
+.learnmoreButoon{
+  color: #2693fa !important;
+  border: 1px solid #2693fa;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  /* font-weight: 700 !important; */
+  transition: all 0.3s ease 0s;
+  padding-top: 0.6em !important;
+  padding-right: 2em !important;
+  padding-bottom: 0.6em !important;
+  padding-left: 2em !important;
+}
+.learnmoreButoon:hover {
+  color: #fff !important;
+  border-color: #c94a22 !important;
+  background-image: initial;
+  background-color: #ff5300;
+}
