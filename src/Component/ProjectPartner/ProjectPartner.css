@@ -3,11 +3,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.ppsmallcontainer{
-  /* display: flex; */
-  justify-content: space-between;
-  /* align-items: center; */
-}
 
 .ppleft-side {
   flex: 1;
@@ -57,7 +52,7 @@
   background: 0 0;
 }
 
-.row {
+.row2 {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.6em;
@@ -96,12 +91,13 @@
   font-size: 34px;
   line-height: 1.4em;
   font-weight: 700;
-  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif !important;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
 }
 
 .partnerpara {
   font-size: 16px;
   line-height: 1.6em;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
 }
 
 .togetherpara {
@@ -119,4 +115,57 @@
   word-wrap: break-word;
   width: 100%;
   max-width: 550px;
+}
+
+@media all and (max-width : 980px) {
+  .ppcontainer {
+    flex-direction: column;
+  }
+
+  .ppleft-side {
+    padding: 8% 8% 2% 8%;
+  }
+
+  .partnerheading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .partnerpara {
+    font-size: 14px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
+  .togetherpara {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .contactuspp {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .ppcard-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .row1 {
+    font-size: 16px;
+  }
+
+  .row2 {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+
+  .ppcard{
+    padding: 0px 22px;
+    margin: 2% -1% 2% 5%;
+  }
 }

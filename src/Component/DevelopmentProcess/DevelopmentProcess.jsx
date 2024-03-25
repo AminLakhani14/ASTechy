@@ -11,7 +11,7 @@ export const DevelopmentProcess = () => {
     const [devTitleDesc, setDevTitleDesc] = useState({ title: '', desc: '' });
     const PageRoute = window.location.pathname.replace(/^\//, '');
     useEffect(() => {
-        debugger;
+        // debugger;
         getDevTexts();
     }, []);
     const getDevTexts = () => {
@@ -76,14 +76,15 @@ export const DevelopmentProcess = () => {
     return (
         <>
             <div className='margintop devpromain' style={{ padding: '3% 6% 3% 7%', height: 'auto' }}>
-                <div className='' style={{ width: '100%' }}>
+                <div className='col-lg-12'>
                     <h1 className='heading4034'>Our <span className='changecolor'>{devTitleDesc.title}</span> Process</h1>
                     <p className='font2014' style={{ width: "95%" }}>{devTitleDesc.desc}</p>
+                    <div className='borderbottomdp'></div>
                 </div>
                 <div className="d-flex w-100 justify-content-around margintop marginbottom">
                     <div className='d-flex w-50'>
-                        <div>
-                            <img src={concept} alt='' />
+                        <div className=''>
+                            <img src={concept} alt='' className='imagecutterdp' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Concept</span>
@@ -93,7 +94,7 @@ export const DevelopmentProcess = () => {
                     </div>
                     <div className='d-flex w-50'>
                         <div>
-                            <img src={design} alt='' />
+                            <img className='imagecutterdp' src={design} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Design</span>
@@ -105,7 +106,7 @@ export const DevelopmentProcess = () => {
                 <div className="d-flex w-100 justify-content-around margintop marginbottom">
                     <div className='d-flex w-50'>
                         <div>
-                            <img src={dev} alt='' />
+                            <img className='imagecutterdp' src={dev} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Development</span>
@@ -115,7 +116,7 @@ export const DevelopmentProcess = () => {
                     </div>
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
-                            <img src={testing} alt='' />
+                            <img className='imagecutterdp' src={testing} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Testing</span>
@@ -126,7 +127,7 @@ export const DevelopmentProcess = () => {
                 <div className="d-flex w-100 justify-content-around margintop marginbottom">
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
-                            <img src={deployment} alt='' />
+                            <img className='imagecutterdp' src={deployment} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Deployment</span>
@@ -135,7 +136,7 @@ export const DevelopmentProcess = () => {
                     </div>
                     <div style={{ width: '50%', display: 'flex' }}>
                         <div>
-                            <img src={maintain} alt='' width={'30px'} />
+                            <img className='imagecutterdp' src={maintain} alt='' width={'30px'} />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Maintenance</span>
