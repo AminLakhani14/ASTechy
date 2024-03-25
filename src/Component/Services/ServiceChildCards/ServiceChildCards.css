@@ -29,3 +29,7 @@
     font-weight: 600;
     line-height: 1.3em;
 }
+
+.sccicon{
+    transition: all 0.2s ease 2ms;   
+}
