@@ -1,27 +1,50 @@
-.devpromain{
+.devpromain {
     background-color: rgb(243 245 249);
 }
-.font2014{
+
+.font2014 {
     font-size: 20px;
 }
-.font26{
+
+.font26 {
     font-size: 26px;
     font-weight: 600;
 }
-.font18{
+
+.font18 {
     font-size: 18px;
- }
-.heading4034{
+}
+
+.heading4034 {
     font-size: 40px;
     font-weight: 500;
 }
-@media all and (max-width : 768px) {
-    .font2014{
-      font-size: 14px;
+
+@media all and (max-width : 980px) {
+    .font2014 {
+        font-size: 14px;
+        text-align: center;
     }
-    .heading4034{
-        font-size: 34px;
-        font-weight: 500;
+
+    .borderbottomdp {
+        margin-top: 10px;
+        border-bottom: 2px solid #000;
     }
-  }
-  
+
+    .heading4034 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .font26{
+        font-size: 18px;
+    }
+
+    .font18{
+        font-size: 16px;
+    }
+
+    .imagecutterdp{
+        width: 40px;
+    }
+}
