@@ -118,7 +118,7 @@ const SolutionProvider = () => {
                             fourth: 'Education',
                             fifth: 'Logistics',
                             sixth: 'Marketing'
-                        
+
                         },
                         tabsdesc: {
                             first: 'Our designers have created award-winning solutions across a diverse range of industries. This extensive experience allows us to craft customized UI/UX that aligns perfectly to your specific market context and end-users.',
@@ -239,9 +239,11 @@ const SolutionProvider = () => {
 
     return (
         <div className={"spcontainer mt-4"}>
-            <div className="spleft-side">
-                <div className='d-flex justify-content-end'>
-                    <img src={servicesIndustries.tabsdesc.image} alt='' height={'400px'} width={'350px'} />
+            <div className='' style={{ width: '40%' }}>
+                <div className="spleft-side">
+                    <div className='d-flex justify-content-end'>
+                        <img className='spleft-sideImg' src={servicesIndustries.tabsdesc.image} alt='' height={'400px'} width={'350px'} />
+                    </div>
                 </div>
             </div>
             <div className="spright-side">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './OurTechStack.css';
 import html5 from '../Assets/icons8-html.svg'
 import css3 from '../Assets/icons8-css3.svg'
@@ -7,17 +7,18 @@ import php from '../Assets/icons8-php.svg'
 import webflow from '../Assets/icons8-webflow.svg'
 import wordpress from '../Assets/icons8-wordpress.svg'
 import laravel from '../Assets/icons8-laravel-64.png'
-import shopify from '../Assets/shopify-svgrepo-com.svg'
+import canva from '../Assets/icons8-canva-64.png'
 import andriod from '../Assets/icons8-android.svg'
 import flutter from '../Assets/icons8-flutter.svg'
 import ios from '../Assets/icons8-ios.svg'
 import react from '../Assets/icons8-react.svg'
-import bitcoin from '../Assets/icons8-bitcoin.svg'
+import hubspot from '../Assets/icons8-hubspot-a-developer-and-marketer-of-software-products-24.png'
 import solana from '../Assets/icons8-solana-64.png'
 import etherium from '../Assets/icons8-ethereum-58.png'
 import metamask from '../Assets/icons8-metamask-48.png'
 import ripple from '../Assets/icons8-ripple-50.png'
-import solidity from '../Assets/icons8-solidity-48.png'
+import bitly from '../Assets/icons8-bitly-32.png'
+import FacebookTwoToneIcon from '@mui/icons-material/FacebookTwoTone';
 import adobeae from '../Assets/after-effects.png'
 import adobeil from '../Assets/illustrator.png'
 import adobefi from '../Assets/icons8-figma-48.png'
@@ -38,11 +39,21 @@ import mern from '../Assets/mern.svg'
 
 const TechnologyStack = () => {
   const [activeTab, setActiveTab] = useState('Web');
-
+  
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+  
   const renderContent = () => {
     switch (activeTab) {
       case 'Web':
@@ -51,95 +62,81 @@ const TechnologyStack = () => {
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={html5} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>HTML 5</p>
+                <p className='ot_iconpara'>HTML 5</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={css3} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>CSS 3</p>
+                <p className='ot_iconpara'>CSS 3</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={js} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>JavaScript</p>
+                <p className='ot_iconpara'>JavaScript</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={mern} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>MERN</p>
+                <p className='ot_iconpara'>MERN</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={php} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>PHP</p>
+                <p className='ot_iconpara'>PHP</p>
               </div>
             </div>
-            <div className='mt-5 d-flex justify-content-center pt-4'>
+            <div className='mt-5 d-flex justify-content-center ociconpaddingtop'>
               <div style={{ flexDirection: 'column', textAlign: 'center' }}>
                 <img src={webflow} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Webflow</p>
+                <p className='ot_iconpara'>Webflow</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={wordpress} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>WordPress</p>
+                <p className='ot_iconpara'>WordPress</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={laravel} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Laravel</p>
+                <p className='ot_iconpara'>Laravel</p>
               </div>
-              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+              {/* <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
                 <img src={shopify} className='imageclass' alt='' color='#5E8E3E' height={'60px'} width={'55px'} />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>shopify</p>
-              </div>
+                <p className='ot_iconpara'>shopify</p>
+              </div> */}
             </div>
           </div>
         );
-      case 'Mobile':
-        return (
-          <div className='content d-flex justify-content-center'>
-            <div style={{ flexDirection: 'column', textAlign: 'center' }}>
-              <img src={andriod} className='imageclass' alt='' />
-              <p style={{ fontSize: '18px', fontWeight: 400 }}>Andriod</p>
-            </div>
-            <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-              <img src={flutter} className='imageclass' alt='' />
-              <p style={{ fontSize: '18px', fontWeight: 400 }}>Flutter</p>
-            </div>
-            <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-              <img src={ios} className='imageclass' alt='' />
-              <p style={{ fontSize: '18px', fontWeight: 400 }}>IOS</p>
-            </div>
-            <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-              <img src={react} className='imageclass' alt='' />
-              <p style={{ fontSize: '18px', fontWeight: 400 }}>React Native</p>
-            </div>
-          </div>
-        );
-      case 'Blockchain':
+      // case 'Mobile':
+      //   return (
+      //     <div className='content d-flex justify-content-center'>
+      //       <div style={{ flexDirection: 'column', textAlign: 'center' }}>
+      //         <img src={andriod} className='imageclass' alt='' />
+      //         <p className='ot_iconpara'>Andriod</p>
+      //       </div>
+      //       <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+      //         <img src={flutter} className='imageclass' alt='' />
+      //         <p className='ot_iconpara'>Flutter</p>
+      //       </div>
+      //       <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+      //         <img src={ios} className='imageclass' alt='' />
+      //         <p className='ot_iconpara'>IOS</p>
+      //       </div>
+      //       <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
+      //         <img src={react} className='imageclass' alt='' />
+      //         <p className='ot_iconpara'>React Native</p>
+      //       </div>
+      //     </div>
+      //   );
+      case 'Social Media Marketing':
         return (
           <div className="content">
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
-                <img src={bitcoin} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Bitcoin</p>
+                <img src={canva} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Canva</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={solana} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Solana</p>
+                <img src={hubspot} className='imageclass' alt='' />
+                <p className='ot_iconpara'>HubSpot</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={etherium} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Ethereum</p>
-              </div>
-            </div>
-            <div className='mt-5 d-flex justify-content-center pt-4'>
-              <div className='text-center'>
-                <img src={metamask} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Metamask</p>
-              </div>
-              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={ripple} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Ripple</p>
-              </div>
-              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={solidity} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Solidity</p>
+                <img src={bitly} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Bitly</p>
               </div>
             </div>
           </div>
@@ -150,25 +147,25 @@ const TechnologyStack = () => {
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={adobeae} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe AE</p>
+                <p className='ot_iconpara'>Adobe AE</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={adobeil} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe Illustrator</p>
+                <p className='ot_iconpara'>Adobe Illustrator</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={adobeph} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe Photshop</p>
+                <p className='ot_iconpara'>Adobe Photshop</p>
               </div>
             </div>
             <div className='mt-5 pt-4 d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={adobexd} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Adobe XD</p>
+                <p className='ot_iconpara'>Adobe XD</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={adobefi} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Figma</p>
+                <p className='ot_iconpara'>Figma</p>
               </div>
             </div>
           </div>
@@ -179,25 +176,25 @@ const TechnologyStack = () => {
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={redis} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Redis</p>
+                <p className='ot_iconpara'>Redis</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={mongodb} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>MongoDB</p>
+                <p className='ot_iconpara'>MongoDB</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={mysql} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>MySQL</p>
+                <p className='ot_iconpara'>MySQL</p>
               </div>
             </div>
             <div className='mt-5 pt-4 d-flex justify-content-center '>
               <div className='text-center'>
                 <img src={PostgreSQL} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>PostgreSQL</p>
+                <p className='ot_iconpara'>PostgreSQL</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={SQLite} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>SQLite</p>
+                <p className='ot_iconpara'>SQLite</p>
               </div>
             </div>
           </div>
@@ -208,29 +205,29 @@ const TechnologyStack = () => {
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={apprium} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Apprium</p>
+                <p className='ot_iconpara'>Apprium</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={jira} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Jira</p>
+                <p className='ot_iconpara'>Jira</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={jmeter} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>JMeter</p>
+                <p className='ot_iconpara'>JMeter</p>
               </div>
             </div>
-            <div  className='mt-5 d-flex justify-content-center'>
+            <div className='mt-5 d-flex justify-content-center'>
               <div className='text-center'>
                 <img src={postman} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Postman</p>
+                <p className='ot_iconpara'>Postman</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={selenium} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Selenium</p>
+                <p className='ot_iconpara'>Selenium</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
                 <img src={trello} className='imageclass' alt='' />
-                <p style={{ fontSize: '18px', fontWeight: 400 }}>Trello</p>
+                <p className='ot_iconpara'>Trello</p>
               </div>
             </div>
           </div>
@@ -244,47 +241,86 @@ const TechnologyStack = () => {
   return (
     <div className='mb-4 pb-5'>
       <h1 className='font4834 margintop marginbottom pt-5 pb-4' style={{
-        textAlign: 'center',lineHeight: '1.4em', fontWeight: '700'
+        textAlign: 'center', lineHeight: '1.4em', fontWeight: '700'
       }}>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h1>
-
-      <div className="tabs pt-4">
-        <span
-          className={activeTab === 'Web' ? 'active' : ''}
-          onClick={() => handleTabClick('Web')}
-        >
-          Web
-        </span>
-        <span
+      {windowWidth < 472 ?
+        <>
+          <div className="tabs col-lg-12 pt-4">
+            <span
+              className={activeTab === 'Web' ? 'active' : ''}
+              onClick={() => handleTabClick('Web')}
+            >
+              Web
+            </span>
+            {/* <span
           className={activeTab === 'Mobile' ? 'active' : ''}
           onClick={() => handleTabClick('Mobile')}
         >
           Mobile
-        </span>
-        <span
-          className={activeTab === 'Blockchain' ? 'active' : ''}
-          onClick={() => handleTabClick('Blockchain')}
-        >
-          Blockchain
-        </span>
-        <span
-          className={activeTab === 'UI/UX Design' ? 'active' : ''}
-          onClick={() => handleTabClick('UI/UX Design')}
-        >
-          UI/UX Design
-        </span>
-        <span
-          className={activeTab === 'Database' ? 'active' : ''}
-          onClick={() => handleTabClick('Database')}
-        >
-          Database
-        </span>
-        <span
-          className={activeTab === 'Testing' ? 'active' : ''}
-          onClick={() => handleTabClick('Testing')}
-        >
-          Testing
-        </span>
-      </div>
+        </span> */}
+            <span
+              className={activeTab === 'Social Media Marketing' ? 'active' : ''}
+              onClick={() => handleTabClick('Social Media Marketing')}
+            >
+              Social Media Marketing
+            </span>
+            <span
+              className={activeTab === 'UI/UX Design' ? 'active' : ''}
+              onClick={() => handleTabClick('UI/UX Design')}
+            >
+              UI/UX Design
+            </span>
+            <span
+              className={activeTab === 'Database' ? 'active' : ''}
+              onClick={() => handleTabClick('Database')}
+            >
+              Database
+            </span>
+          </div>
+          <div className="tabs col-lg-12">
+            <span
+              className={activeTab === 'Testing' ? 'active' : ''}
+              onClick={() => handleTabClick('Testing')}
+            >
+              Testing
+            </span>
+          </div>
+        </>
+        :
+        <>
+          <div className="tabs pt-4">
+            <span
+              className={activeTab === 'Web' ? 'active' : ''}
+              onClick={() => handleTabClick('Web')}
+            >
+              Web
+            </span>
+            <span
+              className={activeTab === 'Social Media Marketing' ? 'active' : ''}
+              onClick={() => handleTabClick('Social Media Marketing')}
+            >
+              Social Media Marketing
+            </span>
+            <span
+              className={activeTab === 'UI/UX Design' ? 'active' : ''}
+              onClick={() => handleTabClick('UI/UX Design')}
+            >
+              UI/UX Design
+            </span>
+            <span
+              className={activeTab === 'Database' ? 'active' : ''}
+              onClick={() => handleTabClick('Database')}
+            >
+              Database
+            </span>
+            <span
+              className={activeTab === 'Testing' ? 'active' : ''}
+              onClick={() => handleTabClick('Testing')}
+            >
+              Testing
+            </span>
+          </div>
+        </>}
 
       {renderContent()}
     </div>
