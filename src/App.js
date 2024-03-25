@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Router>
+      {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/WebDevelopment" element={<WebDevelopment />} />
@@ -39,7 +39,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/AboutUs" element={<AboutUs />} />
         </Routes>
-      </Router>
+      {/* </Router> */}
       <Cities />
       <Footer />
     </div>

@@ -24,15 +24,13 @@ function Home() {
   };
   return (
     <div>
-      <div className="row">
-        <div className="col-lg-6">col-lg-6</div>
-        <div className="col-lg-6">col-lg-6</div>
-      </div>
+      
         <AutoPlay />
       <Service />
+      <div className="pt-4 mt-5 pb-5" style={{backgroundColor:"#F2F5F9"}}>
       <LeftSideExploreMore
         handleController={handleController}
-        secondbutton={'Visit Sites'}
+        secondbutton={'Lets Get Started'}
         heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience"
         subheading="Zwapifi, developed using the React Native framework, 
         is a cutting-edge platform that aims to transform the bartering process.
@@ -41,18 +39,7 @@ function Home() {
          offering a unique and seamless trading experience to the users."
         picture={picture}
       />
-
-      <ExploreMore
-        handleController={handleController}
-        secondbutton={'Visit Sites'}
-        heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience"
-        subheading="Zwapifi, developed using the React Native framework, 
-        is a cutting-edge platform that aims to transform the bartering process.
-         It provides a digital venue for users to trade items, ensuring fair value in return. 
-         The app simplifies trading, promotes sustainability, and aids in decluttering, 
-         offering a unique and seamless trading experience to the users."
-        picture={picture}
-      />
+      </div>
       <OurClient />
       <Feedback />
       <TechnologyStack />

@@ -82,9 +82,7 @@ function AutoPlay(props) {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div
-          className="background1"
-        >
+        <div className="background1">
           <div
             style={{ color: "#ffffff" }}
             className={
@@ -101,14 +99,14 @@ function AutoPlay(props) {
             <div>
               <h1 className="mb-4 sliderMainFont">
                 <b>
-                  Streamline Your Web App with Our Cutting-Edge All-In-One
-                  Solutions.
+                  Optimize Your Online Presence with Our State-of-the-Art,
+                  All-Encompassing SEO Solutions.
                 </b>
               </h1>
               <p className="sliderParagraph">
-                Our Web Application Development Service provide a comprehensive
-                solution for all your web needs, utilizing cutting-edge
-                technology to optimize efficiency,productivity,and success.
+                Transform Your Digital Landscape with Our Holistic SEO
+                Solutions, Leveraging Cutting-Edge Strategies to Boost
+                Visibility, Drive Engagement, and Achieve Unprecedented Success.
               </p>
               <div
                 className={
@@ -117,7 +115,7 @@ function AutoPlay(props) {
                     : "d-flex mt-4"
                 }
               >
-                <button className="HeaderButton">Web App Services</button>
+                <button className="HeaderButton">Search Engine Optimization</button>
               </div>
             </div>
           </div>
@@ -128,7 +126,7 @@ function AutoPlay(props) {
                 : "width50 d-flex align-items-center"
             }
           >
-            <img src={data} alt="Computer man" />
+            <img src={data} alt="Computer man" style={{ width: "99%" }} />
           </div>
         </div>
 

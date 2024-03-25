@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../Images/logo.jpg";
-
+import { Link, Route, Routes } from "react-router-dom"
 function Navbar() {
   const [click, setClick] = useState(false);
   const changeClick = () => setClick(!click);
@@ -37,7 +37,7 @@ function Navbar() {
                   <a href="#">Hire Team</a>
                 </li>
                 <li>
-                  <a to='/graphics-development-services' href="/graphics-development-services">Blockchain</a>
+                  <Link   to='/graphics-development-services' href="/graphics-development-services">Blockchain</Link>
                 </li>
                 <li>
                   <a to='/web-application-development-services' href="/web-application-development-services">Web Apps</a>
