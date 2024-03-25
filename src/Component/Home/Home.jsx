@@ -24,11 +24,11 @@ function Home() {
   };
   return (
     <div>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-lg-6">col-lg-6</div>
         <div className="col-lg-6">col-lg-6</div>
-      </div>
-        <AutoPlay />
+      </div> */}
+      <AutoPlay />
       <Service />
       <LeftSideExploreMore
         handleController={handleController}
