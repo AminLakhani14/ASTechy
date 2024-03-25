@@ -10,10 +10,11 @@
     display: flex;
 }
 
-.ocleft-side{
+.ocleft-side {
     flex: 1;
     padding: 20px;
 }
+
 .ocright-side {
     flex: 1;
 }
@@ -48,4 +49,22 @@
         width: auto;
         padding: 20px;
     }
+
+    .ourclientheading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ourclientpara {
+        font-size: 14px;
+        line-height: 1.6em;
+        text-align: center;
+    }
+
+    .contactusac {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
 }

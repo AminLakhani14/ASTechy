@@ -5,13 +5,25 @@
 
 .spleft-side {
   padding: 6% 0%;
-  flex: 1;
-  background-color: #2693fa;
+  width: 75%;
+  height: 520px;
+  background-color: #2693fa
+}
+
+.spleft-sideImg {
+  position: absolute;
+  left: 14%;
+  margin-top: 20px;
+  display: flex;
+  height: 400px;
+  width: 360px;
+  /* border-color: #d9d9d9; */
+  border-radius: 1px solid #d9d9d9;
 }
 
 .spright-side {
-  padding: 0% 4% 0% 2%;
-  flex: 1;
+  padding: 0% 12% 0% 2%;
+  width: 60%;
 }
 
 .tabsp {
