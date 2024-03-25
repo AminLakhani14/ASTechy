@@ -11,7 +11,7 @@ export const DevelopmentProcess = () => {
     const [devTitleDesc, setDevTitleDesc] = useState({ title: '', desc: '' });
     const PageRoute = window.location.pathname.replace(/^\//, '');
     useEffect(() => {
-        debugger;
+        // debugger;
         getDevTexts();
     }, []);
     const getDevTexts = () => {
