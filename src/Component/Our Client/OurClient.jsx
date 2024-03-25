@@ -28,7 +28,7 @@ const OurClient = () => {
             <div className="ocleft-side">
                 <h2 className='ourclientheading'>Why <span className='changecolor'>our clients</span> love us?</h2>
                 <p className='ourclientpara'>Our clients love us because we prioritize effective communication and are committed to delivering high-quality software solutions that meet the highest standards of excellence.</p>
-                <a to='/contact' href='/contact'>
+                <a to='/contact' href='/contact' className='contactusac'>
                     <button className="HireUsButton mt-4">Contact Us</button>
                 </a>
             </div>
