@@ -39,7 +39,7 @@ import mern from '../Assets/mern.svg'
 
 const TechnologyStack = () => {
   const [activeTab, setActiveTab] = useState('Web');
-  
+
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -53,7 +53,7 @@ const TechnologyStack = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [windowWidth]);
-  
+
   const renderContent = () => {
     switch (activeTab) {
       case 'Web':
@@ -240,9 +240,7 @@ const TechnologyStack = () => {
 
   return (
     <div className='mb-4 pb-5'>
-      <h1 className='font4834 margintop marginbottom pt-5 pb-4' style={{
-        textAlign: 'center', lineHeight: '1.4em', fontWeight: '700'
-      }}>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h1>
+      <h2 className='ots_mainhead margintop pt-5 pb-4'>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h2>
       {windowWidth < 472 ?
         <>
           <div className="tabs col-lg-12 pt-4">
@@ -253,11 +251,11 @@ const TechnologyStack = () => {
               Web
             </span>
             {/* <span
-          className={activeTab === 'Mobile' ? 'active' : ''}
-          onClick={() => handleTabClick('Mobile')}
-        >
-          Mobile
-        </span> */}
+                className={activeTab === 'Mobile' ? 'active' : ''}
+                onClick={() => handleTabClick('Mobile')}
+              >
+                Mobile
+              </span> */}
             <span
               className={activeTab === 'Social Media Marketing' ? 'active' : ''}
               onClick={() => handleTabClick('Social Media Marketing')}
@@ -270,14 +268,20 @@ const TechnologyStack = () => {
             >
               UI/UX Design
             </span>
+          </div>
+          <div className="tabs col-lg-12 ">
             <span
               className={activeTab === 'Database' ? 'active' : ''}
               onClick={() => handleTabClick('Database')}
             >
               Database
             </span>
-          </div>
-          <div className="tabs col-lg-12">
+            <span
+              className={activeTab === 'Database' ? 'active' : ''}
+              onClick={() => handleTabClick('Database')}
+            >
+              Database
+            </span>
             <span
               className={activeTab === 'Testing' ? 'active' : ''}
               onClick={() => handleTabClick('Testing')}

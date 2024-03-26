@@ -23,7 +23,7 @@ function Home() {
     navigate("/");
   };
   return (
-    <div style={{width:'100%'}}>
+    <div style={{ width: '100%' }}>
       <AutoPlay />
       <div>
         <Service />
@@ -42,7 +42,7 @@ function Home() {
       /> 
        </div> */}
       {/* <OurClient /> */}
- <TechnologyStack />
+      <TechnologyStack />
       <Feedback />
     </div>
   );
