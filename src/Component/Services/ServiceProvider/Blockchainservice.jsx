@@ -96,7 +96,6 @@ export const BlockchainPage = ({ route }) => {
   });
   const PageRoute = window.location.pathname.replace(/^\//, "");
   const getHeadingDesc = () => {
-    debugger;
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
       "graphics-development-services",
@@ -463,7 +462,6 @@ export const BlockchainPage = ({ route }) => {
     }
   };
   const getHeadingDescforservice = () => {
-    debugger;
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
       "graphics-development-services",
@@ -1146,13 +1144,13 @@ export const BlockchainPage = ({ route }) => {
           <OurClient />
         </div>
       )}
-      {PageRoute == "services" ? (
+      {/* {PageRoute == "services" ? (
         <></>
       ) : (
         <div className="">
           <Accordion panels={panels} />
         </div>
-      )}
+      )} */}
       <div className="">
         <TechnologyStack />
       </div>

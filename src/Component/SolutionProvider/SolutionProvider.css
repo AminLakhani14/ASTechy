@@ -17,7 +17,6 @@
   display: flex;
   height: 400px;
   width: 360px;
-  /* border-color: #d9d9d9; */
   border-radius: 1px solid #d9d9d9;
 }
 
@@ -35,7 +34,6 @@
   gap: 20px;
   cursor: pointer;
 }
-
 
 .active-tabsp {
   border-bottom: 2px solid #d9d9d9;
@@ -59,3 +57,96 @@
   transition: all 0.9s ease 2ms;
   font-size: 16px;
 }
+
+.spmainheading {
+  font-size: 34px;
+  line-height: 1.4em;
+  font-weight: 700;
+  font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.spleftwidth{
+  width: 40%;
+}
+
+@media all and (max-width : 1310px) {
+  .spleft-sideImg {
+    height: 380px;
+    width: 340px;
+  }
+}
+
+@media all and (max-width : 1260px) {
+  .spleft-sideImg {
+    height: 370px;
+    width: 330px;
+  }
+}
+
+@media all and (max-width : 1220px) {
+  .spleft-sideImg {
+    left: 13%;
+  }
+}
+
+@media all and (max-width : 1180px) {
+  .spleft-sideImg {
+    height: 360px;
+    width: 320px;
+  }
+}
+
+@media all and (max-width : 1140px) {
+  .spleft-sideImg {
+    left: 12%;
+  }
+}
+
+@media all and (max-width : 1100px) {
+  .spleft-sideImg {
+    left: 11%;
+  }
+}
+
+@media all and (max-width : 1160px) {
+  .spleft-sideImg {
+    left: 10%;
+  }
+}
+
+@media all and (max-width : 1120px) {
+  .spleft-sideImg {
+    height: 360px;
+    width: 310px;
+  }
+
+  .tabsp {
+    font-size: 16px;
+  }
+
+  .spdesc {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width : 1120px) {
+  .spleft-sideImg {
+    height: 350px;
+    width: 300px;
+  }
+
+  .tabsp {
+    font-size: 15px;
+  }
+
+  .spdesc {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width : 980px) {
+  .spcontainer {
+    flex-direction: column;
+  }
+}
+
