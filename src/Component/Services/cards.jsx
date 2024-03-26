@@ -14,7 +14,7 @@ const ReactCard = ({ title, description, index, color, route, textColor }) => {
           <h2>{title}</h2>
           <h5 style={{ marginTop: '6px', color: '#F0F0F0' }}>{index}</h5>
         </div>
-        <p style={{ textAlign: 'left', marginTop: '10%' }}>{description}</p>
+        <p className='maincarddesc'>{description}</p>
         <div style={{ textAlign: 'left' }} className='Arrow' onClick={openServices}><EastOutlined fontSize='large' /></div>
       </div>
     </div>
