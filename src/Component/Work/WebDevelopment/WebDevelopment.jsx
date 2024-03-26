@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import picture from "../../../Images/Mobile.jpg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import Feedback from "../../../Global/Feedback";
 import { useState } from "react";
@@ -16,7 +15,7 @@ function WebDevelopment() {
   const [feedbackvisible, setfeedbackvisible] = useState(false);
 
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -34,7 +33,8 @@ function WebDevelopment() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore 
+      <LeftSideExploreMore 
+        rowReverse={true} 
         handleController={handleController}
         heading="Cloud9"
         heading2="– Your Ultimate App for Curating Spotify Music Playlists"
@@ -52,7 +52,8 @@ function WebDevelopment() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="Neuro Ascent"
         heading2="– A Comprehensive Learning Platform for Healthcare Students"

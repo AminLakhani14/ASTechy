@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import picture from "../../../Images/Mobile.jpg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import Feedback from "../../../Global/Feedback";
 import { useState } from "react";
@@ -16,7 +15,7 @@ function Animation() {
   const [feedbackvisible, setfeedbackvisible] = useState(false);
 
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -33,9 +32,9 @@ function Animation() {
         picture={picture}
         secondbutton="Visit Live Site"
       />
-
-      <ExploreMore 
+     <LeftSideExploreMore
         handleController={handleController}
+        rowReverse={true}
         heading="3DPlayMasters"
         heading2="- Visualizing the Future of Golf Course Management."
         subheading="Visualize the future of golf course management with 3DPlayMasters, your premier destination for immersive 3D animations of Tagmarshal's innovative solutions. Explore how Tagmarshal optimizes golf operations and creates an enhanced experience for players through our lifelike renderings. Powered by advanced tools and expertise, 3DPlayMasters showcases Tagmarshal's revolutionary capabilities in breathtaking detail."
@@ -52,8 +51,9 @@ function Animation() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore
         handleController={handleController}
+        rowReverse={true}
         heading="3DVisualizePro"
         heading2="- Transforming Golf Course Management into Art."
         subheading="Experience the artistry of golf course management with 3DVisualizePro, your premier destination for high-quality 3D animations of Tagmarshal's solutions. Dive into how Tagmarshal revolutionizes golf operations and enhances player experiences through our intricate visualizations. With our expertise and attention to detail, 3DVisualizePro transforms Tagmarshal's innovations into mesmerizing works of art."

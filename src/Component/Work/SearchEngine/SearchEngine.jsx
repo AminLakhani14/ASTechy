@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import picture from "../../../Images/Mobile.jpg"
 import Feedback from "../../../Global/Feedback";
@@ -12,7 +11,7 @@ function SearchEngine() {
     navigate('/Home');
   };
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -29,7 +28,8 @@ function SearchEngine() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore 
+      <LeftSideExploreMore 
+        rowReverse={true} 
         handleController={handleController}
         heading="TechTrack"
         heading2="– Empowering Project Management Excellence."
@@ -47,7 +47,8 @@ function SearchEngine() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="HealthHub"
         heading2="– Revolutionizing Healthcare Access."

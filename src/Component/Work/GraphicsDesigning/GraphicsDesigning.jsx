@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import picture from "../../../Images/Mobile.jpg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import Feedback from "../../../Global/Feedback";
 import { useState } from "react";
@@ -16,7 +15,7 @@ function GraphicsDesigning() {
   const [feedbackvisible, setfeedbackvisible] = useState(false);
 
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -34,7 +33,8 @@ function GraphicsDesigning() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore 
+      <LeftSideExploreMore 
+        rowReverse={true} 
         handleController={handleController}
         heading="GraphiCrafters"
         heading2="- Crafting Graphics for Tagmarshal's Vision."
@@ -52,7 +52,8 @@ function GraphicsDesigning() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="PixelPerfection"
         heading2="- Crafting Pixel-Perfect Graphics for Tagmarshal."

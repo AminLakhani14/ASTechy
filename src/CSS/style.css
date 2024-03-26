@@ -1,11 +1,13 @@
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 .HeadingBackground {
   color: #ffffff;
   background-repeat: no-repeat;
-  background-image: url("../Images/Background.jpg");
-  height: 90vh;
+  background-size: cover;
+  background-image: linear-gradient(180deg,rgba(0,61,119,.75) 1%,rgba(38,147,250,.77) 100%),url("../Images/Background.jpg")!important;
+  height: auto;
+  padding-bottom: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -142,6 +144,11 @@ body {
   background-color: #fa7226;
   border-color: #fa7226;
 }
+.leftsideExploreParagraph{
+  font-size: 22px;
+
+  font-weight: 500
+}
 .investNowCard {
   display: flex;
   flex-direction: column;
@@ -175,7 +182,12 @@ body {
   background-color: #1e1e1e;
   height: 450px;
 }
-@media screen and (max-width: 768px) {
+.leftsideExplore {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+@media screen and (max-width: 1024px) {
   .servicesMainHeading{
     display: flex;
     justify-content: center;
@@ -205,8 +217,9 @@ body {
     padding:0px 15px 0px 15px;
   }
   .leftsideExploreParagraph{
-    font-size: 22px;
-    /* padding:0px 15px 0px 15px; */
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 15px 0px 15px;
   }
   .leftsideExploreHeading{
     font-size: 24px;
@@ -229,7 +242,7 @@ body {
     font-size: 30px;
   }
   .leftsideExplore {
-    width: 100%;
+    width: 100% !important;
     text-align: center;
   }
   .citiesBackground {
@@ -254,6 +267,7 @@ body {
   .ExploreImage {
     display: flex;
     justify-content: center;
+    width: 100vw;
   }
   .ExploreMoreForm {
       display: flex;

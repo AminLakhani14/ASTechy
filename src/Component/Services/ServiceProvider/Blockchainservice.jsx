@@ -623,8 +623,8 @@ export const BlockchainPage = ({ route }) => {
   ];
 
   return (
-    <>
-      <div className="">
+    <div style={{overflow:'hidden'}}>
+      <div >
         <Heading
           workBtn={PageRoute == "services" ? true : false}
           visible={false}
@@ -635,7 +635,7 @@ export const BlockchainPage = ({ route }) => {
         />
       </div>
       <div className="margintop row mt-5 ">
-        <div className="col-lg-8 mx-lg-auto text-center">
+        <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center px-5 ">
           {PageRoute == "services" ? (
             <>
               <h1 className="heading4034">
@@ -649,7 +649,7 @@ export const BlockchainPage = ({ route }) => {
             </>
           ) : (
             <>
-              <h1 className="heading4034">
+              <h1 className="heading4034" style={{width:'75%'}}>
                 Our{" "}
                 <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
                 {PageRoute === "graphics-development-services" ||
@@ -658,7 +658,7 @@ export const BlockchainPage = ({ route }) => {
                   : "Development"}{" "}
                 Services
               </h1>
-              <p>{servicesCardsDesc.desc}</p>
+              <p style={{width:'75%',fontSize:'20px',fontWeight:"500"}}>{servicesCardsDesc.desc}</p>
             </>
           )}
         </div>
@@ -1093,7 +1093,7 @@ export const BlockchainPage = ({ route }) => {
             </div>
           </>
         ) : (
-          <div className="col-lg-5 mt-5">
+          <div className="col-lg-5 mt-5 mx-3 px-0">
             <ServiceCardList ServiceCardList={serviceCardList} />
           </div>
         )}
@@ -1163,7 +1163,7 @@ export const BlockchainPage = ({ route }) => {
           <Feedback />
         </div>
       )}
-    </>
+    </div>
   );
 };
 

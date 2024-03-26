@@ -27,7 +27,7 @@ function Feedback(props) {
           <h1  style={
             windowWidth <= 1100
               ? { fontSize: "24px",textAlign:'center', padding:'0px 20px 0px 20px' }
-              : { fontSize: "55px" }
+              : { fontSize: "34px" }
           } className="mb-4">
             <b>
               Ready to discuss your Cross-Platform App development project? Get

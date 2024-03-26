@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import picture from "../../../Images/Mobile.jpg"
 import Feedback from "../../../Global/Feedback";
@@ -12,7 +11,7 @@ function Ebook() {
     navigate('/Home');
   };
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -29,7 +28,8 @@ function Ebook() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore 
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="Reader'sHaven "
         heading2=" - Explore, Engage, Enlighten."
@@ -47,7 +47,8 @@ function Ebook() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="PageTurner"
         heading2="- Your Passport to Adventure and Insight."

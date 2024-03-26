@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 import Heading from "../../../Global/Heading";
 import picture from "../../../Images/Mobile.jpg";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Feedback from "../../../Global/Feedback";
 function Wordpress() {
   const [visible, setvisible] = useState(false);
@@ -13,7 +12,7 @@ function Wordpress() {
     navigate("/");
   };
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -30,7 +29,8 @@ function Wordpress() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="Leskoy"
         heading2="– Inspired by tradition, infused with artistry"
@@ -48,7 +48,8 @@ function Wordpress() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="Wild Tonic"
         heading2="– A Digital Store for Unique Beverages"

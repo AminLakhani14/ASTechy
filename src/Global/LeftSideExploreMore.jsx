@@ -18,7 +18,7 @@ function LeftSideExploreMore(props) {
     };
   }, []);
     return (
-        <div className={windowWidth < 1024 ? "row" : "row"}
+        <div className={props.rowReverse === true ? "row flex-row-reverse" : "row"}
         style={
           windowWidth <= 1024
             ? { flexDirection: "column"  }

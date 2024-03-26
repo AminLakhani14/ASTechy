@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import picture from "../../../Images/Mobile.jpg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
-import ExploreMore from "../../../Global/ExploreMore";
 import Heading from "../../../Global/Heading";
 import Feedback from "../../../Global/Feedback";
 function SocialMedia() {
@@ -11,7 +10,7 @@ function SocialMedia() {
     navigate('/Home');
   };
   return (
-    <div>
+    <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
@@ -28,7 +27,8 @@ function SocialMedia() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore 
+      <LeftSideExploreMore 
+        rowReverse={true} 
         handleController={handleController}
         heading="DigitalPulse"
         heading2=" - Accelerating Brand Visibility and Impact."
@@ -46,7 +46,8 @@ function SocialMedia() {
         secondbutton="Visit Live Site"
       />
 
-      <ExploreMore
+      <LeftSideExploreMore 
+        rowReverse={true}
         handleController={handleController}
         heading="ViralVantage"
         heading2="- Igniting Social Media Buzz."

@@ -1,21 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import ExploreMore from "../../Global/ExploreMore";
-import Heading from "../../Global/Heading";
 import picture from "../../Images/Mobile.jpg";
-import { useState } from "react";
 import LeftSideExploreMore from "../../Global/LeftSideExploreMore";
-import Cities from "../../Global/Cities";
-import Footer from "../../Global/Footer";
 import Service from "../Services/Service";
-import Navbar from "../NavBar/NavBar";
-import CustomCarousel from "../CustomSlider/CustomSlider";
-import images from "../../Images/sliderData";
 import TechnologyStack from "../Technologies/OurTechStack";
 import Feedback from "../../Global/Feedback";
 import OurClient from "../Our Client/OurClient";
 import AutoPlay from "../../Global/DCSlider";
-// import { Accordion } from "../../Global/FAQ";
-
 function Home() {
   const navigate = useNavigate();
 
@@ -23,12 +13,12 @@ function Home() {
     navigate("/");
   };
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '100%',overflow:'hidden' }}>
       <AutoPlay />
       <div>
         <Service />
       </div>
-      {/* <div className="pt-4 mt-5 pb-5" style={{backgroundColor:"#F2F5F9"}}>
+      <div className="pt-4 mt-5 pb-5" style={{backgroundColor:"#F2F5F9"}}>
        <LeftSideExploreMore
         handleController={handleController}
         secondbutton={'Lets Get Started'}
@@ -40,8 +30,8 @@ function Home() {
          offering a unique and seamless trading experience to the users."
         picture={picture}
       /> 
-       </div> */}
-      {/* <OurClient /> */}
+       </div>
+      <OurClient />
       <TechnologyStack />
       <Feedback />
     </div>
