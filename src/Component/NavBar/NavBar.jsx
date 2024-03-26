@@ -31,20 +31,20 @@ function Navbar() {
               <label htmlFor="drop-1" className="toggle">
                 Services +
               </label>
-              <Link to="#">Services</Link>
+              <Link to="/services">Services</Link>
               <input type="checkbox" id="drop-1" />
               <ul>
-                <li>
+                {/* <li>
                   <Link to="#">Hire Team</Link>
-                </li>
+                </li> */}
                 <li>
-                  <Link to='/graphics-development-services'>Blockchain</Link>
+                  <Link to='/graphics-development-services'>Graphics Designing</Link>
                 </li>
                 <li>
                   <Link to='/web-application-development-services'>Web Apps</Link>
                 </li>
                 <li>
-                  <Link to='/seo-services'>Mobile Apps</Link>
+                  <Link to='/seo-services'>SEO</Link>
                 </li>
                 <li>
                   <Link to='/ui-ux-design-services'>UI/UX Design</Link>
@@ -53,10 +53,10 @@ function Navbar() {
                   <Link to='/wordpress-development-services'>WordPress</Link>
                 </li>
                 <li>
-                  <Link to='/social-media-marketing-services'>Shopify</Link>
+                  <Link to='/social-media-marketing-services'>Social Media Marketing</Link>
                 </li>
                 <li>
-                  <Link to='/3d-animation-services'>MVP</Link>
+                  <Link to='/3d-animation-services'>3D Animation</Link>
                 </li>
               </ul>
             </li>
@@ -64,7 +64,7 @@ function Navbar() {
               <label htmlFor="drop-2" className="toggle">
                 Work +
               </label>
-              <Link to="#">Work</Link>
+              <Link to="/Work">Work</Link>
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>

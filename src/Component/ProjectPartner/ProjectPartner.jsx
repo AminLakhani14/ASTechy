@@ -8,18 +8,6 @@ import countries from '../Assets/icons8-middle-east-48.png';
 import satisfaction from '../Assets/icons8-satisfaction-50.png';
 
 const ProjectPartner = ({ mainText, subText, buttonText }) => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
     const PageRoute = window.location.pathname.replace(/^\//, "");
     return (
         <div className={"ppcontainer mt-4"}>
