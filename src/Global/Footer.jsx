@@ -27,7 +27,7 @@ function Footer() {
     <footer className="footer" data-aos="fade-down">
       <div className="container">
         <div
-          className={windowWidth < 500 ? "d-flex" : "row"}
+          className={windowWidth < 1024 ? "row flex-column align-items-center" : "row justify-content-center"}
           style={
             windowWidth <= 500
               ? {
@@ -38,7 +38,7 @@ function Footer() {
               : {}
           }
         >
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-6 t-center">
             {/* About Us section (replace with your content) */}
             <PhoneIcon
               style={{ marginTop: "30px" }}
@@ -62,7 +62,7 @@ function Footer() {
               <p className="mx-2">+1(866)631-8767</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6" style={{ marginTop: "30px" }}>
+          <div className="col-lg-3 col-md-6 t-center" style={{ marginTop: "30px" }}>
             <div
               style={{ display: "flex", justifyContent: "center", gap: "12px" }}
             >
@@ -77,7 +77,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-lg-3 col-md-6 px-5">
+          <div className="col-lg-3 col-md-6 px-5 t-center">
             {/* Social Media section (replace with your links) */}
             <EmailIcon
               style={{ marginTop: "30px" }}

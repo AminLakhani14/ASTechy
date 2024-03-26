@@ -23,12 +23,13 @@ function Home() {
     navigate("/");
   };
   return (
-    <div>
-      
-        <AutoPlay />
-      <Service />
-      <div className="pt-4 mt-5 pb-5" style={{backgroundColor:"#F2F5F9"}}>
-      <LeftSideExploreMore
+    <div style={{width:'100%'}}>
+      <AutoPlay />
+      <div>
+        <Service />
+      </div>
+      {/* <div className="pt-4 mt-5 pb-5" style={{backgroundColor:"#F2F5F9"}}>
+       <LeftSideExploreMore
         handleController={handleController}
         secondbutton={'Lets Get Started'}
         heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience"
@@ -38,11 +39,11 @@ function Home() {
          The app simplifies trading, promotes sustainability, and aids in decluttering, 
          offering a unique and seamless trading experience to the users."
         picture={picture}
-      />
-      </div>
-      <OurClient />
+      /> 
+       </div> */}
+      {/* <OurClient /> */}
+ <TechnologyStack />
       <Feedback />
-      <TechnologyStack />
     </div>
   );
 }

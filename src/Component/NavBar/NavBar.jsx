@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../Images/logo.jpg";
-import { Link, Route, Routes } from "react-router-dom"
+import logo from "../../Images/logo.png";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const changeClick = () => setClick(!click);
@@ -10,114 +11,103 @@ function Navbar() {
   return (
     <>
       <div style={{ height: '90px' }}>
-        <nav >
-          <a href="/" to="/">
+        <nav>
+          <Link to="/">
             <img
               src={logo}
               width="200"
               id='headerLogo'
               height="60"
               alt=""
-            ></img>
-          </a>
+            />
+          </Link>
 
-          <label for="drop" class="toggle" onClick={changeClick}>
+          <label htmlFor="drop" className="toggle" onClick={changeClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </label>
           <input type="checkbox" id="drop" />
-          <ul class="menu">
+          <ul className="menu">
             <li>
-              <label for="drop-1" class="toggle">
+              <label htmlFor="drop-1" className="toggle">
                 Services +
               </label>
-              <a href="#">Services</a>
+              <Link to="#">Services</Link>
               <input type="checkbox" id="drop-1" />
               <ul>
                 <li>
-                  <a href="#">Hire Team</a>
+                  <Link to="#">Hire Team</Link>
                 </li>
                 <li>
-                  <Link   to='/graphics-development-services' href="/graphics-development-services">Blockchain</Link>
+                  <Link to='/graphics-development-services'>Blockchain</Link>
                 </li>
                 <li>
-                  <a to='/web-application-development-services' href="/web-application-development-services">Web Development</a>
+                  <Link to='/web-application-development-services'>Web Apps</Link>
                 </li>
                 <li>
-                  <a to='/seo-services' href="/seo-services">SEO</a>
+                  <Link to='/seo-services'>Mobile Apps</Link>
                 </li>
                 <li>
-                  <a to='/ui-ux-design-services' href="/ui-ux-design-services">UI/UX Design</a>
+                  <Link to='/ui-ux-design-services'>UI/UX Design</Link>
                 </li>
                 <li>
-                  <a to='/wordpress-development-services' href="/wordpress-development-services">WordPress Development</a>
+                  <Link to='/wordpress-development-services'>WordPress</Link>
                 </li>
                 <li>
-                  <a to='/social-media-marketing-services' href="/social-media-marketing-services">Social Media Marketing</a>
+                  <Link to='/social-media-marketing-services'>Shopify</Link>
                 </li>
                 <li>
-                  <a to='/3d-animation-services' href="/3d-animation-services">3D Animation</a>
+                  <Link to='/3d-animation-services'>MVP</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <label for="drop-2" class="toggle">
+              <label htmlFor="drop-2" className="toggle">
                 Work +
               </label>
-              <a href="#">Work</a>
+              <Link to="#">Work</Link>
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>
-                  <a to="/web-application-development-services" href="/web-application-development-services">Web Development</a>
+                  <Link to="/WebDevelopment">Web Development</Link>
                 </li>
                 <li>
-                  <a to="/wordpress-development-services" href="/wordpress-development-services">Wordpress</a>
+                  <Link to="/Wordpress">Wordpress</Link>
                 </li>
                 <li>
-                  <a to="/seo-services" href="/seo-services">SEO</a>
+                  <Link to="/SearchEngine">SEO</Link>
                 </li>
                 <li>
-                  <a to="/social-media-marketing-services" href="/social-media-marketing-services">Social Media Marketing</a>
+                  <Link to="/SocialMedia">Social Media Marketing</Link>
                 </li>
                 <li>
-                  <a to="https://www.wikipedia.org" href="https://www.wikipedia.org">Wikipedia</a>
+                  <Link to="/Wikipedia">Wikipedia</Link>
                 </li>
-                {/* <li>
-                  <a to="/Ebook" href="/Ebook">Ebook</a>
-                </li> */}
                 <li>
-                  <label for="drop-3" class="toggle">
+                  <Link to="/Ebook">Ebook</Link>
+                </li>
+                <li>
+                  <label htmlFor="drop-3" className="toggle">
                     Tutorials +
                   </label>
-                  {/* <a href="#">Tutorials</a>
-                <input type="checkbox" id="drop-3" />
-
-                <ul>
-                  <li>
-                    <a href="#">HTML/CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">jQuery</a>
-                  </li>
-                  <li>
-                    <a href="#">Other</a>
-                  </li>
-                </ul> */}
+                  {/* Add your tutorials here */}
                 </li>
               </ul>
             </li>
             <li>
-            <a to="/AboutUs"  href="/AboutUs">About Us</a>
+              <Link to="/AboutUs">About Us</Link>
             </li>
             <li>
-              <a to='/contact' href="/contact">Contact Us</a>
+              <Link to='/contact'>Contact Us</Link>
             </li>
           </ul>
           <div className="display-none" style={{ width: '15%' }}>
             <h5 className="headercontact me-3 mt-2 float-md-end">+92-307-1234567</h5>
           </div>
-          <a to='/contact' href='/contact'>
+          <div className="display-none">
+          <Link to='/contact'>
             <button className=" display-none headerMenuButton mx-2"><b>Contact Us</b></button>
-          </a>
+          </Link>
+          </div>  
         </nav>
       </div>
     </>

@@ -18,9 +18,9 @@ function LeftSideExploreMore(props) {
     };
   }, []);
     return (
-        <div className={windowWidth < 500 ? "d-flex" : "row"}
+        <div className={windowWidth < 1024 ? "row" : "row"}
         style={
-          windowWidth <= 500
+          windowWidth <= 1024
             ? { flexDirection: "column"  }
             : { marginTop:"90px"}
         }>

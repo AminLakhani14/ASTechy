@@ -113,7 +113,7 @@ text-align: center;
     height:auto !important
   }
   .slick-prev, .slick-next{
-    height: 7% !important;
-    width: 7% !important;
+    height: auto !important;
+    width: auto !important;
   }
 }

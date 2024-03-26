@@ -5,15 +5,10 @@ import { useEffect, useState } from "react";
 function Feedback(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
-    // Function to update the windowWidth state when the resize event occurs
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-
-    // Attach the event listener
     window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -30,7 +25,7 @@ function Feedback(props) {
         <div className="col-lg-3"></div>
         <div data-aos="fade-right" className={windowWidth <= 700?"justify-content-center d-flex flex-column align-items-center":"justify-content-center d-flex flex-column"}>
           <h1  style={
-            windowWidth <= 700
+            windowWidth <= 1100
               ? { fontSize: "24px",textAlign:'center', padding:'0px 20px 0px 20px' }
               : { fontSize: "55px" }
           } className="mb-4">

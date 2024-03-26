@@ -62,7 +62,7 @@ const Service = () => {
                 <span style={{ color: '#000' }}>Our </span>
                 <span style={{ color: '#2693fa' }} className='mx-2'> Services</span>
             </div>
-            <div><p className='text-center' style={{ padding: '0% 15  %' }}>Accelerate your business success with our innovative digital solutions.</p></div>
+            <div><p className='text-center'>Accelerate your business success with our innovative digital solutions.</p></div>
             <div className=''>
                 {isMobile ? (
                     <>

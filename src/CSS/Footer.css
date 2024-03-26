@@ -86,10 +86,13 @@ footer.footer {
   margin: 0;
 }
 
-@media all and (max-width : 768px) {
+@media all and (max-width : 1024px) {
   .responsiveFooter{
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+  }
+  .t-center{
+text-align: center;
   }
 }

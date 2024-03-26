@@ -62,7 +62,7 @@ export const BlockchainPage = ({ route }) => {
   useEffect(() => {
     getHeadingDesc();
     getHeadingDescforservice();
-  }, [route]);
+  }, [window.location.pathname]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     // Function t update the windowWidth state when the resize event occurs
@@ -96,6 +96,7 @@ export const BlockchainPage = ({ route }) => {
   });
   const PageRoute = window.location.pathname.replace(/^\//, "");
   const getHeadingDesc = () => {
+    debugger;
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
       "graphics-development-services",
@@ -462,6 +463,7 @@ export const BlockchainPage = ({ route }) => {
     }
   };
   const getHeadingDescforservice = () => {
+    debugger;
     const route = window.location.pathname.replace(/^\//, "");
     const validRoutes = [
       "graphics-development-services",

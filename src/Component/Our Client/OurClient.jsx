@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './OurClient.css';
 import CustomCarousel from '../CustomSlider/CustomSlider';
 import images from '../../Images/sliderData';
-import AutoPlay from '../../Global/DCSlider';
+import OurClientSlider from '../../Global/OurClientSlider';
 // import experience from '../Assets/icons8-customer-insight-48.png';
 // import talented from '../Assets/icons8-multiplayer-64.png';
 // import webdev from '../Assets/icons8-website-50.png';
@@ -34,7 +34,7 @@ const OurClient = () => {
             </div>
             <div className="ocright-side">
                 <div className="occard-container">
-                    <AutoPlay />
+                    {/* <OurClientSlider /> */}
                 </div>
             </div>
         </div>
