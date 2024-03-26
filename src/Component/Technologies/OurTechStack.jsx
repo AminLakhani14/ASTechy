@@ -8,33 +8,19 @@ import webflow from '../Assets/icons8-webflow.svg'
 import wordpress from '../Assets/icons8-wordpress.svg'
 import laravel from '../Assets/icons8-laravel-64.png'
 import canva from '../Assets/icons8-canva-64.png'
-import andriod from '../Assets/icons8-android.svg'
-import flutter from '../Assets/icons8-flutter.svg'
-import ios from '../Assets/icons8-ios.svg'
-import react from '../Assets/icons8-react.svg'
 import hubspot from '../Assets/icons8-hubspot-a-developer-and-marketer-of-software-products-24.png'
-import solana from '../Assets/icons8-solana-64.png'
-import etherium from '../Assets/icons8-ethereum-58.png'
-import metamask from '../Assets/icons8-metamask-48.png'
-import ripple from '../Assets/icons8-ripple-50.png'
 import bitly from '../Assets/icons8-bitly-32.png'
-import FacebookTwoToneIcon from '@mui/icons-material/FacebookTwoTone';
 import adobeae from '../Assets/after-effects.png'
 import adobeil from '../Assets/illustrator.png'
 import adobefi from '../Assets/icons8-figma-48.png'
 import adobeph from '../Assets/icons8-adobe-photoshop-48.png'
 import adobexd from '../Assets/icons8-adobe-xd-48.png'
-import SQLite from '../Assets/database.png'
-import PostgreSQL from '../Assets/icons8-postgresql-100.png'
-import redis from '../Assets/icons8-redis-48.png'
-import mongodb from '../Assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-24.png'
-import mysql from '../Assets/icons8-mysql-48.png'
-import trello from '../Assets/icons8-trello-48.png'
-import selenium from '../Assets/selenium.png'
-import postman from '../Assets/icons8-postgresql-100.png'
-import jira from '../Assets/icons8-jira-48.png'
-import jmeter from '../Assets/apachejmeter-svgrepo-com.svg'
-import apprium from '../Assets/appium.svg'
+import googleanalytics from '../Assets/icons8-google-analytics.svg'
+import abodech from '../Assets/icons8-character-animator-400.png'
+import Blender from '../Assets/icons8-blender-480.png'
+import yoast from '../Assets/icons8-yoast-is-a-search-optimization-firm-wordpress-plugin-96.png'
+import bing from '../Assets/icons8-bing.svg'
+import Google from '../Assets/icons8-google-480.png'
 import mern from '../Assets/mern.svg'
 
 const TechnologyStack = () => {
@@ -94,34 +80,9 @@ const TechnologyStack = () => {
                 <img src={laravel} className='imageclass' alt='' />
                 <p className='ot_iconpara'>Laravel</p>
               </div>
-              {/* <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-                <img src={shopify} className='imageclass' alt='' color='#5E8E3E' height={'60px'} width={'55px'} />
-                <p className='ot_iconpara'>shopify</p>
-              </div> */}
             </div>
           </div>
         );
-      // case 'Mobile':
-      //   return (
-      //     <div className='content d-flex justify-content-center'>
-      //       <div style={{ flexDirection: 'column', textAlign: 'center' }}>
-      //         <img src={andriod} className='imageclass' alt='' />
-      //         <p className='ot_iconpara'>Andriod</p>
-      //       </div>
-      //       <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-      //         <img src={flutter} className='imageclass' alt='' />
-      //         <p className='ot_iconpara'>Flutter</p>
-      //       </div>
-      //       <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-      //         <img src={ios} className='imageclass' alt='' />
-      //         <p className='ot_iconpara'>IOS</p>
-      //       </div>
-      //       <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '5%' }}>
-      //         <img src={react} className='imageclass' alt='' />
-      //         <p className='ot_iconpara'>React Native</p>
-      //       </div>
-      //     </div>
-      //   );
       case 'Social Media Marketing':
         return (
           <div className="content">
@@ -170,64 +131,54 @@ const TechnologyStack = () => {
             </div>
           </div>
         );
-      case 'Database':
+      case '3D Animation':
         return (
           <div className="content">
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
-                <img src={redis} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Redis</p>
+                <img src={Blender} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Blender</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={mongodb} className='imageclass' alt='' />
-                <p className='ot_iconpara'>MongoDB</p>
+                <img src={adobeil} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Adobe Illustrator</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={mysql} className='imageclass' alt='' />
-                <p className='ot_iconpara'>MySQL</p>
+                <img src={adobeae} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Adobe AE</p>
               </div>
             </div>
-            <div className='mt-5 pt-4 d-flex justify-content-center '>
+            <div className='mt-5 d-flex justify-content-center '>
               <div className='text-center'>
-                <img src={PostgreSQL} className='imageclass' alt='' />
-                <p className='ot_iconpara'>PostgreSQL</p>
-              </div>
-              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={SQLite} className='imageclass' alt='' />
-                <p className='ot_iconpara'>SQLite</p>
+                <img src={abodech} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Adobe Character Animator</p>
               </div>
             </div>
           </div>
         );
-      case 'Testing':
+      case 'SEO':
         return (
           <div className="content">
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
-                <img src={apprium} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Apprium</p>
+                <img src={Google} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Google Console</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={jira} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Jira</p>
+                <img src={yoast} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Yoast</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={jmeter} className='imageclass' alt='' />
-                <p className='ot_iconpara'>JMeter</p>
+                <img src={bing} className='imageclass' alt='' />
+                <p className='ot_iconpara'>
+                  Bing Webmaster Tools</p>
               </div>
             </div>
             <div className='mt-5 d-flex justify-content-center'>
               <div className='text-center'>
-                <img src={postman} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Postman</p>
-              </div>
-              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={selenium} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Selenium</p>
-              </div>
-              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={trello} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Trello</p>
+                <img src={googleanalytics} className='imageclass' alt='' />
+                <p className='ot_iconpara'>
+                  Google Analytics</p>
               </div>
             </div>
           </div>
@@ -250,12 +201,6 @@ const TechnologyStack = () => {
             >
               Web
             </span>
-            {/* <span
-                className={activeTab === 'Mobile' ? 'active' : ''}
-                onClick={() => handleTabClick('Mobile')}
-              >
-                Mobile
-              </span> */}
             <span
               className={activeTab === 'Social Media Marketing' ? 'active' : ''}
               onClick={() => handleTabClick('Social Media Marketing')}
@@ -271,22 +216,16 @@ const TechnologyStack = () => {
           </div>
           <div className="tabs col-lg-12 ">
             <span
-              className={activeTab === 'Database' ? 'active' : ''}
-              onClick={() => handleTabClick('Database')}
+              className={activeTab === '3D Animation' ? 'active' : ''}
+              onClick={() => handleTabClick('3D Animation')}
             >
-              Database
+              3D Animation
             </span>
             <span
-              className={activeTab === 'Database' ? 'active' : ''}
-              onClick={() => handleTabClick('Database')}
+              className={activeTab === 'SEO' ? 'active' : ''}
+              onClick={() => handleTabClick('SEO')}
             >
-              Database
-            </span>
-            <span
-              className={activeTab === 'Testing' ? 'active' : ''}
-              onClick={() => handleTabClick('Testing')}
-            >
-              Testing
+              SEO
             </span>
           </div>
         </>
@@ -312,16 +251,16 @@ const TechnologyStack = () => {
               UI/UX Design
             </span>
             <span
-              className={activeTab === 'Database' ? 'active' : ''}
-              onClick={() => handleTabClick('Database')}
+              className={activeTab === '3D Animation' ? 'active' : ''}
+              onClick={() => handleTabClick('3D Animation')}
             >
-              Database
+              3D Animation
             </span>
             <span
-              className={activeTab === 'Testing' ? 'active' : ''}
-              onClick={() => handleTabClick('Testing')}
+              className={activeTab === 'SEO' ? 'active' : ''}
+              onClick={() => handleTabClick('SEO')}
             >
-              Testing
+              SEO
             </span>
           </div>
         </>}
