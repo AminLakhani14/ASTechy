@@ -41,16 +41,16 @@ function Navbar() {
                   <Link to='/graphics-development-services'>Graphics Designing</Link>
                 </li>
                 <li>
-                  <Link to='/web-application-development-services'>Web Apps</Link>
+                  <Link to='/web-application-development-services'>Web Development</Link>
                 </li>
                 <li>
                   <Link to='/seo-services'>SEO</Link>
                 </li>
                 <li>
-                  <Link to='/ui-ux-design-services'>UI/UX Design</Link>
+                  <Link to='/ui-ux-design-services'>UI/UX Designing</Link>
                 </li>
                 <li>
-                  <Link to='/wordpress-development-services'>WordPress</Link>
+                  <Link to='/wordpress-development-services'>WordPress Development</Link>
                 </li>
                 <li>
                   <Link to='/social-media-marketing-services'>Social Media Marketing</Link>
@@ -68,23 +68,32 @@ function Navbar() {
               <input type="checkbox" id="drop-2" />
               <ul>
                 <li>
-                  <Link to="/WebDevelopment">Web Development</Link>
+                  <Link to="/GraphicsDesigning">Graphics Designing</Link>
                 </li>
                 <li>
-                  <Link to="/Wordpress">Wordpress</Link>
+                  <Link to="/WebDevelopment">Web Development</Link>
                 </li>
                 <li>
                   <Link to="/SearchEngine">SEO</Link>
                 </li>
                 <li>
+                  <Link to="/UIUXDesigning">UI/UX Designing</Link>
+                </li>
+                <li>
+                  <Link to="/Wordpress">Wordpress Development</Link>
+                </li>
+                <li>
                   <Link to="/SocialMedia">Social Media Marketing</Link>
                 </li>
-                <li>
+                 <li>
+                  <Link to='/Animation'>3D Animation</Link>
+                </li>
+                {/* <li>
                   <Link to="/Wikipedia">Wikipedia</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="/Ebook">Ebook</Link>
-                </li>
+                </li> */}
                 <li>
                   <label htmlFor="drop-3" className="toggle">
                     Tutorials +
