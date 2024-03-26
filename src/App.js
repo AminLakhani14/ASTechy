@@ -14,6 +14,9 @@ import Service from "./Component/Services/Service.jsx";
 import BlockchainPage from "./Component/Services/ServiceProvider/Blockchainservice.jsx";
 import ContactUs from "./Component/ContactUs/ContactUs.jsx";
 import AboutUs from "./Component/AboutUs/AboutUs.jsx";
+import GraphicsDesigning from "./Component/Work/GraphicsDesigning/GraphicsDesigning.jsx";
+import UIUXDesigning from "./Component/Work/UIUXDesigning/UIUXDesigning.jsx";
+import Animation from "./Component/Work/3DAnimation/Animation.jsx";
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="/SocialMedia" element={<SocialMedia />} />
           <Route path="/Wikipedia" element={<Wikipedia />} />
           <Route path="/Ebook" element={<Ebook />} />
+          <Route path="/GraphicsDesigning" element={<GraphicsDesigning />} />
+          <Route path="/UIUXDesigning" element={<UIUXDesigning />} />
+          <Route path="/Animation" element={<Animation />} />
           <Route path="/graphics-development-services" element={<BlockchainPage />} />
           <Route path="/web-application-development-services" element={<BlockchainPage />} />
           <Route path="/seo-services" element={<BlockchainPage />} />
