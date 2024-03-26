@@ -622,7 +622,7 @@ export const BlockchainPage = ({ route }) => {
 
   return (
     <>
-      <div className="">
+      {/* <div className="">
         <Heading
           workBtn={PageRoute == "services" ? true : false}
           visible={false}
@@ -631,7 +631,7 @@ export const BlockchainPage = ({ route }) => {
           paragraph={description}
           feedbackvisible={true}
         />
-      </div>
+      </div> */}
       <div className="margintop row mt-5 ">
         <div className="col-lg-8 mx-lg-auto text-center">
           {PageRoute == "services" ? (
@@ -1154,13 +1154,13 @@ export const BlockchainPage = ({ route }) => {
       <div className="">
         <TechnologyStack />
       </div>
-      {PageRoute == "services" ? (
+      {/* {PageRoute == "services" ? (
         <></>
       ) : (
         <div className="mt-5">
           <Feedback />
         </div>
-      )}
+      )} */}
     </>
   );
 };
