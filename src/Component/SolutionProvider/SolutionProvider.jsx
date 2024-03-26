@@ -24,6 +24,7 @@ const SolutionProvider = () => {
     useEffect(() => {
         getHeadingDescforIndustries();
     }, []);
+
     const getHeadingDescforIndustries = () => {
         const route = window.location.pathname.replace(/^\//, "");
         const validRoutes = [
@@ -236,39 +237,40 @@ const SolutionProvider = () => {
             });
         }
     };
-
     return (
-        <div className={"spcontainer mt-4"}>
-            <div className='' style={{ width: '40%' }}>
-                <div className="spleft-side">
-                    <div className='d-flex justify-content-end'>
-                        <img className='spleft-sideImg' src={servicesIndustries.tabsdesc.image} alt='' height={'400px'} width={'350px'} />
+        <>
+            <div className={"spcontainer mt-4"}>
+                < div className='spleftwidth'>
+                    <div className="spleft-side">
+                        <div className='d-flex justify-content-end'>
+                            <img className='spleft-sideImg' src={servicesIndustries.tabsdesc.image} alt='' />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="spright-side">
-                <div className="spcard-container">
-                    <h2 className='partnerheading'><span className='changecolor'>{servicesIndustries.title}</span> Solution for Industries</h2>
-                    <p className='sppara'>{servicesIndustries.desc}</p>
-                    <div className="tabsp">
-                        <span onClick={() => handleTabClick(1)} className={activeTab === 1 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.first}</span>
-                        <span onClick={() => handleTabClick(2)} className={activeTab === 2 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.second}</span>
-                        <span onClick={() => handleTabClick(3)} className={activeTab === 3 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.third}</span>
-                        <span onClick={() => handleTabClick(4)} className={activeTab === 4 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.fourth}</span>
-                        <span onClick={() => handleTabClick(5)} className={activeTab === 5 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.fifth}</span>
-                        <span onClick={() => handleTabClick(6)} className={activeTab === 6 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.sixth}</span>
-                    </div>
-                    <div className="tabsp-content">
-                        {activeTab === 1 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.first}</h3>}
-                        {activeTab === 2 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.second}</h3>}
-                        {activeTab === 3 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.third}</h3>}
-                        {activeTab === 4 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.fourth}</h3>}
-                        {activeTab === 5 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.fifth}</h3>}
-                        {activeTab === 6 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.sixth}</h3>}
+                <div className="spright-side">
+                    <div className="spcard-container">
+                        <h2 className='spmainheading'><span className='changecolor'>{servicesIndustries.title}</span> Solution for Industries</h2>
+                        <p className='sppara'>{servicesIndustries.desc}</p>
+                        <div className="tabsp">
+                            <span onClick={() => handleTabClick(1)} className={activeTab === 1 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.first}</span>
+                            <span onClick={() => handleTabClick(2)} className={activeTab === 2 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.second}</span>
+                            <span onClick={() => handleTabClick(3)} className={activeTab === 3 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.third}</span>
+                            <span onClick={() => handleTabClick(4)} className={activeTab === 4 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.fourth}</span>
+                            <span onClick={() => handleTabClick(5)} className={activeTab === 5 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.fifth}</span>
+                            <span onClick={() => handleTabClick(6)} className={activeTab === 6 ? 'active-tabsp' : 'tabsp'}>{servicesIndustries.tabs.sixth}</span>
+                        </div>
+                        <div className="tabsp-content">
+                            {activeTab === 1 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.first}</h3>}
+                            {activeTab === 2 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.second}</h3>}
+                            {activeTab === 3 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.third}</h3>}
+                            {activeTab === 4 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.fourth}</h3>}
+                            {activeTab === 5 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.fifth}</h3>}
+                            {activeTab === 6 && <h3 className='spdesc'>{servicesIndustries.tabsdesc.sixth}</h3>}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </>
     );
 };
 
