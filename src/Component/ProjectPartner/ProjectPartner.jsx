@@ -6,6 +6,7 @@ import webdev from '../Assets/icons8-website-50.png';
 import projectdel from '../Assets/icons8-project-50.png';
 import countries from '../Assets/icons8-middle-east-48.png';
 import satisfaction from '../Assets/icons8-satisfaction-50.png';
+import { Link } from "react-router-dom";
 
 const ProjectPartner = ({ mainText, subText, buttonText }) => {
     const PageRoute = window.location.pathname.replace(/^\//, "");
@@ -15,9 +16,9 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
                 <h2 className='partnerheading'>Why Choose SSTech as Your <span className='changecolor'>{mainText} {PageRoute === 'graphics-development-services' ? '' : 'Development'} Company</span></h2>
                 <p className='partnerpara'>{subText}</p>
                 <h3 className='togetherpara'>Let’s Start a New {buttonText} Project Together</h3>
-                <a to='/contact' href='/contact' className='contactuspp'>
+                <Link to='/contact' href='/contact' className='contactuspp'>
                     <button className="contactUsButton"><b>Contact Us</b></button>
-                </a>
+                </Link>
             </div>
             <div className="ppright-side">
                 <div className="ppcard-container">
