@@ -16,7 +16,7 @@ function Navbar() {
   },[stopPropagation])
   return (
     <>
-      <div style={{ height: '90px' }}>
+      <div style={{ height: '90px',position: 'fixed', width: '100%', zIndex: '9999' }}>
         <nav>
           <Link to="/">
             <img
