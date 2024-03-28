@@ -18,7 +18,7 @@ function AboutUs() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [windowWidth]);
   const handleTabClick = (tab) => {
     setActiveTab(tab);
     if (tab === "Teams") {
@@ -51,30 +51,31 @@ function AboutUs() {
 
   return (
     <div>
-      <div className="pt-5 HeadingBackground" style={{ justifyContent: "left" }}>
-        <div className="w-50">
-          <div className="col-lg-3"></div>
-          <div style={{ marginLeft: "20%" }}>
+      <div className="pt-5 mt-5 HeadingBackground" style={{ justifyContent: "left", flexDirection: 'column', textAlign: 'left' }}>
+        <div className="marginsliderclass">
+          {/* <div className="col-lg-3"></div> */}
+          <div className={windowWidth < 980 ? 'col-lg-12' : 'col-lg-6'}>
             <h1 style={
               windowWidth <= 500
                 ? { fontSize: "24px" }
                 : { fontSize: "55px" }
-            } className="mb-4">
+            } className="aboutustext">
               <b>
                 About Us
               </b>
             </h1>
-            <p>
+            <p className="aboutusdesc">
               SSTech is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.
             </p>
-            <div>
-              <button data-aos="fade-up" className="HeaderButton">
-                Let's Get Started
-              </button>
-              <button className="headerMenuButton mx-5">
-                <b>Explore Services</b>
-              </button>
-            </div>
+          </div>
+          <div className="col-lg-6"></div>
+          <div className="col-lg-12 buttonalignau">
+            <button className="HeaderButton">
+              Let's Get Started
+            </button>
+            <button className="headerMenuButton mx-5">
+              <b>Explore Services</b>
+            </button>
           </div>
         </div>
       </div>
@@ -287,7 +288,7 @@ function AboutUs() {
           <div className="row">
             <div className="col-lg-6">
               <div>
-                <div className="h1">Headquartered in <span style={{color:"#2693fa"}}>Ontario, Canada</span></div>
+                <div className="h1">Headquartered in <span style={{ color: "#2693fa" }}>Ontario, Canada</span></div>
                 <p className="contentText">
                   Ropstam boasts a proven track record of delivering top-notch custom software solutions to clients ranging from Fortune 500 companies to startups, including Walmart, SharkTank Rogers, PostMedia, Bell, Telus, Cafebonappetit, and Nescafe, since 2009.
                 </p>
