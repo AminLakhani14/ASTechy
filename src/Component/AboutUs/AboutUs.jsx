@@ -51,7 +51,7 @@ function AboutUs() {
 
   return (
     <div>
-      <div className="pt-5 mt-5 HeadingBackground" style={{ justifyContent: "left", flexDirection: 'column', textAlign: 'left' }}>
+      <div className="pt-5 HeadingBackground" style={{ justifyContent: "left", flexDirection: 'column', textAlign: 'left' }}>
         <div className="marginsliderclass">
           {/* <div className="col-lg-3"></div> */}
           <div className={windowWidth < 980 ? 'col-lg-12' : 'col-lg-6'}>
