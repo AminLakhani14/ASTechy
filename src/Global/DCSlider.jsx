@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import cloud from "../Images/cloud.jpeg";
 import slider2 from "../Images/slider2.gif";
 import data from "../Images/data.gif";
+import slide3 from "../Images/Slide3.gif";
 import "../CSS/DCSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -82,9 +83,7 @@ function AutoPlay(props) {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div
-          className="background1"
-        >
+        <div className="background1">
           <div
             style={{ color: "#ffffff" }}
             className={
@@ -180,32 +179,56 @@ function AutoPlay(props) {
             <img src={slider2} alt="Computer man" />
           </div>
         </div>
-        {/* <div className="background3">
-        <div style={{ color: "#ffffff" }} className="width50 d-flex">
-            <div className="col-lg-3 col-sm-3 col-md-3"></div>
+
+        <div className="background3">
+          <div
+            style={{ color: "#ffffff" }}
+            className={
+              windowWidth <= 1024
+                ? "width80 d-flex justify-content-center pt-5 "
+                : "width50 d-flex align-items-center"
+            }
+          >
+            <div
+              className={
+                windowWidth <= 1024 ? "" : "col-lg-3 col-sm-2 col-md-3"
+              }
+            ></div>
             <div>
-              <h1 className="mb-4">
+              <h1 className="mb-4 sliderMainFont">
                 <b>
-                  Streamline Your Web App with Our Cutting-Edge All-In-One
+                  Streamline Your SEO with Our Cutting-Edge All-In-One
                   Solutions.
                 </b>
               </h1>
-              <p>
-                Our Web Application Development Service provide a comprehensive
-                solution for all your web needs, utilizing cutting-edge
-                technology to optimize efficiency,productivity,and success.
+              <p className="sliderParagraph">
+                Optimize your online presence with our SEO-driven web
+                application development services. Explore our portfolio of
+                diverse projects and delighted clients, and let us elevate your
+                digital footprint with cutting-edge technology and personalized
+                SEO solutions.
               </p>
-              <div className="d-flex mt-4">
-                <button className="HeaderButton">
-                 Web App Services
-                </button>
+              <div
+                className={
+                  windowWidth <= 1024
+                    ? "d-flex mt-4 justify-content-center"
+                    : "d-flex mt-4"
+                }
+              >
+                <button className="HeaderButton">SEO Services</button>
               </div>
             </div>
           </div>
-          <div className="width50">
-          <img src={data} alt="Computer man" />
+          <div
+            className={
+              windowWidth <= 1024
+                ? "d-none"
+                : "width50 d-flex align-items-center"
+            }
+          >
+            <img src={slide3} width={"620"} alt="Computer man" />
           </div>
-        </div> */}
+        </div>
       </Slider>
     </div>
   );

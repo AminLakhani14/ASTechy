@@ -17,8 +17,8 @@ function Feedback(props) {
     <div className="pt-5 HeadingBackground"
     style={
       windowWidth <= 500
-        ? { marginTop:"90px" }
-        : { marginTop:"90px"}
+        ? { marginTop:"20px" }
+        : { }
     }
     >
       <div className="width50">

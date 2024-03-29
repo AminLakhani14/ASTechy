@@ -78,11 +78,12 @@ display: block;
     height: 100vh !important;
 }
 .background3{
-    background-color: #2f5458!important;
+    background-color: #827be6!important;
     display: flex !important;
     width: auto;
     height: 100vh !important;
 }
+
 @media screen and (max-width: 1024px) {   
   .sliderMainFont{
 font-size: 22px;
@@ -100,6 +101,10 @@ text-align: center;
   }
   .background2{
     background-image: url('../Images/slider2.gif') !important; 
+    background-size: fill;
+  }
+  .background3{
+    background-image: url('../Images/Slide3.gif') !important; 
     background-size: fill;
   }
   .width80{
