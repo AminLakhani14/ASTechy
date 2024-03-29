@@ -67,19 +67,21 @@ function Heading(props) {
             {props.workBtn === true &&
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <div style={{ display: 'flex' }}>
+                  <div style={{ display: 'flex' }} className="emailusclass">
                     <PhoneIcon
                       className="mx-xl-2"
                       fontSize="large"
                     />
                     <p>Call Us</p>
                   </div>
-                  <div style={{ display: 'flex' }}>
+                  <div style={{ display: 'flex' }} className="emailusclass">
                     <EmailIcon
                       fontSize="large"
                       className="mx-xl-2"
                     />
-                    <p>Email Us</p>
+                    <a href='mailto:your@email.com' className="emailustextclass">
+                      <p>Email Us</p>
+                    </a>
                   </div>
                 </div>
                 <div>

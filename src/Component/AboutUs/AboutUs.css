@@ -70,3 +70,24 @@
 .ml-10 {
     margin-left: 10px;
 }
+
+.marginsliderclass {
+    margin-left: 9%;
+}
+
+.aboutustext {
+    margin-bottom: 3%;
+}
+
+@media all and (max-width : 980px) {
+    .aboutustext {
+        text-align: center;
+    }
+    .aboutusdesc{
+        text-align: center;
+        padding-right: 7%;
+    }
+    .buttonalignau{
+        text-align: center;
+    }
+}
