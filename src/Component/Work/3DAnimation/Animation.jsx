@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import picture from "../../../Images/Mobile.jpg"
+import picture from "../../../Images/Mobile1.jpeg"
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import Heading from "../../../Global/Heading";
 import Feedback from "../../../Global/Feedback";

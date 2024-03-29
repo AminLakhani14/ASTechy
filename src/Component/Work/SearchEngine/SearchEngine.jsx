@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import Heading from "../../../Global/Heading";
-import picture from "../../../Images/Mobile.jpg"
+import picture from "../../../Images/Mobile3.jpg"
 import Feedback from "../../../Global/Feedback";
 
 function SearchEngine() {

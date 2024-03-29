@@ -8,7 +8,7 @@ import lahore from "../Images/lahore.png";
 
 function Cities(props) {
   return (
-    <div className="d-flex citiesBackground justify-content-center align-content-center" style={{marginTop:"90px"}}>
+    <div className="d-flex citiesBackground justify-content-center align-content-center" >
       <div className="w-25">
         <div className="investNowCard">
           <img

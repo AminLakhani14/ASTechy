@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import Heading from "../../../Global/Heading";
-import picture from "../../../Images/Mobile.jpg";
+import picture from "../../../Images/Mobile2.jpg";
 import LeftSideExploreMore from "../../../Global/LeftSideExploreMore";
 import Feedback from "../../../Global/Feedback";
 function Wordpress() {
