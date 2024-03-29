@@ -8,6 +8,11 @@ function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(true);
   const changeClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const mainPropagation =()=>{
+    setClick(!click)
+    setServicesOpen(false)
+    stopPropagation()
+  }
   const stopPropagation = (e) => {
     setServicesOpen(!servicesOpen); // Toggle services dropdown
   };
@@ -28,7 +33,7 @@ function Navbar() {
             />
           </Link>
 
-          <label htmlFor="drop" className="toggle" onClick={changeClick}>
+          <label htmlFor="drop" className="toggle toogleIcon" onClick={changeClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </label>
           <input type="checkbox" id="drop" />
@@ -43,64 +48,64 @@ function Navbar() {
                 {/* <li>
                   <Link style={{backgroundColor:"white"}}  to="#">Hire Team</Link>
                 </li> */}
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/graphics-development-services'>Graphics Designing</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/web-application-development-services'>Web Development</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/seo-services'>SEO</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/ui-ux-design-services'>UI/UX Designing</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/wordpress-development-services'>WordPress Development</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/social-media-marketing-services'>Social Media Marketing</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/3d-animation-services'>3D Animation</Link>
                 </li>
               </ul>)}
             </li>
-            <li onClick={stopPropagation}>
+            <li onClick={mainPropagation}>
               <label htmlFor="drop-2" className="toggle">
                 Work +
               </label>
               <Link style={{backgroundColor:"white"}}  to="/Work">Work</Link>
               <input type="checkbox" id="drop-2" />
               {servicesOpen &&(<ul>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/GraphicsDesigning">Graphics Designing</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/WebDevelopment">Web Development</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/SearchEngine">SEO</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/UIUXDesigning">UI/UX Designing</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/Wordpress">Wordpress Development</Link>
                 </li>
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/SocialMedia">Social Media Marketing</Link>
                 </li>
-                 <li onClick={stopPropagation}>
+                 <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to='/Animation'>3D Animation</Link>
                 </li>
-                {/* <li onClick={stopPropagation}>
+                {/* <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/Wikipedia">Wikipedia</Link>
                 </li> */}
-                {/* <li onClick={stopPropagation}>
+                {/* <li onClick={mainPropagation}>
                   <Link style={{backgroundColor:"white"}}  to="/Ebook">Ebook</Link>
                 </li> */}
-                <li onClick={stopPropagation}>
+                <li onClick={mainPropagation}>
                   <label htmlFor="drop-3" className="toggle">
                     Tutorials +
                   </label>
@@ -108,10 +113,10 @@ function Navbar() {
                 </li>
               </ul>)}
             </li>
-            <li onClick={stopPropagation}>
+            <li onClick={mainPropagation}>
               <Link style={{backgroundColor:"white"}}  to="/AboutUs">About Us</Link>
             </li>
-            <li onClick={stopPropagation}>
+            <li onClick={mainPropagation}>
               <Link style={{backgroundColor:"white"}}  to='/contact'>Contact Us</Link>
             </li>
           </ul>
