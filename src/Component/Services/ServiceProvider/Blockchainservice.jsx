@@ -632,7 +632,7 @@ export const BlockchainPage = ({ route }) => {
           feedbackvisible={true}
         />
       </div>
-      <div className="margintop row mt-5 ">
+      <div className="margintop row mt-5 " style={windowWidth <=1024?{display:"flex",flexDirection:"column",alignItems:"center"}:{}}>
         <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center px-5 ">
           {PageRoute == "services" ? (
             <>
@@ -647,7 +647,7 @@ export const BlockchainPage = ({ route }) => {
             </>
           ) : (
             <>
-              <h1 className="heading4034" style={{width:'75%'}}>
+              <h1 className="heading4034" style={windowWidth <=1024?{width:'100%',textAlign:"center"}:{width:'75%'}}>
                 Our{" "}
                 <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
                 {PageRoute === "graphics-development-services" ||
@@ -656,7 +656,7 @@ export const BlockchainPage = ({ route }) => {
                   : "Development"}{" "}
                 Services
               </h1>
-              <p style={{width:'75%',fontSize:'20px',fontWeight:"500"}}>{servicesCardsDesc.desc}</p>
+              <p style={windowWidth <=1024?{width:'100%',textAlign:"center"}:{width:'75%',fontSize:'20px',fontWeight:"500"}}>{servicesCardsDesc.desc}</p>
             </>
           )}
         </div>
@@ -1091,7 +1091,7 @@ export const BlockchainPage = ({ route }) => {
             </div>
           </>
         ) : (
-          <div className="col-lg-5 mt-5 mx-3 px-0">
+          <div className="col-lg-5 mt-5 mx-3 px-0" style={windowWidth <=1024?{width:"86vw" ,display:"flex",justifyContent:"center"}:{}}>
             <ServiceCardList ServiceCardList={serviceCardList} />
           </div>
         )}
@@ -1099,8 +1099,8 @@ export const BlockchainPage = ({ route }) => {
       {PageRoute == "services" ? (
         <></>
       ) : (
-        <div className="mt-5 d-flex justify-content-center ">
-          <div style={{ width: "86%" }}>
+        <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
+          <div style={{ width: "86vw" }}>
             <ServiceCardList ServiceCardList={serviceCardList1} />
           </div>
         </div>

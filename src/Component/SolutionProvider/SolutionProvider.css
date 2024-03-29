@@ -191,14 +191,13 @@
   }
 
   .tabsp {
-    width: 100%;
-    height: 3px;
+    /* width: 100%;
+    height: 3px; */
     gap: 20px;
   }
 
   .spdesc {
     font-size: 16px;
-    margin-top: 35%;
   }
 
   .active-tabsp {
@@ -209,26 +208,3 @@
 
 }
 
-@media all and (max-width: 460px){
-  .tabsp-content {
-    margin-top: 37%;
-  }
-}
-
-@media all and (max-width: 430px){
-  .tabsp-content {
-    margin-top: 43%;
-  }
-}
-
-@media all and (max-width: 380px){
-  .tabsp-content {
-    margin-top: 50%;
-  }
-}
-
-@media all and (max-width: 330px){
-  .tabsp-content {
-    margin-top: 55%;
-  }
-}

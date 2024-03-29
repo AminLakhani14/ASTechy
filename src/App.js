@@ -21,7 +21,9 @@ import Animation from "./Component/Work/3DAnimation/Animation.jsx";
 function App() {
   return (
     <div className="App">
+      <div style={{height:"90px"}}>
       <NavBar />
+      </div>
       {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home />} />

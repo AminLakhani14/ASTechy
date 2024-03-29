@@ -26,8 +26,24 @@ export const HireUs = () => {
         cardDesc6: '',
     });
     const PageRoute = window.location.pathname.replace(/^\//, '');
+    
     useEffect(() => {
         getDevTexts();
+    }, []);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    useEffect(() => {
+      // Function t update the windowWidth state when the resize event occurs
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+  
+      // Attach the event listener
+      window.addEventListener("resize", handleResize);
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
     }, []);
     const getDevTexts = () => {
         const route = window.location.pathname.replace(/^\//, '');
@@ -189,19 +205,19 @@ export const HireUs = () => {
                 <div className='text-center d-flex flex-column align-items-center'>
                     <h1 className='heading4034' style={{ fontWeight: "700" }}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
                     </span> with <span className='changecolor'>SSTech</span></h1>
-                    <p className='font2014 w-50 mt-3'>{devTitleDesc.desc}</p>
+                    <p className={'font2014 widthHireUs mt-3'}>{devTitleDesc.desc}</p>
                 </div>
-                <div className='row justify-content-center margintop'>
-                    <div className='col-lg-10'>
+                <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
+                     <div style={{ width: "86vw" }}>
                         <ServiceCardList ServiceCardList={serviceCardList1} />
                     </div>
                 </div>
-                <div className='row justify-content-center mt-4'>
-                    <div className='col-lg-10'>
+                <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
+                     <div style={{ width: "86vw" }}>
                         <ServiceCardList ServiceCardList={serviceCardList2} />
                     </div>
                 </div>
-                <div className='d-flex justify-content-center'>
+                <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
                     <button className="HireUsButton margintop" style={{ marginBottom: '70px' }}>
                         Hire MVP Developers
                     </button>

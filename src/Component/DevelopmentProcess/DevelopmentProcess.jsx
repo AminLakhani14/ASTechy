@@ -10,6 +10,21 @@ import maintain from '../Assets/icons8-wrench-as-a-maintenance-logotype-for-comp
 export const DevelopmentProcess = () => {
     const [devTitleDesc, setDevTitleDesc] = useState({ title: '', desc: '' });
     const PageRoute = window.location.pathname.replace(/^\//, '');
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    // Function to update the windowWidth state when the resize event occurs
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Attach the event listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowWidth]);
     useEffect(() => {
         // debugger;
         getDevTexts();
@@ -81,66 +96,66 @@ export const DevelopmentProcess = () => {
                     <p className='font2014' style={{ width: "95%" }}>{devTitleDesc.desc}</p>
                     <div className='borderbottomdp'></div>
                 </div>
-                <div className="d-flex w-100 justify-content-around margintop marginbottom">
-                    <div className='d-flex w-50'>
+                <div className={windowWidth <=1024 ?"d-flex w-100 justify-content-around margintop marginbottom flex-column gap-3":"d-flex w-100 justify-content-around margintop marginbottom"}>
+                    <div className={windowWidth <=1024?"d-flex w-100":'d-flex w-50'}>
                         <div className=''>
                             <img src={concept} alt='' className='imagecutterdp' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Concept</span>
-                            <span className='font18 w-75'>This involves understanding the client’s needs, defining project goals and
+                            <span  className={windowWidth <=1024?'font18 w-100':'font18 w-75'}>This involves understanding the client’s needs, defining project goals and
                                 requirements and creating a project plan.</span>
                         </div>
                     </div>
-                    <div className='d-flex w-50'>
+                    <div className={windowWidth <=1024?"d-flex w-100":'d-flex w-50'}>
                         <div>
                             <img className='imagecutterdp' src={design} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Design</span>
-                            <span className='font18 w-75'>Develop wireframes, mockups, and prototypes to create a visual
+                            <span  className={windowWidth <=1024?'font18 w-100':'font18 w-75'}>Develop wireframes, mockups, and prototypes to create a visual
                                 representation of the {devTitleDesc.title} website or Apps {devTitleDesc.title} for perfect user experience.</span>
                         </div>
                     </div>
                 </div>
-                <div className="d-flex w-100 justify-content-around margintop marginbottom">
-                    <div className='d-flex w-50'>
+                <div className={windowWidth <=1024 ?"d-flex w-100 justify-content-around margintop marginbottom flex-column gap-3":"d-flex w-100 justify-content-around margintop marginbottom"}>
+                <div className={windowWidth <=1024?"d-flex w-100":'d-flex w-50'}>
                         <div>
                             <img className='imagecutterdp' src={dev} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Development</span>
-                            <span className='font18 w-75'>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced
+                            <span  className={windowWidth <=1024?'font18 w-100':'font18 w-75'}>Code the {devTitleDesc.title} solution and integrate necessary third-party ?tools or APIs for enhanced
                                 functionality and performance.</span>
                         </div>
                     </div>
-                    <div style={{ width: '50%', display: 'flex' }}>
+                    <div className={windowWidth <=1024?"d-flex w-100":'d-flex w-50'}>
                         <div>
                             <img className='imagecutterdp' src={testing} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Testing</span>
-                            <span className='font18 w-75'>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
+                            <span  className={windowWidth <=1024?'font18 w-100':'font18 w-75'}>Conduct various tests to ensure the security and functionality of the {devTitleDesc.title} solution.</span>
                         </div>
                     </div>
                 </div>
-                <div className="d-flex w-100 justify-content-around margintop marginbottom">
-                    <div style={{ width: '50%', display: 'flex' }}>
+                <div className={windowWidth <=1024 ?"d-flex w-100 justify-content-around margintop marginbottom flex-column gap-3":"d-flex w-100 justify-content-around margintop marginbottom"}>
+                <div className={windowWidth <=1024?"d-flex w-100":'d-flex w-50'}>
                         <div>
                             <img className='imagecutterdp' src={deployment} alt='' />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Deployment</span>
-                            <span className='font18 w-75'>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
+                            <span  className={windowWidth <=1024?'font18 w-100':'font18 w-75'}>Launch the {devTitleDesc.title} solution and monitor its performance, making necessary updates to ensure optimal functionality.</span>
                         </div>
                     </div>
-                    <div style={{ width: '50%', display: 'flex' }}>
+                    <div className={windowWidth <=1024?"d-flex w-100":'d-flex w-50'}>
                         <div>
                             <img className='imagecutterdp' src={maintain} alt='' width={'30px'} />
                         </div>
                         <div className='d-flex flex-column  mx-2'>
                             <span className='changecolor font26'>Maintenance</span>
-                            <span className='font18 w-75'>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
+                            <span  className={windowWidth <=1024?'font18 w-100':'font18 w-75'}>Ensure optimal performance and security through maintenance, quality assurance, upgrades, and new feature additions.</span>
                         </div>
                     </div>
                 </div>

@@ -45,7 +45,7 @@ function Heading(props) {
             data-aos="fade-right"
             style={
               windowWidth <= 768
-                ? { fontSize: "14px", fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
+                ? { fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
                 : { fontSize: "20px", fontWeight: "400", color: "#ffffff" }
             }>
             <b>Boosting Your Success through Advanced Technology and Client-Centric Solutions</b>
@@ -54,7 +54,7 @@ function Heading(props) {
             data-aos="fade-right"
             style={
               windowWidth <= 768
-                ? { fontSize: "14px", fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
+                ? { fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
                 : { fontSize: "20px", fontWeight: "400", color: "#ffffff" }
             }>
             {props.paragraph}

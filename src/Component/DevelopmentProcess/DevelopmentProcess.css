@@ -22,7 +22,7 @@
 
 @media all and (max-width : 980px) {
     .font2014 {
-        font-size: 14px;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -32,7 +32,7 @@
     }
 
     .heading4034 {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
     }
 

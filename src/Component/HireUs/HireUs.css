@@ -18,3 +18,11 @@
     background-image: initial;
     background-color: #ff5300;
   }
+  .widthHireUs{
+    width:50%
+  }
+  @media (max-width: 1024px) {
+    .widthHireUs{
+      width:80%
+    }
+  }
