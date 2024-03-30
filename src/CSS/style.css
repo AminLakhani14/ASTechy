@@ -22,6 +22,7 @@
   display: flex;
   justify-content: center;
   font-size: 35px;
+  margin-top: 50px;
   font-weight: 500;
 }
 
@@ -239,7 +240,9 @@
     margin-top: 30px;
     font-weight: 500;
   }
-
+.ResponsiveNav{
+  height:40px;
+}
   .citiesLogo {
     height: 65px !important;
     width: 65px !important;

@@ -89,7 +89,7 @@ display: block;
 font-size: 22px;
 text-align: center;
   }
-  .background1 , .background2{
+  .background1 , .background2, .background3{
     justify-content: center;
     height: auto !important;
     padding-top: 0px;
@@ -105,7 +105,8 @@ text-align: center;
   }
   .background3{
     background-image: url('../Images/Slide3.gif') !important; 
-    background-size: fill;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .width80{
     width: 80%;

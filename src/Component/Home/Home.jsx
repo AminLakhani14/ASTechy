@@ -22,18 +22,14 @@ function Home() {
        <LeftSideExploreMore
         handleController={handleController}
         secondbutton={'Lets Get Started'}
-        heading="Zwapifi : Ensuring a Seamless, Extraordinary Trading Experience"
-        subheading="Zwapifi, developed using the React Native framework, 
-        is a cutting-edge platform that aims to transform the bartering process.
-         It provides a digital venue for users to trade items, ensuring fair value in return. 
-         The app simplifies trading, promotes sustainability, and aids in decluttering, 
-         offering a unique and seamless trading experience to the users."
+        heading="Maximize your business's capabilities with our expert outsourcing offerings."
+        subheading="Elevate your in-house team with our carefully selected specialists tailored to each project. Gain access to skilled designers, developers, and project managers, minus the burden of full-time staffing management."
         picture={picture}
       /> 
        </div>
       <OurClient />
-      <TechnologyStack />
       <Feedback />
+      <TechnologyStack />
     </div>
   );
 }

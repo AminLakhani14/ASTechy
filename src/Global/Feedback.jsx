@@ -26,7 +26,7 @@ function Feedback(props) {
         <div data-aos="fade-right" className={windowWidth <= 700?"justify-content-center d-flex flex-column align-items-center":"justify-content-center d-flex flex-column"}>
           <h1  style={
             windowWidth <= 1100
-              ? { fontSize: "24px",textAlign:'center', padding:'0px 20px 0px 20px' }
+              ? { fontSize: "20px",textAlign:'center', padding:'0px 20px 0px 20px' }
               : { fontSize: "34px" }
           } className="mb-4">
             <b>

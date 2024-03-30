@@ -191,7 +191,7 @@ const TechnologyStack = () => {
 
   return (
     <div className='mb-4 pb-5'>
-      <h2 className='ots_mainhead margintop pt-5 pb-4'>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h2>
+      <h2 className='ots_mainhead margintop  pb-4'>Our <span style={{ color: '#2693fa', marginTop: '10px' }}>Technology</span> Stack</h2>
       {windowWidth < 472 ?
         <>
           <div className="tabs col-lg-12 pt-4">

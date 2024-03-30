@@ -81,7 +81,7 @@ function AutoPlay(props) {
   };
 
   return (
-    <div className="slider-container">
+    <div className={windowWidth <=1024?"slider-container mt-5":"slider-container "}>
       <Slider {...settings}>
         <div className="background1">
           <div
@@ -226,7 +226,7 @@ function AutoPlay(props) {
                 : "width50 d-flex align-items-center"
             }
           >
-            <img src={slide3} width={"620"} alt="Computer man" />
+            <img src={slide3} alt="Computer man" />
           </div>
         </div>
       </Slider>

@@ -21,7 +21,7 @@ import Animation from "./Component/Work/3DAnimation/Animation.jsx";
 function App() {
   return (
     <div className="App">
-      <div style={{height:"90px"}}>
+      <div className="ResponsiveNav">
       <NavBar />
       </div>
       {/* <Router> */}
