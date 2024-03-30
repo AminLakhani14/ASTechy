@@ -226,7 +226,7 @@ function AutoPlay(props) {
                 : "width50 d-flex align-items-center"
             }
           >
-            <img src={slide3} alt="Computer man" />
+            <img style={{height:"50vh"}} src={slide3} alt="Computer man" />
           </div>
         </div>
       </Slider>

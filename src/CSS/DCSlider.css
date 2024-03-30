@@ -81,6 +81,7 @@ display: block;
     background-color: #827be6!important;
     display: flex !important;
     width: auto;
+    background-size: fill;
     height: 100vh !important;
 }
 
