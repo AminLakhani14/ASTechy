@@ -18,7 +18,7 @@
 nav { 
 	margin:0;
 	padding: 0;
-	z-index: 1;
+	z-index: 11111;
 	display: flex;
 	height: 90px;
     background-color: white;
@@ -153,7 +153,7 @@ li > a:only-child:after { content: ''; }
 /* Media Queries
 --------------------------------------------- */
 
-@media all and (max-width : 768px) {
+@media all and (max-width : 1024px) {
 	.headerMenuButton{
 		font-size: 14px;
 	}
@@ -192,6 +192,10 @@ li > a:only-child:after { content: ''; }
 	/* Hide the navigation menu by default */
 	/* Also hide the  */
 	.toggle + a,
+	.menu {
+		display: none;
+	}
+	.toggle2 + a,
 	.menu {
 		display: none;
 	}

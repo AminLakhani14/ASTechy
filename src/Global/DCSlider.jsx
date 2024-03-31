@@ -203,8 +203,7 @@ function AutoPlay(props) {
               </h1>
               <p className="sliderParagraph">
                 Optimize your online presence with our SEO-driven web
-                application development services. Explore our portfolio of
-                diverse projects and delighted clients, and let us elevate your
+                application development services. let us elevate your
                 digital footprint with cutting-edge technology and personalized
                 SEO solutions.
               </p>
