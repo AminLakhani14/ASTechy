@@ -98,16 +98,21 @@ text-align: center;
   }
   .background1{
     background-image: url('../Images/data.gif') !important; 
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
   }
   .background2{
     background-image: url('../Images/slider2.gif') !important; 
-    background-size: fill;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
   }
   .background3{
     background-image: url('../Images/Slide3.gif') !important; 
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-x: center;
   }
   .width80{
     width: 80%;

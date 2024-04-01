@@ -28,13 +28,13 @@ function Heading(props) {
   };
 
   return (
-    <div className={windowWidth <= 768 ? "pt-5 mt-5 HeadingBackground" : "pt-5 HeadingBackground"}>
+    <div className={windowWidth <=1024?"pt-5 mt-5 HeadingBackground":"HeadingBackground "}>
       <div className="width50">
         <div className="col-lg-3 col-sm-3 col-md-3"></div>
-        <div className={windowWidth <= 768 ? "justify-content-center d-flex flex-column align-items-center" : "justify-content-center d-flex flex-column"}>
+        <div className={windowWidth <= 1024 ? "justify-content-center d-flex flex-column align-items-center" : "justify-content-center d-flex flex-column"}>
           <h1
             style={
-              windowWidth <= 768
+              windowWidth <= 1024
                 ? { fontSize: "24px" }
                 : { fontSize: "55px" }
             } className="mb-4"
@@ -44,7 +44,7 @@ function Heading(props) {
           {PageRoute == 'services' ? <p
             data-aos="fade-right"
             style={
-              windowWidth <= 768
+              windowWidth <= 1024
                 ? { fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
                 : { fontSize: "20px", fontWeight: "400", color: "#ffffff" }
             }>
@@ -53,7 +53,7 @@ function Heading(props) {
           <p
             data-aos="fade-right"
             style={
-              windowWidth <= 768
+              windowWidth <= 1024
                 ? { fontWeight: "400", color: "#ffffff", textAlign: 'center', padding: '0px 20px 0px 20px' }
                 : { fontSize: "20px", fontWeight: "400", color: "#ffffff" }
             }>
@@ -167,7 +167,7 @@ function Heading(props) {
             </div>
           </div>
         ) : (
-          ""
+         <div style={{height:"550pxy"}}></div>
         )}
       </div>
     </div>

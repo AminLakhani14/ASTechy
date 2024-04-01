@@ -34,7 +34,7 @@ function LeftSideExploreMore(props) {
         <button className="rightGenericButton mx-2"><b>{props.secondbutton}</b></button>
         </div>
         </div>
-        <div className="col-sm-6 col-md-6" data-aos="fade-left">
+        <div className={props.rowReverse && windowWidth <=1024?"":"col-sm-6 col-md-6"} data-aos="fade-left">
         <a href="/" className="ExploreImage">
             <img className="imageSetting"  src={props.picture} alt="profile picture"/>
         </a>
