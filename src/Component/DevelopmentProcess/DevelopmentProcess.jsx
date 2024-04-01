@@ -52,13 +52,13 @@ export const DevelopmentProcess = () => {
                 case 'seo-services':
                     setDevTitleDesc({
                         title: 'SEO',
-                        desc: "At SSTech, we adhere to a rigorous and proven SEO process to guarantee flawless execution of your project from inception to implementation. Here's an outline of our process:"
+                        desc: "At ASTECHY, we adhere to a rigorous and proven SEO process to guarantee flawless execution of your project from inception to implementation. Here's an outline of our process:"
                     });
                     break;
                 case 'ui-ux-design-services':
                     setDevTitleDesc({
                         title: 'UI/UX Designing',
-                        desc: 'At SSTech, we follow a rigorous 6-step user-centered design process to create experiences that truly resonate with your users. By following this well-defined methodology, we ensure that every design we craft is user-centered, efficient, and optimized for your target audience and matches expected user behavior.'
+                        desc: 'At ASTECHY, we follow a rigorous 6-step user-centered design process to create experiences that truly resonate with your users. By following this well-defined methodology, we ensure that every design we craft is user-centered, efficient, and optimized for your target audience and matches expected user behavior.'
                     });
                     break;
                 case 'wordpress-development-services':

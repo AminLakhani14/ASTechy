@@ -74,7 +74,7 @@ export const HireUs = () => {
                 case 'web-application-development-services':
                     setDevTitleDesc({
                         title: 'Web Application',
-                        desc: 'Finding the right talent for your project is easy with SSTech. Our talented in-house team has decade of experience successfully designing, developing, and launching custom web apps. This expertise allows us to efficiently handle any type of web app project:'
+                        desc: 'Finding the right talent for your project is easy with ASTECHY. Our talented in-house team has decade of experience successfully designing, developing, and launching custom web apps. This expertise allows us to efficiently handle any type of web app project:'
                         , cardTitle1: 'Fast Hiring',
                         cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
                         cardTitle2: 'Top Talent',
@@ -92,7 +92,7 @@ export const HireUs = () => {
                 case 'seo-services':
                     setDevTitleDesc({
                         title: 'SEO',
-                        desc: "Seeking adept SEO specialists to augment your team? At SSTech, we provide flexible hiring solutions, granting you access to top-tier talent seamlessly. Whether you require a single specialist or an entire team, we've got you covered."
+                        desc: "Seeking adept SEO specialists to augment your team? At ASTECHY, we provide flexible hiring solutions, granting you access to top-tier talent seamlessly. Whether you require a single specialist or an entire team, we've got you covered."
                         , cardTitle1: 'Fast Hiring',
                         cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
                         cardTitle2: 'Top Talent',
@@ -146,7 +146,7 @@ export const HireUs = () => {
                 case 'social-media-marketing-services':
                     setDevTitleDesc({
                         title: 'Social Media Marketing',
-                        desc: "Interested in recruiting a dedicated Social Media Marketing team? SSTech offers flexible engagement models to expand your team effortlessly:"
+                        desc: "Interested in recruiting a dedicated Social Media Marketing team? ASTECHY offers flexible engagement models to expand your team effortlessly:"
                         , cardTitle1: 'Fast Hiring',
                         cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
                         cardTitle2: 'Top Talent',
@@ -164,7 +164,7 @@ export const HireUs = () => {
                 case '3d-animation-services':
                     setDevTitleDesc({
                         title: '3D Animation',
-                        desc: 'Exploring options to hire expert 3D animators for your project? SSTech offers a team of seasoned professionals poised to bring your vision to life. Our skilled 3D animators excel in animation development, ensuring your project receives the expertise it deserves.'
+                        desc: 'Exploring options to hire expert 3D animators for your project? ASTECHY offers a team of seasoned professionals poised to bring your vision to life. Our skilled 3D animators excel in animation development, ensuring your project receives the expertise it deserves.'
                         , cardTitle1: 'Fast Hiring',
                         cardDesc1: 'With our fast and efficient hiring process, you can add a new team member with just a click of a button and have them onboarded within 24-48 hours.',
                         cardTitle2: 'Top Talent',
@@ -204,7 +204,7 @@ export const HireUs = () => {
             <div className='margintop'>
                 <div className='text-center d-flex flex-column align-items-center'>
                     <h1 className='heading4034' style={{ fontWeight: "700" }}>Hire <span className='changecolor'>{devTitleDesc.title} {PageRoute === 'ui-ux-design-services' ? 'Designers' : 'Developers'}<br></br>
-                    </span> with <span className='changecolor'>SSTech</span></h1>
+                    </span> with <span className='changecolor'>ASTECHY</span></h1>
                     <p className={'font2014 widthHireUs mt-3'}>{devTitleDesc.desc}</p>
                 </div>
                 <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>

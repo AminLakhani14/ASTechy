@@ -24,7 +24,7 @@ function Footer() {
     };
   }, []);
   return (
-    <footer className="footer" data-aos="fade-down">
+    <footer className="footer" >
       <div className="container">
         <div
           className={windowWidth < 1024 ? "row flex-column align-items-center" : "row justify-content-center"}
@@ -98,14 +98,14 @@ function Footer() {
               >
                 Email us at
               </p>
-              <p className="mx-2">info@SSTECH.com</p>
+              <p className="mx-2">info@ASTECHY.com</p>
             </div>
           </div>
         </div>
       </div>
       <div className="copyright">
         <p>
-          &copy; {new Date().getFullYear()} SSTech Solutions Inc. All Rights
+          &copy; {new Date().getFullYear()} ASTECHY Inc. All Rights
           Reserved.
         </p>
       </div>

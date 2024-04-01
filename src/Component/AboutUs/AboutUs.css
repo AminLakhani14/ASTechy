@@ -91,3 +91,52 @@
         text-align: center;
     }
 }
+@media screen and (max-width: 1024px) {
+    .year {
+        margin-top: -8px;
+        font-weight: bold;
+        font-size: 22px;
+        color: #2693fa;
+    }
+    .contentTitle {
+        margin-top: -8px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .crafting {
+        margin-top: -8px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .contentText {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .textHeading {
+        font-size: 16px;
+        color: #2693fa;
+    }
+    .img1 {
+        background-repeat: no-repeat;
+        background-image: url("../../Images/about1.webp");
+        background-size: contain;
+        background-position: center;
+        height: 300px;
+    }
+    .img2 {
+        background-repeat: no-repeat;
+        background-image: url("../../Images/about2.webp");
+        background-size: contain;
+        background-position: center;
+        height: 300px;
+    }
+    .img4 {
+        background-repeat: no-repeat;
+        background-image: url("../../Images/about4.jpg");
+        background-size: contain;
+        background-position: center;
+        height: 160px;
+    }
+}

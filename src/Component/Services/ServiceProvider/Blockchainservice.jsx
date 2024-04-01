@@ -112,7 +112,7 @@ export const BlockchainPage = ({ route }) => {
         case "graphics-development-services":
           setTitle("Graphics Designing Services");
           setDesc(
-            "Welcome to 'Elevating Digital Presence,' a graphics design initiative by SSTech. As a leading provider of bespoke graphic design solutions, SSTech is committed to empowering businesses with captivating visual experiences. In this campaign, we delve into the realm of graphic innovation, exploring emerging trends, strategies, and best practices to drive growth and success in the digital age. From transformative graphic techniques to actionable design insights, 'Elevating Digital Presence' serves as your guide to harnessing the full potential of visual communication with SSTech as your trusted partner."
+            "Welcome to 'Elevating Digital Presence,' a graphics design initiative by ASTECHY. As a leading provider of bespoke graphic design solutions, ASTECHY is committed to empowering businesses with captivating visual experiences. In this campaign, we delve into the realm of graphic innovation, exploring emerging trends, strategies, and best practices to drive growth and success in the digital age. From transformative graphic techniques to actionable design insights, 'Elevating Digital Presence' serves as your guide to harnessing the full potential of visual communication with ASTECHY as your trusted partner."
           );
           setCards({
             title1: {
@@ -156,7 +156,7 @@ export const BlockchainPage = ({ route }) => {
         case "web-application-development-services":
           setTitle("Web App Development Services");
           setDesc(
-            "At SSTech, we are a leading custom web application development company dedicated to creating innovative web apps that solve real business problems. With years of experience designing, building and launching complex web applications, we have the proven expertise to handle any web app project."
+            "At ASTECHY, we are a leading custom web application development company dedicated to creating innovative web apps that solve real business problems. With years of experience designing, building and launching complex web applications, we have the proven expertise to handle any web app project."
           );
           setCards({
             title1: {
@@ -200,7 +200,7 @@ export const BlockchainPage = ({ route }) => {
         case "seo-services":
           setTitle("SEO Services");
           setDesc(
-            "At SSTech, we provide end-to-end SEO services to drive digital transformation and achieve your business objectives through tailored SEO strategies. With a decade-long track record of optimizing websites for startups, enterprises, and industry leaders, we stand as your reliable SEO partner, ensuring enhanced online visibility and sustainable growth."
+            "At ASTECHY, we provide end-to-end SEO services to drive digital transformation and achieve your business objectives through tailored SEO strategies. With a decade-long track record of optimizing websites for startups, enterprises, and industry leaders, we stand as your reliable SEO partner, ensuring enhanced online visibility and sustainable growth."
           );
           setCards({
             title1: {
@@ -244,7 +244,7 @@ export const BlockchainPage = ({ route }) => {
         case "ui-ux-design-services":
           setTitle("UI/UX Designing Services");
           setDesc(
-            "Unlock the potential of exceptional UI/UX design services at SSTech. Elevate your digital presence with our holistic approach, latest technology stack, and industry-specific solutions. Discover why we’re the best UI/UX design company for your brand’s success."
+            "Unlock the potential of exceptional UI/UX design services at ASTECHY. Elevate your digital presence with our holistic approach, latest technology stack, and industry-specific solutions. Discover why we’re the best UI/UX design company for your brand’s success."
           );
           setCards({
             title1: {
@@ -288,7 +288,7 @@ export const BlockchainPage = ({ route }) => {
         case "wordpress-development-services":
           setTitle("WordPress Development Services");
           setDesc(
-            "Our custom WordPress development services can be the one-stop solution for all your design and development needs. At SSTech, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business."
+            "Our custom WordPress development services can be the one-stop solution for all your design and development needs. At ASTECHY, we’re not just WordPress experts; we’re your trusted partners in crafting exceptional online experiences. Explore our comprehensive range of services for your business."
           );
           setCards({
             title1: {
@@ -332,7 +332,7 @@ export const BlockchainPage = ({ route }) => {
         case "social-media-marketing-services":
           setTitle("Social Media Marketing Services");
           setDesc(
-            "Unlock your brand's potential with SSTech's tailored Social Media Marketing services. Elevate your online presence with expertly crafted social media strategies and campaign management. Partner with us to cultivate a captivating, professional, and high-performing social media profile."
+            "Unlock your brand's potential with ASTECHY's tailored Social Media Marketing services. Elevate your online presence with expertly crafted social media strategies and campaign management. Partner with us to cultivate a captivating, professional, and high-performing social media profile."
           );
           setCards({
             title1: {
@@ -376,7 +376,7 @@ export const BlockchainPage = ({ route }) => {
         case "3d-animation-services":
           setTitle("3D Animation Services");
           setDesc(
-            "SSTech is a premier 3D animation studio, offering comprehensive MVP animation services to bring your minimum viable product (MVP) to life. With a wealth of experience in delivering successful 3D animations for startups and enterprises alike, we are your ultimate technology partner for MVP animation development."
+            "ASTECHY is a premier 3D animation studio, offering comprehensive MVP animation services to bring your minimum viable product (MVP) to life. With a wealth of experience in delivering successful 3D animations for startups and enterprises alike, we are your ultimate technology partner for MVP animation development."
           );
           setCards({
             title1: {
@@ -420,7 +420,7 @@ export const BlockchainPage = ({ route }) => {
         case "services":
           setTitle("Our Services");
           setDesc(
-            "At SSTech, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
+            "At ASTECHY, we combine innovative service-driven architecture and state-of-the-art technology to create unparalleled digital products tailored to our clients’ requirements. Our unwavering commitment to customer satisfaction sets us apart in the industry."
           );
           break;
         default:
@@ -478,10 +478,10 @@ export const BlockchainPage = ({ route }) => {
         case "graphics-development-services":
           setServicesCardsDesc({
             title: "Custom Graphics Designing",
-            desc: "SSTech's expertise extends from crafting robust digital ecosystems to tailoring bespoke digital solutions and offering comprehensive consulting services. Explore our eBook services to elevate your digital presence and engage your audience effectively.",
+            desc: "ASTECHY's expertise extends from crafting robust digital ecosystems to tailoring bespoke digital solutions and offering comprehensive consulting services. Explore our eBook services to elevate your digital presence and engage your audience effectively.",
             partnerTitle: "Graphics Designing",
             partnerDesc:
-              "At SSTech, we go beyond conventional eBook development services; we emerge as your dedicated digital publishing partners, committed to amplifying your brand's visibility in the digital realm. Here's why you should trust us with your eBook needs:",
+              "At ASTECHY, we go beyond conventional eBook development services; we emerge as your dedicated digital publishing partners, committed to amplifying your brand's visibility in the digital realm. Here's why you should trust us with your eBook needs:",
           });
           break;
         case "web-application-development-services":
@@ -490,7 +490,7 @@ export const BlockchainPage = ({ route }) => {
             desc: "We offer full-cycle custom web application development services, from conceptualization and UX design to front- end development, back - end programming, testing and launch.Our key web app development services include:",
             partnerTitle: "Web App",
             partnerDesc:
-              "Don’t settle for an average web app – get a custom solution tailored to your needs with SSTech. With SSTech as your web app development partner, you get:",
+              "Don’t settle for an average web app – get a custom solution tailored to your needs with ASTECHY. With ASTECHY as your web app development partner, you get:",
           });
           break;
         case "seo-services":
@@ -505,34 +505,34 @@ export const BlockchainPage = ({ route }) => {
         case "ui-ux-design-services":
           setServicesCardsDesc({
             title: "Custom UI/UX Designing",
-            desc: "SSTech offers cutting-edge UI/UX design services to create intuitive, engaging digital experiences. With an expert team of designers and researchers, we help companies craft user-focused products that delight customers.",
+            desc: "ASTECHY offers cutting-edge UI/UX design services to create intuitive, engaging digital experiences. With an expert team of designers and researchers, we help companies craft user-focused products that delight customers.",
             partnerTitle: "UI/UX Designing",
             partnerDesc:
-              "At SSTech, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:",
+              "At ASTECHY, we are more than just a UI/UX design company; we are your dedicated design allies, committed to elevating your brand in the digital landscape. Here’s why you should entrust your design needs to us:",
           });
           break;
         case "wordpress-development-services":
           setServicesCardsDesc({
             title: "Custom WordPress",
-            desc: "From WordPress theme customization and plugin development to complex WordPress integrations, SSTech provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.",
+            desc: "From WordPress theme customization and plugin development to complex WordPress integrations, ASTECHY provides end-to-end WordPress website design and development, speed optimization, content implementation, security and maintenance, allowing you to focus on your business.",
             partnerTitle: "WordPress",
             partnerDesc:
-              "With over a decade of WordPress experience, SSTech is your trusted partner for custom WordPress services. Here’s why you should choose us:",
+              "With over a decade of WordPress experience, ASTECHY is your trusted partner for custom WordPress services. Here’s why you should choose us:",
           });
           break;
         case "social-media-marketing-services":
           setServicesCardsDesc({
             title: "Custom Social Media Marketing",
-            desc: "Rely on SSTech for bespoke Social Media Marketing solutions aimed at creating high-engagement online presence. With extensive experience in crafting effective social media strategies, our team of experts specializes in the following services:",
+            desc: "Rely on ASTECHY for bespoke Social Media Marketing solutions aimed at creating high-engagement online presence. With extensive experience in crafting effective social media strategies, our team of experts specializes in the following services:",
             partnerTitle: "Social Media Marketing",
             partnerDesc:
-              "SSTech emerges as the preferred option for customized social media marketing solutions, backed by a track record of successful campaigns. This establishes us as the ideal partner to transform your social media presence into a dynamic and impactful marketing tool.",
+              "ASTECHY emerges as the preferred option for customized social media marketing solutions, backed by a track record of successful campaigns. This establishes us as the ideal partner to transform your social media presence into a dynamic and impactful marketing tool.",
           });
           break;
         case "3d-animation-services":
           setServicesCardsDesc({
             title: "Custom 3D Animation",
-            desc: "At SSTech, we offer a comprehensive array of 3D animation services to bring vibrancy to your innovative concepts. Our team of adept animators specializes in 3D animation development, ensuring seamless execution and captivating visuals for your project.",
+            desc: "At ASTECHY, we offer a comprehensive array of 3D animation services to bring vibrancy to your innovative concepts. Our team of adept animators specializes in 3D animation development, ensuring seamless execution and captivating visuals for your project.",
             partnerTitle: "3D Animation",
             partnerDesc:
               "As a leading 3D animation studio, we take pride in our track record of success. We're not just a provider of bespoke 3D animation services; we're your partner in innovation. Here's why you should choose us for 3D animation development:",
@@ -686,7 +686,7 @@ export const BlockchainPage = ({ route }) => {
                 </p>
                 <p className="sub-subheading">
                   Harness the power of social media to connect with your audience and
-                  drive business growth with SSTech's comprehensive social media
+                  drive business growth with ASTECHY's comprehensive social media
                   marketing services. Our experienced team develops tailored
                   strategies to engage your target audience across various platforms,
                   creating compelling content and driving meaningful interactions.
@@ -694,7 +694,7 @@ export const BlockchainPage = ({ route }) => {
                   strong presence and achieve your marketing goals.
                 </p>
                 <p className="subheading mt-5">
-                  Explore SSTech’s Social Media Marketing Services:
+                  Explore ASTECHY’s Social Media Marketing Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Social Media Strategy</li>
@@ -705,7 +705,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Analytics and Reporting</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Elevate your brand's social media presence with SSTech's expertise!
+                  Elevate your brand's social media presence with ASTECHY's expertise!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -752,7 +752,7 @@ export const BlockchainPage = ({ route }) => {
                   Transform Your Digital Presence with Web Apps
                 </p>
                 <p className="sub-subheading">
-                  Harness SSTech’s extensive tech expertise and
+                  Harness ASTECHY’s extensive tech expertise and
                   customer-centric web development approach to accelerate your
                   digital transformation. With over a decade of experience and a
                   talent-driven methodology, we create tailored solutions with
@@ -760,7 +760,7 @@ export const BlockchainPage = ({ route }) => {
                   success.
                 </p>
                 <p className="subheading mt-5">
-                  Discover SSTech’s Comprehensive Web App Services:
+                  Discover ASTECHY’s Comprehensive Web App Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Full Stack Development</li>
@@ -774,7 +774,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Shopify Web Development</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Empower your digital strategy with SSTech today!
+                  Empower your digital strategy with ASTECHY today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -809,7 +809,7 @@ export const BlockchainPage = ({ route }) => {
                   Transform Your Digital Experience with UI/UX Design Services
                 </p>
                 <p className="sub-subheading">
-                  Elevate your digital presence with SSTech’s exceptional UI/UX
+                  Elevate your digital presence with ASTECHY’s exceptional UI/UX
                   design services. Our expert team harnesses the latest
                   technology to craft purpose-driven designs that streamline
                   navigation, boost on-site engagement, and provide an
@@ -817,7 +817,7 @@ export const BlockchainPage = ({ route }) => {
                   interface complexity and captivate users like never before.
                 </p>
                 <p className="subheading mt-5">
-                  Explore SSTech’s Comprehensive UI/UX Services:
+                  Explore ASTECHY’s Comprehensive UI/UX Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Product Design</li>
@@ -828,7 +828,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Agile UX Design</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Enhance your user experience with SSTech today!
+                  Enhance your user experience with ASTECHY today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -883,7 +883,7 @@ export const BlockchainPage = ({ route }) => {
                   level.
                 </p>
                 <p className="subheading mt-5">
-                  Explore SSTech’s Expertise in WordPress Development:
+                  Explore ASTECHY’s Expertise in WordPress Development:
                 </p>
                 <ul className="bulletpoint">
                   <li>WordPress Theme Customization:</li>
@@ -894,7 +894,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Speed Optimization</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Grow your business with SSTech today!
+                  Grow your business with ASTECHY today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -928,7 +928,7 @@ export const BlockchainPage = ({ route }) => {
                 </p>
                 <p className="sub-subheading">
                   Maximize your online visibility and reach your target audience
-                  effectively with SSTech’s top-notch SEO services. Our expert
+                  effectively with ASTECHY’s top-notch SEO services. Our expert
                   team employs advanced strategies and techniques to optimize
                   your website for search engines, driving organic traffic and
                   ensuring higher rankings. Experience enhanced online
@@ -936,7 +936,7 @@ export const BlockchainPage = ({ route }) => {
                   comprehensive SEO solutions.
                 </p>
                 <p className="subheading mt-5">
-                  Discover SSTech’s SEO Services:
+                  Discover ASTECHY’s SEO Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>On-Page SEO</li>
@@ -947,7 +947,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>SEO Consulting</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Elevate your online presence with SSTech's SEO expertise!
+                  Elevate your online presence with ASTECHY's SEO expertise!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -997,7 +997,7 @@ export const BlockchainPage = ({ route }) => {
                 </p>
                 <p className="sub-subheading">
                   Stand out from the crowd and leave a lasting impression with
-                  SSTech's exceptional graphics designing services. Our
+                  ASTECHY's exceptional graphics designing services. Our
                   talented designers create visually appealing graphics that
                   communicate your brand message effectively. From logos and
                   branding to marketing materials and social media assets, we
@@ -1005,7 +1005,7 @@ export const BlockchainPage = ({ route }) => {
                   audience.
                 </p>
                 <p className="subheading mt-5">
-                  Explore SSTech’s Graphics Designing Services:
+                  Explore ASTECHY’s Graphics Designing Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Logo Design</li>
@@ -1016,7 +1016,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Illustrations</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Transform your brand's visual identity with SSTech today!
+                  Transform your brand's visual identity with ASTECHY today!
                 </p>
                 <div className="my-5 leftsideExploreButton">
                   <button className="learnmoreButoon mx-2">
@@ -1051,7 +1051,7 @@ export const BlockchainPage = ({ route }) => {
                   Bring Your Imagination to Life with 3D Animation
                 </p>
                 <p className="sub-subheading">
-                  Unlock the power of visual storytelling with SSTech's
+                  Unlock the power of visual storytelling with ASTECHY's
                   captivating 3D animation services. Our skilled animators
                   breathe life into your ideas, creating immersive and engaging
                   animations that leave a lasting impact on your audience. From
@@ -1059,7 +1059,7 @@ export const BlockchainPage = ({ route }) => {
                   bring your concepts to life with stunning 3D animations.
                 </p>
                 <p className="subheading mt-5">
-                  Explore SSTech’s 3D Animation Services:
+                  Explore ASTECHY’s 3D Animation Services:
                 </p>
                 <ul className="bulletpoint">
                   <li>Product Animation</li>
@@ -1070,7 +1070,7 @@ export const BlockchainPage = ({ route }) => {
                   <li>Virtual Reality</li>
                 </ul>
                 <p className="sub-subheading mt-5">
-                  Let your imagination soar with SSTech's 3D animation
+                  Let your imagination soar with ASTECHY's 3D animation
                   expertise!
                 </p>
                 <div className="my-5 leftsideExploreButton">

@@ -16,7 +16,6 @@ function NavBarMobile() {
     setClick(false);
   };
 const resetState=()=>{
-  debugger;
 setClick(false)
 setHideMenu(false)
 }

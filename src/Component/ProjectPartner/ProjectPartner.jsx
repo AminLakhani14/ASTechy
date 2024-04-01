@@ -13,7 +13,7 @@ const ProjectPartner = ({ mainText, subText, buttonText }) => {
     return (
         <div className={"ppcontainer mt-4"}>
             <div className="ppleft-side">
-                <h2 className='partnerheading'>Why Choose SSTech as Your <span className='changecolor'>{mainText} {PageRoute === 'graphics-development-services' ? '' : 'Development'} Company</span></h2>
+                <h2 className='partnerheading'>Why Choose ASTECHY as Your <span className='changecolor'>{mainText} {PageRoute === 'graphics-development-services' ? '' : 'Development'} Company</span></h2>
                 <p className='partnerpara'>{subText}</p>
                 <h3 className='togetherpara'>Let’s Start a New {buttonText} Project Together</h3>
                 <Link to='/contact' href='/contact' className='contactuspp'>

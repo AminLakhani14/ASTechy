@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./AboutUs.css"
 import Heading from "../../Global/Heading";
+import "../../CSS/style.css";
 
 function AboutUs() {
   const [activeTab, setActiveTab] = useState('Leaders');
@@ -37,13 +38,11 @@ function AboutUs() {
       return (
         <div className="row">
           <div className="col-lg-3">
-            <div className="img3 ml-10"></div>
+            <div className="img4 ml-10"></div>
           </div>
           <div className="col-lg-3">
-            <div className="img3 ml-10"></div>
+            <div className="img4 ml-10"></div>
           </div>
-          <div className="col-lg-3"> <div className="img3 ml-10"></div></div>
-          <div className="col-lg-3"> <div className="img3 ml-10"></div></div>
 
         </div>
       )
@@ -57,18 +56,18 @@ function AboutUs() {
           visible={true}
           startedbtn={true}
           text={'About Us'}
-          paragraph={' SSTech is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.'}
+          paragraph={' ASTECHY is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.'}
           feedbackvisible={true}
         />
       <div className="row mt-5">
         <div className="col-lg-1"></div>
         <div className="col-lg-5 col-md-5">
-          <div className="row">
+          <div className={windowWidth <=1024?"d-flex justify-content-center flex-column mx-4":"row"} >
             <div className="col-lg-6 col-md-6">
               <div>
                 <p className="year">2009</p>
                 <p className="contentTitle">For 13+ years</p>
-                <p className="contentText">Ropstam has been a leading innovator in software development, delivering solutions to complex challenges.</p>
+                <p className="contentText">ASTECHY has been a leading innovator in software development, delivering solutions to complex challenges.</p>
               </div>
             </div>
             <div className="col-lg-6 col-md-6">
@@ -80,7 +79,7 @@ function AboutUs() {
             </div>
           </div>
 
-          <div className="row">
+          <div className={windowWidth <=1024?"d-flex justify-content-center flex-column mx-4":"row"} >
             <div className="col-lg-6 col-md-6">
               <div>
                 <p className="year">100+</p>
@@ -99,7 +98,7 @@ function AboutUs() {
         </div>
         <div className="col-lg-1"></div>
         <div className="col-lg-5 col-md-5">
-          <div className="video-container">
+          <div  className={windowWidth <=1024?"d-flex justify-content-center m-4 video-container":"video-container"} >
             <iframe
               width="560"
               height="315"
@@ -115,12 +114,12 @@ function AboutUs() {
       <br></br>
       <br></br>
       <br></br>
-      <div className="row">
+      <div className={windowWidth <=1024?"d-flex justify-content-center flex-column m-5 mb-0":"row"}>
         <div className="col-lg-1"></div>
         <div className="col-lg-5">
-          <div className="h1">Crafting digital beauty, one project at a time.</div>
+          <div className="crafting">Crafting digital beauty, one project at a time.</div>
           <p className="contentText">
-            Ropstam delivers top-notch digital products with a focus on quality, innovation, and customer satisfaction. Our team of experts have over 10 years of experience in web and mobile development, ensuring your ideas are transformed into successful online businesses that stand out from the competition.
+            ASTECHY delivers top-notch digital products with a focus on quality, innovation, and customer satisfaction. Our team of experts have over 10 years of experience in web and mobile development, ensuring your ideas are transformed into successful online businesses that stand out from the competition.
           </p>
         </div>
         <div className="col-lg-1 d-flex justify-content-center">
@@ -128,12 +127,12 @@ function AboutUs() {
         </div>
         <div className="col-lg-4">
           <p className="textHeading">
-            Unlock the potential of your online presence with Ropstam’s proven track record of delivering top-notch web solutions to over 500 clients worldwide.
+            Unlock the potential of your online presence with ASTECHY’s proven track record of delivering top-notch web solutions to over 500 clients worldwide.
           </p>
         </div>
       </div>
 
-      <div className="row">
+      <div className={windowWidth <=1024?"d-flex justify-content-center flex-column  m-4":"row"}>
         <div className="col-lg-1"></div>
         <div className="col-lg-5">
           <div>
@@ -160,38 +159,38 @@ function AboutUs() {
       <br></br>
       <br></br>
       <br></br>
-      <div className="row HeadingBackground">
+        <div className={windowWidth <=1024?"pt-5 mt-5 HeadingBackground":"HeadingBackground "}>
         <div className="col-lg-1"></div>
-        <div className="col-lg-6">
-          <p className="h1">Wali Hassan</p>
-          <p className="h4">CEO, Ropstam Solutions</p>
+        <div className={windowWidth <=1024?"col-lg-6 m-4":"col-lg-6 "}>
+          <p className="h1">Anas Khursheed</p>
+          <p className="h4">CEO, ASTECHY</p>
           <p className="contentText mt-5">
             “For the past ten years, I have devoted myself wholeheartedly to building and expanding this company. It brings me great pride to see the fantastic team we have built, the outstanding work they produce, and the supportive atmosphere we’ve created for our clients to bring their ideas to life. Our team’s commitment to excellence and client satisfaction has been our guiding principle, driving us to deliver top-notch services that meet and exceed expectations. I am humbled and honored to have led this organization to where it stands today, and I look forward to continuing our journey of growth and success.”
           </p>
         </div>
         <div className="col-lg-5">
-          <div className="img3"></div>
+          {/* <div className="img3"></div> */}
         </div>
       </div>
       <br />
       <br />
       <br />
-      <div className="row">
+      <div className="row mb-0">
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
-          <div className="row">
+          <div className={windowWidth <=1024?"d-flex m-3":"row"}>
             <div className="col-lg-12">
               <h1>Some of our 100+ People</h1>
             </div>
           </div>
           <br />
-          <div className="row">
+          <div className={windowWidth <=1024?"d-flex m-3":"row"}>
             <div className="col-lg-12">
               <p className="h5">Success is a team effort, not a solo endeavor.</p>
             </div>
           </div>
           <br />
-          <div className="row">
+          <div className={windowWidth <=1024?"d-flex m-3":"row"}>
             <div className="col-lg-12">
               <div className="tabs d-flex justify-content-lg-start" style={{ gap: "50px" }}>
                 <span
@@ -218,40 +217,13 @@ function AboutUs() {
                 <div className="col-lg-3">
                   <div className="img4 ml-10"></div>
                 </div>
-                <div className="col-lg-3"> <div className="img4 ml-10"></div></div>
-                <div className="col-lg-3"> <div className="img4 ml-10"></div></div>
-
               </div>)
             : (
-              <div className="row">
+              <div className={windowWidth <=1024?"d-flex justify-content-lg-start":"row"}>
                 <div className="col-lg-12">
                   <div className="tabs d-flex justify-content-lg-start" style={{ gap: "30px" }}>
-                    <span className={teamTab === 'All' ? 'active' : ''} onClick={() => handleTeamTabClick('All')}>
-                      All
-                    </span>
-                    <span className={teamTab === 'Data Research' ? 'active' : ''} onClick={() => handleTeamTabClick('Data Research')}>
-                      Data Research
-                    </span>
-                    <span className={teamTab === 'Full Stack' ? 'active' : ''} onClick={() => handleTeamTabClick('Full Stack')}>
-                      Full Stack
-                    </span>
-                    <span className={teamTab === 'Gaming' ? 'active' : ''} onClick={() => handleTeamTabClick('Gaming')}>
-                      Gaming
-                    </span>
-                    <span className={teamTab === 'HR' ? 'active' : ''} onClick={() => handleTeamTabClick('HR')}>
-                      HR
-                    </span>
                     <span className={teamTab === 'Mobile Apps' ? 'active' : ''} onClick={() => handleTeamTabClick('Mobile Apps')}>
                       Mobile Apps
-                    </span>
-                    <span className={teamTab === 'Social Media' ? 'active' : ''} onClick={() => handleTeamTabClick('Social Media')}>
-                      Social Media
-                    </span>
-                    <span className={teamTab === 'SQA' ? 'active' : ''} onClick={() => handleTeamTabClick('SQA')}>
-                      SQA
-                    </span>
-                    <span className={teamTab === 'UI/UX' ? 'active' : ''} onClick={() => handleTeamTabClick('UI/UX')}>
-                      UI/UX
                     </span>
                     <span className={teamTab === 'WordPress/Shopify' ? 'active' : ''} onClick={() => handleTeamTabClick('WordPress/Shopify')}>
                       WordPress/Shopify
@@ -263,12 +235,12 @@ function AboutUs() {
           }
           {teamTabHtml()}
 
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-6">
               <div>
                 <div className="h1">Headquartered in <span style={{ color: "#2693fa" }}>Ontario, Canada</span></div>
                 <p className="contentText">
-                  Ropstam boasts a proven track record of delivering top-notch custom software solutions to clients ranging from Fortune 500 companies to startups, including Walmart, SharkTank Rogers, PostMedia, Bell, Telus, Cafebonappetit, and Nescafe, since 2009.
+                  ASTECHY boasts a proven track record of delivering top-notch custom software solutions to clients ranging from Fortune 500 companies to startups, including Walmart, SharkTank Rogers, PostMedia, Bell, Telus, Cafebonappetit, and Nescafe, since 2009.
                 </p>
                 <div className="row">
                   <div className="col-lg-12 img6"></div>
@@ -276,7 +248,7 @@ function AboutUs() {
               </div>
             </div>
             <div className="col-lg-6 img5"></div>
-          </div>
+          </div> */}
 
         </div>
         <div className="col-lg-1"></div>
