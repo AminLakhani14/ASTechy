@@ -28,7 +28,7 @@ function Heading(props) {
   };
 
   return (
-    <div className="pt-5 mt-5 HeadingBackground ">
+    <div className={windowWidth <= 768 ? "pt-5 mt-5 HeadingBackground" : "pt-5 HeadingBackground"}>
       <div className="width50">
         <div className="col-lg-3 col-sm-3 col-md-3"></div>
         <div className={windowWidth <= 768 ? "justify-content-center d-flex flex-column align-items-center" : "justify-content-center d-flex flex-column"}>
