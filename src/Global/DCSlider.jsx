@@ -10,6 +10,7 @@ import "../CSS/DCSlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../CSS/style.css";
+import { useNavigate } from "react-router-dom";
 const NextIcon = (props) => {
   const { className, onClick } = props;
   return (
@@ -30,6 +31,7 @@ const PreviousIcon = (props) => {
 
 function AutoPlay(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const navigate = useNavigate();
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -41,6 +43,20 @@ function AutoPlay(props) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  
+  /*** To Open Slider Buttons ****/
+  const openServices = (e) => {
+    if (e.target.id === 'webappservices') {
+      navigate('/web-application-development-services');
+    } else if (e.target.id === 'seoservice') {
+      navigate('/seo-services');
+    } else if (e.target.id === 'uiuxservice') {
+      navigate('/ui-ux-design-services')
+    } else {
+      navigate('/')
+    }
+  };
+  /*** To Open Slider Buttons ****/
   const settings = {
     dots: true,
     infinite: true,
@@ -81,7 +97,7 @@ function AutoPlay(props) {
   };
 
   return (
-    <div className={windowWidth <=1024?"slider-container mt-5":"slider-container "}>
+    <div className={windowWidth <= 1024 ? "slider-container mt-5" : "slider-container "}>
       <Slider {...settings}>
         <div className="background1">
           <div
@@ -116,7 +132,7 @@ function AutoPlay(props) {
                     : "d-flex mt-4"
                 }
               >
-                <button className="HeaderButton">Web App Services</button>
+                <button className="HeaderButton" id="webappservices" onClick={openServices}>Web App Services</button>
               </div>
             </div>
           </div>
@@ -148,15 +164,12 @@ function AutoPlay(props) {
             <div>
               <h1 className="mb-4 sliderMainFont">
                 <b>
-                  Streamline Your Mobile Application with Our Cutting-Edge
-                  All-In-One Solutions.
+                  Optimize Your User Experience with Our Cutting-Edge All-In-One UI/UX Solutions.
                 </b>
               </h1>
               <p className="sliderParagraph">
-                Our Mobile Application Development Service provide a
-                comprehensive solution for all your Mobile Application needs,
-                utilizing cutting-edge technology to optimize
-                efficiency,productivity,and success.
+                Our UI/UX Design Service offers a comprehensive solution for all your digital interface needs,
+                harnessing cutting-edge technology to optimize efficiency, productivity, and success.
               </p>
               <div
                 className={
@@ -165,7 +178,7 @@ function AutoPlay(props) {
                     : "d-flex mt-4"
                 }
               >
-                <button className="HeaderButton">Mobile App Services</button>
+                <button className="HeaderButton" id="uiuxservice" onClick={openServices}>UI/UX Services</button>
               </div>
             </div>
           </div>
@@ -214,7 +227,7 @@ function AutoPlay(props) {
                     : "d-flex mt-4"
                 }
               >
-                <button className="HeaderButton">SEO Services</button>
+                <button className="HeaderButton" id="seoservice" onClick={openServices}>SEO Services</button>
               </div>
             </div>
           </div>
@@ -225,7 +238,7 @@ function AutoPlay(props) {
                 : "width50 d-flex align-items-center"
             }
           >
-            <img style={{height:"50vh"}} src={slide3} alt="Computer man" />
+            <img style={{ height: "50vh" }} src={slide3} alt="Computer man" />
           </div>
         </div>
       </Slider>
