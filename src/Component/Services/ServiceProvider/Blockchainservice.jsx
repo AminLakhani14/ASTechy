@@ -724,8 +724,8 @@ export const BlockchainPage = ({ route }) => {
               </div>
             </div>
             <div
-              className={windowWidth < 768 ? "d-flex ExploreMoreForm" : "row"}
-              style={windowWidth <= 768 ? {} : { marginTop: "90px" }}
+              className={windowWidth < 1024 ? "d-flex ExploreMoreForm" : "row"}
+              style={windowWidth <= 1024 ? {} : { marginTop: "90px" }}
             >
               <div
                 className="col-sm-6 col-md-5 col-order-2 "
@@ -847,8 +847,8 @@ export const BlockchainPage = ({ route }) => {
               </div>
             </div>
             <div
-              className={windowWidth < 768 ? "d-flex ExploreMoreForm" : "row"}
-              style={windowWidth <= 768 ? {} : { marginTop: "90px" }}
+              className={windowWidth < 1024 ? "d-flex ExploreMoreForm" : "row"}
+              style={windowWidth <= 1024 ? {} : { marginTop: "90px" }}
             >
               <div
                 className="col-sm-6 col-md-5 col-order-2 "
@@ -966,8 +966,8 @@ export const BlockchainPage = ({ route }) => {
               </div>
             </div>
             <div
-              className={windowWidth < 768 ? "d-flex ExploreMoreForm" : "row"}
-              style={windowWidth <= 768 ? {} : { marginTop: "90px" }}
+              className={windowWidth < 1024 ? "d-flex ExploreMoreForm" : "row"}
+              style={windowWidth <= 1024 ? {} : { marginTop: "90px" }}
             >
               <div
                 className="col-sm-6 col-md-5 col-order-2 "

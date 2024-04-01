@@ -60,37 +60,7 @@ function AboutUs() {
           paragraph={' SSTech is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.'}
           feedbackvisible={true}
         />
-      {/* <div className="pt-5 HeadingBackground" style={{ justifyContent: "left", flexDirection: 'column', textAlign: 'left' }}>
-        <div className="marginsliderclass">
-          <div className={windowWidth < 980 ? 'col-lg-12' : 'col-lg-6'}>
-            <h1 style={
-              windowWidth <= 500
-                ? { fontSize: "20px" }
-                : { fontSize: "55px" }
-            } className="aboutustext">
-              <b>
-                About Us
-              </b>
-            </h1>
-            <p className="aboutusdesc">
-              SSTech is a leading Canadian IT solutions company staffed by a team of skilled professionals in web development, mobile app development, UI/UX design, and blockchain development. We specialize in providing comprehensive software solutions and services, expertly handling complex projects to deliver outstanding results for our clients.
-            </p>
-          </div>
-          <div className="col-lg-6"></div>
-          <div className="col-lg-12 buttonalignau">
-            <button className="HeaderButton">
-              Let's Get Started
-            </button>
-            <button className="headerMenuButton mx-5">
-              <b>Explore Services</b>
-            </button>
-          </div>
-        </div>
-      </div> */}
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-lg-1"></div>
         <div className="col-lg-5 col-md-5">
           <div className="row">

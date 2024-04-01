@@ -283,7 +283,7 @@ li > a:only-child:after { content: ''; }
 		display: block;
 		width: 100%;
 	}
-
+	
 	nav ul ul ul li {
 		position: static;
 		/* has to be the same number as the "width" of "nav ul ul li" */ 
