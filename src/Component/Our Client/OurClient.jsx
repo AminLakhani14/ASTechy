@@ -1,25 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './OurClient.css';
-import CustomCarousel from '../CustomSlider/CustomSlider';
-import images from '../../Images/sliderData';
-import OurClientSlider from '../../Global/OurClientSlider';
 import { Link } from "react-router-dom";
 
 const OurClient = () => {
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setWindowWidth(window.innerWidth);
-    //     };
-
-    //     window.addEventListener('resize', handleResize);
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
     return (
-        <div className={"occontainer mt-4"}>
+        <div className={"occontainer"}>
             <div className="ocleft-side">
                 <h2 className='ourclientheading'>Why <span className='changecolor'>our clients</span> love us?</h2>
                 <p className='ourclientpara'>Our clients love us because we prioritize effective communication and are committed to delivering high-quality software solutions that meet the highest standards of excellence.</p>
@@ -29,7 +14,10 @@ const OurClient = () => {
             </div>
             <div className="ocright-side">
                 <div className="occard-container">
-                    {/* <OurClientSlider /> */}
+                    <h5>Our comprehensive suite of services, including WordPress development, UI/UX design, 3D 
+                        animation, graphics design, SEO, social media marketing etc, has consistently met and 
+                        surpassed expectations. The tangible results, such as increased downloads and monthly 
+                        users, underscore our dedication to excellence across all facets of your project.</h5>
                 </div>
             </div>
         </div>

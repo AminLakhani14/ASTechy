@@ -123,7 +123,8 @@ nav ul ul ul li {
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
 .headercontact{
-	color:#2693fa!important
+	color:#2693fa!important;
+	cursor: pointer;
 }
 .headercontact:hover{
 	color:#c94a22!important

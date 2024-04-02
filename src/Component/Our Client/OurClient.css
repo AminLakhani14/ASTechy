@@ -9,22 +9,20 @@
 .ocsmallcontainer {
     display: flex;
 }
-
+/* .ocright-side, */
 .ocleft-side {
     flex: 1;
     padding: 20px;
 }
 
 .ocright-side {
-    flex: 1;
-}
-
-.ocright-side {
     width: 50%;
-}
-
-.occard-container {
-    /* width: 50% !important; */
+    background-color: #f2f5f9;
+    padding: 40px 20px;
+    font-family: 'DM Sans', Helvetica, Arial, Lucida, sans-serif;
+    border-left: 3px solid #2693FA;
+    line-height: 1.6em;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
 }
 
 .ourclientheading {
@@ -44,10 +42,12 @@
         flex-direction: column;
     }
 
-    .ocleft-side,
-    .ocright-side {
+    .ocleft-side {
         width: 100%;
         padding: 20px;
+    }
+    .ocright-side{
+        display: none;
     }
 
     .ourclientheading {

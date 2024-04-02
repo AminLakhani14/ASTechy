@@ -36,7 +36,7 @@ const Service = () => {
         { title: <ComputerIcon fontSize={'large'} />, description: 'Web Development', index: '05', route: '/web-application-development-services' },
         { title: <ThreeDRotationIcon fontSize={'large'}  />, description: '3D Animation', index: '06', route: '/3d-animation-services' },
         { title: <DeveloperModeIcon fontSize={'large'} />, description: 'WordPress Development', index: '07', route: '/wordpress-development-services' },
-        { title: <div className='mt-5'></div>, description: 'Explore Our Solutions', color: '#fa7226', textColor: '#fff', route: '/services' }
+        { title: <div className='lastcardmargin'></div>, description: 'Explore Our Solutions', color: '#fa7226', textColor: '#fff', route: '/services' }
     ];
 
     const pageData = [
