@@ -31,10 +31,10 @@ function Footer() {
           style={
             windowWidth <= 500
               ? {
-                  alignItems: "center",
-                  marginBottom: "20px",
-                  flexDirection: "column",
-                }
+                alignItems: "center",
+                marginBottom: "20px",
+                flexDirection: "column",
+              }
               : {}
           }
         >
@@ -62,7 +62,7 @@ function Footer() {
               <p className="mx-2">+1(866)631-8767</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 t-center" style={{ marginTop: "30px" }}>
+          <div className="col-lg-4 col-md-6 t-center" style={{ marginTop: "30px" }}>
             <div
               style={{ display: "flex", justifyContent: "center", gap: "12px" }}
             >
@@ -72,12 +72,12 @@ function Footer() {
               <XIcon fontSize="large" />
             </div>
             <ul className="contact-info">
-              <li style={{ fontSize: "20px", marginLeft: "30px" }}>
+              <li style={{ fontSize: "20px", marginLeft: "30px", textAlign: 'center' }}>
                 <a>Terms of Use – Privacy Policy.</a>
               </li>
             </ul>
           </div>
-          <div className="col-lg-3 col-md-6 px-5 t-center">
+          <div className="col-lg-3 col-md-6 t-center">
             {/* Social Media section (replace with your links) */}
             <EmailIcon
               style={{ marginTop: "30px" }}
@@ -98,7 +98,7 @@ function Footer() {
               >
                 Email us at
               </p>
-              <p className="mx-2">info@ASTECHY.com</p>
+              <p className="mx-2">info@astechy.com</p>
             </div>
           </div>
         </div>
