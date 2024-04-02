@@ -7,6 +7,7 @@ import timezone from '../Assets/icons8-timezone-50.png';
 import progress from '../Assets/icons8-progress-50.png';
 import team from '../Assets/icons8-team-80.png';
 import meeting from '../Assets/icons8-meeting-room-50.png';
+import { Link } from 'react-router-dom';
 
 export const HireUs = () => {
     const [devTitleDesc, setDevTitleDesc] = useState({
@@ -26,24 +27,24 @@ export const HireUs = () => {
         cardDesc6: '',
     });
     const PageRoute = window.location.pathname.replace(/^\//, '');
-    
+
     useEffect(() => {
         getDevTexts();
     }, []);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     useEffect(() => {
-      // Function t update the windowWidth state when the resize event occurs
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
-  
-      // Attach the event listener
-      window.addEventListener("resize", handleResize);
-  
-      // Clean up the event listener on component unmount
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
+        // Function t update the windowWidth state when the resize event occurs
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        // Attach the event listener
+        window.addEventListener("resize", handleResize);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
     const getDevTexts = () => {
         const route = window.location.pathname.replace(/^\//, '');
@@ -207,20 +208,22 @@ export const HireUs = () => {
                     </span> with <span className='changecolor'>ASTECHY</span></h1>
                     <p className={'font2014 widthHireUs mt-3'}>{devTitleDesc.desc}</p>
                 </div>
-                <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
-                     <div style={{ width: "86vw" }}>
+                <div className={windowWidth <= 1024 ? "mt-4 d-flex justify-content-center " : "mt-5 d-flex justify-content-center "}>
+                    <div style={{ width: "86vw" }}>
                         <ServiceCardList ServiceCardList={serviceCardList1} />
                     </div>
                 </div>
-                <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
-                     <div style={{ width: "86vw" }}>
+                <div className={windowWidth <= 1024 ? "mt-4 d-flex justify-content-center " : "mt-5 d-flex justify-content-center "}>
+                    <div style={{ width: "86vw" }}>
                         <ServiceCardList ServiceCardList={serviceCardList2} />
                     </div>
                 </div>
-                <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
-                    <button className="HireUsButton margintop" style={{ marginBottom: '70px' }}>
-                        Hire MVP Developers
-                    </button>
+                <div className={windowWidth <= 1024 ? "mt-4 d-flex justify-content-center " : "mt-5 d-flex justify-content-center "}>
+                    <Link to="/contact">
+                        <button className="HireUsButton margintop" style={{ marginBottom: '70px' }}>
+                            Contact Us
+                        </button>
+                    </Link>
                 </div>
             </div>
         </>
