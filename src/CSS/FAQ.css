@@ -1,138 +1,131 @@
 /* Variables */
 :root {
-    --black: #372717;
-    --gray: #756658;
-  }
-  
-  /* Global */
-  *,
-  *:after,
-  *:before {
-    box-sizing: inherit;
-  }
-  
-  /* body {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-    background-color: #FCFCFC;
-    min-height: 100vh;
-    font-size: 16px;
-    line-height: 1.4;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--black);
-    box-sizing: border-box;
-    overflow-y: scroll;
-  } */
-  
-  /* Accordion */
-  .accordion {
-    /* width: 100%;
+  --black: #372717;
+  --gray: #756658;
+}
+
+/* Global */
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/* Accordion */
+.accordion {
+  /* width: 100%;
     max-width: 470px; */
-    width: 190%;
-    max-width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 80px;
-  }
-  
-  /* Panel */
-  .panel {
-    background-color: #fff;
-  }
-  
-  .panel__label {
-    position: relative;
-    color: white;
-    display: block;
-    width: 92%;
-    background: none;
-    border: none;
-    text-align: left;
-    padding: 25px 60px 25px 25px;
-    border:1px solid white;
-    font-weight: 500;
-    font-size: 17px;
-    font-family: inherit;
-    transition: color 0.2s linear;
-    cursor: pointer;
-  }
-  
-  .panel__label:focus {
-    outline: none;
-  }
-  
-  .panel__label:after,
-  .panel__label:before {
-    content: '';
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    width: 22px;
-    height: 2px;
-    margin-top: -1px; /* Adjusted margin */
-    background-color: var(--black);
-  }
-  
-  .panel__label:before {
-    transform: rotate(-90deg);
-    transition: transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
-  }
-  
-  .panel[aria-expanded='true'] .panel__content {
-    opacity: 1;
-  }
-  
-  .panel[aria-expanded='true'] .panel__label {
-    color: black;
+  width: 190%;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+/* Panel */
+.panel {
+  background-color: #fff;
+}
+
+.panel__label {
+  position: relative;
+  color: white;
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 25px 60px 25px 25px;
+  border: 1px solid white;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: inherit;
+  transition: color 0.2s linear;
+  cursor: pointer;
+}
+
+.panel__label:focus {
+  outline: none;
+}
+
+.panel__label:after,
+.panel__label:before {
+  content: '';
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  width: 22px;
+  height: 2px;
+  margin-top: -1px;
+  /* Adjusted margin */
+  background-color: var(--black);
+}
+
+.panel__label:before {
+  transform: rotate(-90deg);
+  transition: transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.panel[aria-expanded='true'] .panel__content {
+  opacity: 1;
+}
+
+.panel[aria-expanded='true'] .panel__label {
+  color: black;
+  font-size: 34px;
+}
+
+.panel[aria-expanded='true'] .panel__label:before {
+  transform: rotate(0deg);
+}
+
+.panel__inner {
+  overflow: hidden;
+  will-change: height;
+  transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.panel__content {
+  margin: 5px 25px 25px;
+  font-size: 18px;
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.3s linear 0.18s;
+}
+
+.panel:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.font4834 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .font4834 {
     font-size: 34px;
-  }
-  
-  .panel[aria-expanded='true'] .panel__label:before {
-    transform: rotate(0deg);
-  }
-  
-  .panel__inner {
-    overflow: hidden;
-    will-change: height;
-    transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-  }
-  
-  .panel__content {
-    margin: 5px 25px 25px;
-    font-size: 18px;
-    color: #000;
-    opacity: 0;
-    transition: opacity 0.3s linear 0.18s;
-  }
-  
-  .panel:not(:last-child) {
-    margin-bottom: 3px;
-  }
-  .font4834{
-    font-size: 48px;
     font-weight: 700;
   }
-  @media screen and (max-width: 768px) {   
-    .font4834{
-      font-size: 34px;
-      font-weight: 700;
-    }
-    .accordion{
-        width: 90%;
-        max-width: 90%;
-    }
-    .panel[aria-expanded='true'] .panel__label{
-        font-size: 24px;
-    }
-    .panel__inner{
-    }
-    .panel__content{
-        font-size: 14px;
-    }
-    .panel__label{
-        width: 72%;
-    }
-   
+
+  .accordion {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .panel[aria-expanded='true'] .panel__label {
+    font-size: 24px;
+  }
+
+  .panel__inner {}
+
+  .panel__content {
+    font-size: 14px;
+  }
+
+  .panel__label {
+    width: 72%;
+  }
+
 }
