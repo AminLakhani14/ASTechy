@@ -193,6 +193,7 @@
   .tabsp {
     /* width: 100%;
     height: 3px; */
+    height: auto;
     gap: 20px;
   }
 
