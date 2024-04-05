@@ -6,6 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import EmailIcon from "@mui/icons-material/Email";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -59,7 +60,7 @@ function Footer() {
               >
                 Have a query?
               </p>
-              <p className="mx-2">+1(866)631-8767</p>
+              <p className="mx-2">+1(262)765-4448</p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 t-center" style={{ marginTop: "30px" }}>
@@ -78,12 +79,13 @@ function Footer() {
             </ul>
           </div>
           <div className="col-lg-3 col-md-6 t-center">
-            {/* Social Media section (replace with your links) */}
+            <Link style={{color:"white"}} to="/contact"> 
             <EmailIcon
               style={{ marginTop: "30px" }}
               fontSize="large"
               className="mx-xl-2"
             />
+            </Link>
             <div
               style={{
                 display: "inline-grid",

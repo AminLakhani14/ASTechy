@@ -39,9 +39,11 @@ function AboutUs() {
         <div className="row">
           <div className="col-lg-3">
             <div className="img4 ml-10"></div>
+            <h4 className="text-center">Abdullah sheikh</h4>
           </div>
           <div className="col-lg-3">
             <div className="img4 ml-10"></div>
+            <h4 className="text-center">Muhammad anas</h4>
           </div>
 
         </div>
@@ -97,7 +99,7 @@ function AboutUs() {
           </div>
         </div>
         <div className="col-lg-1"></div>
-        <div className="col-lg-5 col-md-5">
+        <div className="col-lg-5 col-md-5 d-none">
           <div  className={windowWidth <=1024?"d-flex justify-content-center m-4 video-container":"video-container"} >
             <iframe
               width="560"
@@ -136,7 +138,7 @@ function AboutUs() {
         <div className="col-lg-1"></div>
         <div className="col-lg-5">
           <div>
-            <div className="img1"></div>
+            <div className="img1 d-none"></div>
             <h5>Our Perspective</h5>
             <p className="contentText">
               We stay ahead of the curve by keeping up with the latest trends in design and development. Our commitment to delivering high-quality digital products sets us apart and ensures your project’s success.
@@ -146,7 +148,7 @@ function AboutUs() {
         </div>
         <div className="col-lg-5">
           <div>
-            <div className="img2"></div>
+            <div className="img2 d-none"></div>
             <h5>Our Purpose</h5>
             <p className="contentText">
               Our goal is to drive businesses toward competitiveness through the integration of digital innovation, exceptional design, and cutting-edge technologies through the development of smart applications.
@@ -162,7 +164,7 @@ function AboutUs() {
         <div className={windowWidth <=1024?"pt-5 mt-5 HeadingBackground":"HeadingBackground "}>
         <div className="col-lg-1"></div>
         <div className={windowWidth <=1024?"col-lg-6 m-4":"col-lg-6 "}>
-          <p className="h1">Anas Khursheed</p>
+          <p className="h1">Muhammad shareef, Shahruk sheikh</p>
           <p className="h4">CEO, ASTECHY</p>
           <p className="contentText mt-5">
             “For the past ten years, I have devoted myself wholeheartedly to building and expanding this company. It brings me great pride to see the fantastic team we have built, the outstanding work they produce, and the supportive atmosphere we’ve created for our clients to bring their ideas to life. Our team’s commitment to excellence and client satisfaction has been our guiding principle, driving us to deliver top-notch services that meet and exceed expectations. I am humbled and honored to have led this organization to where it stands today, and I look forward to continuing our journey of growth and success.”
@@ -212,21 +214,37 @@ function AboutUs() {
             (
               <div className="row">
                 <div className="col-lg-3">
-                  <div className="img4 ml-10"></div>
+                  <div className="img4 ml-10">
+                  </div>
+                  <h4 className="text-center">Abdullah sheikh</h4>
                 </div>
                 <div className="col-lg-3">
-                  <div className="img4 ml-10"></div>
+                  <div className="img4 ml-10">
+                  </div>
+                  <h4 className="text-center">Muhammad anas</h4>
                 </div>
               </div>)
             : (
               <div className={windowWidth <=1024?"d-flex justify-content-lg-start":"row"}>
                 <div className="col-lg-12">
                   <div className="tabs d-flex justify-content-lg-start" style={{ gap: "30px" }}>
-                    <span className={teamTab === 'Mobile Apps' ? 'active' : ''} onClick={() => handleTeamTabClick('Mobile Apps')}>
-                      Mobile Apps
+                  <span className={teamTab === ' Graphics Designing' ? 'active' : ''} onClick={() => handleTeamTabClick(' Graphics Designing')}>
+                  <h6 className="font">Graphics Designing</h6>
                     </span>
-                    <span className={teamTab === 'WordPress/Shopify' ? 'active' : ''} onClick={() => handleTeamTabClick('WordPress/Shopify')}>
-                      WordPress/Shopify
+                    <span className={teamTab === 'Web Development' ? 'active' : ''} onClick={() => handleTeamTabClick('Web Development')}>
+                   <h6  className="font">Web Development</h6>  
+                    </span>
+                    <span className={teamTab === 'SEO' ? 'active' : ''} onClick={() => handleTeamTabClick('SEO')}>
+                    <h6  className="font">SEO</h6>  
+                    </span>
+                    <span className={teamTab === 'UI/UX Designing' ? 'active' : ''} onClick={() => handleTeamTabClick('UI/UX Designing')}>
+                    <h6  className="font"> UI/UX Designing</h6>  
+                    </span>
+                    <span className={teamTab === ' WordPress Development' ? 'active' : ''} onClick={() => handleTeamTabClick(' WordPress Development')}>
+                     <h6 className="font">WordPress Development</h6> 
+                    </span>
+                    <span className={teamTab === 'Social Media Marketing' ? 'active' : ''} onClick={() => handleTeamTabClick('Social Media Marketing')}>
+                    <h6 className="font">Social Media Marketing</h6> 
                     </span>
                   </div>
                 </div>

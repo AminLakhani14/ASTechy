@@ -208,7 +208,7 @@ function Navbar() {
           </ul>
           <div className="display-none" style={{ width: "15%" }}>
             <h5 className="headercontact me-3 mt-2 float-md-end" onClick={handleShowModal}>
-              +92-307-1234567
+            +1(262)765-4448
             </h5>
           </div>
           <div className="display-none">

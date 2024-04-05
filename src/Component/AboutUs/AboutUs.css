@@ -48,7 +48,7 @@
     background-image: url("../../Images/about4.jpg");
     background-size: contain;
     /* background-position: center; */
-    height: 500px;
+    height: 380px;
 }
 
 .img5 {
@@ -138,5 +138,10 @@
         background-size: contain;
         background-position: center;
         height: 160px;
+    }
+    .font{
+        font-size: 8px;
+        display: flex;
+        word-break: keep-all;
     }
 }
