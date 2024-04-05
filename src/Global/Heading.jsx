@@ -6,6 +6,13 @@ import EmailIcon from "@mui/icons-material/Email";
 import "aos/dist/aos.css";
 import { Modal, Button, Form } from 'react-bootstrap';
 
+const INITIAL_STATE = {
+  name: "",
+  email: "",
+  phone: "",
+  companyName: "",
+  message: "",
+}
 function Heading(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const PageRoute = window.location.pathname.replace(/^\//, "");
@@ -26,6 +33,56 @@ function Heading(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const phoneNumber = "+92-307-1234567";
+
+  const [formData, setFormData] = useState({ ...INITIAL_STATE })
+  const [errors, setErrors] = useState({});
+  const handleChange = (event) => {
+    try {
+      debugger;
+      if (event) {
+        const { name, value } = event.target;
+        setFormData((prevField) => ({
+          ...prevField,
+          [name]: value,
+        }));
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          [name]: '', // Reset error message for the changed field
+      }));
+      }
+    } catch (error) {
+      console.log("ERROR", error);
+    }
+  }
+  const validateForm = (data) => {
+    const errors = {};
+    const fields = ['name', 'email', 'phone', 'companyName', 'message'];
+
+    // Regular expression for validating email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    fields.forEach(field => {
+      if (!data[field]) {
+        errors[field] = `${field.charAt(0).toUpperCase() + field.slice(1)} is required.`;
+      } else if (field === 'email' && !emailRegex.test(data[field])) {
+        errors[field] = 'Invalid email format.';
+      }
+    });
+
+    return errors;
+  };
+
+  const sendEmail = () => {
+    const validationErrors = validateForm(formData);
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length === 0) {
+      // Submit the form if there are no errors
+      console.log("Form submitted successfully!");
+    }
+
+    console.log(formData)
+  }
+
 
   return (
     <div className={windowWidth <= 1024 ? "pt-5 mt-5 HeadingBackground" : "HeadingBackground "}>
@@ -106,7 +163,7 @@ function Heading(props) {
               data-aos="fade-left"
             >
               <TextField
-                id="standard-basic"
+                id="standard-basic1"
                 className="w-75 "
                 style={{
                   marginLeft: "40px",
@@ -114,35 +171,65 @@ function Heading(props) {
                   marginTop: "20px",
                 }}
                 label="Full Name*"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 variant="standard"
+                error={Boolean(errors.name)}
+                helperText={errors.name}
+
               />
               <TextField
-                id="standard-basic"
+                id="standard-basic2"
                 className="w-75 "
                 style={{ marginLeft: "40px", marginBottom: "30px" }}
                 label="Work Email*"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 variant="standard"
+                error={Boolean(errors.email)}
+                helperText={errors.email}
+
               />
               <TextField
-                id="standard-basic"
+                id="standard-basic3"
                 className="w-75 "
                 style={{ marginLeft: "40px", marginBottom: "30px" }}
                 label="Work Phone*"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 variant="standard"
+                error={Boolean(errors.phone)}
+                helperText={errors.phone}
+
               />
               <TextField
-                id="standard-basic"
+                id="standard-basic4"
                 className="w-75 "
                 style={{ marginLeft: "40px", marginBottom: "30px" }}
                 label="Company Name*"
+                name="companyName"
+                value={formData.companyName}
+                onChange={handleChange}
                 variant="standard"
+                error={Boolean(errors.companyName)}
+                helperText={errors.companyName}
+
               />
               <TextField
-                id="standard-basic"
+                id="standard-basic5"
                 className="w-75 "
                 style={{ marginLeft: "40px", marginBottom: "30px" }}
                 label="Messge*"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 variant="standard"
+                error={Boolean(errors.message)}
+                helperText={errors.message}
+
               />
               <div
                 style={
@@ -160,7 +247,7 @@ function Heading(props) {
                     }
                 }
               >
-                <button className="headerMenuButton mx-2">
+                <button className="headerMenuButton mx-2" onClick={sendEmail}>
                   <b>Get in Touch</b>
                 </button>
               </div>
