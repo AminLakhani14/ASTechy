@@ -4,31 +4,31 @@ import { useEffect, useState } from "react";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import "aos/dist/aos.css";
+import { Modal, Button, Form } from 'react-bootstrap';
 
 function Heading(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const PageRoute = window.location.pathname.replace(/^\//, "");
   useEffect(() => {
-    // Function to update the windowWidth state when the resize event occurs
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-
-    // Attach the event listener
     window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
   const handleGetStartedClick = () => {
-    // Scroll down 200 pixels when "Let's Get Started" button is clicked
     window.scrollBy(0, 680);
   };
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const phoneNumber = "+92-307-1234567";
 
   return (
-    <div className={windowWidth <=1024?"pt-5 mt-5 HeadingBackground":"HeadingBackground "}>
+    <div className={windowWidth <= 1024 ? "pt-5 mt-5 HeadingBackground" : "HeadingBackground "}>
       <div className="width50">
         <div className="col-lg-3 col-sm-3 col-md-3"></div>
         <div className={windowWidth <= 1024 ? "justify-content-center d-flex flex-column align-items-center" : "justify-content-center d-flex flex-column"}>
@@ -67,16 +67,16 @@ function Heading(props) {
             {props.workBtn === true &&
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <div style={{ display: 'flex' }} className="emailusclass">
+                  <div style={{ display: 'flex' }} className="emailusclass" onClick={handleShow}>
                     <PhoneIcon
                       className="mx-xl-2"
-                      fontSize="large"
+                      fontSize="medium"
                     />
                     <p>Call Us</p>
                   </div>
                   <div style={{ display: 'flex' }} className="emailusclass">
                     <EmailIcon
-                      fontSize="large"
+                      fontSize="medium"
                       className="mx-xl-2"
                     />
                     <a href='mailto:your@email.com' className="emailustextclass">
@@ -84,7 +84,7 @@ function Heading(props) {
                     </a>
                   </div>
                 </div>
-                <div>
+                <div className="mt-3">
                   <button className="HeaderButton">
                     Explore Our Work
                   </button>
@@ -167,9 +167,23 @@ function Heading(props) {
             </div>
           </div>
         ) : (
-         <div style={{height:"550pxy"}}></div>
+          <div style={{ height: "550pxy" }}></div>
         )}
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Phone Number</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{phoneNumber}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={() => { navigator.clipboard.writeText(phoneNumber); handleClose(); }}>
+            Copy Number
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }

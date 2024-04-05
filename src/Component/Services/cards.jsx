@@ -8,14 +8,14 @@ const ReactCard = ({ title, description, index, color, route, textColor }) => {
     navigate(route);
   };
   return (
-    <div className={'card'} style={{ backgroundColor: color, color: textColor }}>
+    <div className={'card'} style={{ backgroundColor: color, color: textColor }} onClick={openServices}>
       <div className="card-content">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <h2>{title}</h2>
           <h5 style={{ marginTop: '6px', color: '#F0F0F0' }}>{index}</h5>
         </div>
         <p className='maincarddesc'>{description}</p>
-        <div style={{ textAlign: 'left' }} className='Arrow' onClick={openServices}><EastOutlined fontSize='large' /></div>
+        <div style={{ textAlign: 'left' }} className='Arrow'><EastOutlined fontSize='large' /></div>
       </div>
     </div>
   );
