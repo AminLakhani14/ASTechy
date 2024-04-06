@@ -227,7 +227,7 @@ function AboutUs() {
             : (
               <div className={windowWidth <=1024?"d-flex justify-content-lg-start":"row"}>
                 <div className="col-lg-12">
-                  <div className="tabs d-flex justify-content-lg-start" style={{ gap: "30px" }}>
+                  <div className="tabs d-flex justify-content-lg-start flex-wrap" style={{ gap: "30px" }}>
                   <span className={teamTab === ' Graphics Designing' ? 'active' : ''} onClick={() => handleTeamTabClick(' Graphics Designing')}>
                   <h6 className="font">Graphics Designing</h6>
                     </span>

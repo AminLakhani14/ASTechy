@@ -140,8 +140,12 @@
         height: 160px;
     }
     .font{
-        font-size: 8px;
+        font-size: 12px;
         display: flex;
         word-break: keep-all;
+    }
+    .flex-wrap{
+        flex-flow: wrap;
+        justify-content: start;
     }
 }
