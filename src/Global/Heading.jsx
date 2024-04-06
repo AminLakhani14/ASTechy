@@ -25,7 +25,7 @@ function Heading(props) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const phoneNumber = "+92-307-1234567";
+  const phoneNumber = "+1(262)765-4448";
 
   return (
     <div className={windowWidth <= 1024 ? "pt-5 mt-5 HeadingBackground" : "HeadingBackground "}>
