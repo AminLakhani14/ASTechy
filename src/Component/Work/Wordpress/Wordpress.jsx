@@ -11,12 +11,15 @@ function Wordpress() {
   const handleController = () => {
     navigate("/");
   };
+  const [feedbackvisible, setfeedbackvisible] = useState(false);
+
   return (
     <div style={{overflow:'hidden'}}>
       <Heading
         visible={false}
         startedbtn={true}
         workBtn={false}
+        feedbackvisible={true}
         text="WordPress Development Portfolio"
         paragraph="Experience seamless e-commerce solutions with our expertise in WordPress development. Our portfolio showcases our ability to create custom online stores, integrate third-party plugins, and optimize website performance."
       />

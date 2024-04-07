@@ -177,11 +177,6 @@ function Navbar() {
                       3D Animation
                     </Link>
                   </li>
-                  <li onClick={stopPropagation}>
-                    <label htmlFor="drop-3" className="toggle">
-                      Tutorials +
-                    </label>
-                  </li>
                 </ul>
               )}
             </li>

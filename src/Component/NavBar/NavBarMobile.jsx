@@ -188,12 +188,6 @@ setHideMenu(false)
                     {/* <li onClick={setResponsiveMenu}>
                   <Link style={{backgroundColor:"white"}}  to="/Ebook">Ebook</Link>
                 </li> */}
-                    <li onClick={setResponsiveMenu}>
-                      <label htmlFor="drop-3" className="toggle">
-                        Tutorials +
-                      </label>
-                      {/* Add your tutorials here */}
-                    </li>
                   </ul>
                 )}
               </li>

@@ -107,15 +107,17 @@ text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
+    width: 109%;
   }
   .background3{
     background-image: url('../Images/Slide3.gif') !important; 
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
+    width: 109%;
   }
   .width80{
-    width: 80%;
+    width: 90%;
   }
   .sliderParagraph{
     text-align: center;
@@ -127,5 +129,15 @@ text-align: center;
   .slick-prev, .slick-next{
     height: auto !important;
     width: auto !important;
+  }
+  .slick-dots {
+    position: absolute !important;
+    bottom: -25px !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin: 0 !important;
+    list-style: none !important;
+    text-align: center !important;
   }
 }
