@@ -210,7 +210,7 @@ function Navbar() {
           <Modal.Title>Pickup an app?</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>https://www.ropstam.com wants to open this application.</p>
+          <p>https://www.astechy.com wants to open this application.</p>
           <Form.Check
             type="checkbox"
             label="Always allow to open link"
