@@ -51,6 +51,7 @@
 @media all and (max-width: 980px) {
   .tabs {
     gap: 20px;
+    /* flex-flow:wrap-reverse */
   }
 
   .tabs span {

@@ -52,9 +52,6 @@ function Navbar() {
               <input type="checkbox" id="drop-1" />
               {servicesOpen && (
                 <ul>
-                  {/* <li>
-                  <Link style={{backgroundColor:"white"}}  to="#">Hire Team</Link>
-                </li> */}
                   <li onClick={stopPropagation}>
                     <Link
                       style={{ backgroundColor: "white" }}
@@ -180,18 +177,6 @@ function Navbar() {
                       3D Animation
                     </Link>
                   </li>
-                  {/* <li onClick={stopPropagation}>
-                  <Link style={{backgroundColor:"white"}}  to="/Wikipedia">Wikipedia</Link>
-                </li> */}
-                  {/* <li onClick={stopPropagation}>
-                  <Link style={{backgroundColor:"white"}}  to="/Ebook">Ebook</Link>
-                </li> */}
-                  <li onClick={stopPropagation}>
-                    <label htmlFor="drop-3" className="toggle">
-                      Tutorials +
-                    </label>
-                    {/* Add your tutorials here */}
-                  </li>
                 </ul>
               )}
             </li>
@@ -208,7 +193,7 @@ function Navbar() {
           </ul>
           <div className="display-none" style={{ width: "15%" }}>
             <h5 className="headercontact me-3 mt-2 float-md-end" onClick={handleShowModal}>
-              +92-307-1234567
+              +1(262)765-4448
             </h5>
           </div>
           <div className="display-none">

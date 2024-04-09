@@ -32,7 +32,7 @@ function Heading(props) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const phoneNumber = "+92-307-1234567";
+  const phoneNumber = "+1(262)765-4448";
 
   const [formData, setFormData] = useState({ ...INITIAL_STATE })
   const [errors, setErrors] = useState({});

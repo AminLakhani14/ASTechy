@@ -99,7 +99,7 @@ function AutoPlay(props) {
   return (
     <div className={windowWidth <= 1024 ? "slider-container mt-5" : "slider-container "}>
       <Slider {...settings}>
-        <div className="background1">
+        <div className="background1" style={ windowWidth <= 1024 ? { width:"100%"} : ""}>
           <div
             style={{ color: "#ffffff" }}
             className={
@@ -147,12 +147,12 @@ function AutoPlay(props) {
           </div>
         </div>
 
-        <div className="background2">
+        <div className="background2" style={ windowWidth <= 1024 ? {width:"109% !important"} : ""}>
           <div
             style={{ color: "#ffffff" }}
             className={
               windowWidth <= 1024
-                ? "width80 d-flex justify-content-center pt-5 "
+                ? "d-flex justify-content-center pt-5 "
                 : "width50 d-flex align-items-center"
             }
           >
@@ -193,7 +193,7 @@ function AutoPlay(props) {
           </div>
         </div>
 
-        <div className="background3">
+        <div className="background3" style={ windowWidth <= 1024 ? {width:"109% !important"} :"" }>
           <div
             style={{ color: "#ffffff" }}
             className={

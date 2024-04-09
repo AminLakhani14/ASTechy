@@ -65,15 +65,10 @@ export const BlockchainPage = ({ route }) => {
   }, [window.location.pathname]);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
-    // Function t update the windowWidth state when the resize event occurs
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-
-    // Attach the event listener
     window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -621,7 +616,7 @@ export const BlockchainPage = ({ route }) => {
   ];
 
   return (
-    <div style={{overflow:'hidden'}}>
+    <div style={{ overflow: 'hidden' }}>
       <div >
         <Heading
           workBtn={PageRoute == "services" ? true : false}
@@ -632,7 +627,7 @@ export const BlockchainPage = ({ route }) => {
           feedbackvisible={true}
         />
       </div>
-      <div className="margintop row mt-5 " style={windowWidth <=1024?{display:"flex",flexDirection:"column",alignItems:"center"}:{}}>
+      <div className="margintop row mt-5 " style={windowWidth <= 1024 ? { display: "flex", flexDirection: "column", alignItems: "center" } : {}}>
         <div className="col-lg-6 d-flex flex-column align-items-center justify-content-center px-5 ">
           {PageRoute == "services" ? (
             <>
@@ -647,7 +642,7 @@ export const BlockchainPage = ({ route }) => {
             </>
           ) : (
             <>
-              <h1 className="heading4034" style={windowWidth <=1024?{width:'100%',textAlign:"center"}:{width:'75%'}}>
+              <h1 className="heading4034" style={windowWidth <= 1024 ? { width: '100%', textAlign: "center" } : { width: '75%' }}>
                 Our{" "}
                 <span className="changecolor">{servicesCardsDesc.title}</span>{" "}
                 {PageRoute === "graphics-development-services" ||
@@ -656,7 +651,7 @@ export const BlockchainPage = ({ route }) => {
                   : "Development"}{" "}
                 Services
               </h1>
-              <p style={windowWidth <=1024?{width:'100%',textAlign:"center"}:{width:'75%',fontSize:'20px',fontWeight:"500"}}>{servicesCardsDesc.desc}</p>
+              <p style={windowWidth <= 1024 ? { width: '100%', textAlign: "center" } : { width: '75%', fontSize: '20px', fontWeight: "500" }}>{servicesCardsDesc.desc}</p>
             </>
           )}
         </div>
@@ -1091,7 +1086,7 @@ export const BlockchainPage = ({ route }) => {
             </div>
           </>
         ) : (
-          <div className="col-lg-5 mt-5 mx-3 px-0" style={windowWidth <=1024?{width:"86vw" ,display:"flex",justifyContent:"center"}:{}}>
+          <div className="col-lg-5 mt-5 mx-3 px-0" style={windowWidth <= 1024 ? { width: "86vw", display: "flex", justifyContent: "center" } : {}}>
             <ServiceCardList ServiceCardList={serviceCardList} />
           </div>
         )}
@@ -1099,7 +1094,7 @@ export const BlockchainPage = ({ route }) => {
       {PageRoute == "services" ? (
         <></>
       ) : (
-        <div className={windowWidth <=1024?"mt-4 d-flex justify-content-center ":"mt-5 d-flex justify-content-center "}>
+        <div className={windowWidth <= 1024 ? "mt-4 d-flex justify-content-center " : "mt-5 d-flex justify-content-center "}>
           <div style={{ width: "86vw" }}>
             <ServiceCardList ServiceCardList={serviceCardList1} />
           </div>
