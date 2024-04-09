@@ -21,12 +21,12 @@
 //                 </div>
 //                 <div className='' style={{ width: '20%' }}>
 //                     <p style={{ color: '#fff' }}>Email us at</p>
-//                     <p style={{ color: '#fff' }}>info@SSTech.com</p>
+//                     <p style={{ color: '#fff' }}>info@AStechy.com</p>
 //                 </div>
 //             </div>
 
 //             <div className="text-center">
-//                 <p className="" style={{ color: '#fff' }}>© 2024 SSTech Solutions Inc. All Rights Reserved.</p>
+//                 <p className="" style={{ color: '#fff' }}>© 2024 AStechy Solutions Inc. All Rights Reserved.</p>
 //             </div>
 //         </div>
 //     )

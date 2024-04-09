@@ -7,9 +7,9 @@ import php from '../Assets/icons8-php.svg'
 import webflow from '../Assets/icons8-webflow.svg'
 import wordpress from '../Assets/icons8-wordpress.svg'
 import laravel from '../Assets/icons8-laravel-64.png'
-import canva from '../Assets/icons8-canva-64.png'
-import hubspot from '../Assets/icons8-hubspot-a-developer-and-marketer-of-software-products-24.png'
-import bitly from '../Assets/icons8-bitly-32.png'
+import Snapchat from '../Assets/icons8-snapchat.svg'
+import facebook from '../Assets/icons8-facebook.svg'
+import Instagram from '../Assets/icons8-instagram.svg'
 import adobeae from '../Assets/after-effects.png'
 import adobeil from '../Assets/illustrator.png'
 import adobefi from '../Assets/icons8-figma-48.png'
@@ -22,6 +22,8 @@ import yoast from '../Assets/icons8-yoast-is-a-search-optimization-firm-wordpres
 import bing from '../Assets/icons8-bing.svg'
 import Google from '../Assets/icons8-google-480.png'
 import mern from '../Assets/mern.svg'
+import linkedin from '../Assets/icons8-linkedin.svg'
+import twitter from '../Assets/icons8-twitter-480.svg'
 
 const TechnologyStack = () => {
   const [activeTab, setActiveTab] = useState('Web');
@@ -83,21 +85,31 @@ const TechnologyStack = () => {
             </div>
           </div>
         );
-      case 'Social Media Marketing':
+      case 'Digital Marketing':
         return (
           <div className="content">
             <div className='d-flex justify-content-center'>
               <div className='text-center'>
-                <img src={canva} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Canva</p>
+                <img src={facebook} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Facebook</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={hubspot} className='imageclass' alt='' />
-                <p className='ot_iconpara'>HubSpot</p>
+                <img src={Snapchat} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Snapchat</p>
               </div>
               <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
-                <img src={bitly} className='imageclass' alt='' />
-                <p className='ot_iconpara'>Bitly</p>
+                <img src={Instagram} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Instagram</p>
+              </div>
+            </div>
+            <div className='mt-5 pt-4 d-flex justify-content-center'>
+              <div className='text-center'>
+                <img src={linkedin} className='imageclass' alt='' />
+                <p className='ot_iconpara'>LinkedIn</p>
+              </div>
+              <div style={{ flexDirection: 'column', textAlign: 'center', marginLeft: '10%' }}>
+                <img src={twitter} className='imageclass' alt='' />
+                <p className='ot_iconpara'>Twitter</p>
               </div>
             </div>
           </div>
@@ -202,10 +214,10 @@ const TechnologyStack = () => {
               Web
             </span>
             <span
-              className={activeTab === 'Social Media Marketing' ? 'active' : ''}
-              onClick={() => handleTabClick('Social Media Marketing')}
+              className={activeTab === 'Digital Marketing' ? 'active' : ''}
+              onClick={() => handleTabClick('Digital Marketing')}
             >
-              Social Media Marketing
+              Digital Marketing
             </span>
             <span
               className={activeTab === 'UI/UX Design' ? 'active' : ''}
@@ -239,10 +251,10 @@ const TechnologyStack = () => {
               Web
             </span>
             <span
-              className={activeTab === 'Social Media Marketing' ? 'active' : ''}
-              onClick={() => handleTabClick('Social Media Marketing')}
+              className={activeTab === 'Digital Marketing' ? 'active' : ''}
+              onClick={() => handleTabClick('Digital Marketing')}
             >
-              Social Media Marketing
+              Digital Marketing
             </span>
             <span
               className={activeTab === 'UI/UX Design' ? 'active' : ''}
