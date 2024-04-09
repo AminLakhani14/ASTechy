@@ -99,6 +99,51 @@ function AutoPlay(props) {
   return (
     <div className={windowWidth <= 1024 ? "slider-container mt-5" : "slider-container "}>
       <Slider {...settings}>
+      <div className="background2" style={ windowWidth <= 1024 ? {width:"109% !important"} : ""}>
+          <div
+            style={{ color: "#ffffff" }}
+            className={
+              windowWidth <= 1024
+                ? "d-flex justify-content-center pt-5 "
+                : "width50 d-flex align-items-center"
+            }
+          >
+            <div
+              className={
+                windowWidth <= 1024 ? "" : "col-lg-3 col-sm-2 col-md-3"
+              }
+            ></div>
+            <div>
+              <h1 className="mb-4 sliderMainFont">
+                <b>
+                  Optimize Your User Experience with Our Cutting-Edge All-In-One UI/UX Solutions.
+                </b>
+              </h1>
+              <p className="sliderParagraph">
+                Our UI/UX Design Service offers a comprehensive solution for all your digital interface needs,
+                harnessing cutting-edge technology to optimize efficiency, productivity, and success.
+              </p>
+              <div
+                className={
+                  windowWidth <= 1024
+                    ? "d-flex mt-4 justify-content-center"
+                    : "d-flex mt-4"
+                }
+              >
+                <button className="HeaderButton" id="uiuxservice" onClick={openServices}>UI/UX Services</button>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              windowWidth <= 1024
+                ? "d-none"
+                : "width50 d-flex align-items-center"
+            }
+          >
+            <img src={slider2} alt="Computer man" />
+          </div>
+        </div>
         <div className="background1" style={ windowWidth <= 1024 ? { width:"100%"} : ""}>
           <div
             style={{ color: "#ffffff" }}
@@ -147,51 +192,7 @@ function AutoPlay(props) {
           </div>
         </div>
 
-        <div className="background2" style={ windowWidth <= 1024 ? {width:"109% !important"} : ""}>
-          <div
-            style={{ color: "#ffffff" }}
-            className={
-              windowWidth <= 1024
-                ? "d-flex justify-content-center pt-5 "
-                : "width50 d-flex align-items-center"
-            }
-          >
-            <div
-              className={
-                windowWidth <= 1024 ? "" : "col-lg-3 col-sm-2 col-md-3"
-              }
-            ></div>
-            <div>
-              <h1 className="mb-4 sliderMainFont">
-                <b>
-                  Optimize Your User Experience with Our Cutting-Edge All-In-One UI/UX Solutions.
-                </b>
-              </h1>
-              <p className="sliderParagraph">
-                Our UI/UX Design Service offers a comprehensive solution for all your digital interface needs,
-                harnessing cutting-edge technology to optimize efficiency, productivity, and success.
-              </p>
-              <div
-                className={
-                  windowWidth <= 1024
-                    ? "d-flex mt-4 justify-content-center"
-                    : "d-flex mt-4"
-                }
-              >
-                <button className="HeaderButton" id="uiuxservice" onClick={openServices}>UI/UX Services</button>
-              </div>
-            </div>
-          </div>
-          <div
-            className={
-              windowWidth <= 1024
-                ? "d-none"
-                : "width50 d-flex align-items-center"
-            }
-          >
-            <img src={slider2} alt="Computer man" />
-          </div>
-        </div>
+
 
         <div className="background3" style={ windowWidth <= 1024 ? {width:"109% !important"} :"" }>
           <div
