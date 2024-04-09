@@ -71,16 +71,56 @@ function Heading(props) {
 
     return errors;
   };
+  const api = () => {
+    const req = {
+      Name: formData.email,
+      MobileNo: formData.phone,
+      Email: formData.name,
+      Comments: formData.message,
+      Address: "",
+      CompanyName: formData.companyName,
+      Country_City: "",
+      Department: "",
+      Company_Website: "",
+      License: "",
+    };
+
+    fetch('https://localhost:7163/api/contact-us', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // Add any other headers if needed
+        },
+        body: JSON.stringify(req),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        alert("Email Sent Successfully");
+        return response.json();
+    })
+    .then(data => {
+        console.log('Response:', data);
+        // Handle the response here
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Handle errors here
+    });
+};
+
 
   const sendEmail = () => {
+    debugger;
     const validationErrors = validateForm(formData);
     setErrors(validationErrors);
     if (Object.keys(validationErrors).length === 0) {
       // Submit the form if there are no errors
       console.log("Form submitted successfully!");
+      api();
     }
 
-    console.log(formData)
   }
 
 
