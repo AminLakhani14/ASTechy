@@ -71,7 +71,7 @@ function Heading(props) {
 
     return errors;
   };
-  const api = () => {
+  const api = async () => {
     const req = {
       Name: formData.email,
       MobileNo: formData.phone,
@@ -84,31 +84,55 @@ function Heading(props) {
       Company_Website: "",
       License: "",
     };
-
-    fetch('https://localhost:7163/api/contact-us', {
+    debugger;
+    try {
+      const response = await fetch('http://localhost:3001/api/sendEmail', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            // Add any other headers if needed
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(req),
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        debugger
+        alert('Email sent successfully');
+      } else {
+        debugger
+        alert('Error sending email');
+      }
+    } catch (error) {
+      debugger
+      console.error('Error:', error);
+      alert('Error sending email');
+    }
+
+    
+    return;
+    fetch('https://localhost:7163/api/contact-us', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        // Add any other headers if needed
+      },
+      body: JSON.stringify(req),
     })
-    .then(response => {
+      .then(response => {
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+          throw new Error('Network response was not ok');
         }
         alert("Email Sent Successfully");
         return response.json();
-    })
-    .then(data => {
+      })
+      .then(data => {
         console.log('Response:', data);
         // Handle the response here
-    })
-    .catch(error => {
+      })
+      .catch(error => {
         console.error('Error:', error);
         // Handle errors here
-    });
-};
+      });
+  };
 
 
   const sendEmail = () => {
