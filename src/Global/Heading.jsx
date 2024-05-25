@@ -48,7 +48,7 @@ function Heading(props) {
         setErrors((prevErrors) => ({
           ...prevErrors,
           [name]: '', // Reset error message for the changed field
-      }));
+        }));
       }
     } catch (error) {
       console.log("ERROR", error);
@@ -107,7 +107,7 @@ function Heading(props) {
       alert('Error sending email');
     }
 
-    
+
     return;
     fetch('https://localhost:7163/api/contact-us', {
       method: 'POST',
@@ -134,6 +134,19 @@ function Heading(props) {
       });
   };
 
+  const api1 = () => {
+    debugger;
+    if (Object.keys(formData).length > 0) {
+      let oldVal = localStorage.getItem("userInfo") || "";
+      let oldVal_Json = oldVal !== "" ? JSON.parse(oldVal) : ""
+        let Data = oldVal_Json !== "" ? [...oldVal_Json, formData] : [formData];
+        localStorage.setItem("userInfo", JSON.stringify(Data));
+        setFormData({...INITIAL_STATE});
+        alert("Record Saved Successfully")
+    }
+  }
+
+
 
   const sendEmail = () => {
     debugger;
@@ -142,7 +155,8 @@ function Heading(props) {
     if (Object.keys(validationErrors).length === 0) {
       // Submit the form if there are no errors
       console.log("Form submitted successfully!");
-      api();
+      // api();
+      api1()
     }
 
   }

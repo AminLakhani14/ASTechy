@@ -18,6 +18,9 @@ import UIUXDesigning from "./Component/Work/UIUXDesigning/UIUXDesigning.jsx";
 import Animation from "./Component/Work/3DAnimation/Animation.jsx";
 import { useEffect, useState } from "react";
 import NavBarMobile from "./Component/NavBar/NavBarMobile.jsx";
+import AddData from "./AddData.js";
+import FetchData from "./FetchData.js";
+import { RequestInfo } from "./Component/Work/RequestInfo.js";
 function ScrollToTopOnMount() {
   const { pathname } = useLocation();
 
@@ -43,7 +46,6 @@ function App() {
       <div className="ResponsiveNav">
       {windowWidth <=1024?<NavBarMobile/>:<NavBar />}
       </div>
-      {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/WebDevelopment" element={<><ScrollToTopOnMount /><WebDevelopment /></>} />
@@ -65,11 +67,17 @@ function App() {
           <Route path="/services" element={<><ScrollToTopOnMount /><BlockchainPage /></>} />
           <Route path="/contact" element={<><ScrollToTopOnMount /><ContactUs /></>} />
           <Route path="/AboutUs" element={<><ScrollToTopOnMount /><AboutUs /></>} />
+          <Route path="/RequestInfo" element={<><ScrollToTopOnMount /><RequestInfo /></>} />
         </Routes>
-      {/* </Router> */}
       <Cities />
       <Footer />
     </div>
+
+    // <div>
+    //   <h1>Firebase Firestore Example</h1>
+    //   <AddData />
+    //   <FetchData />
+    // </div>
   );
 }
 
